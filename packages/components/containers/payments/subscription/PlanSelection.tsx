@@ -151,8 +151,9 @@ export const getPrice = (plan: Plan, cycle: Cycle, plansMap: PlansMap): number |
 const getCycleSelectorOptions = () => {
     const oneMonth = { text: c('Billing cycle option').t`1 month`, value: CYCLE.MONTHLY };
     const oneYear = { text: c('Billing cycle option').t`12 months`, value: CYCLE.YEARLY };
+    const twoYears = { text: c('Billing cycle option').t`24 months`, value: CYCLE.TWO_YEARS };
 
-    return [oneMonth, oneYear];
+    return [oneMonth, oneYear, twoYears];
 };
 
 const ActionLabel = ({ plan, currency, cycle }: { plan: Plan; currency: Currency; cycle: Cycle }) => {
