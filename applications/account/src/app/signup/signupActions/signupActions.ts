@@ -25,6 +25,7 @@ import {
     unlockPasswordChanges,
 } from '@proton/shared/lib/api/user';
 import type { ProductParam } from '@proton/shared/lib/apps/product';
+import { SessionSource } from '@proton/shared/lib/authentication/SessionInterface';
 import type { AuthResponse } from '@proton/shared/lib/authentication/interface';
 import { persistSession } from '@proton/shared/lib/authentication/persistedSessionHelper';
 import { APPS, CLIENT_TYPES, KEYGEN_CONFIGS, KEYGEN_TYPES, VPN_CONNECTIONS } from '@proton/shared/lib/constants';
@@ -77,7 +78,7 @@ export const handleDone = ({
     if (!setupData?.authResponse) {
         throw new Error('Missing auth response');
     }
-    const { authResponse, user, keyPassword, clientKey, offlineKey, persistedAt } = setupData;
+    const { authResponse, user, keyPassword, clientKey, offlineKey, persistedSession } = setupData;
 
     // Users that creates an account after a logout don't have appIntent, foring forcing it here
     if (isElectronMail) {
@@ -89,15 +90,17 @@ export const handleDone = ({
     return {
         cache,
         session: {
-            ...authResponse,
-            persistent,
-            trusted,
-            User: user,
+            data: {
+                ...authResponse,
+                keyPassword,
+                persistent,
+                trusted,
+                User: user,
+                clientKey,
+                offlineKey,
+                persistedSession,
+            },
             loginPassword: password,
-            keyPassword: keyPassword,
-            clientKey,
-            offlineKey,
-            persistedAt,
             flow: 'signup',
             appIntent: appIntent,
         },
@@ -209,7 +212,7 @@ export const handleSetPassword = async ({
         config: updatePrivateKeyRoute(updateKeysPayload),
     });
 
-    const { clientKey, offlineKey } = await persistSession({
+    const { clientKey, offlineKey, persistedSession } = await persistSession({
         api,
         clearKeyPassword: newPassword,
         keyPassword,
@@ -218,6 +221,7 @@ export const handleSetPassword = async ({
         LocalID: setupData?.authResponse.LocalID,
         persistent,
         trusted: false,
+        source: SessionSource.Proton,
     });
 
     const updatedUser = await api<{ User: User }>(getUser()).then(({ User }) => User);
@@ -231,6 +235,7 @@ export const handleSetPassword = async ({
             },
             setupData: {
                 ...setupData,
+                persistedSession,
                 offlineKey,
                 clientKey,
                 keyPassword,
@@ -544,7 +549,7 @@ export const handleSetupUser = async ({
     const { keySetupData, user, addresses } = await setupKeys({ api, ktActivation, password, productParam });
 
     const trusted = false;
-    const { clientKey, offlineKey, persistedAt } = await persistSession({
+    const { clientKey, offlineKey, persistedSession } = await persistSession({
         ...authResponse,
         keyPassword: keySetupData.keyPassword,
         clearKeyPassword: keySetupData.clearKeyPassword,
@@ -552,6 +557,7 @@ export const handleSetupUser = async ({
         api,
         persistent,
         trusted,
+        source: SessionSource.Proton,
     });
 
     const mnemonicData = await handleSetupMnemonic({
@@ -568,7 +574,7 @@ export const handleSetupUser = async ({
         setupData: {
             user,
             keyPassword: keySetupData.keyPassword,
-            persistedAt,
+            persistedSession,
             clientKey,
             offlineKey,
             addresses,

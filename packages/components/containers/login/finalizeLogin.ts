@@ -1,5 +1,6 @@
 import { revoke } from '@proton/shared/lib/api/auth';
 import { getSettings, upgradePassword } from '@proton/shared/lib/api/settings';
+import { SessionSource } from '@proton/shared/lib/authentication/SessionInterface';
 import { maybeResumeSessionByUser, persistSession } from '@proton/shared/lib/authentication/persistedSessionHelper';
 import { APPS } from '@proton/shared/lib/constants';
 import type { UserSettings } from '@proton/shared/lib/interfaces';
@@ -29,12 +30,14 @@ export const finalizeLogin = async ({
     keyPassword,
     clearKeyPassword,
     attemptResume = true,
+    source = SessionSource.Proton,
 }: {
     cache: AuthCacheResult;
     loginPassword: string;
     keyPassword?: string;
     clearKeyPassword?: string;
     attemptResume?: boolean;
+    source?: SessionSource;
 }): Promise<AuthActionResponse> => {
     const { authResponse, authVersion, api, persistent, appName, preAuthKTVerifier } = cache;
 
@@ -50,7 +53,7 @@ export const finalizeLogin = async ({
         const user = cache.data.user || (await syncUser(cache));
         const trusted = false;
 
-        const { clientKey, offlineKey, persistedAt } = await persistSession({
+        const { clientKey, offlineKey, persistedSession } = await persistSession({
             ...authResponse,
             clearKeyPassword: clearKeyPassword || '',
             keyPassword,
@@ -58,20 +61,22 @@ export const finalizeLogin = async ({
             api,
             persistent,
             trusted,
+            source,
         });
 
         return {
             to: AuthStep.DONE,
             session: {
-                ...authResponse,
-                keyPassword,
-                clientKey,
-                offlineKey,
+                data: {
+                    ...authResponse,
+                    clientKey,
+                    offlineKey,
+                    persistent,
+                    persistedSession,
+                    User: user,
+                    trusted,
+                },
                 loginPassword,
-                persistent,
-                persistedAt,
-                trusted,
-                User: user,
                 flow: 'login',
             },
         };
@@ -79,12 +84,19 @@ export const finalizeLogin = async ({
 
     let user = cache.data.user || (await syncUser(cache));
 
-    const validatedSession = attemptResume ? await maybeResumeSessionByUser({ api, User: user }) : null;
-    if (validatedSession) {
+    const resumedSessionResult = attemptResume
+        ? await maybeResumeSessionByUser({
+              api,
+              User: user,
+              // During proton login, ignore resuming an oauth session
+              options: { source: [SessionSource.Saml, SessionSource.Proton] },
+          })
+        : null;
+    if (resumedSessionResult) {
         await api(revoke()).catch(noop);
         return {
             to: AuthStep.DONE,
-            session: { ...validatedSession, loginPassword, flow: 'login' },
+            session: { data: resumedSessionResult, loginPassword, flow: 'login' },
         };
     }
 
@@ -135,7 +147,7 @@ export const finalizeLogin = async ({
         }
     }
 
-    const { clientKey, offlineKey, persistedAt } = await persistSession({
+    const { clientKey, offlineKey, persistedSession } = await persistSession({
         ...authResponse,
         clearKeyPassword: clearKeyPassword || '',
         keyPassword,
@@ -143,6 +155,7 @@ export const finalizeLogin = async ({
         api,
         persistent,
         trusted,
+        source,
     });
 
     await preAuthKTVerifier.preAuthKTCommit(user.ID, api);
@@ -150,15 +163,17 @@ export const finalizeLogin = async ({
     return {
         to: AuthStep.DONE,
         session: {
-            ...authResponse,
-            keyPassword,
+            data: {
+                ...authResponse,
+                keyPassword,
+                offlineKey,
+                clientKey,
+                User: user,
+                persistent,
+                trusted,
+                persistedSession,
+            },
             loginPassword,
-            persistedAt,
-            offlineKey,
-            clientKey,
-            persistent,
-            trusted,
-            User: user,
             flow: 'login',
         },
     };
