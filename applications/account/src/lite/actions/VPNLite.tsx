@@ -36,8 +36,6 @@ const VPNLite = (props: SubscribeAccountProps) => {
         };
 
         const run = async () => {
-            const scopes = await fetchScopes();
-            setShouldConvertAccount(scopes.includes('full'));
             if (user.Subscribed) {
                 setShowConvertAccount(true);
             } else {
@@ -52,6 +50,9 @@ const VPNLite = (props: SubscribeAccountProps) => {
 
                 setSearchParams(overriddenSearchParams);
             }
+
+            const scopes = await fetchScopes();
+            setShouldConvertAccount(scopes.includes('full'));
         };
 
         void run();
