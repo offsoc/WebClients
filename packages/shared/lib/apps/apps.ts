@@ -1,3 +1,6 @@
+import { Product } from '@proton/shared/lib/ProductEnum';
+import isTruthy from '@proton/utils/isTruthy';
+
 import { APPS, APPS_CONFIGURATION, type APP_NAMES, USER_ROLES } from '../constants';
 import { isElectronApp } from '../helpers/desktop';
 import type {
@@ -56,12 +59,10 @@ export const getAvailableAppsByUserType = (options: GetAvailableAppsByUserTypeAr
         APPS.PROTONDRIVE,
         APPS.PROTONVPN_SETTINGS,
         APPS.PROTONPASS,
+        options.context === 'app' && APPS.PROTONDOCS,
         APPS.PROTONWALLET,
-    ];
-
-    if (options.isLumoAvailable) {
-        apps.push(APPS.PROTONLUMO);
-    }
+        options.isLumoAvailable && APPS.PROTONLUMO,
+    ].filter(isTruthy);
 
     return apps;
 };
@@ -86,7 +87,11 @@ const getAvailableAppsByOrganization = ({
     const allowedProducts = organization.Settings?.AllowedProducts;
     // Backwards compatibility, the API might not be ready, if it doesn't exist, fall back to all
     if (allowedProducts) {
-        return new Set(allowedProducts);
+        const result = new Set(allowedProducts);
+        if (result.has(Product.Drive)) {
+            result.add(Product.Docs);
+        }
+        return result;
     }
     return all;
 };
