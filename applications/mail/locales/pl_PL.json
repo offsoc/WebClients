@@ -1634,6 +1634,12 @@
       ],
       "Zoom out": [
         "Pomniejsz"
+      ],
+      "Change password": [
+        "Zmień hasło"
+      ],
+      "Trust key": [
+        "Zaufaj kluczowi"
       ]
     },
     "action": {
@@ -7459,7 +7465,10 @@
         "Inicjowanie…"
       ],
       "Insert image": [
-        "Wstaw obraz"
+        "Wstaw obraz",
+        "Wstaw obrazy",
+        "Wstaw obrazy",
+        "Wstaw obrazy"
       ],
       "Insert link": [
         "Wstaw link"
@@ -9879,6 +9888,9 @@
       ],
       "ZIP code": [
         "Kod pocztowy"
+      ],
+      "Credits": [
+        "Środki"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -13024,7 +13036,7 @@
         "Masz ${ timeRemaining.inSeconds } sekundę na zresetowanie hasła.",
         "Masz ${ timeRemaining.inSeconds } sekundy na zresetowanie hasła.",
         "Masz ${ timeRemaining.inSeconds } sekundy na zresetowanie hasła.",
-        "Masz ${ timeRemaining.inSeconds } sekund na zresetowanie hasła."
+        "Masz ${ timeRemaining.inSeconds } sekundy na zresetowanie hasła."
       ]
     },
     "session_recovery:available:link": {

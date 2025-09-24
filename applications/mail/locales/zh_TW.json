@@ -1538,6 +1538,12 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Change password": [
+        "變更密碼"
+      ],
+      "Remove video conference": [
+        "移除視訊會議"
       ]
     },
     "action": {
@@ -6737,7 +6743,7 @@
         "正在初始化 ..."
       ],
       "Insert image": [
-        "插入圖像"
+        "插入圖片"
       ],
       "Insert link": [
         "插入連結"
@@ -8923,6 +8929,15 @@
       ],
       "ZIP code": [
         "郵遞區號"
+      ],
+      "Credits": [
+        "額度"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "移除 ${ MEET_APP_NAME } 視訊會議"
+      ],
+      "Remove Zoom video conference": [
+        "移除 Zoom 視訊會議"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -14423,6 +14438,11 @@
       ],
       "Passcode:": [
         "數字密碼:"
+      ]
+    },
+    "Payments.info": {
+      "Credits will be added to your balance": [
+        "可用額度將會增加到您的餘額"
       ]
     }
   }

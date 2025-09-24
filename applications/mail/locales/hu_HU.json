@@ -1594,6 +1594,12 @@
       ],
       "Zoom out": [
         "Távolítás"
+      ],
+      "Change password": [
+        "Jelszó módosítása"
+      ],
+      "Trust key": [
+        "Megbízható kulcs"
       ]
     },
     "action": {
@@ -7064,6 +7070,7 @@
         "Inicializálás…"
       ],
       "Insert image": [
+        "Kép beillesztése",
         "Kép beillesztése"
       ],
       "Insert link": [
@@ -9372,6 +9379,9 @@
       ],
       "ZIP code": [
         "Irányítószám"
+      ],
+      "Credits": [
+        "Kredit"
       ]
     },
     "Label (begin date/advanced search)": {

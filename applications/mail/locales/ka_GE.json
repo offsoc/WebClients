@@ -1655,6 +1655,9 @@
       ],
       "Zoom out": [
         "დაპატარავება"
+      ],
+      "Change password": [
+        "პაროლის შეცვლა"
       ]
     },
     "action": {
@@ -1877,6 +1880,12 @@
       ],
       "years": [
         "წელი"
+      ],
+      "Save big on premium Drive features with a limited-time discount.": [
+        "დაზოგეთ ბევრი Drive-ის ფასიან ფუნქციებზე შეზღუდული დროის ფასდაკლებით."
+      ],
+      "Save big on premium Mail features with a limited-time discount.": [
+        "დაზოგეთ ბევრი ელფოსტის ფასიან ფუნქციებზე შეზღუდული დროის ფასდაკლებით."
       ]
     },
     "anniversary_2025: offer": {
@@ -7237,7 +7246,8 @@
         "ინიციალიზაცია…"
       ],
       "Insert image": [
-        "გამოსახულების ჩასმა"
+        "გამოსახულების ჩასმა",
+        "გამოსახულებების ჩასმა"
       ],
       "Insert link": [
         "ბმულის ჩასმა"
@@ -8602,6 +8612,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "გაჭედვისგან თავისუფალი საფოსტო ყუთისგან რამდენიმე წკაპი გაშორებთ"
+      ],
+      "Thank you for choosing ${ BRAND_NAME } to secure your organization.": [
+        "მადლობა, რომ აირჩიეთ ${ BRAND_NAME } თქვენი ორგანიზაციის დასაცავად."
+      ],
+      "You won't be charged if you cancel before ${ trialEndsOnFormatted }.": [
+        "თქვენ არ გადაიხდით, თუ გააუქმებთ თარიღამდე ${ trialEndsOnFormatted }."
       ]
     },
     "info": {
@@ -9611,6 +9627,12 @@
       ],
       "ZIP code": [
         "საფოსტო კოდი"
+      ],
+      "Credits": [
+        "კრედიტები"
+      ],
+      "Video conference": [
+        "ვიდეოკონფერენცია"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11309,6 +11331,9 @@
       ],
       "Your subscription renews soon": [
         "თქვენი გამოწერა მალე განახლდება"
+      ],
+      "Upgrade your storage for just ${ pricingTitle } with ${ planName }": [
+        "ასწიეთ თქვენი საცავი, მხოლოდ, ${ pricingTitle }-ით ${ planName }-ისთან ერთად"
       ]
     },
     "Offer fearue": {
@@ -11558,6 +11583,9 @@
       ],
       "Your free trial has started": [
         "თქვენი გამოსაცდელი პერიოდი დაიწყო"
+      ],
+      "Your full ${ planTitle } subscription starts on ${ boldEndDate }.": [
+        "თქვენი სრული ${ planTitle } გამოწერის დაწყების თარიღია ${ boldEndDate }."
       ]
     },
     "Online accounts": {
@@ -12930,6 +12958,9 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "ასწიეთ სატარიფო გეგმა დაზოგეთ მეტი 2 წლით ${ planName }"
+      ],
+      "Get one plan that includes it all, get ${ BRAND_NAME } Unlimited": [
+        "მიიღეთ ერთი სატარიფო გეგმა, რომელიც ყველაფერს შეიცავს. მიიღეთ ${ BRAND_NAME } Unlimited"
       ]
     },
     "specialoffer: Tooltip": {
@@ -15068,6 +15099,15 @@
       ],
       "✨ Categories are coming!": [
         "✨ კატეგორიები გზაშია!"
+      ],
+      "Account temporarily locked": [
+        "ანგარიში დროებით დაბლოკილია"
+      ],
+      "Upgrade your productivity for ${ formattedPrice } with ${ planName }": [
+        "ასწიეთ თქვენი პროდუქტიულობა ${ formattedPrice }-ისთვის ${ planName }-ით"
+      ],
+      "Upgrade your storage for ${ formattedPrice } with ${ planName }": [
+        "ასწიეთ თქვენი საცავი ${ formattedPrice }-ისთვის ${ planName }-ით"
       ]
     },
     "Today icon tooltip in mini calendar": {

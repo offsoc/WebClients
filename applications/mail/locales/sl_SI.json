@@ -1610,6 +1610,12 @@
       ],
       "Zoom out": [
         "Pomanjšaj"
+      ],
+      "Change password": [
+        "Spremeni geslo"
+      ],
+      "Trust key": [
+        "Zaupaj ključu"
       ]
     },
     "action": {
@@ -7178,7 +7184,10 @@
         "Zagon …"
       ],
       "Insert image": [
-        "Vstavi sliko"
+        "Vstavi sliko",
+        "Vstavi sliki",
+        "Vstavi slike",
+        "Vstavi slik"
       ],
       "Insert link": [
         "Vstavi povezavo"
@@ -9514,6 +9523,9 @@
       ],
       "ZIP code": [
         "Poštna številka"
+      ],
+      "Credits": [
+        "Dobroimetje"
       ]
     },
     "Label (begin date/advanced search)": {

@@ -1624,6 +1624,12 @@
       ],
       "Zoom out": [
         "Zoom ud"
+      ],
+      "Change password": [
+        "Skift adgangskode"
+      ],
+      "Trust key": [
+        "Stol på nøgle"
       ]
     },
     "action": {
@@ -7150,7 +7156,8 @@
         "Igangsætter..."
       ],
       "Insert image": [
-        "Indsæt billede"
+        "Indsæt billede",
+        "Indsæt billeder"
       ],
       "Insert link": [
         "Indsæt link"
@@ -9509,6 +9516,9 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Credits": [
+        "Kreditter"
       ]
     },
     "Label (begin date/advanced search)": {

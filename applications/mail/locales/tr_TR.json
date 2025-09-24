@@ -1466,8 +1466,7 @@
         "Güven"
       ],
       "Trust key": [
-        "Güvenilen anahtar",
-        "Güvenilen anahtarlar"
+        "Anahtara güven"
       ],
       "Trust public key": [
         "Herkese açık anahtara güven"
@@ -1655,6 +1654,12 @@
       ],
       "Zoom out": [
         "Uzaklaştır"
+      ],
+      "Change password": [
+        "Parolayı değiştir"
+      ],
+      "Remove video conference": [
+        "Görüntülü görüşmeyi kaldır"
       ]
     },
     "action": {
@@ -7347,7 +7352,8 @@
         "Hazırlanıyor…"
       ],
       "Insert image": [
-        "Görsel ekle"
+        "Görsel ekle",
+        "Görseller ekle"
       ],
       "Insert link": [
         "Bağlantı ekle"
@@ -9787,6 +9793,18 @@
       ],
       "ZIP code": [
         "Posta kodu"
+      ],
+      "Credits": [
+        "Kredi"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "${ MEET_APP_NAME } görüntülü görüşmesini kaldır"
+      ],
+      "Remove Zoom video conference": [
+        "Zoom görüntülü görüşmesini kaldır"
+      ],
+      "Video conference": [
+        "Görüntülü görüşme"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12049,6 +12067,9 @@
       ],
       "Your payment is still being processed": [
         "Ödeme işleminiz sürüyor"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Bu işlem geçerli aboneliğin kapsamını genişletir. Yalnızca yeni eklentiler ve geçerli fatura döneminin kalan süresi için ücret alınır. Aboneliğinizin yenilenme tarihi değişmeyecek."
       ]
     },
     "Payments.Error": {
@@ -15417,6 +15438,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ Kategoriler özelliği geliyor!"
+      ],
+      "Account temporarily locked": [
+        "Hesap geçici olarak kilitlendi"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15988,6 +16012,14 @@
       ],
       "Passcode:": [
         "Parola:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Önceki abonelik tarifenizin kullanılmayan bölümünden kalan kredi"
+      ],
+      "Credits will be added to your balance": [
+        "Kalan kredi bakiyenize eklenecek"
       ]
     }
   }

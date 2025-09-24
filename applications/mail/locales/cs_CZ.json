@@ -1474,10 +1474,7 @@
         "Důvěřovat"
       ],
       "Trust key": [
-        "Důvěřovat klíči",
-        "Důvěřovat klíčům",
-        "Důvěřovat klíčům",
-        "Důvěřovat klíčům"
+        "Důvěřovat klíči"
       ],
       "Trust public key": [
         "Důvěřovat veřejnému klíči"
@@ -1667,6 +1664,12 @@
       ],
       "Zoom out": [
         "Oddálit"
+      ],
+      "Change password": [
+        "Změnit heslo"
+      ],
+      "Remove video conference": [
+        "Odebrat videokonferenci"
       ]
     },
     "action": {
@@ -7581,7 +7584,10 @@
         "Inicializace..."
       ],
       "Insert image": [
-        "Vložit obrázek"
+        "Vložit obrázek",
+        "Vložit obrázky",
+        "Vložit obrázky",
+        "Vložit obrázky"
       ],
       "Insert link": [
         "Vložit odkaz"
@@ -10079,6 +10085,18 @@
       ],
       "ZIP code": [
         "PSČ"
+      ],
+      "Credits": [
+        "Kredity"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Odebrat videokonferenci ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Odebrat videokonferenci Zoom"
+      ],
+      "Video conference": [
+        "Videokonference"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -15882,6 +15900,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ Kategorie se blíží!"
+      ],
+      "Account temporarily locked": [
+        "Účet dočasně uzamčen"
       ]
     },
     "Today icon tooltip in mini calendar": {

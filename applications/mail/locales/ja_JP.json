@@ -1649,6 +1649,12 @@
       ],
       "Zoom out": [
         "縮小"
+      ],
+      "Change password": [
+        "パスワードを変更"
+      ],
+      "Remove video conference": [
+        "ビデオ会議を削除"
       ]
     },
     "action": {
@@ -7230,7 +7236,7 @@
         "初期化中…"
       ],
       "Insert image": [
-        "画像の挿入"
+        "画像を挿入"
       ],
       "Insert link": [
         "リンクを挿入"
@@ -9641,6 +9647,18 @@
       ],
       "ZIP code": [
         "郵便番号"
+      ],
+      "Credits": [
+        "クレジット"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "${ MEET_APP_NAME } ビデオ会議を削除"
+      ],
+      "Remove Zoom video conference": [
+        "Zoomビデオ会議を削除"
+      ],
+      "Video conference": [
+        "ビデオ会議"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -15042,6 +15060,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ カテゴリがまもなく登場します！"
+      ],
+      "Account temporarily locked": [
+        "アカウントが一時的にロックされています"
       ]
     },
     "Today icon tooltip in mini calendar": {

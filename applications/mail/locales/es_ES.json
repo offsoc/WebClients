@@ -1655,6 +1655,12 @@
       ],
       "Zoom out": [
         "Alejar"
+      ],
+      "Change password": [
+        "Cambiar contraseña"
+      ],
+      "Remove video conference": [
+        "Eliminar la videoconferencia"
       ]
     },
     "action": {
@@ -7344,7 +7350,8 @@
         "Inicializando…"
       ],
       "Insert image": [
-        "Insertar imagen"
+        "Insertar una imagen",
+        "Insertar imágenes"
       ],
       "Insert link": [
         "Insertar enlace"
@@ -9784,6 +9791,18 @@
       ],
       "ZIP code": [
         "Código postal"
+      ],
+      "Credits": [
+        "Créditos"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Eliminar videoconferencia de ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Eliminar videoconferencia de Zoom"
+      ],
+      "Video conference": [
+        "Videoconferencia"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -15414,6 +15433,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ ¡Llegan las categorías!"
+      ],
+      "Account temporarily locked": [
+        "Cuenta temporalmente bloqueada"
       ]
     },
     "Today icon tooltip in mini calendar": {

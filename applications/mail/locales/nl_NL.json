@@ -1645,6 +1645,12 @@
       ],
       "Zoom out": [
         "Zoom uit"
+      ],
+      "Change password": [
+        "Wachtwoord wijzigen"
+      ],
+      "Trust key": [
+        "Vertrouwde sleutel"
       ]
     },
     "action": {
@@ -7325,7 +7331,8 @@
         "Initialiseren..."
       ],
       "Insert image": [
-        "Afbeelding invoegen"
+        "Afbeelding toevoegen",
+        "Afbeeldingen toevoegen"
       ],
       "Insert link": [
         "Koppeling invoegen"
@@ -9765,6 +9772,9 @@
       ],
       "ZIP code": [
         "Postcode"
+      ],
+      "Credits": [
+        "Tegoed"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -15376,6 +15386,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ Categorieën komen eraan!"
+      ],
+      "Account temporarily locked": [
+        "Account tijdelijk geblokkeerd"
       ]
     },
     "Today icon tooltip in mini calendar": {

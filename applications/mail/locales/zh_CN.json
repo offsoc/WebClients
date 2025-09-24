@@ -1625,6 +1625,12 @@
       ],
       "Zoom out": [
         "缩小"
+      ],
+      "Change password": [
+        "更改密码"
+      ],
+      "Trust key": [
+        "信任密钥"
       ]
     },
     "action": {
@@ -7085,7 +7091,7 @@
         "初始化中..."
       ],
       "Insert image": [
-        "插入图片"
+        "插入图像"
       ],
       "Insert link": [
         "插入链接"
@@ -9451,6 +9457,9 @@
       ],
       "ZIP code": [
         "邮政编码"
+      ],
+      "Credits": [
+        "余额"
       ]
     },
     "Label (begin date/advanced search)": {

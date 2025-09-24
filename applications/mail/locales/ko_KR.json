@@ -1649,6 +1649,9 @@
       ],
       "Zoom out": [
         "축소"
+      ],
+      "Change password": [
+        "비밀번호 변경"
       ]
     },
     "action": {
@@ -9641,6 +9644,12 @@
       ],
       "ZIP code": [
         "우편번호"
+      ],
+      "Credits": [
+        "크레딧"
+      ],
+      "Video conference": [
+        "화상 회의"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -15042,6 +15051,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ 카테고리를 곧 만나보세요!"
+      ],
+      "Account temporarily locked": [
+        "계정 일시 잠김"
       ]
     },
     "Today icon tooltip in mini calendar": {

@@ -1655,6 +1655,12 @@
       ],
       "Zoom out": [
         "Zoom ut"
+      ],
+      "Change password": [
+        "Endre passord"
+      ],
+      "Remove video conference": [
+        "Fjern videokonferanse"
       ]
     },
     "action": {
@@ -7347,7 +7353,8 @@
         "Initialiserer…"
       ],
       "Insert image": [
-        "Sett inn bilde"
+        "Sett inn bilde",
+        "Sett inn bilder"
       ],
       "Insert link": [
         "Sett inn kobling"
@@ -9787,6 +9794,18 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Credits": [
+        "Kreditter"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Fjern ${ MEET_APP_NAME }-videokonferanse"
+      ],
+      "Remove Zoom video conference": [
+        "Fjern Zoom-videokonferanse"
+      ],
+      "Video conference": [
+        "Videokonferanse"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12049,6 +12068,9 @@
       ],
       "Your payment is still being processed": [
         "Betalingen din behandles fortsatt"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Denne handlingen utvider det eksisterende abonnementet. Du vil kun bli belastet for de nye tilleggene og den gjenværende tiden av den nåværende faktureringssyklusen. Fornyelsesdatoen for abonnementet ditt vil ikke bli endret."
       ]
     },
     "Payments.Error": {
@@ -15322,6 +15344,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ Kategorier kommer!"
+      ],
+      "Account temporarily locked": [
+        "Konto midlertidig låst"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15893,6 +15918,14 @@
       ],
       "Passcode:": [
         "Adgangskode:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Kreditt for den ubrukte delen av ditt forrige planabonnement"
+      ],
+      "Credits will be added to your balance": [
+        "Kreditter vil bli lagt til saldoen din"
       ]
     }
   }
