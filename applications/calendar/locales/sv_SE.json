@@ -944,6 +944,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Din gratis provperiod av din app för stationär dator slutar den ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Ta bort videokonferens"
       ]
     },
     "action": {
@@ -1249,6 +1252,9 @@
       ],
       "You cannot add custom domains during the trial period.": [
         "Du kan inte lägga till anpassade domäner under provperioden."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews every ${ renewCycle } months. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "Efter provperioden slutar den ${ formattedDate } kommer den bli en betald prenumeration som förnyas automatiskt var ${ renewCycle }:e månad. Du kommer inte att debiteras om du avbryter före ${ formattedDate }."
       ]
     },
     "b2b_trials_Action": {
@@ -3896,6 +3902,9 @@
       ],
       "ZIP code is required": [
         "Postnummer är obligatoriskt"
+      ],
+      "Failed to create ${ MEET_APP_NAME } video conference": [
+        "Misslyckades att skapa ${ MEET_APP_NAME }-videokonferens"
       ]
     },
     "Error accepting calendar invitation": {
@@ -6180,6 +6189,9 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Du kommer fortfarande att kunna se dina egna kontodata, men alla användarkonton kommer att tas bort från din organisation."
+      ],
+      "${ CALENDAR_APP_NAME } requires a ${ BRAND_NAME } address for secure event sync and encryption. ${ claimAddressButton }.": [
+        "${ CALENDAR_APP_NAME } kräver en ${ BRAND_NAME }-adress för säker synkronisering och kryptering av händelse. ${ claimAddressButton }."
       ]
     },
     "info": {
@@ -6847,6 +6859,15 @@
       ],
       "Zoom meeting": [
         "Zoom-möte"
+      ],
+      "Credits": [
+        "Krediter"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Ta bort ${ MEET_APP_NAME }-videokonferens"
+      ],
+      "Remove Zoom video conference": [
+        "Ta bort Zoom-videokonferens"
       ]
     },
     "Label for contact group color": {
@@ -8568,6 +8589,9 @@
       ],
       "Unlimited aliases to protect your identity": [
         "Obegränsat antal alias för att skydda din identitet"
+      ],
+      "Collaborate with non-${ BRAND_NAME } users": [
+        "Samarbeta med icke ${ BRAND_NAME }-användare"
       ]
     },
     "Onboarding": {
@@ -8938,6 +8962,9 @@
       ],
       "Your payment is still being processed": [
         "Din betalning håller fortfarande på att behandlas"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Denna åtgärd utökar den befintliga prenumerationen. Du kommer endast att debiteras för de nya utökningarna och den återstående tiden av den nuvarande faktureringsperioden. Förnyelsedatumet för din prenumeration kommer inte att ändras."
       ]
     },
     "Payments.Error": {
@@ -9898,6 +9925,9 @@
       ],
       "Video conferencing is here!": [
         "Videokonferenser är här!"
+      ],
+      "Schedule and join ${ MEET_APP_NAME } calls right from your calendar.": [
+        "Schemalägg och anslut till ${ MEET_APP_NAME }-samtal direkt från din kalender."
       ]
     },
     "sso": {
@@ -12007,6 +12037,14 @@
       ],
       "Passcode:": [
         "Lösenkod:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Kredit för den oanvända delen av din tidigare paketprenumeration"
+      ],
+      "Credits will be added to your balance": [
+        "Krediter kommer att läggas till ditt saldo"
       ]
     }
   }

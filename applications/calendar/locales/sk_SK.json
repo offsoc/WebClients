@@ -952,6 +952,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Bezplatná skúšobná verzia desktopovej aplikácie končí dňa ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Odstrániť videokonferenciu"
       ]
     },
     "action": {
@@ -7076,6 +7079,15 @@
       ],
       "Zoom meeting": [
         "Zoom stretnutie"
+      ],
+      "Credits": [
+        "Kredity"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Odstrániť videokonferenciu ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Odstrániť videokonferenciu Zoom"
       ]
     },
     "Label for contact group color": {
@@ -9301,6 +9313,9 @@
       ],
       "Your payment is still being processed": [
         "Vaša platba sa stále spracováva"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Táto akcia rozširuje existujúce predplatné. Bude vám účtovaný poplatok len za nové doplnky a zostávajúci čas aktuálneho fakturačného obdobia. Dátum obnovenia vášho predplatného sa nezmení."
       ]
     },
     "Payments.Error": {
@@ -12583,6 +12598,14 @@
       ],
       "Passcode:": [
         "Prístupový kód:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Kredit za nevyužitú časť vášho predchádzajúceho predplatného plánu"
+      ],
+      "Credits will be added to your balance": [
+        "Kredity budú pridané k vášmu zostatku"
       ]
     }
   }

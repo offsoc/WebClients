@@ -4545,6 +4545,9 @@
       ],
       "ZIP code": [
         "Poštanski broj"
+      ],
+      "Credits": [
+        "Kredit"
       ]
     },
     "Label for contact group color": {

@@ -6608,6 +6608,9 @@
       ],
       "ZIP code": [
         "Irányítószám"
+      ],
+      "Credits": [
+        "Kredit"
       ]
     },
     "Label for contact group color": {

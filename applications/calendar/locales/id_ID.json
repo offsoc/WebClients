@@ -6715,6 +6715,9 @@
       ],
       "Zoom meeting": [
         "Pertemuan Zoom"
+      ],
+      "Credits": [
+        "Saldo"
       ]
     },
     "Label for contact group color": {
@@ -11736,6 +11739,11 @@
       ],
       "Passcode:": [
         "Kode sandi:"
+      ]
+    },
+    "b2b_trials_2025_Info": {
+      "You can have up to ${ TRIAL_MAX_SCRIBE_SEATS } Scribe seats during the trial period.": [
+        "Anda dapat memiliki hingga ${ TRIAL_MAX_SCRIBE_SEATS } kuota Scribe selama masa uji coba."
       ]
     }
   }

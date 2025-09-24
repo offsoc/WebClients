@@ -6273,6 +6273,9 @@
       ],
       "ZIP code": [
         "Поштовий індекс"
+      ],
+      "Credits": [
+        "Кредити"
       ]
     },
     "Label for contact group color": {

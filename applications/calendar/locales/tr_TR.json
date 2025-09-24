@@ -944,6 +944,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Bilgisayar uygulamasını ücretsiz deneme süreniz ${ formattedEndDate } tarihinde sona erecek. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Görüntülü görüşmeyi kaldır"
       ]
     },
     "action": {
@@ -6896,6 +6899,15 @@
       ],
       "Zoom meeting": [
         "Zoom görüşmesi"
+      ],
+      "Credits": [
+        "Kredi"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "${ MEET_APP_NAME } görüntülü görüşmesini kaldır"
+      ],
+      "Remove Zoom video conference": [
+        "Zoom görüntülü görüşmesini kaldır"
       ]
     },
     "Label for contact group color": {
@@ -8991,6 +9003,9 @@
       ],
       "Your payment is still being processed": [
         "Ödeme işleminiz sürüyor"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Bu işlem geçerli aboneliğin kapsamını genişletir. Yalnızca yeni eklentiler ve geçerli fatura döneminin kalan süresi için ücret alınır. Aboneliğinizin yenilenme tarihi değişmeyecek."
       ]
     },
     "Payments.Error": {
@@ -12171,6 +12186,14 @@
       ],
       "Passcode:": [
         "Parola:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Önceki abonelik tarifenizin kullanılmayan bölümünden kalan kredi"
+      ],
+      "Credits will be added to your balance": [
+        "Kalan kredi bakiyenize eklenecek"
       ]
     }
   }

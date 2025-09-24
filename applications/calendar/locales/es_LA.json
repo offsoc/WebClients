@@ -944,6 +944,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "La prueba gratuita de la aplicación de escritorio finaliza en ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Eliminar videoconferencia"
       ]
     },
     "action": {
@@ -1255,6 +1258,12 @@
       ],
       "You have reached the trial limit.": [
         "Usted ha alcanzado el límite de la prueba."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews every ${ renewCycle } months. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "Cuando finalice la prueba el ${ formattedDate }, se convertirá en una suscripción de pago que se renueva automáticamente cada ${ renewCycle } meses. No se le cobrará si cancela antes del ${ formattedDate }."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews monthly. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "Cuando finalice la prueba el ${ formattedDate }, se convertirá en una suscripción de pago que se renueva automáticamente cada mes. No se le cobrará si cancela antes del ${ formattedDate }."
       ]
     },
     "b2b_trials_Action": {
@@ -6890,6 +6899,15 @@
       ],
       "Zoom meeting": [
         "Reunión de Zoom"
+      ],
+      "Credits": [
+        "Créditos"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Eliminar videoconferencia de ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Eliminar videoconferencia de Zoom"
       ]
     },
     "Label for contact group color": {

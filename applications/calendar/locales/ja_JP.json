@@ -940,6 +940,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "デスクトップアプリの無料トライアルは ${ formattedEndDate } で終了します。${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "ビデオ会議を削除"
       ]
     },
     "action": {
@@ -6806,6 +6809,15 @@
       ],
       "Zoom meeting": [
         "Zoom ミーティング"
+      ],
+      "Credits": [
+        "クレジット"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "${ MEET_APP_NAME } ビデオ会議を削除"
+      ],
+      "Remove Zoom video conference": [
+        "Zoomビデオ会議を削除"
       ]
     },
     "Label for contact group color": {

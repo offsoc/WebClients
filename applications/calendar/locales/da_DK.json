@@ -6691,6 +6691,9 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Credits": [
+        "Kreditter"
       ]
     },
     "Label for contact group color": {

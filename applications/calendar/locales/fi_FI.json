@@ -6602,6 +6602,9 @@
       ],
       "ZIP code": [
         "Postinumero"
+      ],
+      "Credits": [
+        "Krediitit"
       ]
     },
     "Label for contact group color": {

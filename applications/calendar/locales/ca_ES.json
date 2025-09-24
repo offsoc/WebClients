@@ -944,6 +944,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "La prova gratuïta de l'aplicació d'escriptori finalitza el ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Esborreu la videoconferència"
       ]
     },
     "action": {
@@ -6896,6 +6899,15 @@
       ],
       "Zoom meeting": [
         "Reunió per Zoom"
+      ],
+      "Credits": [
+        "Crèdits"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Esborreu la videoconferència de ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Esborreu la videoconferència de Zoom"
       ]
     },
     "Label for contact group color": {
@@ -8991,6 +9003,9 @@
       ],
       "Your payment is still being processed": [
         "Encara s'està processant el vostre pagament."
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Aquesta acció amplia la subscripció existent. Se us cobraran només els nous complements i el temps restant del cicle de facturació actual. La data de renovació de la seva subscripció no es modificarà."
       ]
     },
     "Payments.Error": {
@@ -12081,6 +12096,14 @@
       ],
       "Passcode:": [
         "Codi d'accés:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Crèdit per la part no utilitzada de la vostra subscripció del pla anterior"
+      ],
+      "Credits will be added to your balance": [
+        "Els crèdits s'afegiran al vostre saldo"
       ]
     }
   }

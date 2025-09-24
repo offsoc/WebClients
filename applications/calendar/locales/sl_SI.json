@@ -6652,6 +6652,9 @@
       ],
       "ZIP code": [
         "Poštna številka"
+      ],
+      "Credits": [
+        "Dobroimetje"
       ]
     },
     "Label for contact group color": {

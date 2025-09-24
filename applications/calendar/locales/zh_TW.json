@@ -880,6 +880,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "桌面應用程式免費試用期將會在${ formattedEndDate }.${ upgradeButton }完結"
+      ],
+      "Remove video conference": [
+        "移除視訊會議"
       ]
     },
     "action": {
@@ -6268,6 +6271,15 @@
       ],
       "ZIP code": [
         "郵遞區號"
+      ],
+      "Credits": [
+        "額度"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "移除 ${ MEET_APP_NAME } 視訊會議"
+      ],
+      "Remove Zoom video conference": [
+        "移除 Zoom 視訊會議"
       ]
     },
     "Label for contact group color": {
@@ -10907,6 +10919,11 @@
       ],
       "Passcode:": [
         "數字密碼:"
+      ]
+    },
+    "Payments.info": {
+      "Credits will be added to your balance": [
+        "可用額度將會增加到您的餘額"
       ]
     }
   }

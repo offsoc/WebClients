@@ -6960,6 +6960,9 @@
       ],
       "ZIP code": [
         "Kod pocztowy"
+      ],
+      "Credits": [
+        "Środki"
       ]
     },
     "Label for contact group color": {
@@ -9788,7 +9791,7 @@
         "Masz ${ timeRemaining.inSeconds } sekundę na zresetowanie hasła.",
         "Masz ${ timeRemaining.inSeconds } sekundy na zresetowanie hasła.",
         "Masz ${ timeRemaining.inSeconds } sekundy na zresetowanie hasła.",
-        "Masz ${ timeRemaining.inSeconds } sekund na zresetowanie hasła."
+        "Masz ${ timeRemaining.inSeconds } sekundy na zresetowanie hasła."
       ]
     },
     "session_recovery:available:link": {

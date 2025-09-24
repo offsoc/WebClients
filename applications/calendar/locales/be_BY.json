@@ -952,6 +952,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Ваш бясплатны пробны перыяд праграмы для камп'ютара завершыцца ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Выдаліць відэаканферэнцыю"
       ]
     },
     "action": {
@@ -7076,6 +7079,15 @@
       ],
       "Zoom meeting": [
         "Сустрэча па Zoom"
+      ],
+      "Credits": [
+        "Крэдыты"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Выдаліць відэаканферэнцыю ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Выдаліць відэаканферэнцыю Zoom"
       ]
     },
     "Label for contact group color": {
@@ -9301,6 +9313,9 @@
       ],
       "Your payment is still being processed": [
         "Ваш плацеж усё яшчэ апрацоўваецца"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Гэта дзеянне пашырае існуючую падпіску. З вас будзе спагнана плата толькі за новыя дадаткі і час, якія засталіся ў бягучым перыядзе аплаты. Дата падаўжэння вашай падпіскі не будзе зменена."
       ]
     },
     "Payments.Error": {
@@ -12583,6 +12598,14 @@
       ],
       "Passcode:": [
         "Код доступу:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Крэдыты для нявыкарыстанай часткі вашага папярэдняга тарыфнага плана падпіскі"
+      ],
+      "Credits will be added to your balance": [
+        "Крэдыты будуць дададзены на ваш баланс"
       ]
     }
   }

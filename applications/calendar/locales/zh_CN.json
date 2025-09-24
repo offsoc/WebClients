@@ -6652,6 +6652,9 @@
       ],
       "ZIP code": [
         "邮政编码"
+      ],
+      "Credits": [
+        "余额"
       ]
     },
     "Label for contact group color": {

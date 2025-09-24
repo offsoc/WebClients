@@ -944,6 +944,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "La tua prova gratuita dell'applicazione desktop termina ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Rimuovi videoconferenza"
       ]
     },
     "action": {
@@ -6896,6 +6899,15 @@
       ],
       "Zoom meeting": [
         "Riunione Zoom"
+      ],
+      "Credits": [
+        "Crediti"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Rimuovi videoconferenza ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Rimuovi videoconferenza Zoom"
       ]
     },
     "Label for contact group color": {
@@ -8996,6 +9008,9 @@
       ],
       "Your payment is still being processed": [
         "Il tuo pagamento è ancora in fase di elaborazione."
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Questa azione estende l'abbonamento esistente. Ti verranno addebitati solo i nuovi add-on e il tempo rimanente del ciclo di fatturazione corrente. La data di rinnovo del tuo abbonamento non verrà modificata."
       ]
     },
     "Payments.Error": {
@@ -12176,6 +12191,14 @@
       ],
       "Passcode:": [
         "Codice di accesso:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Credito per la parte non usata del tuo precedente abbonamento"
+      ],
+      "Credits will be added to your balance": [
+        "I crediti verranno aggiunti al tuo saldo."
       ]
     }
   }
