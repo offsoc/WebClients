@@ -17,8 +17,13 @@ type NativeSafariMessage =
     | { refreshCredentials: Pick<RefreshSessionData, 'AccessToken' | 'RefreshTime' | 'RefreshToken'> }
     | { environment: string };
 
-export const sendSafariMessage = (message: NativeSafariMessage) =>
-    browser.runtime.sendNativeMessage(SAFARI_MESSAGE_KEY, JSON.stringify(message));
+export const sendSafariMessage = (message: NativeSafariMessage) => {
+    try {
+        return browser.runtime.sendNativeMessage(SAFARI_MESSAGE_KEY, JSON.stringify(message));
+    } catch (err) {
+        logger.warn(`[Safari] Native message failure`, err);
+    }
+};
 
 /** Safari does not correctly attach cookies service-worker side
  * when pulling the fork during authentication. As such, we must
