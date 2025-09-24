@@ -4545,6 +4545,9 @@
       ],
       "ZIP code": [
         "Poštanski broj"
+      ],
+      "Credits": [
+        "Kredit"
       ]
     },
     "Label for contact group color": {
@@ -7198,6 +7201,9 @@
       ],
       "Your plan": [
         "Vaš plan"
+      ],
+      "Two-factor authentication": [
+        "Dvofaktorska autentikacija"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

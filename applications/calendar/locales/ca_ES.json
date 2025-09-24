@@ -944,6 +944,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "La prova gratuïta de l'aplicació d'escriptori finalitza el ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Esborreu la videoconferència"
       ]
     },
     "action": {
@@ -1261,6 +1264,12 @@
       ],
       "You have reached the trial limit.": [
         "Heu arribat al límit de la prova."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews every ${ renewCycle } months. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "Un cop finalitzi el període de prova el ${ formattedDate }, es convertirà en una subscripció de pagament que es renovarà automàticament cada ${ renewCycle } mesos. No se us cobrarà si la cancel·leu abans del ${ formattedDate }."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews monthly. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "Un cop finalitzi el període de prova el ${ formattedDate }, es convertirà en una subscripció de pagament que es renovarà automàticament cada mes. No se us cobrarà si la cancel·leu abans del ${ formattedDate }."
       ]
     },
     "b2b_trials_Action": {
@@ -6896,6 +6905,15 @@
       ],
       "Zoom meeting": [
         "Reunió per Zoom"
+      ],
+      "Credits": [
+        "Crèdits"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Esborreu la videoconferència de ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Esborreu la videoconferència de Zoom"
       ]
     },
     "Label for contact group color": {
@@ -8991,6 +9009,9 @@
       ],
       "Your payment is still being processed": [
         "Encara s'està processant el vostre pagament."
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Aquesta acció amplia la subscripció existent. Se us cobraran només els nous complements i el temps restant del cicle de facturació actual. La data de renovació de la seva subscripció no es modificarà."
       ]
     },
     "Payments.Error": {
@@ -11511,6 +11532,12 @@
       ],
       "Your shorter address is now ready": [
         "La vostra adreça més curta ja està a punt."
+      ],
+      "Account restricted": [
+        "Compte restringit"
+      ],
+      "Two-factor authentication": [
+        "Autenticació de doble factor"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12078,6 +12105,14 @@
       ],
       "Passcode:": [
         "Codi d'accés:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Crèdit per la part no utilitzada de la vostra subscripció del pla anterior"
+      ],
+      "Credits will be added to your balance": [
+        "Els crèdits s'afegiran al vostre saldo"
       ]
     }
   }

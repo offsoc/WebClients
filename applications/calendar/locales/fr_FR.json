@@ -944,6 +944,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Votre essai gratuit de l'application de bureau se termine le ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Retirer la vidéoconférence"
       ]
     },
     "action": {
@@ -1261,6 +1264,12 @@
       ],
       "You have reached the trial limit.": [
         "Vous avez atteint la limite de la version d'essai."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews every ${ renewCycle } months. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "Une fois la période d'essai terminée le ${ formattedDate }, il deviendra un abonnement payant qui se renouvelle automatiquement tous les ${ renewCycle } mois. Vous ne serez pas facturé si vous annulez avant le ${ formattedDate }."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews monthly. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "Une fois la période d'essai terminée le ${ formattedDate }, il deviendra un abonnement payant qui se renouvelle automatiquement chaque mois. Vous ne serez pas facturé si vous annulez avant le ${ formattedDate }."
       ]
     },
     "b2b_trials_Action": {
@@ -6896,6 +6905,15 @@
       ],
       "Zoom meeting": [
         "Réunion Zoom"
+      ],
+      "Credits": [
+        "Crédits"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Retirer la vidéoconférence ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Retirer la vidéoconférence Zoom"
       ]
     },
     "Label for contact group color": {
@@ -8991,6 +9009,9 @@
       ],
       "Your payment is still being processed": [
         "Votre paiement est en cours de traitement."
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Cette action étend l'abonnement existant. Vous ne serez facturé que pour les nouveaux add-ons complémentaires et le temps restant du cycle de facturation actuel. La date de renouvellement de votre abonnement ne sera pas modifiée."
       ]
     },
     "Payments.Error": {
@@ -11601,6 +11622,12 @@
       ],
       "Your shorter address is now ready": [
         "Votre adresse au format plus court est maintenant prête."
+      ],
+      "Account restricted": [
+        "Compte restreint"
+      ],
+      "Two-factor authentication": [
+        "Authentification à deux facteurs"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12168,6 +12195,14 @@
       ],
       "Passcode:": [
         "Code d’accès :"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Crédit pour la période non utilisée de votre abonnement précédent"
+      ],
+      "Credits will be added to your balance": [
+        "Les crédits seront ajoutés à votre solde."
       ]
     }
   }

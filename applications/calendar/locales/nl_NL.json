@@ -6869,6 +6869,9 @@
       ],
       "ZIP code": [
         "Postcode"
+      ],
+      "Credits": [
+        "Tegoed"
       ]
     },
     "Label for contact group color": {
@@ -11568,6 +11571,12 @@
       ],
       "Your shorter address is now ready": [
         "Uw kortere adres is nu klaar"
+      ],
+      "Account restricted": [
+        "Account beperkt"
+      ],
+      "Two-factor authentication": [
+        "Tweestapsverificatie"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

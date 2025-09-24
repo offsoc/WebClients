@@ -6691,6 +6691,9 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Credits": [
+        "Kreditter"
       ]
     },
     "Label for contact group color": {
@@ -11202,6 +11205,12 @@
       ],
       "Your shorter address is now ready": [
         "Din kortere adresse er nu klar"
+      ],
+      "Account restricted": [
+        "Konto begrænset:"
+      ],
+      "Two-factor authentication": [
+        "To-faktor-godkendelse"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

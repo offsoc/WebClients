@@ -6652,6 +6652,9 @@
       ],
       "ZIP code": [
         "Poštna številka"
+      ],
+      "Credits": [
+        "Dobroimetje"
       ]
     },
     "Label for contact group color": {
@@ -11210,6 +11213,12 @@
       ],
       "Your shorter address is now ready": [
         "Vaš krajši naslov je zdaj pripravljen"
+      ],
+      "Account restricted": [
+        "Račun je omejen"
+      ],
+      "Two-factor authentication": [
+        "Dvojno preverjanja pristnosti"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

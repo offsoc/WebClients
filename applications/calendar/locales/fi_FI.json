@@ -911,6 +911,12 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Ilmainen työpöytäsovelluksen kokeilujaksosi päättyy ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Cancel trial and pay": [
+        "Peruuta kokeilujakso ja maksa"
+      ],
+      "Passphrase": [
+        "Salalause"
       ]
     },
     "action": {
@@ -3708,6 +3714,12 @@
       ],
       "ZIP code is required": [
         "Postinumero vaaditaan"
+      ],
+      "Failed to open to contact": [
+        "Yhteystiedon avaaminen epäonnistui"
+      ],
+      "Please enter postal code": [
+        "Syötä postinumerosi"
       ]
     },
     "Error accepting calendar invitation": {
@@ -4287,6 +4299,9 @@
       ],
       "Security Center": [
         "Suojauskeskus"
+      ],
+      "Domain": [
+        "Verkkotunnus"
       ]
     },
     "Hint": {
@@ -5932,6 +5947,9 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Voit silti tarkastella omia tilitietojasi, mutta kaikki käyttäjätilit poistetaan organisaatiostasi."
+      ],
+      "Download current logs": [
+        "Lataa nykyiset lokitiedot"
       ]
     },
     "info": {
@@ -6052,6 +6070,9 @@
       ],
       "WKD": [
         "WKD"
+      ],
+      "KOO": [
+        "KOO"
       ]
     },
     "Keyboard shortcut name": {
@@ -6578,6 +6599,12 @@
       ],
       "ZIP code": [
         "Postinumero"
+      ],
+      "Credits": [
+        "Krediitit"
+      ],
+      "Passphrase:": [
+        "Salalause:"
       ]
     },
     "Label for contact group color": {
@@ -7540,6 +7567,15 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Skannaamme pimeää verkkoa tarkistaaksemme, onko ${ BRAND_NAME } -osoitteesi tai -aliaksesi vuotaneet ja hälytämme välittömästi, jos löydämme jotain."
+      ],
+      "1 TB secure storage": [
+        "1 Tt suojattua tallennustilaa"
+      ],
+      "Quickly craft replies": [
+        "Laadi vastauksia nopeasti"
+      ],
+      "Support for up to 2 users": [
+        "Tuki jopa kahdelle käyttäjälle"
       ]
     },
     "new_plans: feature highlight": {
@@ -8538,6 +8574,15 @@
       ],
       "Your payment is still being processed": [
         "Maksuasi käsitellään vielä"
+      ],
+      "Taxes": [
+        "Verot"
+      ],
+      "VAT": [
+        "ALV"
+      ],
+      "VAT number": [
+        "ALV-numero"
       ]
     },
     "Payments.Error": {
@@ -8582,6 +8627,21 @@
       ],
       "VAT number": [
         "ALV-numero"
+      ],
+      "Add ABN": [
+        "Lisää ABN"
+      ],
+      "Add EIN": [
+        "Lisää EIN"
+      ],
+      "Add VAT number": [
+        "Lisää ALV-numero"
+      ],
+      "Edit Business Number": [
+        "Muokkaa yritystunnusta"
+      ],
+      "Edit VAT number": [
+        "Muokkaa ALV-numeroa"
       ]
     },
     "PGP key encryption warning": {
@@ -8737,6 +8797,9 @@
       ],
       "ZIP code": [
         "Postinumero"
+      ],
+      "Select country": [
+        "Valitse maa"
       ]
     },
     "Placeholder for contact group name": {
@@ -9299,6 +9362,12 @@
       ],
       "Upgrade for ${ pricingTitle }": [
         "Päivitä hintaan ${ pricingTitle }"
+      ],
+      "Browse securely": [
+        "Selaa turvallisesti"
+      ],
+      "Guard against threats": [
+        "Suojaudu uhilta"
       ]
     },
     "specialoffer: Offers": {
@@ -10940,6 +11009,12 @@
       ],
       "Your shorter address is now ready": [
         "Lyhyempi osoittesi on nyt valmis"
+      ],
+      "Account restricted": [
+        "Tiliä on rajoitettu"
+      ],
+      "Two-factor authentication": [
+        "Kaksivaiheinen tunnistautuminen"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

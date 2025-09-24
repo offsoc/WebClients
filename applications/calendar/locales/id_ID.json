@@ -6710,6 +6710,9 @@
       ],
       "Zoom meeting": [
         "Pertemuan Zoom"
+      ],
+      "Credits": [
+        "Saldo"
       ]
     },
     "Label for contact group color": {
@@ -9688,6 +9691,12 @@
       ],
       "Video conferencing is here!": [
         "Konferensi video kini telah hadir!"
+      ],
+      "${ MEET_APP_NAME } is here!": [
+        "${ MEET_APP_NAME } telah hadir!"
+      ],
+      "Schedule and join ${ MEET_APP_NAME } calls right from your calendar.": [
+        "Jadwalkan dan gabung ke panggilan ${ MEET_APP_NAME } langsung dari kalender Anda."
       ]
     },
     "sso": {
@@ -11199,6 +11208,12 @@
       ],
       "Your shorter address is now ready": [
         "Alamat lebih pendek Anda sudah siap"
+      ],
+      "Account restricted": [
+        "Akun dibatasi"
+      ],
+      "Two-factor authentication": [
+        "Autentikasi dua faktor"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11722,6 +11737,16 @@
       ],
       "Passcode:": [
         "Kode sandi:"
+      ]
+    },
+    "b2b_trials_2025_Info": {
+      "You can have up to ${ TRIAL_MAX_SCRIBE_SEATS } Scribe seats during the trial period.": [
+        "Anda dapat memiliki hingga ${ TRIAL_MAX_SCRIBE_SEATS } kuota Scribe selama masa uji coba."
+      ]
+    },
+    "collider_2025: Info": {
+      "Add ${ LUMO_APP_NAME }": [
+        "Tambah ${ LUMO_APP_NAME }"
       ]
     }
   }

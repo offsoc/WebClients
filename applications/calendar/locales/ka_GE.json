@@ -1156,6 +1156,15 @@
       ],
       "years": [
         "წელი"
+      ],
+      "Save big on premium Drive features with a limited-time discount.": [
+        "დაზოგეთ ბევრი Drive-ის ფასიან ფუნქციებზე შეზღუდული დროის ფასდაკლებით."
+      ],
+      "Save big on premium Mail features with a limited-time discount.": [
+        "დაზოგეთ ბევრი ელფოსტის ფასიან ფუნქციებზე შეზღუდული დროის ფასდაკლებით."
+      ],
+      "Save big on premium Pass features with a limited-time discount.": [
+        "დაზოგეთ ბევრი Pass-ის ფასიან ფუნქციებზე შეზღუდული დროის ფასდაკლებით."
       ]
     },
     "anniversary_2025: offer": {
@@ -1225,6 +1234,9 @@
     "b2b_trials_2025_Info": {
       "You have reached the trial limit.": [
         "მიაღწიეთ გამოსაცდელი პერიოდის ზღვარს."
+      ],
+      "You cannot add custom domains during the trial period.": [
+        "გამოსაცდელი პერიოდის მიმდინარეობისას თქვენს დომენებს ვერ დაამატებთ."
       ]
     },
     "b2b_trials_Action": {
@@ -1829,6 +1841,9 @@
     "collider_2025: Info": {
       "Add ${ LUMO_APP_NAME }": [
         "${ LUMO_APP_NAME }-ის დამატება"
+      ],
+      "High-speed chats and advanced AI features.": [
+        "სწრაფი ჩატები და დამატებითი ხი-ის ფუნქციები"
       ]
     },
     "colon": {
@@ -3859,6 +3874,9 @@
       ],
       "ZIP code is required": [
         "საფოსტო კოდი აუცილებელია"
+      ],
+      "Failed to create ${ MEET_APP_NAME } video conference": [
+        "${ MEET_APP_NAME }-ის ვიდეოკონფერენციის შექმნა ჩავარდა"
       ]
     },
     "Error accepting calendar invitation": {
@@ -6068,6 +6086,15 @@
       ],
       "You’ll lose access to ${ boldPlanTitle } on ${ boldEndDate }.": [
         "დაკარგავთ წვდომას ${ boldPlanTitle }-სთან. თარიღი: ${ boldEndDate }."
+      ],
+      "Thank you for choosing ${ BRAND_NAME } to secure your organization.": [
+        "მადლობა, რომ აირჩიეთ ${ BRAND_NAME } თქვენი ორგანიზაციის დასაცავად."
+      ],
+      "You are currently signed in as ${ username }.": [
+        "შესული ბრძანდებით, როგორც ${ username }."
+      ],
+      "You won't be charged if you cancel before ${ trialEndsOnFormatted }.": [
+        "თქვენ არ გადაიხდით, თუ გააუქმებთ თარიღამდე ${ trialEndsOnFormatted }."
       ]
     },
     "info": {
@@ -6738,6 +6765,9 @@
       ],
       "Zoom meeting": [
         "Zoom-ის შეხვედრა"
+      ],
+      "Credits": [
+        "კრედიტები"
       ]
     },
     "Label for contact group color": {
@@ -8384,6 +8414,15 @@
       ],
       "Your subscription renews soon": [
         "თქვენი გამოწერა მალე განახლდება"
+      ],
+      "Last chance to get 80% off your first month of ${ plan }.": [
+        "ბოლო შანსი, მიიღოთ 80% ფასდაკლება პირველ თვეში თქვენი ${ plan }-დან."
+      ],
+      "Limited-time offer, valid for your first month": [
+        "შეთავაზება შეზღუდული დროით. ხელმისაწვდომია, მხოლოდ, თქვენი პირველი თვისთვის"
+      ],
+      "Upgrade your storage for just ${ pricingTitle } with ${ planName }": [
+        "ასწიეთ თქვენი საცავი, მხოლოდ, ${ pricingTitle }-ით ${ planName }-ისთან ერთად"
       ]
     },
     "Offer fearue": {
@@ -8495,6 +8534,15 @@
       ],
       "Your free trial has started": [
         "თქვენი გამოსაცდელი პერიოდი დაიწყო"
+      ],
+      "You can still cancel within 30 days and get a pro-rata refund.": [
+        "გაუქმება შემდეგ 30 დღეში ჯერ კიდევ შეგიძლიათ. თანხა დაგიბრუნდებათ"
+      ],
+      "You can still cancel within 30 days and get a prorated refund.": [
+        "გაუქმება შემდეგ 30 დღეში ჯერ კიდევ შეგიძლიათ. თანხა დაგიბრუნდებათ"
+      ],
+      "Your full ${ planTitle } subscription starts on ${ boldEndDate }.": [
+        "თქვენი სრული ${ planTitle } გამოწერის დაწყების თარიღია ${ boldEndDate }."
       ]
     },
     "Option": {
@@ -8760,6 +8808,21 @@
       ],
       "Your payment is still being processed": [
         "თქვენი გადახდა ჯერ კიდევ მუშავდება"
+      ],
+      "Excluding ${ taxRate }% ${ taxName }: ${ taxAmount }": [
+        "${ taxRate }%-ის არჩათვლით ${ taxName }: ${ taxAmount }"
+      ],
+      "Excluding ${ taxRate }% taxes: ${ taxAmount }": [
+        "${ taxRate }% გადასახადების ამოღებით: ${ taxAmount }"
+      ],
+      "Including ${ taxRate }% ${ taxName }: ${ taxAmount }": [
+        "${ taxRate }%-ის ჩათვლით ${ taxName }: ${ taxAmount }"
+      ],
+      "Including ${ taxRate }% taxes: ${ taxAmount }": [
+        "${ taxRate }% გადასახადის გათვალისწინებით: ${ taxAmount }"
+      ],
+      "This number will be shown on all future invoices": [
+        "ეს რიცხვი ყველა მომავალ ინვოისზე გამოჩნდება"
       ]
     },
     "Payments.Error": {
@@ -9672,6 +9735,9 @@
       ],
       "Upgrade and save more with 2 years of ${ planName }": [
         "ასწიეთ სატარიფო გეგმა დაზოგეთ მეტი 2 წლით ${ planName }"
+      ],
+      "Get one plan that includes it all, get ${ BRAND_NAME } Unlimited": [
+        "მიიღეთ ერთი სატარიფო გეგმა, რომელიც ყველაფერს შეიცავს. მიიღეთ ${ BRAND_NAME } Unlimited"
       ]
     },
     "specialoffer: Tooltip": {
@@ -9718,6 +9784,9 @@
       ],
       "Video conferencing is here!": [
         "ვიდეოკონფერენციები უკვე აქაა!"
+      ],
+      "Schedule and join ${ MEET_APP_NAME } calls right from your calendar.": [
+        "დაგეგმეთ და შეუერთდით ${ MEET_APP_NAME }-ის ზარებს პირდაირ თქვენი კალენდრიდან."
       ]
     },
     "sso": {
@@ -11248,6 +11317,18 @@
       ],
       "Your shorter address is now ready": [
         "თქვენი მოკლე მისამართი ახლა მზადაა"
+      ],
+      "Account restricted": [
+        "ანგარიში შეზღუდულია"
+      ],
+      "Two-factor authentication": [
+        "2FA"
+      ],
+      "Upgrade your productivity for ${ formattedPrice } with ${ planName }": [
+        "ასწიეთ თქვენი პროდუქტიულობა ${ formattedPrice }-ისთვის ${ planName }-ით"
+      ],
+      "Upgrade your storage for ${ formattedPrice } with ${ planName }": [
+        "ასწიეთ თქვენი საცავი ${ formattedPrice }-ისთვის ${ planName }-ით"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

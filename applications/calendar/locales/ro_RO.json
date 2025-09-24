@@ -948,6 +948,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Perioada de încercare a versiunii pentru desktop se încheie ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Remove video conference": [
+        "Eliminare conferință video"
       ]
     },
     "action": {
@@ -1271,6 +1274,12 @@
       ],
       "You have reached the trial limit.": [
         "Ați atins limita perioadei de probare."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews every ${ renewCycle } months. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "După ce perioada de probare se încheie la ${ formattedDate }, va deveni un abonament cu plată care se reînnoiește automat la fiecare ${ renewCycle } luni. Nu veți plăti dacă anulați înainte de ${ formattedDate }."
+      ],
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews monthly. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "După ce perioada de probare se încheie la ${ formattedDate }, va deveni un abonament cu plată care se reînnoiește automat lunar. Nu veți plăti dacă anulați înainte de ${ formattedDate }."
       ]
     },
     "b2b_trials_Action": {
@@ -6986,6 +6995,15 @@
       ],
       "Zoom meeting": [
         "Conferință pe Zoom"
+      ],
+      "Credits": [
+        "Credite"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "Eliminare conferință video ${ MEET_APP_NAME }"
+      ],
+      "Remove Zoom video conference": [
+        "Eliminare conferință video Zoom"
       ]
     },
     "Label for contact group color": {
@@ -11718,6 +11736,12 @@
       ],
       "Your shorter address is now ready": [
         "Adresa scurtă este pregătită acum"
+      ],
+      "Account restricted": [
+        "Cont restricționat"
+      ],
+      "Two-factor authentication": [
+        "Autentificare cu doi factori"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

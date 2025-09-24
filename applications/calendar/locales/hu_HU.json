@@ -6608,6 +6608,9 @@
       ],
       "ZIP code": [
         "Irányítószám"
+      ],
+      "Credits": [
+        "Kredit"
       ]
     },
     "Label for contact group color": {
@@ -11060,6 +11063,12 @@
       ],
       "Your shorter address is now ready": [
         "A rövidebb címe elkészült"
+      ],
+      "Account restricted": [
+        "Fiók korlátozva"
+      ],
+      "Two-factor authentication": [
+        "Kétlépcsős hitelesítés"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -6681,6 +6681,9 @@
       ],
       "ZIP code": [
         "Código postal"
+      ],
+      "Credits": [
+        "Créditos"
       ]
     },
     "Label for contact group color": {
@@ -11189,6 +11192,12 @@
       ],
       "Your shorter address is now ready": [
         "O seu endereço mais curto já está pronto"
+      ],
+      "Account restricted": [
+        "Conta restrita"
+      ],
+      "Two-factor authentication": [
+        "Autenticação de dois fatores"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
