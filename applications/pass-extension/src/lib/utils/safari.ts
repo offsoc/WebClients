@@ -7,7 +7,7 @@ import type { RefreshSessionData } from '@proton/pass/lib/api/refresh';
 import type { PullForkCall } from '@proton/pass/lib/auth/fork';
 import type { AuthSession } from '@proton/pass/lib/auth/session';
 import browser from '@proton/pass/lib/globals/browser';
-import type { MaybeNull } from '@proton/pass/types';
+import type { Maybe, MaybeNull } from '@proton/pass/types';
 import { throwError } from '@proton/pass/utils/fp/throw';
 import { logger } from '@proton/pass/utils/logger';
 import { wait } from '@proton/shared/lib/helpers/promise';
@@ -17,9 +17,10 @@ type NativeSafariMessage =
     | { refreshCredentials: Pick<RefreshSessionData, 'AccessToken' | 'RefreshTime' | 'RefreshToken'> }
     | { environment: string };
 
-export const sendSafariMessage = (message: NativeSafariMessage) => {
+export const sendSafariMessage = async <T = unknown>(message: NativeSafariMessage): Promise<Maybe<T>> => {
     try {
-        return browser.runtime.sendNativeMessage(SAFARI_MESSAGE_KEY, JSON.stringify(message));
+        const result = await browser.runtime.sendNativeMessage<string, T>(SAFARI_MESSAGE_KEY, JSON.stringify(message));
+        return result;
     } catch (err) {
         logger.warn(`[Safari] Native message failure`, err);
     }
