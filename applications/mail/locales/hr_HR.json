@@ -5161,6 +5161,9 @@
       ],
       "Your phone number will only be used for this one-time verification.": [
         "Vaš broj telefona koristit će se samo za ovu jednokratnu provjeru."
+      ],
+      "Referral link copied to your clipboard": [
+        "Referalna poveznica je kopirana u Vaš međuspremnik"
       ]
     },
     "info": {
@@ -9026,6 +9029,9 @@
       ],
       "✨ Categories are coming!": [
         "✨Kategorije stižu!"
+      ],
+      "How does it work?": [
+        "Kako funkcionira?"
       ]
     },
     "Today icon tooltip in mini calendar": {

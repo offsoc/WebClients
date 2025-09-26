@@ -1544,6 +1544,9 @@
       ],
       "Remove video conference": [
         "移除視訊會議"
+      ],
+      "Toggle notifications": [
+        "顯示/隱藏通知"
       ]
     },
     "action": {
@@ -8019,6 +8022,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "輕點幾下滑鼠，即可擁有整潔的收件匣"
+      ],
+      "Copy your referral link": [
+        "複製您的推介連結"
+      ],
+      "Referral link copied to your clipboard": [
+        "推介連結已複製到您的剪貼簿"
       ]
     },
     "info": {
@@ -13926,6 +13935,9 @@
       ],
       "Your subscriptions in one place": [
         "集中管理您的訂閱"
+      ],
+      "How does it work?": [
+        "那是如何運作的？"
       ]
     },
     "Today icon tooltip in mini calendar": {

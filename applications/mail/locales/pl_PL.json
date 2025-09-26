@@ -8927,6 +8927,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Od uporządkowanej skrzynki odbiorczej dzieli Cię kilka kliknięć"
+      ],
+      "Copy your referral link": [
+        "Kopiuj link polecający"
+      ],
+      "Referral link copied to your clipboard": [
+        "Link polecający został skopiowany do schowka"
       ]
     },
     "info": {
@@ -15607,6 +15613,9 @@
       ],
       "Your subscriptions in one place": [
         "Twoje subskrypcje w jednym miejscu"
+      ],
+      "How does it work?": [
+        "Jak to działa?"
       ]
     },
     "Today icon tooltip in mini calendar": {

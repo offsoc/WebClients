@@ -1661,6 +1661,9 @@
       ],
       "Remove video conference": [
         "Eliminar la videoconferencia"
+      ],
+      "Toggle referral": [
+        "Alternar referidos"
       ]
     },
     "action": {
@@ -8773,6 +8776,27 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Estás a solo unos clics de tener una bandeja de entrada ordenada"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Paso 1:** Invita a tus amigos a ${ BRAND_NAME } con tu enlace de referidos."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Paso 2:** Tus amigos obtienen 2 semanas gratis en el plan ${ BRAND_NAME } que elijan."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Paso 2:** Tus amigos obtienen 2 semanas gratis en su plan."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Paso 3:** Consigue ${ referrerRewardAmount } créditos por cada amigo que se suscriba a un plan."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Paso 3:** Consigue ${ referrerRewardAmount } créditos por cada amigo que se suscriba a un plan."
+      ],
+      "Copy your referral link": [
+        "Copia tu enlace de referido"
+      ],
+      "Referral link copied to your clipboard": [
+        "El enlace de referido se ha copiado en el portapapeles"
       ]
     },
     "info": {
@@ -12065,6 +12089,12 @@
       ],
       "Your payment is still being processed": [
         "Tu pago aún está siendo procesado."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Se te cobrará el ${ formattedDate }, renovándose cada ${ renewCycle } meses."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Se te cobrará el ${ formattedDate }, con renovación mensual."
       ]
     },
     "Payments.Error": {
@@ -15436,6 +15466,15 @@
       ],
       "Account temporarily locked": [
         "Cuenta temporalmente bloqueada"
+      ],
+      "How does it work?": [
+        "¿Cómo funciona?"
+      ],
+      "Referral": [
+        "Referido"
+      ],
+      "Share your link": [
+        "Comparte tu enlace"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16007,6 +16046,34 @@
       ],
       "Passcode:": [
         "Código de acceso:"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } por cada referido"
+      ],
+      "Friend joined": [
+        "Un amigo se unió",
+        "Amigos unidos"
+      ],
+      "Friend subscribed": [
+        "Amigo suscrito",
+        "Amigos suscritos"
+      ],
+      "Invite friends. Get credits.": [
+        "Invita a tus amigos. Obtén créditos."
+      ],
+      "Invited friends": [
+        "Invitar a amigos"
+      ],
+      "More sharing options": [
+        "Más opciones para compartir"
+      ],
+      "Refer friends": [
+        "Invitar a amigos"
+      ],
+      "Start earning credits": [
+        "Empieza a ganar créditos"
       ]
     }
   }

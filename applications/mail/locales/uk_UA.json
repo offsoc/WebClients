@@ -8136,6 +8136,12 @@
       ],
       "Your scheduled plan starts on ${ renewalTime } and will auto-renew every month.": [
         "Ваш план починається ${ renewalTime } і буде автоматично поновлюватися щомісяця."
+      ],
+      "Copy your referral link": [
+        "Скопіюйте своє реферальне посилання"
+      ],
+      "Referral link copied to your clipboard": [
+        "Реферальне посилання успішно скопійовано до буферу обміну"
       ]
     },
     "info": {
@@ -14102,6 +14108,9 @@
       ],
       "Your shorter address is now ready": [
         "Ваша коротша адреса готова"
+      ],
+      "How does it work?": [
+        "Як це працює?"
       ]
     },
     "Today icon tooltip in mini calendar": {

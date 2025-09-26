@@ -8775,6 +8775,12 @@
       ],
       "All messages will be shown in Inbox, and the category tabs and tags will no longer be visible. ": [
         "Todos los mensajes se mostrarán en la bandeja de entrada y las pestañas de categorías y etiquetas dejarán de estar visibles. "
+      ],
+      "Copy your referral link": [
+        "Copiar el enlace de referencia"
+      ],
+      "Referral link copied to your clipboard": [
+        "Enlace de referencia copiado al portapapeles"
       ]
     },
     "info": {
@@ -15438,6 +15444,9 @@
       ],
       "Disable categories?": [
         "¿Desactivar las categorías?"
+      ],
+      "How does it work?": [
+        "¿Cómo funciona?"
       ]
     },
     "Today icon tooltip in mini calendar": {

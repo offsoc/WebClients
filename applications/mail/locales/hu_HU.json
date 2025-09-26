@@ -8460,6 +8460,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Már csak néhány kattintás választja el a rendetlenség-mentes postaládától"
+      ],
+      "Copy your referral link": [
+        "Ajánló hivatkozás másolása"
+      ],
+      "Referral link copied to your clipboard": [
+        "Ajánló hivatkozás kimásolva a vágólapra"
       ]
     },
     "info": {
@@ -14676,6 +14682,9 @@
       ],
       "Your subscriptions in one place": [
         "Az előfizetései egy helyen"
+      ],
+      "How does it work?": [
+        "Hogyan működik?"
       ]
     },
     "Today icon tooltip in mini calendar": {

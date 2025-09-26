@@ -1670,6 +1670,9 @@
       ],
       "Remove video conference": [
         "Odebrat videokonferenci"
+      ],
+      "Toggle referral": [
+        "Přepnout doporučení"
       ]
     },
     "action": {
@@ -9055,6 +9058,18 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Od doručené pošty bez nepořádku vás dělí jen několik kliknutí"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Krok 1:** Pozvěte své přátele do ${ BRAND_NAME } pomocí svého doporučujícího odkazu."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Krok 3:** Získejte ${ referrerRewardAmount } kreditů za každého přítele, který se přihlásí k odběru tarifu."
+      ],
+      "Copy your referral link": [
+        "Kopírovat váš doporučující odkaz"
+      ],
+      "Referral link copied to your clipboard": [
+        "Odkaz byl zkopírován do schránky"
       ]
     },
     "info": {
@@ -12439,6 +12454,9 @@
       ],
       "Your payment is still being processed": [
         "Vaše platba se stále zpracovává"
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Poplatek vám bude účtován ${ formattedDate } a bude se obnovovat každý měsíc."
       ]
     },
     "Payments.Error": {
@@ -15903,6 +15921,12 @@
       ],
       "Account temporarily locked": [
         "Účet dočasně uzamčen"
+      ],
+      "How does it work?": [
+        "Jak to funguje?"
+      ],
+      "Share your link": [
+        "Sdílejte svůj odkaz"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16564,6 +16588,25 @@
       ],
       "Passcode:": [
         "Přístupový kód:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Kredit za nevyužitou část vašeho předchozího předplatného"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } za doporučení"
+      ],
+      "Invite friends. Get credits.": [
+        "Pozvěte přátele. Získejte kredity."
+      ],
+      "More sharing options": [
+        "Více možností sdílení"
+      ],
+      "Refer friends": [
+        "Doporučte přátele"
       ]
     }
   }

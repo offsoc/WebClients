@@ -8472,6 +8472,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "只需点击几下，您的收件箱就不会杂乱无章了"
+      ],
+      "Copy your referral link": [
+        "复制您的推荐链接"
+      ],
+      "Referral link copied to your clipboard": [
+        "邀请链接已复制"
       ]
     },
     "info": {
@@ -14724,6 +14730,9 @@
       ],
       "Your subscriptions in one place": [
         "一站式订阅服务"
+      ],
+      "How does it work?": [
+        "如何操作？"
       ]
     },
     "Today icon tooltip in mini calendar": {

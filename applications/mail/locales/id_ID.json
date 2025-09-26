@@ -8538,6 +8538,12 @@
       ],
       "These conversations are kept here based on your organization's data retention policy.": [
         "Percakapan berikut ini akan disimpan pada halaman ini berdasarkan kebijakan penyimpanan data yang ditetapkan oleh organisasi Anda."
+      ],
+      "Copy your referral link": [
+        "Salin tautan rujukan Anda"
+      ],
+      "Referral link copied to your clipboard": [
+        "Tautan rujukan disalin ke papan klip"
       ]
     },
     "info": {
@@ -14930,6 +14936,12 @@
       ],
       "Account temporarily locked": [
         "Akun sementara terkunci"
+      ],
+      "How does it work?": [
+        "Bagaimana cara hal ini bekerja?"
+      ],
+      "Referral": [
+        "Rujukan"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15461,6 +15473,14 @@
     "b2b_trials_2025_Info": {
       "You can have up to ${ TRIAL_MAX_SCRIBE_SEATS } Scribe seats during the trial period.": [
         "Anda dapat memiliki hingga ${ TRIAL_MAX_SCRIBE_SEATS } kuota Scribe selama masa uji coba."
+      ]
+    },
+    "Referral": {
+      "Friend joined": [
+        "Teman yang bergabung"
+      ],
+      "Friend subscribed": [
+        "Teman yang berlangganan"
       ]
     }
   }

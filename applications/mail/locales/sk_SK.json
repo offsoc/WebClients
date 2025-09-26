@@ -1670,6 +1670,12 @@
       ],
       "Trust key": [
         "Dôveryhodný kľúč"
+      ],
+      "Toggle notifications": [
+        "Prepnúť notifikácie"
+      ],
+      "Toggle referral": [
+        "Prepnúť odporúčanie"
       ]
     },
     "action": {
@@ -9055,6 +9061,27 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Ste len pár kliknutí od prehľadnej doručenej pošty."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Krok 1:** Pozvite svojich priateľov do ${ BRAND_NAME } pomocou svojho odporúčacieho odkazu."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Krok 2:** Vaši priatelia získajú 2 týždne zadarmo na zvolený ${ BRAND_NAME } plán."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Krok 2:** Vaši priatelia získajú 2 týždne zadarmo v rámci svojho plánu."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Krok 3:** Získajte ${ referrerRewardAmount } kreditov za každého priateľa, ktorý si predplatí niektorý z plánov."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Krok 3:** Získajte ${ referrerRewardAmount } v kreditoch za každú osobu, ktorá si predplatí plán."
+      ],
+      "Copy your referral link": [
+        "Kopírujte váš odporúčací odkaz"
+      ],
+      "Referral link copied to your clipboard": [
+        "Odkaz skopírovaný do schránky"
       ]
     },
     "info": {
@@ -12442,6 +12469,12 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Táto akcia rozširuje existujúce predplatné. Bude vám účtovaný poplatok len za nové doplnky a zostávajúci čas aktuálneho fakturačného obdobia. Dátum obnovenia vášho predplatného sa nezmení."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Poplatok vám bude účtovaný dňa ${ formattedDate }, s obnovou každých ${ renewCycle } mesiacov."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Platba vám bude účtovaná ${ formattedDate } a bude sa obnovovať každý mesiac."
       ]
     },
     "Payments.Error": {
@@ -15906,6 +15939,15 @@
       ],
       "Account temporarily locked": [
         "Účet dočasne zablokovaný"
+      ],
+      "How does it work?": [
+        "Ako to funguje?"
+      ],
+      "Referral": [
+        "Odporúčanie"
+      ],
+      "Share your link": [
+        "Zdieľajte váš odkaz"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16575,6 +16617,44 @@
       ],
       "Credits will be added to your balance": [
         "Kredity budú pridané k vášmu zostatku"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } za odporúčanie"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Získajte až ${ maxRewardAmount } v kreditoch. Získate ${ referrerRewardAmount }, keď si osoba, ktorú pozvete predplatí ${ BRAND_NAME } plán."
+      ],
+      "Friend joined": [
+        "Priateľ sa pripojil",
+        "Priatelia sa pripojili",
+        "Priateľov sa pripojilo",
+        "Priateľov sa pripojilo"
+      ],
+      "Friend subscribed": [
+        "Priateľ si predplatil",
+        "Priatelia si predplatili",
+        "Priateľov si predplatilo",
+        "Priateľov si predplatilo"
+      ],
+      "Invite friends. Get credits.": [
+        "Pozvite priateľov. Získajte kredity."
+      ],
+      "Invited friends": [
+        "Pozvite priateľov"
+      ],
+      "More sharing options": [
+        "Viac možností zdieľania"
+      ],
+      "Refer friends": [
+        "Odporučiť priateľov"
+      ],
+      "Start earning credits": [
+        "Začnite zarábať kredity"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Môžete získať kredit až **${ maxRewardAmount }**."
       ]
     }
   }

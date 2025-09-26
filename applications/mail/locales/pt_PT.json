@@ -8545,6 +8545,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Está a alguns cliques de ter uma caixa de entrada organizada"
+      ],
+      "Copy your referral link": [
+        "Copiar a sua ligação de referência"
+      ],
+      "Referral link copied to your clipboard": [
+        "Ligação de referência copiada para a área de transferência"
       ]
     },
     "info": {
@@ -14882,6 +14888,9 @@
       ],
       "Your subscriptions in one place": [
         "As suas subscrições num só lugar"
+      ],
+      "How does it work?": [
+        "Como funciona?"
       ]
     },
     "Today icon tooltip in mini calendar": {

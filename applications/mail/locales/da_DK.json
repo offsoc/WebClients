@@ -8573,6 +8573,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Du er få klik fra en ryddelig indbakke."
+      ],
+      "Copy your referral link": [
+        "Kopier dit henvisningslink"
+      ],
+      "Referral link copied to your clipboard": [
+        "Henvisningslink kopieret til din udklipsholder"
       ]
     },
     "info": {
@@ -14924,6 +14930,9 @@
       ],
       "Your subscriptions in one place": [
         "Dine abonnementer ét sted"
+      ],
+      "How does it work?": [
+        "Hvordan fungerer det?"
       ]
     },
     "Today icon tooltip in mini calendar": {

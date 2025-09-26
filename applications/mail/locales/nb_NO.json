@@ -1661,6 +1661,12 @@
       ],
       "Remove video conference": [
         "Fjern videokonferanse"
+      ],
+      "Toggle notifications": [
+        "Slå varslinger av/på"
+      ],
+      "Toggle referral": [
+        "Slå verving av/på"
       ]
     },
     "action": {
@@ -6423,8 +6429,8 @@
         "${ elementsCount } samtaler flyttes"
       ],
       "${ elementsCount } conversation will be unlabelled from:": [
-        "${ elementsCount } samtale vil bli avmerket fra:",
-        "${ elementsCount } samtaler vil bli avmerket fra:"
+        "${ elementsCount } samtale avmerkes fra:",
+        "${ elementsCount } samtaler avmerkes fra:"
       ],
       "${ elementsCount } message will be labelled as:": [
         "${ elementsCount } melding merkes som:",
@@ -6443,8 +6449,8 @@
         "${ elementsCount } meldinger flyttes"
       ],
       "${ elementsCount } message will be unlabelled from:": [
-        "${ elementsCount } melding vil bli avmerket fra:",
-        "${ elementsCount } meldinger vil bli avmerket fra:"
+        "${ elementsCount } melding avmerkes fra:",
+        "${ elementsCount } meldinger avmerkes fra:"
       ],
       "${ embeddedAttachmentsCount } embedded image": [
         "${ embeddedAttachmentsCount } innebygd bilde",
@@ -8114,8 +8120,8 @@
         "Denne samtalen inneholder meldinger i papirkurven."
       ],
       "This conversation will be marked as spam. Would you also like to unsubscribe from future emails?": [
-        "Denne samtalen vil bli merket som søppelpost. Ønsker du å melde deg av fremtidige e-poster?",
-        "Disse samtalene vil bli merket som søppelpost. Ønsker du å melde deg av fremtidige e-poster?"
+        "Denne samtalen merkes som søppelpost. Ønsker du å melde deg av fremtidige e-poster?",
+        "Disse samtalene merkes som søppelpost. Ønsker du å melde deg av fremtidige e-poster?"
       ],
       "This email has failed its domain's authentication requirements. It may be spoofed or improperly forwarded.": [
         "Denne e-posten har ikke oppfylt domenets autentiseringskrav. Den kan være forfalsket eller feilaktig videresendt."
@@ -8776,6 +8782,27 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Du er bare noen få klikk unna en ryddig innboks"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Trinn 1:** Inviter vennene dine til ${ BRAND_NAME } med vervekoblingen."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Trinn 2:** Vennene dine får 2 uker gratis på den valgte ${ BRAND_NAME }-planen."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Trinn 2:** Vennene dine får 2 uker gratis på planene deres."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Trinn 3:** Få ${ referrerRewardAmount } kreditter for hver venn som abonnerer på en plan."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Trinn 3:** Få ${ referrerRewardAmount } i kreditter for hver person som abonnerer på en plan."
+      ],
+      "Copy your referral link": [
+        "Kopier vervekoblingen din"
+      ],
+      "Referral link copied to your clipboard": [
+        "Vervekobling kopiert til utklippstavlen din"
       ]
     },
     "info": {
@@ -12071,6 +12098,12 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Denne handlingen utvider det eksisterende abonnementet. Du vil kun bli belastet for de nye tilleggene og den gjenværende tiden av den nåværende faktureringssyklusen. Fornyelsesdatoen for abonnementet ditt vil ikke bli endret."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Du vil bli belastet på ${ formattedDate }, fornyes hver ${ renewCycle } måned."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Du blir belastet på ${ formattedDate }, og fornyes hver måned."
       ]
     },
     "Payments.Error": {
@@ -13221,7 +13254,7 @@
     },
     "Spotlight": {
       "Check out what's included with your subscription and start enjoying the benefits.": [
-        "Sjekk ut hva som er inkludert i abonnementet ditt og begynn å nyte fordelene."
+        "Sjekk ut hva som er inkludert i abonnementet ditt og begynn å kose deg over fordelene."
       ],
       "Discover your subscription benefits": [
         "Oppdag abonnementsfordelene dine"
@@ -13849,8 +13882,8 @@
         "${ elementsCount } samtaler merket som ulest."
       ],
       "${ elementsCount } conversation moved to ${ labelName } and sender added to your not spam list.": [
-        "${ elementsCount } samtale flyttet til ${ labelName } og avsender lagt til din ikke-søppelpostliste.",
-        "${ elementsCount } samtaler flyttet til ${ labelName } og avsenderene lagt til din ikke-søppelpostliste."
+        "${ elementsCount } samtale flyttet til ${ labelName } og avsender lagt til ikke-søppelpostlisten din.",
+        "${ elementsCount } samtaler flyttet til ${ labelName } og avsenderene lagt til ikke-søppelpostlisten din."
       ],
       "${ elementsCount } conversation moved to ${ labelName }.": [
         "${ elementsCount } samtale flyttet til ${ labelName }.",
@@ -15347,6 +15380,15 @@
       ],
       "Account temporarily locked": [
         "Konto midlertidig låst"
+      ],
+      "How does it work?": [
+        "Hvordan fungerer det?"
+      ],
+      "Referral": [
+        "Verving"
+      ],
+      "Share your link": [
+        "Del koblingen din"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15926,6 +15968,40 @@
       ],
       "Credits will be added to your balance": [
         "Kreditter vil bli lagt til saldoen din"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } per verving"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Tjen opptil ${ maxRewardAmount } i kreditt. Du får ${ referrerRewardAmount } når personen du inviterer, abonnerer på en ${ BRAND_NAME }-plan."
+      ],
+      "Friend joined": [
+        "Venn ble med",
+        "Venner ble med"
+      ],
+      "Friend subscribed": [
+        "Venn abonnerte",
+        "Venner abonnerte"
+      ],
+      "Invite friends. Get credits.": [
+        "Inviter venner. Få kreditter."
+      ],
+      "Invited friends": [
+        "Inviterte venner"
+      ],
+      "More sharing options": [
+        "Flere delingsalternativer"
+      ],
+      "Refer friends": [
+        "Verv venner"
+      ],
+      "Start earning credits": [
+        "Begynn å tjene kreditter"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Du kan få opptil **${ maxRewardAmount }** i kreditt."
       ]
     }
   }

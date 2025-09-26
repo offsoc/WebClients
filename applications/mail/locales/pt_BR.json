@@ -8775,6 +8775,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Você está a alguns cliques de distância de ter uma caixa de entrada organizada"
+      ],
+      "Copy your referral link": [
+        "Copiar seu link de referência"
+      ],
+      "Referral link copied to your clipboard": [
+        "Link de referência copiado para sua área de transferência"
       ]
     },
     "info": {
@@ -12078,6 +12084,12 @@
       ],
       "Your payment is still being processed": [
         "Seu pagamento ainda está sendo processado"
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Você será cobrado em ${ formattedDate }, renovando a cada ${ renewCycle } meses."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Você será cobrado em ${ formattedDate }, renovando todo mês."
       ]
     },
     "Payments.Error": {
@@ -15449,6 +15461,12 @@
       ],
       "Account temporarily locked": [
         "Conta temporariamente bloqueada"
+      ],
+      "How does it work?": [
+        "Como isso funciona?"
+      ],
+      "Share your link": [
+        "Compartilhe seu link"
       ]
     },
     "Today icon tooltip in mini calendar": {

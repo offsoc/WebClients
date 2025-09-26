@@ -1660,6 +1660,12 @@
       ],
       "Remove video conference": [
         "Esborreu la videoconferència"
+      ],
+      "Toggle notifications": [
+        "Activa/desactiva les notificacions"
+      ],
+      "Toggle referral": [
+        "Activar/desactivar referit"
       ]
     },
     "action": {
@@ -8775,6 +8781,27 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Sou tot just a uns quants clics d'una safata d'entrada ordenada"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Pas 1:** Convideu amistats a ${ BRAND_NAME } amb el vostre enllaç de referència."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Pas 2:** Les vostres amistats obtindran 2 setmanes de franc en el seu pla ${ BRAND_NAME } escollit."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Pas 2:** Les vostres amistats obtindran 2 setmanes de franc en el seu pla."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Pas 3:** Obtingueu ${ referrerRewardAmount } crèdits per cada amistat que es subscrigui a un pla."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Pas 3:** Obtingueu ${ referrerRewardAmount } en crèdits per cada persona que es subscrigui a un pla."
+      ],
+      "Copy your referral link": [
+        "Copieu el vostre enllaç de recomanació"
+      ],
+      "Referral link copied to your clipboard": [
+        "S'ha copiat l'enllaç de recomanació al porta-retalls"
       ]
     },
     "info": {
@@ -12069,7 +12096,13 @@
         "Encara s'està processant el vostre pagament."
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
-        "Aquesta acció amplia la subscripció existent. Se us cobraran només els nous complements i el temps restant del cicle de facturació actual. La data de renovació de la seva subscripció no es modificarà."
+        "Aquesta acció amplia la subscripció existent. Se us cobraran només els nous complements i el temps restant del cicle de facturació actual. La data de renovació de la subscripció no es modificarà."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Se us cobrarà el ${ formattedDate }, amb renovació cada ${ renewCycle } mesos."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Se us cobrarà el ${ formattedDate }, amb renovació mensual."
       ]
     },
     "Payments.Error": {
@@ -15346,6 +15379,15 @@
       ],
       "Account temporarily locked": [
         "El compte s'ha bloquejat temporalment"
+      ],
+      "How does it work?": [
+        "Com funciona?"
+      ],
+      "Referral": [
+        "Referència"
+      ],
+      "Share your link": [
+        "Compartiu el vostre enllaç"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15921,10 +15963,44 @@
     },
     "Payments.info": {
       "Credit for the unused portion of your previous plan subscription": [
-        "Crèdit per la part no utilitzada de la vostra subscripció del pla anterior"
+        "Crèdit per la part no utilitzada de la vostra subscripció al pla anterior"
       ],
       "Credits will be added to your balance": [
         "Els crèdits s'afegiran al vostre saldo"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } com a referència"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Guanyeu fins a ${ maxRewardAmount } en crèdits. Rebreu ${ referrerRewardAmount } quan la persona que convideu se subscrigui a un pla de ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Una amistat s'hi ha afegit",
+        "Unes amistats s'hi han afegit"
+      ],
+      "Friend subscribed": [
+        "Una amistat s'ha subscrit",
+        "Unes amistats s'han subscrit"
+      ],
+      "Invite friends. Get credits.": [
+        "Convideu amistats. Aconseguiu crèdits."
+      ],
+      "Invited friends": [
+        "Amistats que heu convidat"
+      ],
+      "More sharing options": [
+        "Més opcions de compartició"
+      ],
+      "Refer friends": [
+        "Recomaneu amistats"
+      ],
+      "Start earning credits": [
+        "Comenceu a guanyar crèdits"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Podeu obtenir fins a **${ maxRewardAmount }** en crèdits."
       ]
     }
   }

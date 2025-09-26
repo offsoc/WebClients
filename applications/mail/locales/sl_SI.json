@@ -8586,6 +8586,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Do urejenega poštnega predala vas loči le nekaj klikov."
+      ],
+      "Copy your referral link": [
+        "Kopirajte svojo povezavo za priporočilo"
+      ],
+      "Referral link copied to your clipboard": [
+        "Povezava za priporočilo je bila kopirana v odložišče."
       ]
     },
     "info": {
@@ -14969,6 +14975,9 @@
       ],
       "Your subscriptions in one place": [
         "Vaše naročnine na enem mestu"
+      ],
+      "How does it work?": [
+        "Kako deluje?"
       ]
     },
     "Today icon tooltip in mini calendar": {

@@ -8482,6 +8482,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Olet vain muutaman klikkauksen päässä siististä postilaatikosta"
+      ],
+      "Copy your referral link": [
+        "Kopioi suosituslinkkisi"
+      ],
+      "Referral link copied to your clipboard": [
+        "Suosituslinkki kopioitiin leikepöydälle"
       ]
     },
     "info": {
@@ -14738,6 +14744,9 @@
       ],
       "✨ Categories are coming!": [
         "✨ Kategoriat ovat tulossa!"
+      ],
+      "How does it work?": [
+        "Miten se toimii?"
       ]
     },
     "Today icon tooltip in mini calendar": {

@@ -1660,6 +1660,12 @@
       ],
       "Remove video conference": [
         "Ta bort videokonferens"
+      ],
+      "Toggle notifications": [
+        "Slå på/av aviseringar"
+      ],
+      "Toggle referral": [
+        "Slå på/av hänvisning"
       ]
     },
     "action": {
@@ -8723,6 +8729,27 @@
       ],
       "${ CALENDAR_APP_NAME } requires a ${ BRAND_NAME } address for secure event sync and encryption. ${ claimAddressButton }.": [
         "${ CALENDAR_APP_NAME } kräver en ${ BRAND_NAME }-adress för säker synkronisering och kryptering av händelse. ${ claimAddressButton }."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Steg 1:** Bjud in dina vänner till ${ BRAND_NAME } med din hänvisningslänk."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Steg 2:** Dina vänner får 2 veckor gratis på sitt valda ${ BRAND_NAME }-paket."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Steg 2:** Dina vänner får 2 veckor gratis på sitt paket."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Steg 3:** Få ${ referrerRewardAmount } krediter för varje vän som prenumererar på ett paket."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Steg 3:** Få ${ referrerRewardAmount } krediter för varje person som prenumererar på ett paket."
+      ],
+      "Copy your referral link": [
+        "Kopiera din hänvisningslänk"
+      ],
+      "Referral link copied to your clipboard": [
+        "Hänvisningslänk kopierats till ditt urklipp"
       ]
     },
     "info": {
@@ -15269,6 +15296,15 @@
       ],
       "Unsubscribe not available for this sender": [
         "Avsluta prenumeration är inte tillgängligt för denna avsändare"
+      ],
+      "How does it work?": [
+        "Hur fungerar det?"
+      ],
+      "Referral": [
+        "Hänvisning"
+      ],
+      "Share your link": [
+        "Dela din länk"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15845,6 +15881,32 @@
       ],
       "Credits will be added to your balance": [
         "Krediter kommer att läggas till ditt saldo"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } per hänvisning"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Tjäna upp till ${ maxRewardAmount } i kredit. Du får ${ referrerRewardAmount } när personen du bjuder in prenumererar på ett ${ BRAND_NAME }-paket."
+      ],
+      "Invite friends. Get credits.": [
+        "Bjud in vänner. Få krediter."
+      ],
+      "Invited friends": [
+        "Inbjudna vänner"
+      ],
+      "More sharing options": [
+        "Fler delningsalternativ"
+      ],
+      "Refer friends": [
+        "Hänvisa vänner"
+      ],
+      "Start earning credits": [
+        "Börja tjäna krediter"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Du kan få upp till **${ maxRewardAmount }** i kredit."
       ]
     }
   }

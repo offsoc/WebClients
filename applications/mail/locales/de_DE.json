@@ -1661,6 +1661,12 @@
       ],
       "Remove video conference": [
         "Videokonferenz entfernen"
+      ],
+      "Toggle notifications": [
+        "Benachrichtigungen umschalten"
+      ],
+      "Toggle referral": [
+        "Empfehlung umschalten"
       ]
     },
     "action": {
@@ -8776,6 +8782,27 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Du bist nur ein paar Klicks von einem aufgeräumten Posteingang entfernt"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Schritt 1:** Lade deine Freunde mit deinem Empfehlungs-Link zu ${ BRAND_NAME } ein."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Schritt 2:** Deine Freunde bekommen ihr gewähltes ${ BRAND_NAME }-Abonnement 2 Wochen kostenlos."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Schritt 2:** Deine Freunde erhalten ihr Abonnement 2 Wochen kostenlos."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Schritt 3:** Erhalte ${ referrerRewardAmount } Guthaben für jeden Freund, der ein Abonnement abschließt."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Schritt 3:** Erhalte ${ referrerRewardAmount } Guthaben für jede Person, die ein Abonnement abschließt."
+      ],
+      "Copy your referral link": [
+        "Einladungslink kopieren"
+      ],
+      "Referral link copied to your clipboard": [
+        "Empfehlungslink wurde in die Zwischenablage kopiert"
       ]
     },
     "info": {
@@ -12071,6 +12098,12 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Diese Aktion erweitert dein bestehendes Abonnement. Dir werden nur die neuen Ergänzungen für die verbleibende Zeit des aktuellen Abrechnungszeitraums in Rechnung gestellt. Das Verlängerungsdatum deines Abonnements wird nicht geändert."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Die Abrechnung erfolgt am ${ formattedDate } und erfolgt alle ${ renewCycle } Monate."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Die Abrechnung erfolgt am ${ formattedDate } und wird monatlich fällig."
       ]
     },
     "Payments.Error": {
@@ -15442,6 +15475,15 @@
       ],
       "Account temporarily locked": [
         "Konto vorübergehend gesperrt"
+      ],
+      "How does it work?": [
+        "Wie funktioniert das?"
+      ],
+      "Referral": [
+        "Empfehlung"
+      ],
+      "Share your link": [
+        "Deinen Link teilen"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16021,6 +16063,40 @@
       ],
       "Credits will be added to your balance": [
         "Das Guthaben wird dir gutgeschrieben."
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } pro Empfehlung"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Verdiene bis zu ${ maxRewardAmount } Guthaben. Du erhältst ${ referrerRewardAmount }, wenn die von dir eingeladene Person ein ${ BRAND_NAME }-Abonnement abschließt."
+      ],
+      "Friend joined": [
+        "Freund ist beigetreten",
+        "Freunde sind beigetreten"
+      ],
+      "Friend subscribed": [
+        "Freund hat abonniert",
+        "Freunde haben abonniert"
+      ],
+      "Invite friends. Get credits.": [
+        "Lade Freunde ein. Erhalte Guthaben."
+      ],
+      "Invited friends": [
+        "Eingeladene Freunde"
+      ],
+      "More sharing options": [
+        "Weitere Teilen-Optionen"
+      ],
+      "Refer friends": [
+        "Freunde werben"
+      ],
+      "Start earning credits": [
+        "Fange an, Guthaben zu verdienen"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Du kannst bis zu **${ maxRewardAmount }** als Guthaben erhalten."
       ]
     }
   }

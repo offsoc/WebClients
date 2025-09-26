@@ -1667,6 +1667,12 @@
       ],
       "Remove video conference": [
         "Eliminare conferință video"
+      ],
+      "Toggle notifications": [
+        "Comutare notificări"
+      ],
+      "Toggle referral": [
+        "Comutare recomandat"
       ]
     },
     "action": {
@@ -8917,6 +8923,27 @@
       ],
       "All messages will be shown in Inbox, and the category tabs and tags will no longer be visible. ": [
         "Toate mesajele vor fi afișate în „Primite”, iar filele de categorii și etichetele nu vor mai fi vizibile."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Pasul 1:** Invitați persoane la ${ BRAND_NAME } cu legătura web personală de recomandare."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Pasul 2:** Persoanele recomandare vor primi 2 săptămâni gratuite pentru planul ${ BRAND_NAME } ales."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Pasul 2:** Persoanele recomandate primesc 2 săptămâni gratuite pentru planul lor."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Pasul 3:** Obțineți ${ referrerRewardAmount } credite pentru fiecare persoană care se abonează la un plan."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Pasul 3:** Obțineți ${ referrerRewardAmount } credite pentru fiecare persoană care se abonează la un plan."
+      ],
+      "Copy your referral link": [
+        "Copiere legătură web de recomandare"
+      ],
+      "Referral link copied to your clipboard": [
+        "Legătura de recomandare a fost copiată în memorie."
       ]
     },
     "info": {
@@ -12255,6 +12282,15 @@
       ],
       "Your payment is still being processed": [
         "Plata este încă în curs de procesare."
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Această acțiune extinde abonamentul existent. Taxa se va aplica doar pentru noile module și pentru timpul rămas din ciclul de facturare actual. Data reînnoirii abonamentului actual nu va fi modificată."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Plata se va efectua la data de ${ formattedDate }, cu reînnoire la fiecare ${ renewCycle } luni."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Plata se va efectua la data de ${ formattedDate }, reînnoindu-se în fiecare lună."
       ]
     },
     "Payments.Error": {
@@ -13440,7 +13476,7 @@
         "Protejare e-mail împotriva urmăririi"
       ],
       "Get up to ${ credits } in credits.": [
-        "Obțineți până la ${ credits } de credite."
+        "Obțineți până la ${ credits } în credite."
       ],
       "Invite friends to ${ BRAND_NAME }": [
         "Invitați persoane la ${ BRAND_NAME }"
@@ -15625,6 +15661,15 @@
       ],
       "Disable categories?": [
         "Dezactivați categoriile?"
+      ],
+      "How does it work?": [
+        "Cum funcționează?"
+      ],
+      "Referral": [
+        "Recomandare"
+      ],
+      "Share your link": [
+        "Partajați-vă legătura web"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16241,6 +16286,50 @@
       ],
       "Passcode:": [
         "Cod de acces:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Credit pentru porțiunea neutilizată din abonamentul planului anterior."
+      ],
+      "Credits will be added to your balance": [
+        "Creditele vă vor fi adăugate în soldul personal."
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } per recomandare"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Câștigați până la ${ maxRewardAmount } în credite. Veți primi ${ referrerRewardAmount } atunci când persoana pe care o invitați se abonează la un plan ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Persoană alăturată",
+        "Persoane alăturate",
+        "Persoane alăturate"
+      ],
+      "Friend subscribed": [
+        "Persoană abonată",
+        "Persoane abonate",
+        "Persoane abonate"
+      ],
+      "Invite friends. Get credits.": [
+        "Invitați persoane. Obțineți credite."
+      ],
+      "Invited friends": [
+        "Persoane invitate"
+      ],
+      "More sharing options": [
+        "Mai multe opțiuni de partajare"
+      ],
+      "Refer friends": [
+        "Recomandați persoane"
+      ],
+      "Start earning credits": [
+        "Începeți să câștigați credite"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Puteți obține până la **${ maxRewardAmount }** în credite."
       ]
     }
   }

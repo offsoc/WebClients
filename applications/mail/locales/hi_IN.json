@@ -6608,6 +6608,12 @@
       ],
       "Your phone number will only be used for this one-time verification.": [
         "आपके फ़ोन नंबर का उपयोग केवल इस एक बार के सत्यापन के लिए किया जाएगा।"
+      ],
+      "Copy your referral link": [
+        "अपना रेफरल लिंक कॉपी करें"
+      ],
+      "Referral link copied to your clipboard": [
+        "रेफ़रल लिंक आपके क्लिपबोर्ड पर कॉपी किया गया"
       ]
     },
     "info": {
@@ -11206,6 +11212,9 @@
       ],
       "Account temporarily locked": [
         "अकाउंट अस्थायी समय के लिए बंद किया गया है"
+      ],
+      "How does it work?": [
+        "यह कैसे काम करता है?"
       ]
     },
     "Today icon tooltip in mini calendar": {

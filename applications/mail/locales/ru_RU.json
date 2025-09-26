@@ -8645,6 +8645,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Вы всего в нескольких нажатиях от почтового ящика, свободного от хлама"
+      ],
+      "Copy your referral link": [
+        "Скопировать свою реферальную ссылку"
+      ],
+      "Referral link copied to your clipboard": [
+        "Реферальная ссылка скопирована в буфер обмена"
       ]
     },
     "info": {
@@ -15096,6 +15102,9 @@
       ],
       "Your subscriptions in one place": [
         "Ваши подписки в одном месте"
+      ],
+      "How does it work?": [
+        "Как это работает?"
       ]
     },
     "Today icon tooltip in mini calendar": {

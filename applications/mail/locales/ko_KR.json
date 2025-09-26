@@ -8632,6 +8632,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "몇 번의 클릭만으로 정리된 받은 편지함을 만들어 보세요"
+      ],
+      "Copy your referral link": [
+        "당신의 추천인 링크를 공유하세요"
+      ],
+      "Referral link copied to your clipboard": [
+        "클립보드에 추천인 코드가 복사되었습니다"
       ]
     },
     "info": {
@@ -15054,6 +15060,9 @@
       ],
       "Account temporarily locked": [
         "계정 일시 잠김"
+      ],
+      "How does it work?": [
+        "어떻게 작동하나요?"
       ]
     },
     "Today icon tooltip in mini calendar": {

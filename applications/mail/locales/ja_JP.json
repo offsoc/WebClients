@@ -1655,6 +1655,9 @@
       ],
       "Remove video conference": [
         "ビデオ会議を削除"
+      ],
+      "Toggle notifications": [
+        "通知の切り替え"
       ]
     },
     "action": {
@@ -8635,6 +8638,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "不要なものが整理された受信トレイまで、あと数クリックです。"
+      ],
+      "Copy your referral link": [
+        "招待リンクをコピー"
+      ],
+      "Referral link copied to your clipboard": [
+        "招待リンクをクリップボードにコピーしました"
       ]
     },
     "info": {
@@ -15063,6 +15072,9 @@
       ],
       "Account temporarily locked": [
         "アカウントが一時的にロックされています"
+      ],
+      "How does it work?": [
+        "どのように動作しますか?"
       ]
     },
     "Today icon tooltip in mini calendar": {

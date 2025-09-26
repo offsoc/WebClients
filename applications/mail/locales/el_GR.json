@@ -1660,6 +1660,12 @@
       ],
       "Remove video conference": [
         "Κατάργηση τηλεδιάσκεψης"
+      ],
+      "Toggle notifications": [
+        "Εναλλαγή ειδοποιήσεων"
+      ],
+      "Toggle referral": [
+        "Εναλλαγή παραπομπής"
       ]
     },
     "action": {
@@ -5426,7 +5432,7 @@
         "Έχετε προσκληθεί να εγγραφείτε στο ${ bannerOrganization }. ${ viewInviteButton }"
       ],
       "You have successfully joined the family group": [
-        "Συμμετείχατε με επιτυχία στην ομάδα οικογένειας"
+        "Έχετε ενταχθεί με επιτυχία στην οικογενειακή ομάδα"
       ],
       "You have unpaid invoices. Please pay them before joining a family plan.": [
         "Έχετε ανεξόφλητα τιμολόγια. Παρακαλούμε πληρώστε τα πριν συμμετάσχετε σε ένα οικογενειακό πλάνο."
@@ -8775,6 +8781,27 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Είστε μόνο μερικά κλικ μακριά από τα εισερχόμενα χωρίς ακαταστασία"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Βήμα 1:** Προσκαλέστε τους φίλους σας στο ${ BRAND_NAME } με τον σύνδεσμο παραπομπής σας."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Βήμα 2:** Οι φίλοι σας λαμβάνουν 2 εβδομάδες δωρεάν στο επιλεγμένο ${ BRAND_NAME } πλάνο τους."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Βήμα 2:** Οι φίλοι σας λαμβάνουν 2 εβδομάδες δωρεάν στο πλάνο τους."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Βήμα 3:** Κερδίστε ${ referrerRewardAmount } πιστώσεις για κάθε φίλο που εγγράφεται σε ένα πλάνο."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Βήμα 3:** Κερδίστε ${ referrerRewardAmount } σε πιστώσεις για κάθε άτομο που εγγράφεται σε ένα πλάνο."
+      ],
+      "Copy your referral link": [
+        "Αντιγράψτε τον σύνδεσμο παραπομπής σας"
+      ],
+      "Referral link copied to your clipboard": [
+        "Ο σύνδεσμος παραπομπής αντιγράφηκε στο πρόχειρό σας"
       ]
     },
     "info": {
@@ -12070,6 +12097,12 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Αυτή η ενέργεια επεκτείνει την υπάρχουσα συνδρομή. Θα χρεωθείτε μόνο για τα νέα πρόσθετα και τον υπόλοιπο χρόνο του τρέχοντος κύκλου χρέωσης. Η ημερομηνία ανανέωσης της συνδρομής σας δε θα αλλάξει."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Θα χρεωθείτε στις ${ formattedDate }, με ανανέωση κάθε ${ renewCycle } μήνες."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Θα χρεωθείτε στις ${ formattedDate }, με ανανέωση κάθε μήνα."
       ]
     },
     "Payments.Error": {
@@ -15346,6 +15379,15 @@
       ],
       "Account temporarily locked": [
         "Ο λογαριασμός έχει κλειδωθεί προσωρινά"
+      ],
+      "How does it work?": [
+        "Πώς λειτουργεί;"
+      ],
+      "Referral": [
+        "Παραπομπή"
+      ],
+      "Share your link": [
+        "Κοινοποιήστε το σύνδεσμο σας"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15925,6 +15967,40 @@
       ],
       "Credits will be added to your balance": [
         "Οι πιστώσεις θα προστεθούν στο υπόλοιπό σας"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } ανά παραπομπή"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Κερδίστε έως και ${ maxRewardAmount } σε πίστωση. Θα λάβετε ${ referrerRewardAmount } όταν το άτομο που προσκαλέσατε εγγραφεί σε ένα πλάνο ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Φίλος εντάχθηκε",
+        "Φίλοι εντάχθηκαν"
+      ],
+      "Friend subscribed": [
+        "Φίλος εγγράφηκε",
+        "Φίλοι εγγράφηκαν"
+      ],
+      "Invite friends. Get credits.": [
+        "Προσκαλέστε φίλους. Λάβετε πιστώσεις."
+      ],
+      "Invited friends": [
+        "Προσκεκλημένοι φίλοι"
+      ],
+      "More sharing options": [
+        "Περισσότερες επιλογές κοινής χρήσης"
+      ],
+      "Refer friends": [
+        "Συστήστε φίλους"
+      ],
+      "Start earning credits": [
+        "Ξεκινήστε να κερδίζετε πιστώσεις"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Μπορείτε να λάβετε έως και **${ maxRewardAmount }** σε πίστωση."
       ]
     }
   }

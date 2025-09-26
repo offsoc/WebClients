@@ -1658,6 +1658,15 @@
       ],
       "Change password": [
         "პაროლის შეცვლა"
+      ],
+      "Remove video conference": [
+        "ვიდეოკონფერენციის წაშლა"
+      ],
+      "Toggle notifications": [
+        "გაფრთხილებების გადართვა"
+      ],
+      "Toggle referral": [
+        "რეფერალის გადართვა"
       ]
     },
     "action": {
@@ -8618,6 +8627,15 @@
       ],
       "You won't be charged if you cancel before ${ trialEndsOnFormatted }.": [
         "თქვენ არ გადაიხდით, თუ გააუქმებთ თარიღამდე ${ trialEndsOnFormatted }."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**ნაბიჯი 2:** თქვენი მეგობრები მიიღებენ 2 კვირას უფასოდ თავიანთ სატარიფო გეგმაზე."
+      ],
+      "Copy your referral link": [
+        "თქვენი მიმართვის ბმულის კოპირება"
+      ],
+      "Referral link copied to your clipboard": [
+        "ბმის ბმული დაკოპირდა ბაფერში"
       ]
     },
     "info": {
@@ -9633,6 +9651,12 @@
       ],
       "Video conference": [
         "ვიდეოკონფერენცია"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "${ MEET_APP_NAME }-ის ვიდეოკონფერენციის წაშლა"
+      ],
+      "Remove Zoom video conference": [
+        "Zoom ვიდეოკონფერენციის წაშლა"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -15108,6 +15132,15 @@
       ],
       "Upgrade your storage for ${ formattedPrice } with ${ planName }": [
         "ასწიეთ თქვენი საცავი ${ formattedPrice }-ისთვის ${ planName }-ით"
+      ],
+      "How does it work?": [
+        "როგორ მუშაობს?"
+      ],
+      "Referral": [
+        "რეფერალი"
+      ],
+      "Share your link": [
+        "გააზიარეთ თქვენი ბმული"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15673,6 +15706,45 @@
       ],
       "Passcode:": [
         "საკვანძო კოდი:"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "წინა გამოწერის დარჩენილი ნაწილის კრედიტი"
+      ],
+      "Credits will be added to your balance": [
+        "თქვენს ბალანსზე კრედიტები დაგემატებათ"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } თითო რეფერალისთვის"
+      ],
+      "Friend joined": [
+        "მეგობარი შემოვიდა",
+        "მეგობრები შემოვიდნენ"
+      ],
+      "Friend subscribed": [
+        "მეგობარი გამოწერილია",
+        "მეგობრები გამოწერილია"
+      ],
+      "Invite friends. Get credits.": [
+        "მოიწვიეთ მეგობრები და მიიღეთ კრედიტები."
+      ],
+      "Invited friends": [
+        "მოწვეული მეგობრები"
+      ],
+      "More sharing options": [
+        "მეტი გაზიარების პარამეტრი"
+      ],
+      "Refer friends": [
+        "რეკომენდაცია მეგობრებს"
+      ],
+      "Start earning credits": [
+        "დაიწყეთ კრედიტების გამომუშავება"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "შეგიძლიათ, გქონდეთ **${ maxRewardAmount }**-მდე კრედიტი."
       ]
     }
   }

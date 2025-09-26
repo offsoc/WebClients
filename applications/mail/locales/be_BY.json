@@ -1670,6 +1670,12 @@
       ],
       "Remove video conference": [
         "Выдаліць відэаканферэнцыю"
+      ],
+      "Toggle notifications": [
+        "Пераключыць апавяшчэнні"
+      ],
+      "Toggle referral": [
+        "Пераключыць рэфералаў"
       ]
     },
     "action": {
@@ -8391,7 +8397,7 @@
         "Гэта паведамленне было скарэктавана для правільнага адлюстравання на цёмным фоне."
       ],
       "This message is automatically generated as a response to a previous message.": [
-        "Гэта паведамленне аўтаматычна згенерыравана ў адказ на папярэдняе паведамленне."
+        "Гэта паведамленне аўтаматычна згенеравана ў адказ на папярэдняе паведамленне."
       ],
       "This message is from a ${ PASS_APP_NAME } alias.": [
         "Гэта паведамленне з псеўданіма ${ PASS_APP_NAME }."
@@ -9055,6 +9061,27 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Вам засталося некалькі націскаў, каб навесці парадак у сваёй паштовай скрыні"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Крок 1:** Запрашайце сваіх сяброў у ${ BRAND_NAME } са сваёй рэферальнай спасылкай."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Крок 2:** Вашы сябры атрымаюць 2 тыдні бясплатнага выкарыстання на тарыфным плане ${ BRAND_NAME }, які яны выбралі."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Крок 2:** Вашы сябры атрымаюць 2 тыдні бясплатнага выкарыстання на сваім тарыфным плане."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Крок 3:** Атрымайце ${ referrerRewardAmount } крэдытаў за кожнага сябра, які падпішацца на тарыфны план."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Крок 3:** Атрымайце ${ referrerRewardAmount } крэдытаў за кожную асобу, якая падпішацца на тарыфны план."
+      ],
+      "Copy your referral link": [
+        "Скапіяваць сваю рэферальную спасылку"
+      ],
+      "Referral link copied to your clipboard": [
+        "Рэферальная спасылка скапіявана ў буфер абмену"
       ]
     },
     "info": {
@@ -11758,7 +11785,7 @@
         "${ reason } было ўключана"
       ],
       "Block removed": [
-        "Блакіраванне знята"
+        "Блакіроўка выдалена"
       ],
       "Contact group created": [
         "Група кантактаў створана"
@@ -12442,6 +12469,12 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Гэта дзеянне пашырае існуючую падпіску. З вас будзе спагнана плата толькі за новыя дадаткі і час, якія засталіся ў бягучым перыядзе аплаты. Дата падаўжэння вашай падпіскі не будзе зменена."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every ${ renewCycle } months.": [
+        "Аплата будзе спагнана ${ formattedDate }. Падаўжэнне будзе адбывацца кожныя ${ renewCycle } месяцы."
+      ],
+      "You will be charged on ${ formattedDate }, renewing every month.": [
+        "Аплата будзе спагнана ${ formattedDate }. Падаўжэнне будзе адбывацца штомесяц."
       ]
     },
     "Payments.Error": {
@@ -15906,6 +15939,15 @@
       ],
       "Account temporarily locked": [
         "Уліковы запіс часова заблакіраваны"
+      ],
+      "How does it work?": [
+        "Як гэта працуе?"
+      ],
+      "Referral": [
+        "Рэферал"
+      ],
+      "Share your link": [
+        "Абагуліць сваю спасылку"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16575,6 +16617,44 @@
       ],
       "Credits will be added to your balance": [
         "Крэдыты будуць дададзены на ваш баланс"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } за кожнае запрашэнне"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Зарабіце да ${ maxRewardAmount } у крэдытах. Вы атрымаеце ${ referrerRewardAmount }, калі запрошаная асоба падпішацца на тарыфны план ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Сябар далучыўся",
+        "Сябры далучылася",
+        "Сяброў далучылася",
+        "Сяброў далучылася"
+      ],
+      "Friend subscribed": [
+        "Сябар падпісаўся",
+        "Сябры падпісаліся",
+        "Сяброў падпісалася",
+        "Сяброў падпісалася"
+      ],
+      "Invite friends. Get credits.": [
+        "Запрашайце сяброў і атрымлівайце крэдыты."
+      ],
+      "Invited friends": [
+        "Запрошаныя сябры"
+      ],
+      "More sharing options": [
+        "Больш параметраў для абагульвання"
+      ],
+      "Refer friends": [
+        "Параіць сябрам"
+      ],
+      "Start earning credits": [
+        "Пачніце зарабляць крэдыты"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Вы можаце атрымаць да **${ maxRewardAmount }** у крэдытах."
       ]
     }
   }
