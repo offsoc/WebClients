@@ -9492,6 +9492,20 @@
       ],
       "Start earning credits": [
         "Inizia a guadagnare crediti"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Guadagna fino a ${ maxRewardAmount } in credito. Riceverai ${ referrerRewardAmount } quando la persona che inviti si abbona a un piano ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Amico associato",
+        "Amici associati"
+      ],
+      "Friend subscribed": [
+        "Amico abbonato",
+        "Amici abbonati"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Puoi guadagnare fino a **${ maxRewardAmount }** in credito."
       ]
     },
     "Reload event button tooltip": {

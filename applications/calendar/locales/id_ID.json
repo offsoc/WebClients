@@ -11743,6 +11743,14 @@
       "Passcode:": [
         "Kode sandi:"
       ]
+    },
+    "Referral": {
+      "Friend joined": [
+        "Teman yang bergabung"
+      ],
+      "Friend subscribed": [
+        "Teman yang berlangganan"
+      ]
     }
   }
 }

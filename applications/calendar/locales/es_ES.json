@@ -9018,6 +9018,12 @@
       ],
       "Your payment is still being processed": [
         "Tu pago aún está siendo procesado."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Cantidad a pagar después de la prueba el ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "términos y condiciones"
       ]
     },
     "Payments.Error": {

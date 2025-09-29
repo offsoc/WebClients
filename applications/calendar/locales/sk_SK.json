@@ -9334,6 +9334,12 @@
       ],
       "Your payment is still being processed": [
         "Vaša platba sa stále spracováva"
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Suma splatná po skončení skúšobnej prevádzky dňa ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "zmluvnými podmienkami používania"
       ]
     },
     "Payments.Error": {

@@ -9179,6 +9179,12 @@
       ],
       "Your payment is still being processed": [
         "Plata este încă în curs de procesare."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Suma datorată după probare la ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "termenii și condițiile"
       ]
     },
     "Payments.Error": {

@@ -6229,6 +6229,21 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Kendi hesap bilgilerinizi görmeyi sürdürebileceksiniz. Ancak kuruluşunuzun tüm kullanıcı hesapları silinecek."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**1. adım:** Arkadaşlarınızı öneri bağlantınızla ${ BRAND_NAME } kullanmaya davet edin."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**2. Adım:** Arkadaşlarınız, seçtikleri ${ BRAND_NAME } tarifesinde 2 hafta ücretsiz kullanım alacak."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**2. adım:** Arkadaşlarınız tarifelerine 2 hafta ücretsiz kullanım alacak."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**3. adım**: Bir tarifeye abone olan her arkadaşınız için ${ referrerRewardAmount } kredi kazanın."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**3. adım**: Bir tarifeye abone olan her kişi için ${ referrerRewardAmount } kredi kazanın."
       ]
     },
     "info": {
@@ -9009,6 +9024,12 @@
       ],
       "Your payment is still being processed": [
         "Ödeme işleminiz sürüyor"
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Deneme süresinden sonra ${ formattedDate } tarihinde ödenecek tutar"
+      ],
+      "terms and conditions": [
+        "hükümler ve koşullar"
       ]
     },
     "Payments.Error": {
@@ -11624,6 +11645,9 @@
       ],
       "Your shorter address is now ready": [
         "Daha kısa adresiniz hazır"
+      ],
+      "Share your link": [
+        "Bağlantınızı paylaşın."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12191,6 +12215,40 @@
       ],
       "Passcode:": [
         "Parola:"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "Her yönlendirme için ${ referrerRewardAmount }"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "${ maxRewardAmount } tutarına kadar kredi kazanın. Davet ettiğiniz kişi bir ${ BRAND_NAME } tarifesine abone olduğunda ${ referrerRewardAmount } alacaksınız."
+      ],
+      "Friend joined": [
+        "Katılan arkadaş",
+        "Katılan arkadaşlar"
+      ],
+      "Friend subscribed": [
+        "Abone olan arkadaş",
+        "Abone olan arkadaşlar"
+      ],
+      "Invite friends. Get credits.": [
+        "Arkadaşlarınızı davet edin. Kredi kazanın."
+      ],
+      "Invited friends": [
+        "Davet edilmiş arkadaşlar"
+      ],
+      "More sharing options": [
+        "Diğer paylaşım seçenekleri"
+      ],
+      "Refer friends": [
+        "Arkadaşlarınıza önerin"
+      ],
+      "Start earning credits": [
+        "Kredi kazanmaya başlayın"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "**${ maxRewardAmount }** tutarına kadar kredi kazanabilirsiniz."
       ]
     }
   }

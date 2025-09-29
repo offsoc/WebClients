@@ -396,7 +396,7 @@
         "Атрымаць праверачны код"
       ],
       "Go to ${ planOrAppName }": [
-        "Перайдзіце ў ${ planOrAppName }"
+        "Перайсці ў ${ planOrAppName }"
       ],
       "Go to label": [
         "Перайсці ў меткі"
@@ -6397,6 +6397,21 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Вы ўсё яшчэ зможаце праглядаць даныя свайго ўласнага ўліковага запісу, але ўсе ўліковыя запісы карыстальнікаў будуць выдалены з вашай арганізацыі."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Крок 1:** Запрашайце сваіх сяброў у ${ BRAND_NAME } са сваёй рэферальнай спасылкай."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Крок 2:** Вашы сябры атрымаюць 2 тыдні бясплатнага выкарыстання на тарыфным плане ${ BRAND_NAME }, які яны выбралі."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Крок 2:** Вашы сябры атрымаюць 2 тыдні бясплатнага выкарыстання на сваім тарыфным плане."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Крок 3:** Атрымайце ${ referrerRewardAmount } крэдытаў за кожнага сябра, які падпішацца на тарыфны план."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Крок 3:** Атрымайце ${ referrerRewardAmount } крэдытаў за кожную асобу, якая падпішацца на тарыфны план."
       ]
     },
     "info": {
@@ -9319,6 +9334,12 @@
       ],
       "Your payment is still being processed": [
         "Ваш плацеж усё яшчэ апрацоўваецца"
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Сума да аплаты пасля пробнага перыяду на ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "умовы выкарыстання"
       ]
     },
     "Payments.Error": {
@@ -11946,6 +11967,9 @@
       ],
       "Your shorter address is now ready": [
         "Ваш больш кароткі адрас гатовы да выкарыстання"
+      ],
+      "Share your link": [
+        "Абагуліць сваю спасылку"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12601,6 +12625,44 @@
       ],
       "Passcode:": [
         "Код доступу:"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } за кожнае запрашэнне"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Зарабіце да ${ maxRewardAmount } у крэдытах. Вы атрымаеце ${ referrerRewardAmount }, калі запрошаная асоба падпішацца на тарыфны план ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Сябар далучыўся",
+        "Сябры далучылася",
+        "Сяброў далучылася",
+        "Сяброў далучылася"
+      ],
+      "Friend subscribed": [
+        "Сябар падпісаўся",
+        "Сябры падпісаліся",
+        "Сяброў падпісалася",
+        "Сяброў падпісалася"
+      ],
+      "Invite friends. Get credits.": [
+        "Запрашайце сяброў і атрымлівайце крэдыты."
+      ],
+      "Invited friends": [
+        "Запрошаныя сябры"
+      ],
+      "More sharing options": [
+        "Больш параметраў для абагульвання"
+      ],
+      "Refer friends": [
+        "Параіць сябрам"
+      ],
+      "Start earning credits": [
+        "Пачніце зарабляць крэдыты"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Вы можаце атрымаць да **${ maxRewardAmount }** у крэдытах."
       ]
     }
   }

@@ -6205,6 +6205,15 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "U kunt nog steeds uw eigen accountgegevens bekijken, maar alle gebruikersaccounts worden verwijderd uit uw organisatie."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Stap 1:** Nodig uw vrienden uit voor ${ BRAND_NAME } met uw verwijzingssnelkoppeling."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Stap 3:** Ontvang ${ referrerRewardAmount } tegoed voor elke vriend die zich inschrijft voor een abonnement."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Stap 3:** Ontvang ${ referrerRewardAmount } tegoed voor elke persoon die zich inschrijft voor een abonnement."
       ]
     },
     "info": {
@@ -11565,6 +11574,9 @@
       ],
       "Your shorter address is now ready": [
         "Uw kortere adres is nu klaar"
+      ],
+      "Share your link": [
+        "Deel uw snelkoppeling"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12132,6 +12144,29 @@
       ],
       "Passcode:": [
         "Toegangscode:"
+      ]
+    },
+    "Payments.info": {
+      "Credits will be added to your balance": [
+        "Tegoed wordt toegevoegd aan uw saldo."
+      ]
+    },
+    "Referral": {
+      "Friend subscribed": [
+        "Vriend geabonneerd",
+        "Vrienden geabonneerd"
+      ],
+      "Invite friends. Get credits.": [
+        "Nodig vrienden uit. Ontvang tegoed."
+      ],
+      "Invited friends": [
+        "Uitgenodigde vrienden"
+      ],
+      "More sharing options": [
+        "Meer opties om te delen"
+      ],
+      "Start earning credits": [
+        "Begin met het verdienen van tegoed"
       ]
     }
   }

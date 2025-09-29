@@ -6886,6 +6886,9 @@
       ],
       "Zoom meeting": [
         "Zoom-möte"
+      ],
+      "Add ${ MEET_APP_NAME } conferencing": [
+        "Lägg till ${ MEET_APP_NAME }-konferens"
       ]
     },
     "Label for contact group color": {
@@ -8983,6 +8986,9 @@
       ],
       "Your payment is still being processed": [
         "Din betalning håller fortfarande på att behandlas"
+      ],
+      "terms and conditions": [
+        "användarvillkor"
       ]
     },
     "Payments.Error": {
