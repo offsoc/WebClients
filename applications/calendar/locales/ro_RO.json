@@ -12412,6 +12412,11 @@
       "Passcode:": [
         "Cod de acces:"
       ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Conectați-vă cu aceeași adresă Gmail cu care v-ați conectat inițial."
+      ]
     }
   }
 }

@@ -12250,6 +12250,11 @@
       "Passcode:": [
         "Code d’accès :"
       ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Veuillez vous connecter avec la même adresse Gmail que celle que vous avez connectée à l'origine"
+      ]
     }
   }
 }

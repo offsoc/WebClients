@@ -11751,6 +11751,16 @@
       "Friend subscribed": [
         "Teman yang berlangganan"
       ]
+    },
+    "collider_2025: feature": {
+      "Access to advanced AI models": [
+        "Akses ke berbagai model AI lanjutan"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Silakan masuk dengan alamat Gmail yang sama dengan yang Anda gunakan pertama kali untuk terhubung"
+      ]
     }
   }
 }

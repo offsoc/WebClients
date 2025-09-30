@@ -10933,7 +10933,7 @@
         "Recuperació de compte"
       ],
       "Account restricted": [
-        "Compte restringit"
+        "S'ha restringit el compte"
       ],
       "Account security": [
         "Seguretat del compte"
@@ -12159,6 +12159,11 @@
       ],
       "Passcode:": [
         "Codi d'accés:"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Inicieu la sessió amb la mateixa adreça de Gmail amb la que us vau connectar originalment"
       ]
     }
   }

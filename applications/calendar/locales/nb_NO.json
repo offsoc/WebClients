@@ -12160,6 +12160,11 @@
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Du kan få opptil **${ maxRewardAmount }** i kreditt."
       ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Logg på med den samme Gmail-adressen du opprinnelig koblet til"
+      ]
     }
   }
 }

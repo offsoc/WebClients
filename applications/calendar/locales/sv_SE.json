@@ -8989,6 +8989,9 @@
       ],
       "terms and conditions": [
         "användarvillkor"
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Belopp att betala efter provperioden den ${ formattedDate }"
       ]
     },
     "Payments.Error": {
@@ -12092,6 +12095,11 @@
       ],
       "Passcode:": [
         "Lösenkod:"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Logga in med samma Gmail-adress som du ursprungligen anslöt"
       ]
     }
   }

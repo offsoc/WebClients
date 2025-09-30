@@ -12664,6 +12664,11 @@
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Můžete získat až **${ maxRewardAmount }** v kreditech."
       ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Přihlaste se prosím pomocí stejné adresy Gmail, kterou jste původně použili pro připojení"
+      ]
     }
   }
 }

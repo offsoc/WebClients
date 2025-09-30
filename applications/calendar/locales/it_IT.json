@@ -9029,6 +9029,12 @@
       ],
       "Your payment is still being processed": [
         "Il tuo pagamento è ancora in fase di elaborazione."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Importo dovuto dopo la prova il ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "Termini e Condizioni"
       ]
     },
     "Payments.Error": {
@@ -12248,6 +12254,11 @@
       ],
       "Passcode:": [
         "Codice di accesso:"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Accedi con lo stesso indirizzo email che hai usato originariamente"
       ]
     }
   }

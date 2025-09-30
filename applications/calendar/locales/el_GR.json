@@ -12160,6 +12160,11 @@
       "Passcode:": [
         "Κωδικός πρόσβασης:"
       ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Παρακαλούμε συνδεθείτε με την ίδια διεύθυνση Gmail που συνδεθήκατε αρχικά."
+      ]
     }
   }
 }

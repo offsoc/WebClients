@@ -12664,6 +12664,11 @@
       "Passcode:": [
         "Prístupový kód:"
       ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Prihláste sa pomocou tej istej Gmail adresy, ktorú ste použili pri prvom prihlásení, prosím."
+      ]
     }
   }
 }

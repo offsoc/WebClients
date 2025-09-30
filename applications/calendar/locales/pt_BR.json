@@ -12261,6 +12261,11 @@
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Você pode receber até **${ maxRewardAmount }** em crédito."
       ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Inicie sessão com o mesmo endereço do Gmail que você conectou originalmente"
+      ]
     }
   }
 }
