@@ -4045,6 +4045,9 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Vremenska zona vašeg sustava promijenjena je u ${ timezone }. Želite li ažurirati svoje postavke vremenske zone?"
+      ],
+      "Referral link copied to your clipboard": [
+        "Referalna poveznica je kopirana u Vaš međuspremnik"
       ]
     },
     "info": {
@@ -4548,6 +4551,9 @@
       ],
       "Credits": [
         "Kredit"
+      ],
+      "Don't show this again": [
+        "Ne prikazuj ponovno"
       ]
     },
     "Label for contact group color": {
@@ -7204,6 +7210,9 @@
       ],
       "Your plan": [
         "Vaš plan"
+      ],
+      "How does it work?": [
+        "Kako funkcionira?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

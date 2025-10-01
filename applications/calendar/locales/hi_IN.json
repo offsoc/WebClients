@@ -4955,6 +4955,12 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "आपका सिस्टम समय क्षेत्र ${ timezone } में बदल गया है। अपने समय क्षेत्र पसंद को अपडेट करें?"
+      ],
+      "Copy your referral link": [
+        "अपना रेफरल लिंक कॉपी करें"
+      ],
+      "Referral link copied to your clipboard": [
+        "रेफ़रल लिंक आपके क्लिपबोर्ड पर कॉपी किया गया"
       ]
     },
     "info": {
@@ -5548,6 +5554,9 @@
       ],
       "Credits": [
         "क्रेडिट"
+      ],
+      "Don't show this again": [
+        "फिर से न दिखाएं"
       ]
     },
     "Label for contact group color": {
@@ -8881,6 +8890,9 @@
       ],
       "Your shorter address is now ready": [
         "आपका छोटा पता अब तैयार है"
+      ],
+      "How does it work?": [
+        "यह कैसे काम करता है?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -1242,10 +1242,10 @@
     },
     "b2b_trials_2025_Info": {
       "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews every ${ renewCycle } months. You won’t be charged if you cancel before ${ formattedDate }.": [
-        "Un cop finalitzi el període de prova el ${ formattedDate }, es convertirà en una subscripció de pagament que es renovarà automàticament cada ${ renewCycle } mesos. No se us cobrarà si la cancel·leu abans del ${ formattedDate }."
+        "Un cop finalitzi el període de prova el ${ formattedDate }, passarà a ser una subscripció de pagament que es renovarà automàticament cada ${ renewCycle } mesos. No se us cobrarà si la cancel·leu abans del ${ formattedDate }."
       ],
       "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews monthly. You won’t be charged if you cancel before ${ formattedDate }.": [
-        "Un cop finalitzi el període de prova el ${ formattedDate }, es convertirà en una subscripció de pagament que es renovarà automàticament cada mes. No se us cobrarà si la cancel·leu abans del ${ formattedDate }."
+        "Un cop finalitzi el període de prova el ${ formattedDate }, passarà a ser una subscripció de pagament que es renovarà automàticament cada mes. No se us cobrarà si la cancel·leu abans del ${ formattedDate }."
       ],
       "You can have up to ${ TRIAL_MAX_DEDICATED_IPS } dedicated server during the trial period.": [
         "Podeu tenir fins a ${ TRIAL_MAX_DEDICATED_IPS } servidors dedicats durant el període de prova."
@@ -6229,6 +6229,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Encara podreu veure les dades del vostre compte, però tots els comptes d'usuari s'eliminaran de la vostra organització."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Pas 1:** Convideu amistats a ${ BRAND_NAME } amb el vostre enllaç de referència."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Pas 2:** Les vostres amistats obtindran 2 setmanes de franc en el seu pla ${ BRAND_NAME } escollit."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Pas 2:** Les vostres amistats obtindran 2 setmanes de franc en el seu pla."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Pas 3:** Obtingueu ${ referrerRewardAmount } crèdits per cada amistat que es subscrigui a un pla."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Pas 3:** Obtingueu ${ referrerRewardAmount } en crèdits per cada persona que es subscrigui a un pla."
+      ],
+      "Copy your referral link": [
+        "Copieu el vostre enllaç de recomanació"
+      ],
+      "Referral link copied to your clipboard": [
+        "S'ha copiat l'enllaç de recomanació al porta-retalls"
       ]
     },
     "info": {
@@ -6908,6 +6929,9 @@
       ],
       "Remove Zoom video conference": [
         "Esborreu la videoconferència de Zoom"
+      ],
+      "Don't show this again": [
+        "No ho tornis a mostrar"
       ]
     },
     "Label for contact group color": {
@@ -9005,7 +9029,25 @@
         "Encara s'està processant el vostre pagament."
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
-        "Aquesta acció amplia la subscripció existent. Se us cobraran només els nous complements i el temps restant del cicle de facturació actual. La data de renovació de la seva subscripció no es modificarà."
+        "Aquesta acció amplia la subscripció existent. Se us cobraran només els nous complements i el temps restant del cicle de facturació actual. La data de renovació de la subscripció no es modificarà."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Import a pagar després del període de prova el ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Es requereix un mètode de pagament perquè la subscripció s'activi un cop finalitzi la prova."
+      ],
+      "terms and conditions": [
+        "termes i condicions"
+      ],
+      "This offer is not available with your current plan.": [
+        "Aquesta oferta no està disponible amb el pla actual."
+      ],
+      "You already have a subscription to this plan.": [
+        "Ja teniu una subscripció a aquest pla."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Ja teniu una subscripció a aquest pla. Podeu canviar-la a ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -10873,7 +10915,7 @@
         "Recuperació de compte"
       ],
       "Account restricted": [
-        "Compte restringit"
+        "S'ha restringit el compte"
       ],
       "Account security": [
         "Seguretat del compte"
@@ -11529,6 +11571,12 @@
       ],
       "Your shorter address is now ready": [
         "La vostra adreça més curta ja està a punt."
+      ],
+      "How does it work?": [
+        "Com funciona?"
+      ],
+      "Share your link": [
+        "Compartiu el vostre enllaç"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12100,10 +12148,49 @@
     },
     "Payments.info": {
       "Credit for the unused portion of your previous plan subscription": [
-        "Crèdit per la part no utilitzada de la vostra subscripció del pla anterior"
+        "Crèdit per la part no utilitzada de la vostra subscripció al pla anterior"
       ],
       "Credits will be added to your balance": [
         "Els crèdits s'afegiran al vostre saldo"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Inicieu la sessió amb la mateixa adreça de Gmail amb la que us vau connectar originalment"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } com a referència"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Guanyeu fins a ${ maxRewardAmount } en crèdits. Rebreu ${ referrerRewardAmount } quan la persona que convideu se subscrigui a un pla de ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Una amistat s'hi ha afegit",
+        "Unes amistats s'hi han afegit"
+      ],
+      "Friend subscribed": [
+        "Una amistat s'ha subscrit",
+        "Unes amistats s'han subscrit"
+      ],
+      "Invite friends. Get credits.": [
+        "Convideu amistats. Aconseguiu crèdits."
+      ],
+      "Invited friends": [
+        "Amistats que heu convidat"
+      ],
+      "More sharing options": [
+        "Més opcions de compartició"
+      ],
+      "Refer friends": [
+        "Recomaneu amistats"
+      ],
+      "Start earning credits": [
+        "Comenceu a guanyar crèdits"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Podeu obtenir fins a **${ maxRewardAmount }** en crèdits."
       ]
     }
   }

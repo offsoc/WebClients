@@ -6142,6 +6142,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "자신의 계정 데이터는 여전히 볼 수 있지만 모든 사용자 계정이 조직에서 제거됩니다."
+      ],
+      "Copy your referral link": [
+        "당신의 추천인 링크를 공유하세요"
+      ],
+      "Referral link copied to your clipboard": [
+        "클립보드에 추천인 코드가 복사되었습니다"
       ]
     },
     "info": {
@@ -6809,6 +6815,9 @@
       ],
       "Credits": [
         "크레딧"
+      ],
+      "Don't show this again": [
+        "다시 보지 않기"
       ]
     },
     "Label for contact group color": {
@@ -11310,6 +11319,9 @@
       ],
       "Your shorter address is now ready": [
         "짧은 주소가 준비되었습니다"
+      ],
+      "How does it work?": [
+        "어떻게 작동하나요?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -6145,6 +6145,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "お客様ご自身のアカウントデータは引き続き表示できますが、すべてのユーザーアカウントがお客様の組織から削除されます。"
+      ],
+      "Copy your referral link": [
+        "招待リンクをコピー"
+      ],
+      "Referral link copied to your clipboard": [
+        "招待リンクをクリップボードにコピーしました"
       ]
     },
     "info": {
@@ -6818,6 +6824,9 @@
       ],
       "Remove Zoom video conference": [
         "Zoomビデオ会議を削除"
+      ],
+      "Don't show this again": [
+        "次回から表示しない"
       ]
     },
     "Label for contact group color": {
@@ -11319,6 +11328,9 @@
       ],
       "Your shorter address is now ready": [
         "短いアドレスの準備ができました"
+      ],
+      "How does it work?": [
+        "どのように動作しますか?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

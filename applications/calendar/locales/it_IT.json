@@ -6229,6 +6229,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Potrai ancora visualizzare i dati del tuo account, ma tutti gli account utente verranno rimossi dalla tua organizzazione."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Passaggio 1:** Invita i tuoi amici a ${ BRAND_NAME } con il tuo link di affiliazione."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Passo 2:** I tuoi amici ottengono 2 settimane gratis sul piano ${ BRAND_NAME } che hanno scelto."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Passo 2:** I tuoi amici ottengono 2 settimane gratis sul loro piano."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Passaggio 3:** Ottieni ${ referrerRewardAmount } crediti per ogni amico che si abbona a un piano."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Passaggio 3:** Ottieni ${ referrerRewardAmount } crediti per ogni persona che si abbona a un piano."
+      ],
+      "Copy your referral link": [
+        "Copia il tuo link di riferimento"
+      ],
+      "Referral link copied to your clipboard": [
+        "Link di riferimento copiato negli appunti"
       ]
     },
     "info": {
@@ -6908,6 +6929,9 @@
       ],
       "Remove Zoom video conference": [
         "Rimuovi videoconferenza Zoom"
+      ],
+      "Don't show this again": [
+        "Non mostrare più"
       ]
     },
     "Label for contact group color": {
@@ -9011,6 +9035,12 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Questa azione estende l'abbonamento esistente. Ti verranno addebitati solo i nuovi add-on e il tempo rimanente del ciclo di fatturazione corrente. La data di rinnovo del tuo abbonamento non verrà modificata."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Importo dovuto dopo la prova il ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "Termini e Condizioni"
       ]
     },
     "Payments.Error": {
@@ -11624,6 +11654,12 @@
       ],
       "Your shorter address is now ready": [
         "Il tuo indirizzo breve ora è pronto"
+      ],
+      "How does it work?": [
+        "Come funziona?"
+      ],
+      "Share your link": [
+        "Condividi il tuo link"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12199,6 +12235,45 @@
       ],
       "Credits will be added to your balance": [
         "I crediti verranno aggiunti al tuo saldo."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Accedi con lo stesso indirizzo email che hai usato originariamente"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } per ogni affiliazione"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Guadagna fino a ${ maxRewardAmount } in credito. Riceverai ${ referrerRewardAmount } quando la persona che inviti si abbona a un piano ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Amico associato",
+        "Amici associati"
+      ],
+      "Friend subscribed": [
+        "Amico abbonato",
+        "Amici abbonati"
+      ],
+      "Invite friends. Get credits.": [
+        "Invita amici. Ottieni crediti."
+      ],
+      "Invited friends": [
+        "Amici invitati"
+      ],
+      "More sharing options": [
+        "Più opzioni di condivisione"
+      ],
+      "Refer friends": [
+        "Segnala amici"
+      ],
+      "Start earning credits": [
+        "Inizia a guadagnare crediti"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Puoi guadagnare fino a **${ maxRewardAmount }** in credito."
       ]
     }
   }

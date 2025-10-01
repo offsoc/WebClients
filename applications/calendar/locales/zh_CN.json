@@ -6006,6 +6006,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "您仍然可以查看您自己的账户数据，但所有用户账户将从您的组织中移除。"
+      ],
+      "Copy your referral link": [
+        "复制您的推荐链接"
+      ],
+      "Referral link copied to your clipboard": [
+        "邀请链接已复制"
       ]
     },
     "info": {
@@ -6655,6 +6661,9 @@
       ],
       "Credits": [
         "余额"
+      ],
+      "Don't show this again": [
+        "不再显示此内容"
       ]
     },
     "Label for contact group color": {
@@ -11043,6 +11052,9 @@
       ],
       "Your shorter address is now ready": [
         "您的较短地址现已准备就绪"
+      ],
+      "How does it work?": [
+        "如何操作？"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

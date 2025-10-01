@@ -6313,6 +6313,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Veți putea totuși să vă vizualizați datele propriului cont, dar toate conturile de utilizator vor fi eliminate din organizație."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Pasul 1:** Invitați persoane la ${ BRAND_NAME } cu legătura web personală de recomandare."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Pasul 2:** Persoanele recomandare vor primi 2 săptămâni gratuite pentru planul ${ BRAND_NAME } ales."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Pasul 2:** Persoanele recomandate primesc 2 săptămâni gratuite pentru planul lor."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Pasul 3:** Obțineți ${ referrerRewardAmount } credite pentru fiecare persoană care se abonează la un plan."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Pasul 3:** Obțineți ${ referrerRewardAmount } credite pentru fiecare persoană care se abonează la un plan."
+      ],
+      "Copy your referral link": [
+        "Copiere legătură web de recomandare"
+      ],
+      "Referral link copied to your clipboard": [
+        "Legătura de recomandare a fost copiată în memorie."
       ]
     },
     "info": {
@@ -6998,6 +7019,9 @@
       ],
       "Remove Zoom video conference": [
         "Eliminare conferință video Zoom"
+      ],
+      "Don't show this again": [
+        "Nu mai arăta asta"
       ]
     },
     "Label for contact group color": {
@@ -9158,6 +9182,27 @@
       ],
       "Your payment is still being processed": [
         "Plata este încă în curs de procesare."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Suma datorată după probare la ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Metoda de plată este necesară pentru activarea abonamentului după încheierea perioadei de probare."
+      ],
+      "terms and conditions": [
+        "termenii și condițiile"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Această acțiune extinde abonamentul existent. Taxa se va aplica doar pentru noile module și pentru timpul rămas din ciclul de facturare actual. Data reînnoirii abonamentului actual nu va fi modificată."
+      ],
+      "This offer is not available with your current plan.": [
+        "Această ofertă nu este disponibilă cu planul actual."
+      ],
+      "You already have a subscription to this plan.": [
+        "Deja aveți un abonament la acest plan."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Aveți deja un abonament la acest plan. Vă puteți schimba abonamentul pe ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -10144,7 +10189,7 @@
         "Culori personale evenimente"
       ],
       "Get up to ${ credits } in credits.": [
-        "Obțineți până la ${ credits } de credite."
+        "Obțineți până la ${ credits } în credite."
       ],
       "Invite friends to ${ BRAND_NAME }": [
         "Invitați persoane la ${ BRAND_NAME }"
@@ -11733,6 +11778,12 @@
       ],
       "Your shorter address is now ready": [
         "Adresa scurtă este pregătită acum"
+      ],
+      "How does it work?": [
+        "Cum funcționează?"
+      ],
+      "Share your link": [
+        "Partajați-vă legătura web"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12344,6 +12395,55 @@
       ],
       "Passcode:": [
         "Cod de acces:"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Conectați-vă cu aceeași adresă Gmail cu care v-ați conectat inițial."
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Credit pentru porțiunea neutilizată din abonamentul planului anterior."
+      ],
+      "Credits will be added to your balance": [
+        "Creditele vă vor fi adăugate în soldul personal."
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } per recomandare"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Câștigați până la ${ maxRewardAmount } în credite. Veți primi ${ referrerRewardAmount } atunci când persoana pe care o invitați se abonează la un plan ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Persoană alăturată",
+        "Persoane alăturate",
+        "Persoane alăturate"
+      ],
+      "Friend subscribed": [
+        "Persoană abonată",
+        "Persoane abonate",
+        "Persoane abonate"
+      ],
+      "Invite friends. Get credits.": [
+        "Invitați persoane. Obțineți credite."
+      ],
+      "Invited friends": [
+        "Persoane invitate"
+      ],
+      "More sharing options": [
+        "Mai multe opțiuni de partajare"
+      ],
+      "Refer friends": [
+        "Recomandați persoane"
+      ],
+      "Start earning credits": [
+        "Începeți să câștigați credite"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Puteți obține până la **${ maxRewardAmount }** în credite."
       ]
     }
   }

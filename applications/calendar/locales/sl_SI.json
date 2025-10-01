@@ -6000,6 +6000,12 @@
       ],
       "Your trial will end in ${ timeRemaining }.": [
         "Vaše preizkusno obdobje se bo končalo čez ${ timeRemaining }."
+      ],
+      "Copy your referral link": [
+        "Kopirajte svojo povezavo za priporočilo"
+      ],
+      "Referral link copied to your clipboard": [
+        "Povezava za priporočilo je bila kopirana v odložišče."
       ]
     },
     "info": {
@@ -6655,6 +6661,9 @@
       ],
       "Credits": [
         "Dobroimetje"
+      ],
+      "Don't show this again": [
+        "Ne prikazuj več"
       ]
     },
     "Label for contact group color": {
@@ -11216,6 +11225,9 @@
       ],
       "Your shorter address is now ready": [
         "Vaš krajši naslov je zdaj pripravljen"
+      ],
+      "How does it work?": [
+        "Kako deluje?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -6029,6 +6029,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Ainda poderá ver os seus dados de conta, mas todas as contas de utilizador serão removidas da sua organização."
+      ],
+      "Copy your referral link": [
+        "Copiar a sua ligação de referência"
+      ],
+      "Referral link copied to your clipboard": [
+        "Ligação de referência copiada para a área de transferência"
       ]
     },
     "info": {
@@ -6684,6 +6690,9 @@
       ],
       "Credits": [
         "Créditos"
+      ],
+      "Don't show this again": [
+        "Não mostrar novamente"
       ]
     },
     "Label for contact group color": {
@@ -11195,6 +11204,9 @@
       ],
       "Your shorter address is now ready": [
         "O seu endereço mais curto já está pronto"
+      ],
+      "How does it work?": [
+        "Como funciona?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

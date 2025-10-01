@@ -6051,6 +6051,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Anda akan tetap dapat melihat data milik akun Anda, namun seluruh akun pengguna akan dihapus dari organisasi Anda."
+      ],
+      "Copy your referral link": [
+        "Salin tautan rujukan Anda"
+      ],
+      "Referral link copied to your clipboard": [
+        "Tautan rujukan disalin ke papan klip"
       ]
     },
     "info": {
@@ -6718,6 +6724,9 @@
       ],
       "Credits": [
         "Saldo"
+      ],
+      "Don't show this again": [
+        "Jangan tampilkan lagi"
       ]
     },
     "Label for contact group color": {
@@ -11216,6 +11225,9 @@
       ],
       "Your shorter address is now ready": [
         "Alamat lebih pendek Anda sudah siap"
+      ],
+      "How does it work?": [
+        "Bagaimana cara hal ini bekerja?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11744,6 +11756,24 @@
     "b2b_trials_2025_Info": {
       "You can have up to ${ TRIAL_MAX_SCRIBE_SEATS } Scribe seats during the trial period.": [
         "Anda dapat memiliki hingga ${ TRIAL_MAX_SCRIBE_SEATS } kuota Scribe selama masa uji coba."
+      ]
+    },
+    "collider_2025: feature": {
+      "Access to advanced AI models": [
+        "Akses ke berbagai model AI lanjutan"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Silakan masuk dengan alamat Gmail yang sama dengan yang Anda gunakan pertama kali untuk terhubung"
+      ]
+    },
+    "Referral": {
+      "Friend joined": [
+        "Teman yang bergabung"
+      ],
+      "Friend subscribed": [
+        "Teman yang berlangganan"
       ]
     }
   }

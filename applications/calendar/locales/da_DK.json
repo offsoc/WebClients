@@ -6042,6 +6042,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Du vil stadig kunne se dine egne kontodata, men alle brugerkonti vil blive fjernet fra din organisation."
+      ],
+      "Copy your referral link": [
+        "Kopier dit henvisningslink"
+      ],
+      "Referral link copied to your clipboard": [
+        "Henvisningslink kopieret til din udklipsholder"
       ]
     },
     "info": {
@@ -6694,6 +6700,9 @@
       ],
       "Credits": [
         "Kreditter"
+      ],
+      "Don't show this again": [
+        "Vis ikke dette igen"
       ]
     },
     "Label for contact group color": {
@@ -11208,6 +11217,9 @@
       ],
       "Your shorter address is now ready": [
         "Din kortere adresse er nu klar"
+      ],
+      "How does it work?": [
+        "Hvordan fungerer det?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

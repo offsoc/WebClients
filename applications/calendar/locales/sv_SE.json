@@ -6192,6 +6192,27 @@
       ],
       "${ CALENDAR_APP_NAME } requires a ${ BRAND_NAME } address for secure event sync and encryption. ${ claimAddressButton }.": [
         "${ CALENDAR_APP_NAME } kräver en ${ BRAND_NAME }-adress för säker synkronisering och kryptering av händelse. ${ claimAddressButton }."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Steg 1:** Bjud in dina vänner till ${ BRAND_NAME } med din hänvisningslänk."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Steg 2:** Dina vänner får 2 veckor gratis på sitt valda ${ BRAND_NAME }-paket."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Steg 2:** Dina vänner får 2 veckor gratis på sitt paket."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Steg 3:** Få ${ referrerRewardAmount } krediter för varje vän som prenumererar på ett paket."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Steg 3:** Få ${ referrerRewardAmount } krediter för varje person som prenumererar på ett paket."
+      ],
+      "Copy your referral link": [
+        "Kopiera din hänvisningslänk"
+      ],
+      "Referral link copied to your clipboard": [
+        "Hänvisningslänk kopierats till ditt urklipp"
       ]
     },
     "info": {
@@ -6868,6 +6889,12 @@
       ],
       "Remove Zoom video conference": [
         "Ta bort Zoom-videokonferens"
+      ],
+      "Add ${ MEET_APP_NAME } conferencing": [
+        "Lägg till ${ MEET_APP_NAME }-konferens"
+      ],
+      "Don't show this again": [
+        "Visa inte detta igen"
       ]
     },
     "Label for contact group color": {
@@ -8965,6 +8992,21 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Denna åtgärd utökar den befintliga prenumerationen. Du kommer endast att debiteras för de nya utökningarna och den återstående tiden av den nuvarande faktureringsperioden. Förnyelsedatumet för din prenumeration kommer inte att ändras."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Belopp att betala efter provperioden den ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "användarvillkor"
+      ],
+      "This offer is not available with your current plan.": [
+        "Detta erbjudande är inte tillgängligt med ditt nuvarande paket."
+      ],
+      "You already have a subscription to this plan.": [
+        "Du har redan en prenumeration på detta paket."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Du har redan en prenumeration på detta paket. Du kan ändra din prenumeration på ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -11473,6 +11515,12 @@
       ],
       "Your shorter address is now ready": [
         "Din kortare adress är redo nu"
+      ],
+      "How does it work?": [
+        "Hur fungerar det?"
+      ],
+      "Share your link": [
+        "Dela din länk"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12045,6 +12093,37 @@
       ],
       "Credits will be added to your balance": [
         "Krediter kommer att läggas till ditt saldo"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Logga in med samma Gmail-adress som du ursprungligen anslöt"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } per hänvisning"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Tjäna upp till ${ maxRewardAmount } i kredit. Du får ${ referrerRewardAmount } när personen du bjuder in prenumererar på ett ${ BRAND_NAME }-paket."
+      ],
+      "Invite friends. Get credits.": [
+        "Bjud in vänner. Få krediter."
+      ],
+      "Invited friends": [
+        "Inbjudna vänner"
+      ],
+      "More sharing options": [
+        "Fler delningsalternativ"
+      ],
+      "Refer friends": [
+        "Hänvisa vänner"
+      ],
+      "Start earning credits": [
+        "Börja tjäna krediter"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Du kan få upp till **${ maxRewardAmount }** i kredit."
       ]
     }
   }

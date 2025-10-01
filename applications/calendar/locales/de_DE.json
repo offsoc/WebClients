@@ -1245,7 +1245,7 @@
         "Nachdem deine Testversion am ${ formattedDate } endet, wird sie zu einem kostenpflichtigen Abonnement, das sich alle ${ renewCycle } Monate automatisch verlängert. Du wirst nicht belastet, wenn du vor dem ${ formattedDate } kündigst."
       ],
       "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews monthly. You won’t be charged if you cancel before ${ formattedDate }.": [
-        "Nachdem deine Testversion am ${ formattedDate } endet, wird es zu einem kostenpflichtigen Abonnement, das sich monatlich automatisch verlängert. Du wirst nicht belastet, wenn du vor dem ${ formattedDate } kündigst."
+        "Nachdem deine Testversion am ${ formattedDate } endet, wird sie zu einem kostenpflichtigen Abonnement, das sich monatlich automatisch verlängert. Du wirst nicht belastet, wenn du vor dem ${ formattedDate } kündigst."
       ],
       "You can have up to ${ TRIAL_MAX_DEDICATED_IPS } dedicated server during the trial period.": [
         "Du kannst während des Testzeitraums bis zu ${ TRIAL_MAX_DEDICATED_IPS } dedizierte Server haben."
@@ -6229,6 +6229,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Du kannst weiterhin deine eigenen Kontodaten ansehen, aber alle Benutzerkonten werden aus deiner Organisation entfernt."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Schritt 1:** Lade deine Freunde mit deinem Empfehlungs-Link zu ${ BRAND_NAME } ein."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Schritt 2:** Deine Freunde bekommen ihr gewähltes ${ BRAND_NAME }-Abonnement 2 Wochen kostenlos."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Schritt 2:** Deine Freunde erhalten ihr Abonnement 2 Wochen kostenlos."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Schritt 3:** Erhalte ${ referrerRewardAmount } Guthaben für jeden Freund, der ein Abonnement abschließt."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Schritt 3:** Erhalte ${ referrerRewardAmount } Guthaben für jede Person, die ein Abonnement abschließt."
+      ],
+      "Copy your referral link": [
+        "Einladungslink kopieren"
+      ],
+      "Referral link copied to your clipboard": [
+        "Empfehlungslink wurde in die Zwischenablage kopiert"
       ]
     },
     "info": {
@@ -6908,6 +6929,9 @@
       ],
       "Remove Zoom video conference": [
         "Zoom-Videokonferenz entfernen"
+      ],
+      "Don't show this again": [
+        "Nicht erneut anzeigen"
       ]
     },
     "Label for contact group color": {
@@ -9006,6 +9030,24 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Diese Aktion erweitert dein bestehendes Abonnement. Dir werden nur die neuen Ergänzungen für die verbleibende Zeit des aktuellen Abrechnungszeitraums in Rechnung gestellt. Das Verlängerungsdatum deines Abonnements wird nicht geändert."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Betrag fällig nach der Testversion am ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Für die Aktivierung des Abonnements nach dem Ende der Testversion ist eine Zahlungsmethode erforderlich."
+      ],
+      "terms and conditions": [
+        "Allgemeinen Geschäftsbedingungen"
+      ],
+      "This offer is not available with your current plan.": [
+        "Dieses Angebot ist mit deinem aktuellen Abonnement nicht verfügbar."
+      ],
+      "You already have a subscription to this plan.": [
+        "Du hast dieses Abonnement bereits."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Du hast dieses Abonnement bereits. Du kannst dein Abonnement auf ${ subscriptionPlatform } ändern."
       ]
     },
     "Payments.Error": {
@@ -11619,6 +11661,12 @@
       ],
       "Your shorter address is now ready": [
         "Deine kürzere E-Mail-Adresse ist jetzt fertig"
+      ],
+      "How does it work?": [
+        "Wie funktioniert das?"
+      ],
+      "Share your link": [
+        "Deinen Link teilen"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12194,6 +12242,45 @@
       ],
       "Credits will be added to your balance": [
         "Das Guthaben wird dir gutgeschrieben."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Bitte melde dich mit derselben Gmail-Adresse an, die du ursprünglich verbunden hast."
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } pro Empfehlung"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Verdiene bis zu ${ maxRewardAmount } Guthaben. Du erhältst ${ referrerRewardAmount }, wenn die von dir eingeladene Person ein ${ BRAND_NAME }-Abonnement abschließt."
+      ],
+      "Friend joined": [
+        "Freund ist beigetreten",
+        "Freunde sind beigetreten"
+      ],
+      "Friend subscribed": [
+        "Freund hat abonniert",
+        "Freunde haben abonniert"
+      ],
+      "Invite friends. Get credits.": [
+        "Lade Freunde ein. Erhalte Guthaben."
+      ],
+      "Invited friends": [
+        "Eingeladene Freunde"
+      ],
+      "More sharing options": [
+        "Weitere Teilen-Optionen"
+      ],
+      "Refer friends": [
+        "Freunde werben"
+      ],
+      "Start earning credits": [
+        "Fange an, Guthaben zu verdienen"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Du kannst bis zu **${ maxRewardAmount }** als Guthaben erhalten."
       ]
     }
   }

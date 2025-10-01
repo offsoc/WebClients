@@ -1863,6 +1863,9 @@
       ],
       "Web search access": [
         "Acceso a la búsqueda web"
+      ],
+      "Upload and query small files": [
+        "Cargar y consultar archivos pequeños"
       ]
     },
     "collider_2025: Info": {
@@ -6226,6 +6229,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Podrás seguir viendo los datos de tu propia cuenta, pero todas las cuentas de usuario serán eliminadas de tu organización."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Paso 1:** Invita a tus amigos a ${ BRAND_NAME } con tu enlace de referidos."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Paso 2:** Tus amigos obtienen 2 semanas gratis en el plan ${ BRAND_NAME } que elijan."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Paso 2:** Tus amigos obtienen 2 semanas gratis en su plan."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Paso 3:** Consigue ${ referrerRewardAmount } créditos por cada amigo que se suscriba a un plan."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Paso 3:** Consigue ${ referrerRewardAmount } créditos por cada amigo que se suscriba a un plan."
+      ],
+      "Copy your referral link": [
+        "Copia tu enlace de referido"
+      ],
+      "Referral link copied to your clipboard": [
+        "El enlace de referido se ha copiado en el portapapeles"
       ]
     },
     "info": {
@@ -6905,6 +6929,9 @@
       ],
       "Remove Zoom video conference": [
         "Eliminar videoconferencia de Zoom"
+      ],
+      "Don't show this again": [
+        "No mostrar esto de nuevo"
       ]
     },
     "Label for contact group color": {
@@ -9000,6 +9027,15 @@
       ],
       "Your payment is still being processed": [
         "Tu pago aún está siendo procesado."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Cantidad a pagar después de la prueba el ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "términos y condiciones"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Esta acción amplía la suscripción existente. Se te cobrará solo por los nuevos complementos y el tiempo restante del ciclo de facturación actual. La fecha de renovación de tu suscripción no cambiará."
       ]
     },
     "Payments.Error": {
@@ -11613,6 +11649,12 @@
       ],
       "Your shorter address is now ready": [
         "Tu dirección en formato más corto ya está lista."
+      ],
+      "How does it work?": [
+        "¿Cómo funciona?"
+      ],
+      "Share your link": [
+        "Comparte tu enlace"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12180,6 +12222,53 @@
       ],
       "Passcode:": [
         "Código de acceso:"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Por favor, inicia sesión con la misma dirección de Gmail que conectaste originalmente"
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Crédito por la parte no utilizada de tu suscripción al plan anterior"
+      ],
+      "Credits will be added to your balance": [
+        "Se añadirán créditos a tu saldo."
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } por cada referido"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Gana hasta ${ maxRewardAmount } en crédito. Recibirás ${ referrerRewardAmount } cuando la persona que invites se suscriba a un plan de ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Un amigo se unió",
+        "Amigos unidos"
+      ],
+      "Friend subscribed": [
+        "Amigo suscrito",
+        "Amigos suscritos"
+      ],
+      "Invite friends. Get credits.": [
+        "Invita a tus amigos. Obtén créditos."
+      ],
+      "Invited friends": [
+        "Invitar a amigos"
+      ],
+      "More sharing options": [
+        "Más opciones para compartir"
+      ],
+      "Refer friends": [
+        "Invitar a amigos"
+      ],
+      "Start earning credits": [
+        "Empieza a ganar créditos"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Gana hasta **${ maxRewardAmount }** en crédito."
       ]
     }
   }

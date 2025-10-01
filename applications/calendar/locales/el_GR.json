@@ -4309,7 +4309,7 @@
         "Έχετε προσκληθεί να εγγραφείτε στο ${ bannerOrganization }. ${ viewInviteButton }"
       ],
       "You have successfully joined the family group": [
-        "Συμμετείχατε με επιτυχία στην ομάδα οικογένειας"
+        "Έχετε ενταχθεί με επιτυχία στην οικογενειακή ομάδα"
       ],
       "You have unpaid invoices. Please pay them before joining a family plan.": [
         "Έχετε ανεξόφλητα τιμολόγια. Παρακαλούμε πληρώστε τα πριν συμμετάσχετε σε ένα οικογενειακό πλάνο."
@@ -6229,6 +6229,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Θα εξακολουθείτε να μπορείτε να βλέπετε τα δικά σας δεδομένα λογαριασμού, αλλά όλοι οι λογαριασμοί χρηστών θα καταργηθούν από τον οργανισμό σας."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Βήμα 1:** Προσκαλέστε τους φίλους σας στο ${ BRAND_NAME } με τον σύνδεσμο παραπομπής σας."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Βήμα 2:** Οι φίλοι σας λαμβάνουν 2 εβδομάδες δωρεάν στο επιλεγμένο ${ BRAND_NAME } πλάνο τους."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Βήμα 2:** Οι φίλοι σας λαμβάνουν 2 εβδομάδες δωρεάν στο πλάνο τους."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Βήμα 3:** Κερδίστε ${ referrerRewardAmount } πιστώσεις για κάθε φίλο που εγγράφεται σε ένα πλάνο."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Βήμα 3:** Κερδίστε ${ referrerRewardAmount } σε πιστώσεις για κάθε άτομο που εγγράφεται σε ένα πλάνο."
+      ],
+      "Copy your referral link": [
+        "Αντιγράψτε τον σύνδεσμο παραπομπής σας"
+      ],
+      "Referral link copied to your clipboard": [
+        "Ο σύνδεσμος παραπομπής αντιγράφηκε στο πρόχειρό σας"
       ]
     },
     "info": {
@@ -6908,6 +6929,9 @@
       ],
       "Remove Zoom video conference": [
         "Κατάργηση τηλεδιάσκεψης Zoom"
+      ],
+      "Don't show this again": [
+        "Να μην εμφανιστεί ξανά"
       ]
     },
     "Label for contact group color": {
@@ -9006,6 +9030,24 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Αυτή η ενέργεια επεκτείνει την υπάρχουσα συνδρομή. Θα χρεωθείτε μόνο για τα νέα πρόσθετα και τον υπόλοιπο χρόνο του τρέχοντος κύκλου χρέωσης. Η ημερομηνία ανανέωσης της συνδρομής σας δε θα αλλάξει."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Ποσό οφειλής μετά τη δοκιμή στις ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Η μέθοδος πληρωμής απαιτείται για την ενεργοποίηση της συνδρομής μετά τη λήξη της δοκιμαστικής περιόδου."
+      ],
+      "terms and conditions": [
+        "όροι και προϋποθέσεις"
+      ],
+      "This offer is not available with your current plan.": [
+        "Αυτή η προσφορά δεν είναι διαθέσιμη με το τρέχον πλάνο σας."
+      ],
+      "You already have a subscription to this plan.": [
+        "Έχετε ήδη μια συνδρομή σε αυτό το πλάνο."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Έχετε ήδη συνδρομή σε αυτό το πλάνο. Μπορείτε να αλλάξετε τη συνδρομή σας στο ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -11529,6 +11571,12 @@
       ],
       "Your shorter address is now ready": [
         "Η συντομότερη διεύθυνσή σας είναι τώρα έτοιμη"
+      ],
+      "How does it work?": [
+        "Πώς λειτουργεί;"
+      ],
+      "Share your link": [
+        "Κοινοποιήστε το σύνδεσμο σας"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12104,6 +12152,45 @@
       ],
       "Credits will be added to your balance": [
         "Οι πιστώσεις θα προστεθούν στο υπόλοιπό σας"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Παρακαλούμε συνδεθείτε με την ίδια διεύθυνση Gmail που συνδεθήκατε αρχικά."
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } ανά παραπομπή"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Κερδίστε έως και ${ maxRewardAmount } σε πίστωση. Θα λάβετε ${ referrerRewardAmount } όταν το άτομο που προσκαλέσατε εγγραφεί σε ένα πλάνο ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Φίλος εντάχθηκε",
+        "Φίλοι εντάχθηκαν"
+      ],
+      "Friend subscribed": [
+        "Φίλος εγγράφηκε",
+        "Φίλοι εγγράφηκαν"
+      ],
+      "Invite friends. Get credits.": [
+        "Προσκαλέστε φίλους. Λάβετε πιστώσεις."
+      ],
+      "Invited friends": [
+        "Προσκεκλημένοι φίλοι"
+      ],
+      "More sharing options": [
+        "Περισσότερες επιλογές κοινής χρήσης"
+      ],
+      "Refer friends": [
+        "Συστήστε φίλους"
+      ],
+      "Start earning credits": [
+        "Ξεκινήστε να κερδίζετε πιστώσεις"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Μπορείτε να λάβετε έως και **${ maxRewardAmount }** σε πίστωση."
       ]
     }
   }

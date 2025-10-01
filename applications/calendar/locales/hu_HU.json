@@ -5962,6 +5962,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Továbbra is megtekintheti saját fiókadatait, de az összes felhasználói fiók eltávolításra kerül a szervezetéből."
+      ],
+      "Copy your referral link": [
+        "Ajánló hivatkozás másolása"
+      ],
+      "Referral link copied to your clipboard": [
+        "Ajánló hivatkozás kimásolva a vágólapra"
       ]
     },
     "info": {
@@ -6611,6 +6617,9 @@
       ],
       "Credits": [
         "Kredit"
+      ],
+      "Don't show this again": [
+        "Ne jelenjen meg többet"
       ]
     },
     "Label for contact group color": {
@@ -11066,6 +11075,9 @@
       ],
       "Your shorter address is now ready": [
         "A rövidebb címe elkészült"
+      ],
+      "How does it work?": [
+        "Hogyan működik?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

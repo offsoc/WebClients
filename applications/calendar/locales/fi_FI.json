@@ -5950,6 +5950,12 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Voit silti tarkastella omia tilitietojasi, mutta kaikki käyttäjätilit poistetaan organisaatiostasi."
+      ],
+      "Copy your referral link": [
+        "Kopioi suosituslinkkisi"
+      ],
+      "Referral link copied to your clipboard": [
+        "Suosituslinkki kopioitiin leikepöydälle"
       ]
     },
     "info": {
@@ -6605,6 +6611,9 @@
       ],
       "Credits": [
         "Krediitit"
+      ],
+      "Don't show this again": [
+        "Älä näytä tätä uudelleen"
       ]
     },
     "Label for contact group color": {
@@ -11012,6 +11021,9 @@
       ],
       "Your shorter address is now ready": [
         "Lyhyempi osoittesi on nyt valmis"
+      ],
+      "How does it work?": [
+        "Miten se toimii?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

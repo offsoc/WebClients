@@ -6397,6 +6397,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Stále si budete môcť prezerať svoje vlastné údaje, ale všetky používateľské účty budú z vašej organizácie odstránené."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Krok 1:** Pozvite svojich priateľov do ${ BRAND_NAME } pomocou svojho odporúčacieho odkazu."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Krok 2:** Vaši priatelia získajú 2 týždne zadarmo na zvolený ${ BRAND_NAME } plán."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Krok 2:** Vaši priatelia získajú 2 týždne zadarmo v rámci svojho plánu."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Krok 3:** Získajte ${ referrerRewardAmount } kreditov za každého priateľa, ktorý si predplatí niektorý z plánov."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Krok 3:** Získajte ${ referrerRewardAmount } v kreditoch za každú osobu, ktorá si predplatí plán."
+      ],
+      "Copy your referral link": [
+        "Kopírujte váš odporúčací odkaz"
+      ],
+      "Referral link copied to your clipboard": [
+        "Odkaz skopírovaný do schránky"
       ]
     },
     "info": {
@@ -7088,6 +7109,9 @@
       ],
       "Remove Zoom video conference": [
         "Odstrániť videokonferenciu Zoom"
+      ],
+      "Don't show this again": [
+        "Nabudúce nezobrazovať"
       ]
     },
     "Label for contact group color": {
@@ -9316,6 +9340,24 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Táto akcia rozširuje existujúce predplatné. Bude vám účtovaný poplatok len za nové doplnky a zostávajúci čas aktuálneho fakturačného obdobia. Dátum obnovenia vášho predplatného sa nezmení."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Suma splatná po skončení skúšobnej prevádzky dňa ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Spôsob platby potrebný na aktiváciu predplatného po skončení skúšobnej doby."
+      ],
+      "terms and conditions": [
+        "zmluvnými podmienkami používania"
+      ],
+      "This offer is not available with your current plan.": [
+        "Táto ponuka nie je s vaším aktuálnym programom dostupná."
+      ],
+      "You already have a subscription to this plan.": [
+        "Tento plán už máte predplatený."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Tento plán už máte predplatený. Predplatné môžete zmeniť na ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -11943,6 +11985,12 @@
       ],
       "Your shorter address is now ready": [
         "Vaša skrátená adresa je pripravená"
+      ],
+      "How does it work?": [
+        "Ako to funguje?"
+      ],
+      "Share your link": [
+        "Zdieľajte váš odkaz"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12606,6 +12654,49 @@
       ],
       "Credits will be added to your balance": [
         "Kredity budú pridané k vášmu zostatku"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Prihláste sa pomocou tej istej Gmail adresy, ktorú ste použili pri prvom prihlásení, prosím."
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } za odporúčanie"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Získajte až ${ maxRewardAmount } v kreditoch. Získate ${ referrerRewardAmount }, keď si osoba, ktorú pozvete predplatí ${ BRAND_NAME } plán."
+      ],
+      "Friend joined": [
+        "Priateľ sa pripojil",
+        "Priatelia sa pripojili",
+        "Priateľov sa pripojilo",
+        "Priateľov sa pripojilo"
+      ],
+      "Friend subscribed": [
+        "Priateľ si predplatil",
+        "Priatelia si predplatili",
+        "Priateľov si predplatilo",
+        "Priateľov si predplatilo"
+      ],
+      "Invite friends. Get credits.": [
+        "Pozvite priateľov. Získajte kredity."
+      ],
+      "Invited friends": [
+        "Pozvite priateľov"
+      ],
+      "More sharing options": [
+        "Viac možností zdieľania"
+      ],
+      "Refer friends": [
+        "Odporučiť priateľov"
+      ],
+      "Start earning credits": [
+        "Začnite zarábať kredity"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Môžete získať kredit až **${ maxRewardAmount }**."
       ]
     }
   }

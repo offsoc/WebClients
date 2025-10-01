@@ -5674,6 +5674,12 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Схоже, системний часовий пояс змінено на ${ timezone }. Хочете оновити налаштування часового поясу?"
+      ],
+      "Copy your referral link": [
+        "Скопіюйте своє реферальне посилання"
+      ],
+      "Referral link copied to your clipboard": [
+        "Реферальне посилання успішно скопійовано до буферу обміну"
       ]
     },
     "info": {
@@ -6276,6 +6282,9 @@
       ],
       "Credits": [
         "Кредити"
+      ],
+      "Don't show this again": [
+        "Більше не показувати"
       ]
     },
     "Label for contact group color": {
@@ -10553,6 +10562,9 @@
       ],
       "Your shorter address is now ready": [
         "Ваша коротша адреса готова"
+      ],
+      "How does it work?": [
+        "Як це працює?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
