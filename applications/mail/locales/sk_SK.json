@@ -1676,6 +1676,9 @@
       ],
       "Toggle referral": [
         "Prepnúť odporúčanie"
+      ],
+      "Customize categories": [
+        "Prispôsobenie kategórií"
       ]
     },
     "action": {
@@ -6732,7 +6735,7 @@
         "${ storage } úložisko"
       ],
       "${ subscription.UnreadMessageCount } unread": [
-        "${ subscription.UnreadMessageCount } neprečítaných",
+        "${ subscription.UnreadMessageCount } neprečítaná",
         "${ subscription.UnreadMessageCount } neprečítané",
         "${ subscription.UnreadMessageCount } neprečítaných",
         "${ subscription.UnreadMessageCount } neprečítaných"
@@ -8898,7 +8901,7 @@
         "Vybrali ste **${ elementsCount } konverzáciu** v ${ location }",
         "Vybrali ste **${ elementsCount } konverzácie** v ${ location }",
         "Vybrali ste **${ elementsCount } konverzácií** v ${ location }",
-        "Vybrali ste **${ elementsCount } konverzácie** v ${ location }"
+        "Vybrali ste **${ elementsCount } konverzácií** v ${ location }"
       ],
       "You selected **${ elementsCount } conversation**.": [
         "Vybrali ste **${ elementsCount } konverzáciu**.",
@@ -10124,6 +10127,21 @@
       ],
       "Video conference": [
         "Videokonferencia"
+      ],
+      "${ count } unread conversation": [
+        "${ count } neprečítaná konverzácia",
+        "${ count } neprečítané konverzácie",
+        "${ count } neprečítaných konverzácií",
+        "${ count } neprečítaných konverzácií"
+      ],
+      "${ count } unread message": [
+        "${ count } neprečítaná správa",
+        "${ count } neprečítané správy",
+        "${ count } neprečítaných správ",
+        "${ count } neprečítaných správ"
+      ],
+      "Add or remove categories. Set or turn off notifications. Adjust anytime in the ${ menuIcon } menu.": [
+        "Pridajte alebo odstráňte kategórie. Nastavte alebo vypnite upozornenia. Upravujte kedykoľvek v ponuke ${ menuIcon }."
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11979,6 +11997,12 @@
       ],
       "Use your ${ MAIL_APP_NAME } address to sign in to online services to avoid being tracked and profiled. Change your email for popular services now. ${ learnMoreLink }": [
         "Na prihlásenie do online služieb používajte svoju adresu ${ MAIL_APP_NAME }, aby ste sa vyhli sledovaniu a profilovaniu. Zmeňte si teraz svoj email pre obľúbené služby. ${ learnMoreLink }"
+      ],
+      "Change your email address for popular services now to avoid being tracked and profiled. ${ learnMoreLink }": [
+        "Zmeňte svoju emailovú adresu pre populárne služby teraz, aby ste sa vyhli sledovaniu a profilovaniu. ${ learnMoreLink }"
+      ],
+      "Maybe later": [
+        "Možno neskôr"
       ]
     },
     "Onboarding modal": {
@@ -12475,6 +12499,24 @@
       ],
       "You will be charged on ${ formattedDate }, renewing every month.": [
         "Platba vám bude účtovaná ${ formattedDate } a bude sa obnovovať každý mesiac."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Suma splatná po skončení skúšobnej prevádzky dňa ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Spôsob platby potrebný na aktiváciu predplatného po skončení skúšobnej doby."
+      ],
+      "terms and conditions": [
+        "zmluvnými podmienkami používania"
+      ],
+      "This offer is not available with your current plan.": [
+        "Táto ponuka nie je s vaším aktuálnym programom dostupná."
+      ],
+      "You already have a subscription to this plan.": [
+        "Tento plán už máte predplatený."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Tento plán už máte predplatený. Predplatné môžete zmeniť na ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -15948,6 +15990,9 @@
       ],
       "Share your link": [
         "Zdieľajte váš odkaz"
+      ],
+      "Customize categories to fit your needs": [
+        "Prispôsobte kategórie svojim potrebám"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16655,6 +16700,11 @@
       ],
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Môžete získať kredit až **${ maxRewardAmount }**."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Prihláste sa pomocou tej istej Gmail adresy, ktorú ste použili pri prvom prihlásení, prosím."
       ]
     }
   }

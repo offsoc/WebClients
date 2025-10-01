@@ -634,7 +634,7 @@
         "Атрымаць праверачны код"
       ],
       "Go to ${ planOrAppName }": [
-        "Перайдзіце ў ${ planOrAppName }"
+        "Перайсці ў ${ planOrAppName }"
       ],
       "Go to label": [
         "Перайсці ў меткі"
@@ -1676,6 +1676,18 @@
       ],
       "Toggle referral": [
         "Пераключыць рэфералаў"
+      ],
+      "Continue with categories": [
+        "Працягнуць з катэгорыямі"
+      ],
+      "Customize categories": [
+        "Наладзіць катэгорыі"
+      ],
+      "Is this private?": [
+        "Гэта прыватна?"
+      ],
+      "Keep inbox as before": [
+        "Захаваць паштовую скрыню як раней"
       ]
     },
     "action": {
@@ -9082,6 +9094,21 @@
       ],
       "Referral link copied to your clipboard": [
         "Рэферальная спасылка скапіявана ў буфер абмену"
+      ],
+      "Categories work like spam filters. We only look for patterns in unencrypted header and technical data. We do not read email content, share your data, or infringe on your privacy.": [
+        "Катэгорыі працуюць як спам-фільтры. Мы шукаем шаблоны толькі ў незашыфраваных загалоўках і тэхнічных дадзеных. Мы не чытаем змесціва электроннай пошты, не абагульваем вашыя дадзеныя і не парушаем вашу прыватнасць."
+      ],
+      "Includes bills, receipts, orders, and bookings.": [
+        "Уключае рахункі, квітанцыі, замовы і браніраванні."
+      ],
+      "Includes marketing emails like offers and product announcements.": [
+        "Уключае маркетынгавыя электронныя лісты, такія як прапановы і аб'явы аб прадуктах."
+      ],
+      "Includes news recaps and other non-promotional content. ": [
+        "Уключае агляды навін і іншы нерэкламны кантэнт. "
+      ],
+      "Includes updates from social networks and media-sharing sites.": [
+        "Уключае абнаўленні з сацыяльных сетак і сайтаў абмену медыякантэнтам."
       ]
     },
     "info": {
@@ -10124,6 +10151,24 @@
       ],
       "Video conference": [
         "Відэаканферэнцыя"
+      ],
+      "${ count } unread conversation": [
+        "${ count } непрачытаная размова",
+        "${ count } непрачытаныя размовы",
+        "${ count } непрачытаных размоў",
+        "${ count } непрачытаных размоў"
+      ],
+      "${ count } unread message": [
+        "${ count } непрачытанае паведамленне",
+        "${ count } непрачытаныя паведамленні",
+        "${ count } непрачытаных паведамленняў",
+        "${ count } непрачытаных паведамленняў"
+      ],
+      "Add or remove categories. Set or turn off notifications. Adjust anytime in the ${ menuIcon } menu.": [
+        "Дадавайце або выдаляйце катэгорыі. Наладжвайце або выключайце апавяшчэнні. Наладжвайце меню ${ menuIcon } у любы час."
+      ],
+      "No more missing important messages! These now show up under ${ primaryCopy }. Everything else is sorted by category so they’re easy to find and don’t clutter your inbox.": [
+        "Больш не прапусціце важныя паведамленні! Яны цяпер адлюстроўваюцца ў раздзеле ${ primaryCopy }. Усё астатняе адсартавана па катэгорыях, таму іх лёгка знайсці і яны не захламляюць вашу паштовую скрыню."
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11979,6 +12024,12 @@
       ],
       "Use your ${ MAIL_APP_NAME } address to sign in to online services to avoid being tracked and profiled. Change your email for popular services now. ${ learnMoreLink }": [
         "Выкарыстоўвайце адрас ${ MAIL_APP_NAME } для ўваходу ў сеткавыя сэрвісы, каб пазбегнуць адсочвання і прафілявання. Змяніце сваю электронную пошту для папулярных сэрвісаў. ${ learnMoreLink }"
+      ],
+      "Change your email address for popular services now to avoid being tracked and profiled. ${ learnMoreLink }": [
+        "Змяніце свой адрас электроннай пошты для папулярных сэрвісаў, каб пазбегнуць адсочвання і прафілявання. ${ learnMoreLink }"
+      ],
+      "Maybe later": [
+        "Магчыма пазней"
       ]
     },
     "Onboarding modal": {
@@ -12475,6 +12526,24 @@
       ],
       "You will be charged on ${ formattedDate }, renewing every month.": [
         "Аплата будзе спагнана ${ formattedDate }. Падаўжэнне будзе адбывацца штомесяц."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Сума да аплаты пасля пробнага перыяду на ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Спосаб аплаты патрабуецца для актывацыі падпіскі пасля завяршэння пробнага перыяду."
+      ],
+      "terms and conditions": [
+        "ўмовы выкарыстання"
+      ],
+      "This offer is not available with your current plan.": [
+        "Гэта прапанова недаступна з вашым бягучым тарыфным планам."
+      ],
+      "You already have a subscription to this plan.": [
+        "У вас ужо ёсць падпіска на гэты тарыфны план."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "У вас ужо ёсць падпіска на гэты тарыфны план. Вы можаце змяніць сваю падпіску на ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -15948,6 +16017,15 @@
       ],
       "Share your link": [
         "Абагуліць сваю спасылку"
+      ],
+      "Built for privacy": [
+        "Створаны для прыватнасці"
+      ],
+      "Customize categories to fit your needs": [
+        "Наладзьце катэгорыі пад свае патрэбы"
+      ],
+      "Introducing email categories": [
+        "Прадстаўляем катэгорыі электроннай пошты"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16655,6 +16733,11 @@
       ],
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Вы можаце атрымаць да **${ maxRewardAmount }** у крэдытах."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Увайдзіце з тым жа адрасам Gmail, які вы першапачаткова падключылі"
       ]
     }
   }

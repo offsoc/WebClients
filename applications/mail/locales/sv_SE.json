@@ -1666,6 +1666,18 @@
       ],
       "Toggle referral": [
         "Slå på/av hänvisning"
+      ],
+      "Continue with categories": [
+        "Fortsätt med kategorier"
+      ],
+      "Customize categories": [
+        "Anpassa kategorier"
+      ],
+      "Is this private?": [
+        "Är detta privat?"
+      ],
+      "Keep inbox as before": [
+        "Behåll inkorg som förut"
       ]
     },
     "action": {
@@ -8750,6 +8762,12 @@
       ],
       "Referral link copied to your clipboard": [
         "Hänvisningslänk kopierats till ditt urklipp"
+      ],
+      "All messages will be shown in Inbox, and the category tabs and tags will no longer be visible. ": [
+        "Alla meddelanden kommer att visas i inkorgen, och kategoriflikarna och etiketterna kommer inte längre att vara synliga. "
+      ],
+      "Includes bills, receipts, orders, and bookings.": [
+        "Inkluderar fakturor, kvitton, beställningar och bokningar."
       ]
     },
     "info": {
@@ -9771,6 +9789,20 @@
       ],
       "Which category should this be recategorized under?": [
         "Vilken kategori ska detta omkategoriseras under?"
+      ],
+      "${ count } unread conversation": [
+        "${ count } oläst konversation",
+        "${ count } olästa konversationer"
+      ],
+      "${ count } unread message": [
+        "${ count } oläst meddelande",
+        "${ count } olästa meddelanden"
+      ],
+      "Add or remove categories. Set or turn off notifications. Adjust anytime in the ${ menuIcon } menu.": [
+        "Lägg till eller ta bort kategorier. Ställ in eller stäng av aviseringar. Justera när som helst i ${ menuIcon }-menyn."
+      ],
+      "Help us improve the upcoming mail categorization": [
+        "Hjälp oss att förbättra den kommande e-postkategoriseringen"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11561,6 +11593,12 @@
       ],
       "Use your ${ MAIL_APP_NAME } address to sign in to online services to avoid being tracked and profiled. Change your email for popular services now. ${ learnMoreLink }": [
         "Använd din ${ MAIL_APP_NAME }-adress för att logga in på tjänster online för att undvika att bli spårad och profilerad. Ändra din e-post för populära tjänster nu. ${ learnMoreLink }"
+      ],
+      "Change your email address for popular services now to avoid being tracked and profiled. ${ learnMoreLink }": [
+        "Ändra din e-postadress för populära tjänster nu för att undvika bli spårad och profileras. ${ learnMoreLink }"
+      ],
+      "Maybe later": [
+        "Kanske senare"
       ]
     },
     "Onboarding modal": {
@@ -12035,6 +12073,21 @@
       ],
       "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
         "Denna åtgärd utökar den befintliga prenumerationen. Du kommer endast att debiteras för de nya utökningarna och den återstående tiden av den nuvarande faktureringsperioden. Förnyelsedatumet för din prenumeration kommer inte att ändras."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Belopp att betala efter provperioden den ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "användarvillkor"
+      ],
+      "This offer is not available with your current plan.": [
+        "Detta erbjudande är inte tillgängligt med ditt nuvarande paket."
+      ],
+      "You already have a subscription to this plan.": [
+        "Du har redan en prenumeration på detta paket."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Du har redan en prenumeration på detta paket. Du kan ändra din prenumeration på ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -15305,6 +15358,15 @@
       ],
       "Share your link": [
         "Dela din länk"
+      ],
+      "Built for privacy": [
+        "Byggd för integritet"
+      ],
+      "Customize categories to fit your needs": [
+        "Anpassa kategorier för att passa dina behov"
+      ],
+      "Introducing email categories": [
+        "Introducerar e-postkategorier"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15907,6 +15969,11 @@
       ],
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Du kan få upp till **${ maxRewardAmount }** i kredit."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Logga in med samma Gmail-adress som du ursprungligen anslöt"
       ]
     }
   }

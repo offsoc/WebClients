@@ -1666,6 +1666,15 @@
       ],
       "Toggle referral": [
         "Activer/désactiver le parrainage"
+      ],
+      "Continue with categories": [
+        "Continuer avec les catégories"
+      ],
+      "Is this private?": [
+        "Est-ce privé ?"
+      ],
+      "Keep inbox as before": [
+        "Conserver la boite de réception telle quelle"
       ]
     },
     "action": {
@@ -8802,6 +8811,21 @@
       ],
       "Referral link copied to your clipboard": [
         "Le lien de parrainage est copié dans votre presse-papiers."
+      ],
+      "Categories work like spam filters. We only look for patterns in unencrypted header and technical data. We do not read email content, share your data, or infringe on your privacy.": [
+        "Les catégories fonctionnent comme des filtres anti-indésirables/spam. Nous recherchons uniquement des schémas dans les en-têtes non chiffrés et les données techniques. Nous ne lisons pas le contenu des messages, ne partageons pas vos données et n'empiétons pas sur votre respect de la vie privée."
+      ],
+      "Includes bills, receipts, orders, and bookings.": [
+        "Comprend les factures, les accusés de réception, les commandes et les réservations."
+      ],
+      "Includes marketing emails like offers and product announcements.": [
+        "Comprend les messages marketing tels que les offres et les annonces de produits."
+      ],
+      "Includes news recaps and other non-promotional content. ": [
+        "Inclut des résumés d'actualités et d'autres contenus non promotionnels. "
+      ],
+      "Includes updates from social networks and media-sharing sites.": [
+        "Comprend les mises à jour des réseaux sociaux et des sites de partage de médias."
       ]
     },
     "info": {
@@ -9832,6 +9856,17 @@
       ],
       "Video conference": [
         "Vidéoconférence"
+      ],
+      "${ count } unread conversation": [
+        "${ count } conversation non lue",
+        "${ count } conversations non lues"
+      ],
+      "${ count } unread message": [
+        "${ count } message non lu",
+        "${ count } messages non lus"
+      ],
+      "No more missing important messages! These now show up under ${ primaryCopy }. Everything else is sorted by category so they’re easy to find and don’t clutter your inbox.": [
+        "Vous ne manquerez plus de messages importants ! Ceux-ci apparaissent désormais sous ${ primaryCopy }. Tout le reste est trié par catégorie, ce qui les rend faciles à trouver et évite d'encombrer votre boîte de réception."
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11617,6 +11652,12 @@
       ],
       "Use your ${ MAIL_APP_NAME } address to sign in to online services to avoid being tracked and profiled. Change your email for popular services now. ${ learnMoreLink }": [
         "Utilisez votre adresse ${ MAIL_APP_NAME } pour vous connecter aux services en ligne afin d'éviter d'être suivi et profilé. Modifiez dès à présent votre e-mail pour les services que vous utilisez le plus. ${ learnMoreLink }"
+      ],
+      "Change your email address for popular services now to avoid being tracked and profiled. ${ learnMoreLink }": [
+        "Changez votre adresse e-mail pour les services populaires dès maintenant afin d'éviter d'être suivi et profilé. ${ learnMoreLink }"
+      ],
+      "Maybe later": [
+        "Peut-être plus tard"
       ]
     },
     "Onboarding modal": {
@@ -12103,6 +12144,24 @@
       ],
       "You will be charged on ${ formattedDate }, renewing every month.": [
         "Vous serez facturé le ${ formattedDate }, renouvelable tous les mois."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Montant dû après la version d'essai le ${ formattedDate }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Un moyen de paiement est requis pour que l'abonnement soit activé après la fin de la version d'essai."
+      ],
+      "terms and conditions": [
+        "conditions générales d'utilisation"
+      ],
+      "This offer is not available with your current plan.": [
+        "Cette offre n'est pas disponible avec votre abonnement actuel."
+      ],
+      "You already have a subscription to this plan.": [
+        "Vous êtes déjà abonné à cet abonnement."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Vous avez déjà un abonnement. Vous pouvez modifier votre abonnement sur ${ subscriptionPlatform }."
       ]
     },
     "Payments.Error": {
@@ -15483,6 +15542,12 @@
       ],
       "Share your link": [
         "Partagez votre lien"
+      ],
+      "Built for privacy": [
+        "Conçu pour le respect de la vie privée"
+      ],
+      "Introducing email categories": [
+        "Présentation des catégories de messages"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16096,6 +16161,11 @@
       ],
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Vous pouvez obtenir jusqu'à **${ maxRewardAmount }** en crédits."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Veuillez vous connecter avec la même adresse Gmail que celle que vous avez connectée à l'origine"
       ]
     }
   }

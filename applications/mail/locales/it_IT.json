@@ -9833,6 +9833,14 @@
       ],
       "Video conference": [
         "Videoconferenza"
+      ],
+      "${ count } unread conversation": [
+        "${ count } conversazione non letta",
+        "${ count } conversazioni non lette"
+      ],
+      "${ count } unread message": [
+        "${ count } messaggio non letto",
+        "${ count } messaggi non letti"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11623,6 +11631,12 @@
       ],
       "Use your ${ MAIL_APP_NAME } address to sign in to online services to avoid being tracked and profiled. Change your email for popular services now. ${ learnMoreLink }": [
         "Utilizza il tuo indirizzo ${ MAIL_APP_NAME } per accedere ai servizi online per evitare di essere tracciato e profilato. Cambia subito la tua email per i servizi più diffusi. ${ learnMoreLink }"
+      ],
+      "Change your email address for popular services now to avoid being tracked and profiled. ${ learnMoreLink }": [
+        "Cambia il tuo indirizzo email per i servizi più popolari ora per evitare di essere tracciato e profilato. ${ learnMoreLink }"
+      ],
+      "Maybe later": [
+        "Forse più tardi"
       ]
     },
     "Onboarding modal": {
@@ -12109,6 +12123,12 @@
       ],
       "You will be charged on ${ formattedDate }, renewing every month.": [
         "Ti verrà addebitato il ${ formattedDate }, con rinnovo ogni mese."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Importo dovuto dopo la prova il ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "Termini e Condizioni"
       ]
     },
     "Payments.Error": {
@@ -16102,6 +16122,11 @@
       ],
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Puoi guadagnare fino a **${ maxRewardAmount }** in credito."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Accedi con lo stesso indirizzo email che hai usato originariamente"
       ]
     }
   }

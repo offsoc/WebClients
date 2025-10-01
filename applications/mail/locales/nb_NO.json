@@ -1667,6 +1667,9 @@
       ],
       "Toggle referral": [
         "Slå verving av/på"
+      ],
+      "Customize categories": [
+        "Tilpass kategorier"
       ]
     },
     "action": {
@@ -9833,6 +9836,17 @@
       ],
       "Video conference": [
         "Videokonferanse"
+      ],
+      "${ count } unread conversation": [
+        "${ count } ulest samtale",
+        "${ count } uleste samtaler"
+      ],
+      "${ count } unread message": [
+        "${ count } ulest melding",
+        "${ count } uleste meldinger"
+      ],
+      "Add or remove categories. Set or turn off notifications. Adjust anytime in the ${ menuIcon } menu.": [
+        "Legg til eller fjern kategorier. Angi eller slå av varsler. Juster når som helst i ${ menuIcon }-menyen."
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11618,6 +11632,12 @@
       ],
       "Use your ${ MAIL_APP_NAME } address to sign in to online services to avoid being tracked and profiled. Change your email for popular services now. ${ learnMoreLink }": [
         "Bruk ${ MAIL_APP_NAME }-adressen din til å logge på nettjenester for å unngå å bli sporet og profilert. Endre e-postadressen din for populære tjenester nå. ${ learnMoreLink }"
+      ],
+      "Change your email address for popular services now to avoid being tracked and profiled. ${ learnMoreLink }": [
+        "Endre e-postadressen din for populære tjenester nå for å unngå sporing og profilering. ${ learnMoreLink }"
+      ],
+      "Maybe later": [
+        "Kanskje senere"
       ]
     },
     "Onboarding modal": {
@@ -12104,6 +12124,12 @@
       ],
       "You will be charged on ${ formattedDate }, renewing every month.": [
         "Du blir belastet på ${ formattedDate }, og fornyes hver måned."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Beløp som forfaller etter prøveperioden på ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "vilkår og betingelser"
       ]
     },
     "Payments.Error": {
@@ -15389,6 +15415,9 @@
       ],
       "Share your link": [
         "Del koblingen din"
+      ],
+      "Customize categories to fit your needs": [
+        "Tilpass kategorier etter dine behov"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16002,6 +16031,11 @@
       ],
       "You can get up to **${ maxRewardAmount }** in credit.": [
         "Du kan få opptil **${ maxRewardAmount }** i kreditt."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Logg på med den samme Gmail-adressen du opprinnelig koblet til"
       ]
     }
   }

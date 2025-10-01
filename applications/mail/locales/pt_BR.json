@@ -1660,6 +1660,15 @@
       ],
       "Remove video conference": [
         "Remover videoconferência"
+      ],
+      "Customize categories": [
+        "Personalizar categorias"
+      ],
+      "Toggle notifications": [
+        "Alternar notificações"
+      ],
+      "Toggle referral": [
+        "Alternar indicação"
       ]
     },
     "action": {
@@ -4123,7 +4132,7 @@
         "Mesclando contatos... Isso pode levar alguns minutos. Quando o processo estiver concluído, você poderá fechar esta janela."
       ],
       "New emails from ${ senderEmailAddress } and ${ otherSendersCount } other won't be delivered and will be permanently deleted.": [
-        "Novos e-mails de ${ senderEmailAddress } e outros ${ otherSendersCount } não serão entregues e serão excluídos permanentemente.",
+        "Novos e-mails de ${ senderEmailAddress } e ${ otherSendersCount } outro, não serão entregues e serão excluídos permanentemente.",
         "Novos e-mails de ${ senderEmailAddress } e outros ${ otherSendersCount } não serão entregues e serão excluídos permanentemente."
       ],
       "New emails from ${ senderEmailAddress } won't be delivered and will be permanently deleted.": [
@@ -4936,8 +4945,8 @@
         "O valor devido foi alterado. Tente novamente."
       ],
       "The attachment could not be decrypted.\nIf you have the corresponding private key, you will still be able to decrypt\nthe file with a program such as GnuPG.": [
-        "Não foi possível descriptografar o anexo.\nCaso tenha a chave privada correspondente, você ainda será capaz de descriptografar\no arquivo com um programa como o GnuPG.",
-        "Não foi possível descriptografar alguns dos anexos.\nCaso tenha a chave privada correspondente, você ainda será capaz de descriptografar\nos arquivos com um programa como o GnuPG."
+        "O anexo não pôde ser descriptografado.\nSe você tiver a chave privada correspondente, ainda poderá descriptografar o arquivo com um programa como o GnuPG.",
+        "Alguns anexos não puderam ser descriptografados.\nSe você tiver a chave privada correspondente, ainda poderá descriptografar os arquivos com um programa como o GnuPG."
       ],
       "The email addresses do not match": [
         "Os endereços de e-mail não correspondem."
@@ -5079,7 +5088,7 @@
     },
     "Error adding participants to a calendar event": {
       "At most ${ maxAttendees } participant is allowed per invitation": [
-        "É permitido no máximo ${ maxAttendees } participantes por convite",
+        "É permitido no máximo ${ maxAttendees } participante por convite",
         "São permitidos no máximo ${ maxAttendees } participantes por convite"
       ]
     },
@@ -6406,28 +6415,28 @@
         "${ currentProgress } de ${ totalProgress }"
       ],
       "${ elementsCount } conversation will be labelled as:": [
-        "A conversa ${ elementsCount } será marcada como:",
-        "As conversas ${ elementsCount } serão marcadas como:"
+        "${ elementsCount } conversa será marcada como:",
+        "${ elementsCount } conversas serão marcadas como:"
       ],
       "${ elementsCount } conversation will be marked as read.": [
         "${ elementsCount } conversa será marcada como lida.",
         "${ elementsCount } conversas serão marcadas como lidas."
       ],
       "${ elementsCount } conversation will be marked as unread.": [
-        "A conversa ${ elementsCount } será marcada como não lida.",
-        "As conversas ${ elementsCount } serão marcadas como não lidas."
+        "${ elementsCount } conversa será marcada como não lida.",
+        "${ elementsCount } conversas serão marcadas como não lidas."
       ],
       "${ elementsCount } conversation will be moved": [
-        "A conversa ${ elementsCount } será movida",
-        "As conversas ${ elementsCount } serão movidas"
+        "${ elementsCount } conversa será movida",
+        "${ elementsCount } conversas serão movidas"
       ],
       "${ elementsCount } conversation will be unlabelled from:": [
-        "A conversa ${ elementsCount } não será rotulada de:",
-        "As conversas de ${ elementsCount } não serão rotuladas de:"
+        "${ elementsCount } conversa não será rotulada de:",
+        "${ elementsCount } conversas não serão rotuladas de:"
       ],
       "${ elementsCount } message will be labelled as:": [
         "${ elementsCount } mensagem será marcada como:",
-        "${ elementsCount } mensagens serão rotuladas como:"
+        "${ elementsCount } mensagens serão marcadas como:"
       ],
       "${ elementsCount } message will be marked as read.": [
         "${ elementsCount } mensagem será marcada como lida.",
@@ -6442,8 +6451,8 @@
         "${ elementsCount } mensagens serão movidas"
       ],
       "${ elementsCount } message will be unlabelled from:": [
-        "A mensagem ${ elementsCount } não será desmarcada de: ",
-        "As mensagens ${ elementsCount } não serão rotuladas de:"
+        "${ elementsCount } mensagem não será desmarcada de:",
+        "${ elementsCount } mensagens não serão desmarcadas de:"
       ],
       "${ embeddedAttachmentsCount } embedded image": [
         "${ embeddedAttachmentsCount } imagem incorporada",
@@ -6478,8 +6487,8 @@
         "${ numberOfUTMTrackers } links limpos"
       ],
       "${ NumMessages } message in conversation": [
-        "${ NumMessages } mensagem em conversa",
-        "${ NumMessages } mensagens em conversa"
+        "${ NumMessages } mensagem na conversa",
+        "${ NumMessages } mensagens na conversa"
       ],
       "${ numOccurrences } occurrence found": [
         "${ numOccurrences } ocorrência encontrada",
@@ -6784,12 +6793,12 @@
         "Você tem certeza de que deseja excluir permanentemente estas ${ count } conversas?"
       ],
       "Are you sure you want to permanently delete ${ count } draft?": [
-        "Você tem certeza de que deseja excluir permanentemente este ${ count } rascunho?",
+        "Você tem certeza de que deseja excluir permanentemente ${ count } rascunho?",
         "Você tem certeza de que quer excluir permanentemente ${ count } rascunhos?"
       ],
       "Are you sure you want to permanently delete ${ count } message?": [
-        "Você tem certeza de que deseja excluir permanentemente esta ${ count } mensagem?",
-        "Você tem certeza de que deseja excluir permanentemente estas ${ count } mensagens?"
+        "Você tem certeza de que deseja excluir permanentemente ${ count } mensagem?",
+        "Você tem certeza de que deseja excluir permanentemente ${ count } mensagens?"
       ],
       "Are you sure you want to permanently delete this conversation?": [
         "Você tem certeza de que quer excluir permanentemente esta conversa?"
@@ -8070,8 +8079,8 @@
         "O remetente solicitou uma confirmação de leitura."
       ],
       "The verification of ${ contactNames } has failed: the contact is not signed correctly.\nThis may be the result of a password reset.\nYou must re-sign the contact in order to send a message to ${ contactAddresses } or edit the contact.": [
-        "A verificação do ${ contactNames } falhou: o contato não está assinado corretamente. \nIsso pode ter sido causado por uma redefinição de senha. \nVocê deverá assinar novamente para poder enviar uma mensagem para ${ contactAddresses } ou editar o contato.",
-        "A verificação do ${ contactNames } falhou: os contatos selecionados não foram assinados corretamente.\nIsso pode ter sido causado por uma redefinição de senha. \nVocê deverá re-assinar os contatos novamente para poder enviar uma mensagem para ${ contactAddresses } ou editar os contatos."
+        "A verificação de ${ contactNames } falhou: o contato não foi assinado corretamente.\nIsso pode ser resultado de uma redefinição de senha.\nVocê precisa assinar novamente o contato para enviar uma mensagem para ${ contactAddresses } ou editá-lo.",
+        "A verificação de ${ contactNames } falhou: os contatos não foram assinados corretamente.\nIsso pode ser resultado de uma redefinição de senha.\nVocê precisa assinar novamente os contatos para enviar uma mensagem para ${ contactAddresses } ou editá-los."
       ],
       "The verification process will open a new browser tab. Please disable any active pop-up blockers.": [
         "O processo de verificação abrirá uma nova guia do navegador. Desative todos os bloqueadores de pop-up ativos."
@@ -8781,6 +8790,21 @@
       ],
       "Referral link copied to your clipboard": [
         "Link de referência copiado para sua área de transferência"
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**Passo 1:** Convide seus amigos para a ${ BRAND_NAME } com seu link de indicação."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**Passo 2:** Seus amigos ganham 2 semanas grátis no plano ${ BRAND_NAME } escolhido por eles."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**Passo 2:** Seus amigos ganham 2 semanas grátis no plano deles."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**Passo 3:** Ganhe ${ referrerRewardAmount } créditos para cada amigo que se inscrever para um plano."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**Passo 3:** Ganhe ${ referrerRewardAmount } em créditos para cada pessoa que se inscrever para um plano."
       ]
     },
     "info": {
@@ -8857,12 +8881,12 @@
         "Ao clicar em \"Chave confiável\" será criado um contato e esta chave pública será associada a este remetente. Os e-mails deste endereço serão automaticamente verificados de forma criptográfica."
       ],
       "Do you want to trust the primary public key with the following fingerprint?": [
-        "Você deseja confiar na chave pública principal com a seguinte impressão digital?",
-        "Você deseja confiar nas chaves públicas principais com as seguintes impressões digitais?"
+        "Você deseja confiar a chave pública primária com a seguinte impressão digital?",
+        "Você deseja confiar as chaves públicas primárias com as seguintes impressões digitais?"
       ],
       "You have enabled Address Verification with Trusted Keys for this email address,\nbut no active encryption key has been trusted.\nYou must trust a key valid for sending in order to send a message to this email address.": [
-        "Você ativou a verificação de endereço com chaves de confiança para este endereço de e-mail,\nmas nenhuma chave de criptografia ativa foi confiada.\nVocê deve confiar em uma chave válida para enviar uma mensagem para este endereço de e-mail.",
-        "Você ativou a verificação de endereço com chaves de confiança para estes endereços de e-mail,\nmas nenhuma chave de criptografia ativa foi confiada.\nVocê deve confiar nas chaves válidas para envio, para poder enviar uma mensagem para estes endereços de e-mail."
+        "Você ativou a Verificação de Endereço com Chaves Confiáveis ​​para este endereço de e-mail, mas nenhuma chave de criptografia ativa foi considerada confiável.\nVocê precisa confiar em uma chave válida para envio para poder enviar uma mensagem para este endereço de e-mail.",
+        "Você ativou a Verificação de Endereço com Chaves Confiáveis ​​para estes endereços de e-mail, mas nenhuma chave de criptografia ativa foi considerada confiável.\nVocê precisa confiar em uma chave válida para envio para poder enviar uma mensagem para estes endereços de e-mail."
       ]
     },
     "Key validation warning": {
@@ -9811,6 +9835,14 @@
       ],
       "Video conference": [
         "Videoconferência"
+      ],
+      "${ count } unread conversation": [
+        "${ count } conversa não lida",
+        "${ count } conversas não lidas"
+      ],
+      "${ count } unread message": [
+        "${ count } mensagem não lida",
+        "${ count } mensagens não lidas"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11601,6 +11633,9 @@
       ],
       "Use your ${ MAIL_APP_NAME } address to sign in to online services to avoid being tracked and profiled. Change your email for popular services now. ${ learnMoreLink }": [
         "Use seu endereço ${ MAIL_APP_NAME } para entrar em serviços online para evitar ser rastreado e perfilado. Altere seu e-mail para serviços populares agora. ${ learnMoreLink }"
+      ],
+      "Maybe later": [
+        "Talvez mais tarde"
       ]
     },
     "Onboarding modal": {
@@ -12090,6 +12125,15 @@
       ],
       "You will be charged on ${ formattedDate }, renewing every month.": [
         "Você será cobrado em ${ formattedDate }, renovando todo mês."
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Valor devido após a avaliação em ${ formattedDate }"
+      ],
+      "terms and conditions": [
+        "termos e condições"
+      ],
+      "This action expands the existing subscription. You will be charged only for the new add-ons and the remaining time of the current billing cycle. The renewal date of your subscription will not be changed.": [
+        "Esta ação expande a assinatura existente. Você será cobrado apenas pelos novos complementos e pelo tempo restante do ciclo de faturamento atual. A data de renovação da sua assinatura não será alterada."
       ]
     },
     "Payments.Error": {
@@ -12759,8 +12803,8 @@
         "Você deseja enviar o e-mail mesmo assim?"
       ],
       "We have detected errors. Your email cannot be sent to the email address entered due to the following reason:": [
-        "Detectamos alguns erros. Não é possível enviar seu e-mail para o endereço de e-mail informado, pelo seguinte motivo:",
-        "Detectamos alguns erros. Não é possível enviar seu e-mail para nenhum dos endereços de e-mail inseridos pelos seguintes motivos:"
+        "Detectamos erros. Não é possível enviar seu e-mail para o endereço de e-mail informado, pelo seguinte motivo:",
+        "Detectamos erros. Seu e-mail não pode ser enviado para nenhum dos endereços de e-mail informados pelos seguintes motivos:"
       ],
       "We have detected some errors. Your email cannot be sent to one or more of the email addresses entered due to the following reasons:": [
         "Detectamos alguns erros. Não é possível enviar seu e-mail para um ou mais dos endereços de e-mail inseridos pelos seguintes motivos:"
@@ -13955,8 +13999,8 @@
         "${ elementsCount } conversas marcadas como lidas."
       ],
       "${ elementsCount } conversation marked as Starred.": [
-        "${ elementsCount } conversa marcada com estrela.",
-        "${ elementsCount } conversas marcadas com estrela."
+        "${ elementsCount } conversa marcada com Estrela.",
+        "${ elementsCount } conversas marcadas com Estrela."
       ],
       "${ elementsCount } conversation marked as unread.": [
         "${ elementsCount } conversa marcada como não lida.",
@@ -15402,8 +15446,8 @@
         "Aviso: Site suspeito de ser falso"
       ],
       "We protected you from ${ trackersCount } tracker": [
-        "Temos protegido você de ${ trackersCount } rastreador",
-        "Temos protegido você de ${ trackersCount } rastreadores"
+        "Nós protegemos você de ${ trackersCount } rastreador",
+        "Nós protegemos você de ${ trackersCount } rastreadores"
       ],
       "Welcome": [
         "Bem-vindo"
@@ -15467,6 +15511,9 @@
       ],
       "Share your link": [
         "Compartilhe seu link"
+      ],
+      "Referral": [
+        "Indicação"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16043,6 +16090,48 @@
     "Payments.info": {
       "Credit for the unused portion of your previous plan subscription": [
         "Crédito pela parte não usada no plano anterior da sua assinatura"
+      ],
+      "Credits will be added to your balance": [
+        "Créditos serão adicionados ao seu saldo."
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Inicie sessão com o mesmo endereço do Gmail que você conectou originalmente"
+      ]
+    },
+    "Referral": {
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } por indicação"
+      ],
+      "Earn up to ${ maxRewardAmount } in credit. You’ll get ${ referrerRewardAmount } when the person you invite subscribes to a ${ BRAND_NAME } plan.": [
+        "Ganhe até ${ maxRewardAmount } em crédito. Você receberá ${ referrerRewardAmount } quando a pessoa que você convidar se inscrever em um plano ${ BRAND_NAME }."
+      ],
+      "Friend joined": [
+        "Amigo entrou",
+        "Amigos entraram"
+      ],
+      "Friend subscribed": [
+        "Amigo se inscreveu",
+        "Amigos se inscreveram"
+      ],
+      "Invite friends. Get credits.": [
+        "Convide amigos. Ganhe créditos."
+      ],
+      "Invited friends": [
+        "Amigos convidados"
+      ],
+      "More sharing options": [
+        "Mais opções de compartilhamento"
+      ],
+      "Refer friends": [
+        "Indicar amigos"
+      ],
+      "Start earning credits": [
+        "Comece a ganhar créditos"
+      ],
+      "You can get up to **${ maxRewardAmount }** in credit.": [
+        "Você pode receber até **${ maxRewardAmount }** em crédito."
       ]
     }
   }
