@@ -950,6 +950,18 @@
       ],
       "Subscribe now": [
         "Subscriviu-vos ara"
+      ],
+      "Create a booking page": [
+        "Creeu una pàgina de reserves"
+      ],
+      "Create an event": [
+        "Creeu un esdeveniment"
+      ],
+      "Create booking page": [
+        "Creeu una pàgina de reserves"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Uniu-vos a ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1395,6 +1407,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB d'emmagatzematge: 40 vegades el vostre pla actual"
+      ],
+      "Recover previous file versions": [
+        "Recupereu versions anteriors dels fitxers"
       ]
     },
     "BF2024: Offers": {
@@ -1403,6 +1421,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Es renova al cap d'1 mes a ${ regularAmount }"
+      ],
+      "forever": [
+        "per sempre"
       ]
     },
     "BF2024: Tooltip": {
@@ -1545,6 +1566,9 @@
       ],
       "Website access problem": [
         "Problema d'acces a la web"
+      ],
+      "Black Friday": [
+        "Divendres negre"
       ]
     },
     "Button": {
@@ -6273,6 +6297,18 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Actualitzeu el pla per conservar els vostres avantatges de ${ planTitle }."
+      ],
+      "${ booking.duration } min duration": [
+        "Durada de ${ booking.duration } min"
+      ],
+      "A booking slot cannot be added in the past.": [
+        "No es pot afegir una franja de reserva en el passat."
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "Permeteu que altres reservin temps amb vós automàticament. Sense correus d'anada i tornada. Compartiu un enllaç i mantingueu el control de la vostra disponibilitat."
+      ],
+      "Want to create your own booking page?": [
+        "Voleu crear la vostra pròpia pàgina de reserves?"
       ]
     },
     "info": {
@@ -6955,6 +6991,18 @@
       ],
       "Zoom meeting": [
         "Reunió per Zoom"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Duration": [
+        "Durada"
+      ],
+      "Get the deal": [
+        "Aconseguiu l'oferta"
+      ],
+      "Title": [
+        "Títol"
       ]
     },
     "Label for contact group color": {
@@ -8898,6 +8946,9 @@
       ],
       "Team policies": [
         "Regles d'equip"
+      ],
+      "File attachments (up to 10GB)": [
+        "Fitxers adjunts (fins a 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -9083,6 +9134,20 @@
       ],
       "Your payment is still being processed": [
         "Encara s'està processant el vostre pagament."
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "El preu amb descompte especial és vàlid durant el primer ${ subscriptionLength } mes.",
+        "El preu amb descompte especial és vàlid durant el primers ${ subscriptionLength } mesos."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "El preu amb descompte especial és vàlid durant el primer mes. El cupó és vàlid per a ${ couponRedemptions } renovació. Després, es renovarà automàticament per ${ renewPriceStr } durant 1 mes. Podreu cancel·lar-ho en qualsevol moment.",
+        "El preu amb descompte especial és vàlid durant el primer mes. El cupó és vàlid per a ${ couponRedemptions } renovacions. Després, es renovarà automàticament per ${ renewPriceStr } durant 1 mes. Podreu cancel·lar-ho en qualsevol moment."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "El preu amb descompte especial és vàlid durant el primer mes. Després, es renovarà automàticament per ${ renewPriceStr } cada mes. Podreu cancel·lar-ho en qualsevol moment."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
+        "La vostra subscripció ja té un descompte. Passar a aquesta nova promoció significa que el descompte actual no s'aplicarà."
       ]
     },
     "Payments.Error": {
@@ -11685,6 +11750,18 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "Milloreu de pla per mantenir els vostres avantatges prèmium."
+      ],
+      "Booking page": [
+        "Pàgina de reserves"
+      ],
+      "Ready to automate your scheduling?": [
+        "Esteu a punt per automatitzar la vostra programació?"
+      ],
+      "This booking page does not exist": [
+        "Aquesta pàgina de reserves no existeix"
+      ],
+      "This booking page has expired": [
+        "Aquesta pàgina de reserves ha caducat"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12280,6 +12357,9 @@
       ],
       "Share your plan": [
         "Compartiu el vostre pla"
+      ],
+      "Get 4x more storage": [
+        "Aconseguiu el quàdruple d'emmagatzematge"
       ]
     },
     "Duo offer: Title": {
@@ -12288,6 +12368,90 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Compartiu els avantatges del vostre pla amb ${ BRAND_NAME } Duo"
+      ],
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Aconseguiu el quàdruple d'emmagatzematge amb ${ BRAND_NAME } Duo"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Rebaixes del Black Friday"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB d'emmagatzematge de dades"
+      ],
+      "3 TB data storage": [
+        "3 TB d'emmagatzematge de dades"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Accedeixi a més de 15.000 servidors en més de 120 països"
+      ],
+      "Access advanced AI models": [
+        "Accedeixi a models d'IA avançats"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Totes les funcions prèmium de ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } i ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Bloquegeu anuncis, rastrejadors i programari maliciós"
+      ],
+      "Built-in 2FA authenticator": [
+        "Autenticador 2FA integrat"
+      ],
+      "Connect 10 devices at once": [
+        "Connecti 10 dispositius alhora"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Historial de xat complet amb cerca fàcil i favorits"
+      ],
+      "Individual accounts for 6 users": [
+        "Comptes individuals per a 6 usuaris"
+      ],
+      "Individual accounts for you and a partner": [
+        "Comptes individuals per a dues persones"
+      ],
+      "Stronger protection against cyber threats": [
+        "Protecció més forta contra les ciberamenaces"
+      ],
+      "Unlimited daily chats": [
+        "Xats diaris sense límits"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Divendres negre"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Ajudi els seus éssers estimats a unir-se a la revolució de la privadesa amb els nostres paquets de millor valor, ara amb un 50 % de descompte!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Uneixi's a la revolució de la privadesa amb els nostres paquets de millor valor, ara amb un 50 % de descompte!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "durant ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Estalviï ${ savedAmount } amb la nostra millor oferta per temps limitat!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Canviï al nostre pla de 2 anys i estalviï ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Canviï al nostre pla anual i estalviï ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Regali als seus una protecció digital completa."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "NetShield, dissenyat especialment, protegeix els vostres dispositius i accelera la navegació en bloquejar anuncis, rastrejadors i programari maliciós."
       ]
     }
   }

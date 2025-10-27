@@ -6955,6 +6955,12 @@
       ],
       "Zoom meeting": [
         "Reunión de Zoom"
+      ],
+      "Duration": [
+        "Duración"
+      ],
+      "Title": [
+        "Título"
       ]
     },
     "Label for contact group color": {
@@ -12378,6 +12384,87 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Comparta los beneficios de su plan con ${ BRAND_NAME } Duo"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Oferta de Black Friday"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB de almacenamiento de datos"
+      ],
+      "3 TB data storage": [
+        "3 TB de almacenamiento de datos"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Acceda a más de 15 000 servidores en más de 120 países"
+      ],
+      "Access advanced AI models": [
+        "Acceso a modelos de IA avanzados"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Todas las funciones prémium de ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } y ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Bloquee anuncios, rastreadores y malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Autenticador de 2FA integrado"
+      ],
+      "Connect 10 devices at once": [
+        "Conecte 10 dispositivos a la vez"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Historial de chat completo con búsqueda fácil y favoritos"
+      ],
+      "Individual accounts for 6 users": [
+        "Cuentas individuales para 6 usuarios"
+      ],
+      "Individual accounts for you and a partner": [
+        "Cuentas individuales para usted y otra persona"
+      ],
+      "Stronger protection against cyber threats": [
+        "Mayor protección contra ciberamenazas"
+      ],
+      "Unlimited daily chats": [
+        "Chats diarios ilimitados"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Ayude a sus seres queridos a unirse a la revolución de la privacidad con nuestros paquetes de mejor valor, ¡ahora con un 50 % de descuento!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "¡Únase a la revolución de la privacidad con nuestros paquetes de mejor valor, ahora con un 50 % de descuento!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "por ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "¡Ahorre ${ savedAmount } con nuestra mejor oferta por tiempo limitado!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "¡Cámbiese a nuestro plan de 2 años y ahorre ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "¡Cámbiese a nuestro plan anual y ahorre ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Brinde a los suyos protección digital completa."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "La tecnología NetShield tiene como fin proteger los dispositivos y que pueda navegar mucho más rápido bloqueando anuncios, rastreadores y malware."
       ]
     }
   }

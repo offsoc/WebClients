@@ -6602,6 +6602,12 @@
       ],
       "ZIP code": [
         "Irányítószám"
+      ],
+      "Duration": [
+        "Időtartam"
+      ],
+      "Title": [
+        "Cím"
       ]
     },
     "Label for contact group color": {
@@ -11620,6 +11626,24 @@
       "Friend subscribed": [
         "Ismerős előfizetett",
         "Ismerősök előfizettek"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Access 15,000+ servers in 120+ countries": [
+        "15,000+ szerver elérése, 120+ országban"
+      ],
+      "Block ads, trackers, and malware": [
+        "Hirdetések, trackerek és rosszindulatú programok blokkolása"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "a következőhöz: ${ durationDeal }"
       ]
     }
   }

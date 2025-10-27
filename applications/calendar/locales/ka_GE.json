@@ -947,6 +947,12 @@
       ],
       "Subscribe now": [
         "გამოიწერეთ ახლავე"
+      ],
+      "Create an event": [
+        "მოვლენის შექმნა"
+      ],
+      "Create booking page": [
+        "დაჯავშნის გვერდის შექმნა"
       ]
     },
     "action": {
@@ -1379,6 +1385,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "განახლდება 1 თვეში ფასად ${ regularAmount }."
+      ],
+      "forever": [
+        "სამუდამოდ"
       ]
     },
     "BF2024: Tooltip": {
@@ -1521,6 +1530,9 @@
       ],
       "Website access problem": [
         "ვებგვერდთან წვდომის პრობლემა"
+      ],
+      "Black Friday": [
+        "შავი პარასკევი"
       ]
     },
     "Button": {
@@ -6115,6 +6127,9 @@
       ],
       "You’ll lose access to ${ boldPlanTitle } on ${ boldEndDate }.": [
         "დაკარგავთ წვდომას ${ boldPlanTitle }-სთან. თარიღი: ${ boldEndDate }."
+      ],
+      "Continue": [
+        "გაგრძელება"
       ]
     },
     "info": {
@@ -6797,6 +6812,18 @@
       ],
       "Zoom meeting": [
         "Zoom-ის შეხვედრა"
+      ],
+      "Black Friday": [
+        "შავი პარასკევი"
+      ],
+      "Duration": [
+        "ხანგრძლივობა"
+      ],
+      "Get the deal": [
+        "ფასდაკლების მიღება"
+      ],
+      "Title": [
+        "სათაური"
       ]
     },
     "Label for contact group color": {
@@ -6950,6 +6977,9 @@
       ],
       "What’s this?": [
         "რა არის ეს?"
+      ],
+      "Bookings pages": [
+        "დაჯავშნის გვერდები"
       ]
     },
     "Link label (optional)": {
@@ -11427,6 +11457,9 @@
       ],
       "How your free trial works": [
         "როგორ მუშაობს საცდელი ვერსია"
+      ],
+      "Booking page": [
+        "დაჯავშნის გვერდი"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11988,6 +12021,54 @@
       ],
       "Passcode:": [
         "საკვანძო კოდი:"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Access 15,000+ servers in 120+ countries": [
+        "წვდომა 15,000+ სერვერთან 120+ ქვეყანაში"
+      ],
+      "Block ads, trackers, and malware": [
+        "რეკლამის, ტრეკერებისა და მავნე პროგრამების დაბლოკვა"
+      ],
+      "Built-in 2FA authenticator": [
+        "ჩაშენებული 2FA ავთენტიკატორი"
+      ],
+      "Unlimited daily chats": [
+        "შეუზღუდავი ყოველდღიური ჩატები"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "${ durationDeal }-სთვის"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "NetShield-ი იცავს თქვენს მოწყობილობებს და აჩქარებს ინტერნეტში მუშაობას რეკლამების, ტრეკერების და არასასურველი პროგრამების დაბლოკვით."
+      ]
+    },
+    "Duo offer": {
+      "/month": [
+        "/თვეში"
+      ],
+      "2 user accounts": [
+        "2 მომხმარებლის ანგარიში"
+      ],
+      "Only": [
+        "მხოლოდ"
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "მიიღეთ 4-ჯერ მეტი საცავი"
+      ],
+      "Share your plan": [
+        "გააზიარეთ თქვენი სატარიფო გეგმა"
       ]
     }
   }

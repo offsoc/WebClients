@@ -950,6 +950,18 @@
       ],
       "Subscribe now": [
         "S'abonner maintenant"
+      ],
+      "Create a booking page": [
+        "Créer une page de réservation"
+      ],
+      "Create an event": [
+        "Créer un événement"
+      ],
+      "Create booking page": [
+        "Créer une page de réservation"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Rejoindre ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1395,6 +1407,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 Go d'espace de stockage : 40x votre abonnement actuel"
+      ],
+      "Recover previous file versions": [
+        "Récupérez les versions précédentes de vos fichiers"
       ]
     },
     "BF2024: Offers": {
@@ -1403,6 +1421,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Renouvellement après 1 mois à ${ regularAmount }"
+      ],
+      "forever": [
+        "pour toujours"
       ]
     },
     "BF2024: Tooltip": {
@@ -1545,6 +1566,9 @@
       ],
       "Website access problem": [
         "Problème d'accès au site web"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -6273,6 +6297,18 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Passez à la version supérieure pour conserver vos avantages de ${ planTitle }."
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } min de durée"
+      ],
+      "A booking slot cannot be added in the past.": [
+        "Un créneau de réservation dans le passé ne peut pas être ajouté dans le passé."
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "Permettez à d'autres de réserver du temps avec vous automatiquement. Fini les messages d'aller-retour. Partagez un lien et gardez le contrôle de votre disponibilité."
+      ],
+      "Want to create your own booking page?": [
+        "Souhaitez-vous créer votre propre page de réservation ?"
       ]
     },
     "info": {
@@ -6955,6 +6991,18 @@
       ],
       "Zoom meeting": [
         "Réunion Zoom"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Duration": [
+        "Durée"
+      ],
+      "Get the deal": [
+        "Profitez de l'offre"
+      ],
+      "Title": [
+        "Titre"
       ]
     },
     "Label for contact group color": {
@@ -8898,6 +8946,9 @@
       ],
       "Team policies": [
         "Règles d'équipe"
+      ],
+      "File attachments (up to 10GB)": [
+        "Fichiers joints (jusqu'à 10 Go)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -9083,6 +9134,20 @@
       ],
       "Your payment is still being processed": [
         "Votre paiement est en cours de traitement."
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Le tarif réduit spécial est valable pendant le premier ${ subscriptionLength } mois.",
+        "Le tarif réduit spécial est valable pendant les premiers ${ subscriptionLength } mois."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "Le tarif exceptionnellement réduit est valable le premier mois. Le coupon est valide pour ${ couponRedemptions } renouvellement. Il sera ensuite automatiquement renouvelé à ${ renewPriceStr } pendant 1 mois. Vous pouvez annuler à tout moment.",
+        "Le tarif exceptionnellement réduit est valable le premier mois. Le coupon est valide pour ${ couponRedemptions } renouvellements. Il sera ensuite automatiquement renouvelé à ${ renewPriceStr } pendant 1 mois. Vous pouvez annuler à tout moment."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Le tarif exceptionnel s'applique le premier mois. Ensuite, l'abonnement sera automatiquement renouvelé au prix de ${ renewPriceStr } par mois. Vous pouvez résilier l'abonnement à tout moment."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
+        "Votre abonnement bénéficie actuellement d'une réduction existante. Le passage à cette nouvelle promotion signifie que la réduction existante ne sera plus appliquée."
       ]
     },
     "Payments.Error": {
@@ -11775,6 +11840,18 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "Passez à la version supérieure pour conserver vos avantages premium."
+      ],
+      "Booking page": [
+        "Page de réservation"
+      ],
+      "Ready to automate your scheduling?": [
+        "Prêt à automatiser votre programmation ?"
+      ],
+      "This booking page does not exist": [
+        "Cette page de réservation n'existe pas"
+      ],
+      "This booking page has expired": [
+        "Cette page de réservation a expiré"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12370,6 +12447,9 @@
       ],
       "Share your plan": [
         "Partagez votre abonnement"
+      ],
+      "Get 4x more storage": [
+        "Obtenez 4x plus d'espace de stockage."
       ]
     },
     "Duo offer: Title": {
@@ -12378,6 +12458,90 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Partagez les avantages de votre abonnement avec ${ BRAND_NAME } Duo"
+      ],
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Obtenez 4x plus d'espace de stockage avec ${ BRAND_NAME } Duo"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Offres Black Friday"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 To d'espace de stockage de données"
+      ],
+      "3 TB data storage": [
+        "3 To d'espace de stockage de données"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Accédez à plus de 15 000 serveurs dans plus de 120 pays"
+      ],
+      "Access advanced AI models": [
+        "Accès à des modèles d'IA avancés"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Toutes les fonctionnalités premium de ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } et ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Bloquez les publicités, les traqueurs et les logiciels malveillants"
+      ],
+      "Built-in 2FA authenticator": [
+        "Authentificateur 2FA intégré"
+      ],
+      "Connect 10 devices at once": [
+        "Connectez 10 appareils en même temps"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Historique complet des discussions avec recherche facile et favoris"
+      ],
+      "Individual accounts for 6 users": [
+        "Comptes individuels pour 6 utilisateurs"
+      ],
+      "Individual accounts for you and a partner": [
+        "Comptes individuels pour vous et un partenaire"
+      ],
+      "Stronger protection against cyber threats": [
+        "Une protection renforcée contre les cybermenaces"
+      ],
+      "Unlimited daily chats": [
+        "Chats quotidiens illimités"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Aidez vos proches à rejoindre la révolution du respect de la vie privée avec nos meilleures offres groupées, maintenant à -50 % !"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Rejoignez la révolution du respect de la vie privée avec nos meilleures offres groupées, maintenant à -50 % !"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "pour ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Économisez ${ savedAmount } grâce à notre meilleure offre à durée limitée !"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Passez à notre abonnement de 2 ans et économisez ${ savedAmount } !"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Passez à notre abonnement annuel et économisez ${ savedAmount } !"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Offrez à votre tribu une protection numérique complète."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "La fonctionnalité NetShield est spécialement conçue pour protéger vos appareils et accélérer votre navigation en bloquant les publicités, les traqueurs et les logiciels malveillants."
       ]
     }
   }

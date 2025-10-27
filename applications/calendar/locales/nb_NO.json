@@ -947,6 +947,21 @@
       ],
       "Subscribe now": [
         "Abonner nå"
+      ],
+      "Create a booking page": [
+        "Opprett en bestillingsside"
+      ],
+      "Create a new bookings page": [
+        "Opprett en ny bestillingsside"
+      ],
+      "Create an event": [
+        "Opprett en hendelse"
+      ],
+      "Create booking page": [
+        "Opprett bestillingsside"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Bli med ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1392,6 +1407,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB lagringsplass: 40x din nåværende plan"
+      ],
+      "Recover previous file versions": [
+        "Gjenopprett tidligere filversjoner"
       ]
     },
     "BF2024: Offers": {
@@ -1400,6 +1421,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Fornyes etter 1 måned til ${ regularAmount }."
+      ],
+      "forever": [
+        "for alltid"
       ]
     },
     "BF2024: Tooltip": {
@@ -1542,6 +1566,9 @@
       ],
       "Website access problem": [
         "Problem med tilgang til nettsted"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -4378,6 +4405,12 @@
     "Feature": {
       "Unlimited hide-my-email aliases": [
         "Ubegrenset antall hide-my-email-aliaser"
+      ],
+      "Encrypted cloud storage for files, photos and documents": [
+        "Kryptert skylagring for filer, bilder og dokumenter"
+      ],
+      "More premium features": [
+        "Flere premiumfunksjoner"
       ]
     },
     "fido2: Error": {
@@ -6255,6 +6288,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Du vil fortsatt kunne se dine egne kontodata, men alle brukerkontoer vil bli fjernet fra organisasjonen din."
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } min. varighet"
+      ],
+      "A booking slot cannot be added in the past.": [
+        "En bestillingsplass kan ikke legges til i fortiden."
+      ],
+      "Choose a plan that works best for you.": [
+        "Velg en plan som fungerer best for deg."
+      ],
+      "Continue": [
+        "Fortsett"
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "La andre bestille tid med deg automatisk. Ingen frem-og-tilbake e-poster. Del en kobling, og behold kontrollen over tilgjengeligheten din."
+      ],
+      "Upgrade to keep your ${ planTitle } benefits.": [
+        "Oppgrader for å beholde ${ planTitle } fordelene dine."
+      ],
+      "Want to create your own booking page?": [
+        "Vil du opprette din egen bestillingsside?"
       ]
     },
     "info": {
@@ -6937,6 +6991,18 @@
       ],
       "Zoom meeting": [
         "Zoom-møte"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Duration": [
+        "Varighet"
+      ],
+      "Get the deal": [
+        "Skaff deg tilbudet"
+      ],
+      "Title": [
+        "Tittel"
       ]
     },
     "Label for contact group color": {
@@ -7090,6 +7156,9 @@
       ],
       "What’s this?": [
         "Hva er det der?"
+      ],
+      "Bookings pages": [
+        "Bestillingssider"
       ]
     },
     "Link label (optional)": {
@@ -7206,6 +7275,9 @@
       ],
       "Your free trial has ended. Access to your account will soon be disabled. ${ action }": [
         "Prøveperioden er avsluttet. Tilgang til kontoen din vil snart bli deaktivert. ${ action }"
+      ],
+      "Your free trial has ended. ${ nonAutoRenewalAction }": [
+        "Din gratis prøveperiode er over. ${ nonAutoRenewalAction }"
       ]
     },
     "Message display when a new app version is available": {
@@ -8613,6 +8685,12 @@
       ],
       "Your subscription renews soon": [
         "Abonnementet ditt fornyes snart"
+      ],
+      "Don't show this again": [
+        "Ikke vis dette igjen"
+      ],
+      "Get ${ BRAND_NAME } Duo": [
+        "Skaff deg ${ BRAND_NAME } Duo"
       ]
     },
     "Offer fearue": {
@@ -8868,6 +8946,9 @@
       ],
       "Team policies": [
         "Retningslinjer for teamet"
+      ],
+      "File attachments (up to 10GB)": [
+        "Filvedlegg (opptil 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -9053,6 +9134,13 @@
       ],
       "Your payment is still being processed": [
         "Betalingen din behandles fortsatt"
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "Den spesielt rabatterte prisen er gyldig den første måneden. Kupongen er gyldig for ${ couponRedemptions } fornyelse. Deretter vil den automatisk bli fornyet til ${ renewPriceStr } for 1 måned. Du kan avbryte når som helst.",
+        "Den spesielt rabatterte prisen er gyldig den første måneden. Kupongen er gyldig for ${ couponRedemptions } fornyelser. Deretter vil den automatisk bli fornyet til ${ renewPriceStr } for 1 måned. Du kan avbryte når som helst."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
+        "Abonnementet ditt har for øyeblikket en eksisterende rabatt. Hvis du flytter til denne nye kampanjen, vil den eksisterende rabatten ikke lenger gjelde."
       ]
     },
     "Payments.Error": {
@@ -9465,6 +9553,9 @@
       ],
       "your subscription": [
         "abonnementet ditt"
+      ],
+      "Once your full subscription starts, you can still cancel within 30 days and get a prorated refund.": [
+        "Når det fulle abonnementet ditt starter, kan du fortsatt kansellere innen 30 dager og få en forholdsmessig refusjon."
       ]
     },
     "Reload event button tooltip": {
@@ -11643,6 +11734,24 @@
       ],
       "How your free trial works": [
         "Hvordan din gratis prøveperiode fungerer"
+      ],
+      "Booking page": [
+        "Bestillingsside"
+      ],
+      "Get **${ referralInfo.uiData.refereeRewardAmount }** in credits with ${ planTitle }": [
+        "Få **${ referralInfo.uiData.refereeRewardAmount }** i kreditter med ${ planTitle }"
+      ],
+      "Ready to automate your scheduling?": [
+        "Klar til å automatisere planleggingen din?"
+      ],
+      "This booking page does not exist": [
+        "Denne bestillingssiden finnes ikke"
+      ],
+      "This booking page has expired": [
+        "Denne bestillingssiden er utløpt"
+      ],
+      "Upgrade to keep your premium benefits.": [
+        "Oppgrader for å beholde premiumfordelene dine."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11944,6 +12053,9 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Prøveperioden avsluttes ${ textDate }. ${ action }"
+      ],
+      "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
+        "Prøveperioden avsluttes ${ textDate }. Du blir ikke belastet hvis du avbryter før ${ textDate }. ${ action }"
       ]
     },
     "Warning in modal to accept calendar invitation; Description": {
@@ -12210,6 +12322,68 @@
       ],
       "Passcode:": [
         "Adgangskode:"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Access 15,000+ servers in 120+ countries": [
+        "Tilgang til 15,000+ tjenere i 120+ land"
+      ],
+      "Block ads, trackers, and malware": [
+        "Blokkér annonser, sporere og skadelig programvare"
+      ],
+      "Built-in 2FA authenticator": [
+        "Innebygget 2FA-autentisering"
+      ],
+      "Unlimited daily chats": [
+        "Ubegrenset antall daglige chatter"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "for ${ durationDeal }"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Spesialdesignet NetShield beskytter enheten din og øker hastigheten på surfingen din ved å blokkere annonser, sporere og skadelig programvare."
+      ]
+    },
+    "Duo offer": {
+      "/month": [
+        "/måned"
+      ],
+      "1 TB of storage to share": [
+        "1 TB med lagringsplass å dele"
+      ],
+      "2 user accounts": [
+        "2 brukerkontoer"
+      ],
+      "All premium features from your current plan": [
+        "Alle premiumfunksjoner fra din nåværende plan"
+      ],
+      "Only": [
+        "Kun"
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "Skaff deg 4x mer lagringskapasitet"
+      ],
+      "Share your plan": [
+        "Del planen din"
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Få 4x mer lagring med ${ BRAND_NAME } Duo"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Del fordelene med planen din med ${ BRAND_NAME } Duo"
       ]
     }
   }

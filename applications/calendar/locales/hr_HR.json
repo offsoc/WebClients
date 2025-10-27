@@ -4554,6 +4554,12 @@
       ],
       "ZIP code": [
         "Poštanski broj"
+      ],
+      "Duration": [
+        "Trajanje"
+      ],
+      "Title": [
+        "Naslov"
       ]
     },
     "Label for contact group color": {
@@ -7679,6 +7685,24 @@
       ],
       "your subscription": [
         "Vaša pretplata"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Block ads, trackers, and malware": [
+        "Blokirajte oglase, pratitelje i zlonamjerne programe"
+      ],
+      "Built-in 2FA authenticator": [
+        "Ugrađeni 2FA autentifikator"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "za ${ durationDeal }"
       ]
     }
   }

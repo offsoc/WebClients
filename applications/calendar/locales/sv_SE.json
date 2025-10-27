@@ -950,6 +950,18 @@
       ],
       "Subscribe now": [
         "Prenumerera nu"
+      ],
+      "Create a booking page": [
+        "Skapa en bokningssida"
+      ],
+      "Create an event": [
+        "Skapa en händelse"
+      ],
+      "Create booking page": [
+        "Skapa bokningssida"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Gå med ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1389,6 +1401,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB lagringsutrymme: 40x ditt nuvarande paket"
+      ],
+      "Recover previous file versions": [
+        "Återställ tidigare filversioner"
       ]
     },
     "BF2024: Offers": {
@@ -1397,6 +1415,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Förnyas efter 1 månad till ${ regularAmount }."
+      ],
+      "forever": [
+        "för alltid"
       ]
     },
     "BF2024: Tooltip": {
@@ -1536,6 +1557,9 @@
       ],
       "Website access problem": [
         "Problem med åtkomst till webbplats"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -6252,6 +6276,9 @@
       ],
       "Continue": [
         "Fortsätt"
+      ],
+      "Want to create your own booking page?": [
+        "Vill du skapa din egen bokningssida?"
       ]
     },
     "info": {
@@ -6934,6 +6961,18 @@
       ],
       "Zoom meeting": [
         "Zoom-möte"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Duration": [
+        "Varaktighet"
+      ],
+      "Get the deal": [
+        "Ta del av erbjudandet"
+      ],
+      "Title": [
+        "Rubrik"
       ]
     },
     "Label for contact group color": {
@@ -7206,6 +7245,9 @@
       ],
       "Your free trial has ended. Access to your account will soon be disabled. ${ action }": [
         "Din gratis provperiod har avslutats. Åtkomst till ditt konto kommer snart att inaktiveras. ${ action }"
+      ],
+      "Your free trial has ended. ${ nonAutoRenewalAction }": [
+        "Din gratis provperiod har slutat. ${ nonAutoRenewalAction }"
       ]
     },
     "Message display when a new app version is available": {
@@ -8876,6 +8918,9 @@
       ],
       "Team policies": [
         "Policy för team"
+      ],
+      "File attachments (up to 10GB)": [
+        "Filbilagor (upp till 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -11651,6 +11696,18 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "Uppgradera för att behålla dina premiumförmåner."
+      ],
+      "Booking page": [
+        "Bokningssida"
+      ],
+      "Ready to automate your scheduling?": [
+        "Redo att automatisera din schemaläggning?"
+      ],
+      "This booking page does not exist": [
+        "Denna bokningssida finns inte"
+      ],
+      "This booking page has expired": [
+        "Denna bokningssida har löpt ut"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12237,6 +12294,95 @@
     "Duo offer: Link": {
       "Share your plan": [
         "Dela ditt paket"
+      ],
+      "Get 4x more storage": [
+        "Skaffa 4x mer lagringsutrymme"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday-rea"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB datalagring"
+      ],
+      "3 TB data storage": [
+        "3 TB datalagring"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Åtkomst till 15 000+ servrar i 120+ länder"
+      ],
+      "Access advanced AI models": [
+        "Åtkomst till avancerade AI-modeller"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Alla premiumfunktioner i ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } och ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Blockera annonser, spårare och skadlig kod"
+      ],
+      "Built-in 2FA authenticator": [
+        "Inbyggd 2FA-autentiserare"
+      ],
+      "Connect 10 devices at once": [
+        "Anslut 10 enheter samtidigt"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Fullständig chatthistorik med enkel sökning och favoriter"
+      ],
+      "Individual accounts for 6 users": [
+        "Individuella konton för 6 användare"
+      ],
+      "Individual accounts for you and a partner": [
+        "Individuella konton för dig och en partner"
+      ],
+      "Stronger protection against cyber threats": [
+        "Starkare skydd mot cyberhot"
+      ],
+      "Unlimited daily chats": [
+        "Obegränsat antal dagliga chattar"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Hjälp dina nära och kära att gå med i integritetsrevolutionen med våra mest prisvärda paket, nu med 50 % rabatt!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Gå med i integritetsrevolutionen med våra mest prisvärda paket, nu med 50 % rabatt!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "för ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Spara ${ savedAmount } med vårt mest prisvärda, tidsbegränsade erbjudande!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Byt till vår 2-årsplan och spara ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Byt till vår årsplan och spara ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Unna dina nära och kära ett komplett digitalt skydd."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Specialdesignade NetShield skyddar dina enheter och snabbar upp din surfning genom att blockera annonser, spårare och skadlig kod."
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Skaffa 4x mer lagringsutrymme med ${ BRAND_NAME } Duo"
       ]
     }
   }

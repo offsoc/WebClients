@@ -950,6 +950,12 @@
       ],
       "Subscribe now": [
         "Εγγραφείτε τώρα"
+      ],
+      "Create booking page": [
+        "Δημιουργήστε σελίδα κρατήσεων"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Συμμετοχή ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1395,6 +1401,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "Αποθηκευτικός χώρος 200 GB: 40 φορές το τρέχον πλάνο σας"
+      ],
+      "Recover previous file versions": [
+        "Ανάκτηση προηγούμενων εκδόσεων αρχείων"
       ]
     },
     "BF2024: Offers": {
@@ -1403,6 +1415,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Ανανεώνεται μετά από 1 μήνα με ${ regularAmount }."
+      ],
+      "forever": [
+        "για πάντα"
       ]
     },
     "BF2024: Tooltip": {
@@ -1545,6 +1560,9 @@
       ],
       "Website access problem": [
         "Πρόβλημα πρόσβασης ιστοσελίδας"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -3737,10 +3755,10 @@
         "Παρακαλούμε εισάγετε έναν έγκυρο Ταχυδρομικό Κώδικα."
       ],
       "Please enter postal code": [
-        "Παρακαλώ εισάγετε τον ταχυδρομικό κώδικα"
+        "Παρακαλούμε εισάγετε τον ταχυδρομικό κώδικα"
       ],
       "Please enter ZIP code": [
-        "Παρακαλώ εισάγετε τον ταχυδρομικό κώδικα"
+        "Παρακαλούμε εισάγετε τον ταχυδρομικό κώδικα"
       ],
       "Please fix the highlighted conflict to proceed.": [
         "Παρακαλούμε επιλύστε την τονισμένη διένεξη προς συνέχιση.",
@@ -6273,6 +6291,15 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Αναβαθμίστε για να διατηρήσετε τα ${ planTitle } προνόμιά σας."
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } λεπτά διάρκεια"
+      ],
+      "A booking slot cannot be added in the past.": [
+        "Μια θέση κράτησης δεν μπορεί να προστεθεί στο παρελθόν."
+      ],
+      "Want to create your own booking page?": [
+        "Θέλετε να δημιουργήσετε τη δική σας σελίδα κρατήσεων;"
       ]
     },
     "info": {
@@ -6955,6 +6982,18 @@
       ],
       "Zoom meeting": [
         "Τηλεδιάσκεψη Zoom"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Duration": [
+        "Διάρκεια"
+      ],
+      "Get the deal": [
+        "Αποκτήστε την προσφορά"
+      ],
+      "Title": [
+        "Τίτλος"
       ]
     },
     "Label for contact group color": {
@@ -8898,6 +8937,9 @@
       ],
       "Team policies": [
         "Πολιτικές ομάδας"
+      ],
+      "File attachments (up to 10GB)": [
+        "Συνημμένα αρχεία (έως 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -9083,6 +9125,20 @@
       ],
       "Your payment is still being processed": [
         "Η πληρωμή σας βρίσκεται ακόμα υπό επεξεργασία"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο ${ subscriptionLength } μήνα.",
+        "Η ειδικά μειωμένη τιμή ισχύει για τους πρώτους ${ subscriptionLength } μήνες."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο μήνα. Το κουπόνι ισχύει για ${ couponRedemptions } ανανέωση. Στη συνέχεια, θα ανανεώνεται αυτόματα με τιμή ${ renewPriceStr } για 1 μήνα. Μπορείτε να ακυρώσετε οποιαδήποτε στιγμή.",
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο μήνα. Το κουπόνι ισχύει για ${ couponRedemptions } ανανεώσεις. Στη συνέχεια, θα ανανεώνεται αυτόματα με τιμή ${ renewPriceStr } για 1 μήνα. Μπορείτε να ακυρώσετε οποιαδήποτε στιγμή."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο μήνα. Στη συνέχεια, θα ανανεωθεί αυτόματα σε ${ renewPriceStr } κάθε μήνα. Μπορείτε να ακυρώσετε ανά πάσα στιγμή."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
+        "Η συνδρομή σας έχει ήδη μια υπάρχουσα έκπτωση. Η μετάβαση σε αυτή τη νέα προσφορά σημαίνει ότι η υπάρχουσα έκπτωση δε θα ισχύει πλέον."
       ]
     },
     "Payments.Error": {
@@ -11685,6 +11741,15 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "Αναβαθμίστε για να διατηρήσετε τα premium προνόμιά σας."
+      ],
+      "Booking page": [
+        "Σελίδα κρατήσεων"
+      ],
+      "This booking page does not exist": [
+        "Αυτή η σελίδα κρατήσεων δεν υπάρχει"
+      ],
+      "This booking page has expired": [
+        "Αυτή η σελίδα κράτησης έχει λήξει"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12272,6 +12337,48 @@
       ],
       "Only": [
         "Μόνο"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Block ads, trackers, and malware": [
+        "Αποκλείστε διαφημίσεις, ιχνηλάτες και κακόβουλο λογισμικό"
+      ],
+      "Built-in 2FA authenticator": [
+        "Ενσωματωμένη εφαρμογή ταυτοποίησης 2FA"
+      ],
+      "Unlimited daily chats": [
+        "Απεριόριστες καθημερινές συνομιλίες"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "για ${ durationDeal }"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Το ειδικά σχεδιασμένο NetShield προστατεύει τις συσκευές σας και επιταχύνει την περιήγησή σας εμποδίζοντας διαφημίσεις, ιχνηλάτες και κακόβουλο λογισμικό."
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "Αποκτήστε 4x περισσότερο χώρο αποθήκευσης"
+      ],
+      "Share your plan": [
+        "Κοινοποιήστε το πλάνο σας"
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Αποκτήστε 4x περισσότερο χώρο αποθήκευσης με το ${ BRAND_NAME } Duo"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Μοιραστείτε τα οφέλη του πλάνου σας με το ${ BRAND_NAME } Duo"
       ]
     }
   }
