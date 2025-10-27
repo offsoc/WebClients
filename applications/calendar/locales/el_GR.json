@@ -956,6 +956,15 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Συμμετοχή ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Αντιγραφή συνδέσμου κράτησης"
+      ],
+      "Create a booking page": [
+        "Δημιουργήστε μια σελίδα κρατήσεων"
+      ],
+      "Create an event": [
+        "Δημιουργία εκδήλωσης"
       ]
     },
     "action": {
@@ -1812,7 +1821,7 @@
         "Κρυπτογραφημένη εφαρμογή διαχείρισης κωδικών πρόσβασης"
       ],
       "Our basic, free plan with end-to-end encrypted email and storage. No premium features included.": [
-        "Το βασικό, δωρεάν πλάνο μας με κρυπτογραφημένο ηλεκτρονικό ταχυδρομείο και αποθηκευτικό χώρο από άκρο σε άκρο. Δεν περιλαμβάνονται premium δυνατότητες."
+        "Το βασικό, δωρεάν πλάνο μας με διατερματικά κρυπτογραφημένο ηλεκτρονικό ταχυδρομείο και αποθηκευτικό χώρο. Δεν περιλαμβάνονται premium δυνατότητες."
       ],
       "Save ${ upsellSavings }": [
         "Εξοικονομίστε ${ upsellSavings }"
@@ -6300,6 +6309,15 @@
       ],
       "Want to create your own booking page?": [
         "Θέλετε να δημιουργήσετε τη δική σας σελίδα κρατήσεων;"
+      ],
+      "Booking page example": [
+        "Παράδειγμα σελίδας κρατήσεων"
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "Αφήστε τους άλλους να κλείνουν ραντεβού μαζί σας αυτόματα. Χωρίς ατελείωτες ανταλλαγές ηλεκτρονικών μηνυμάτων. Μοιραστείτε έναν σύνδεσμο και διατηρήστε τον έλεγχο της διαθεσιμότητάς σας."
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Κοινοποιήστε αυτή τη σελίδα για να επιτρέψετε σε άλλους να κλείσουν χρόνο στο ημερολόγιό σας."
       ]
     },
     "info": {
@@ -10898,6 +10916,9 @@
       ],
       "You have successfully unsubscribed": [
         "Διαγραφήκατε με επιτυχία"
+      ],
+      "Booking link copied to clipboard": [
+        "Ο σύνδεσμος κράτησης αντιγράφηκε στο πρόχειρο"
       ]
     },
     "Suffix": {
@@ -11750,6 +11771,12 @@
       ],
       "This booking page has expired": [
         "Αυτή η σελίδα κράτησης έχει λήξει"
+      ],
+      "Ready to automate your scheduling?": [
+        "Είστε έτοιμοι να αυτοματοποιήσετε τον προγραμματισμό σας;"
+      ],
+      "Your booking page is ready": [
+        "Η σελίδα κρατήσεών σας είναι έτοιμη"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11855,6 +11882,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Ασφαλείς συνδέσεις σε όλες τις συσκευές σας. Περιλαμβάνει απεριόριστα ψευδώνυμα, κοινή χρήση, ενσωματωμένο έλεγχο ταυτότητας δύο παραγόντων (2FA) και πολλά άλλα."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Βοηθός τεχνητής νοημοσύνης που σέβεται την ιδιωτικότητά σας"
       ]
     },
     "Tooltip; share calendar modal ": {

@@ -970,6 +970,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Далучыцца да ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Скапіяваць спасылку на браніраванне"
       ]
     },
     "action": {
@@ -6477,6 +6480,12 @@
       ],
       "Want to create your own booking page?": [
         "Хочаце стварыць уласную старонку браніравання?"
+      ],
+      "Booking page example": [
+        "Прыклад старонкі браніравання"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Абагуліце гэту старонку, каб іншыя маглі забраніраваць час у вашым календары."
       ]
     },
     "info": {
@@ -9524,7 +9533,7 @@
         "Дадаць нумар прадпрыемства"
       ],
       "Add EIN": [
-        "Рэдагаваць ІНП"
+        "Рэдагаваць EIN"
       ],
       "Add VAT number": [
         "Дадаць нумар ПДВ"
@@ -11299,6 +11308,9 @@
       ],
       "You have successfully unsubscribed": [
         "Вы паспяхова скасавалі падпіску"
+      ],
+      "Booking link copied to clipboard": [
+        "Спасылка на браніраванне скапіявана ў буфер абмену"
       ]
     },
     "Suffix": {
@@ -12184,6 +12196,9 @@
       ],
       "This booking page has expired": [
         "Гэта старонка браніравання пратэрмінавана"
+      ],
+      "Your booking page is ready": [
+        "Ваша старонка браніравання гатова"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12289,6 +12304,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Бяспечныя запісы ўваходу на ўсіх вашых прыладах. Уключае неабмежаваную колькасць псеўданімаў, абагульненне, інтэграцыю з 2ФА і іншыя функцыі."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Памочнік ШІ, які паважае вашу прыватнасць"
       ]
     },
     "Tooltip; share calendar modal ": {

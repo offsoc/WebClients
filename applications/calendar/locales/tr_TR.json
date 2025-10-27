@@ -962,6 +962,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "${ CALENDAR_APP_NAME } uygulamasına katılın"
+      ],
+      "Copy Booking link": [
+        "Rezervasyon bağlantısını kopyala"
       ]
     },
     "action": {
@@ -6309,6 +6312,12 @@
       ],
       "Want to create your own booking page?": [
         "Kendi rezervasyon sayfanızı oluşturmak ister misiniz?"
+      ],
+      "Booking page example": [
+        "Rezervasyon sayfası örneği"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Başkalarının takviminizde rezervasyon alabilmesi için bu sayfayı paylaşın."
       ]
     },
     "info": {
@@ -10997,6 +11006,9 @@
       ],
       "You have successfully unsubscribed": [
         "Aboneliği sonlandırdınız"
+      ],
+      "Booking link copied to clipboard": [
+        "Rezervasyon bağlantısı panoya kopyalandı"
       ]
     },
     "Suffix": {
@@ -11852,6 +11864,9 @@
       ],
       "This booking page has expired": [
         "Bu rezervasyon sayfasının geçerlilik süresi dolmuş"
+      ],
+      "Your booking page is ready": [
+        "Rezervasyon sayfanız hazır"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11957,6 +11972,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Tüm aygıtlarınızda oturum açma işlemlerinin güvenliğini sağlayın. Sınırsız takma ad, paylaşım, bütünleşik iki adımlı doğrulama ve diğer özellikler."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Gizliliğinize saygı duyan yapay zeka yardımcısı"
       ]
     },
     "Tooltip; share calendar modal ": {
