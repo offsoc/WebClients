@@ -11982,6 +11982,32 @@
       "Passcode:": [
         "Kode sandi:"
       ]
+    },
+    "BF2025: Deal details": {
+      "Block ads, trackers, and malware": [
+        "Blokir iklan, pelacak, dan malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Autentikator 2FA terintegrasi"
+      ],
+      "Unlimited daily chats": [
+        "Tanpa batasan jumlah percakapan harian"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Jumat Hitam"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "untuk ${ durationDeal }"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Dirancang secara khusus, NetShield melindungi perangkat Anda dan mempercepat penjelajahan Anda dengan memblokir iklan, pelacak, dan perangkat lunak jahat."
+      ]
     }
   }
 }

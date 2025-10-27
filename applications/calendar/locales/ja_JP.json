@@ -946,6 +946,18 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "デスクトップアプリの無料トライアルは ${ formattedEndDate } で終了します。${ upgradeButton }"
+      ],
+      "Create a booking page": [
+        "予約ページを作成"
+      ],
+      "Create an event": [
+        "予定を作成する"
+      ],
+      "Create booking page": [
+        "予約ページを作成"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "${ CALENDAR_APP_NAME }に参加"
       ]
     },
     "action": {
@@ -1334,6 +1346,12 @@
       ],
       "Use your own email domain": [
         "独自メールドメインを使用する"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB ストレージ：お客様の現在のプランの40倍"
+      ],
+      "Recover previous file versions": [
+        "以前のファイルを復元"
       ]
     },
     "BF2024: Offers": {
@@ -1342,6 +1360,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "${ regularAmount }で1ヶ月後に自動更新されます。"
+      ],
+      "forever": [
+        "永久"
       ]
     },
     "BF2024: Tooltip": {
@@ -1476,6 +1497,9 @@
       ],
       "Website access problem": [
         "ウェブサイトへのアクセスに関する問題"
+      ],
+      "Black Friday": [
+        "ブラックフライデー"
       ]
     },
     "Button": {
@@ -4304,6 +4328,12 @@
     "Feature": {
       "Unlimited hide-my-email aliases": [
         "無制限の Hide-my-email エイリアス"
+      ],
+      "Encrypted cloud storage for files, photos and documents": [
+        "ファイル、写真、文書のための暗号化済みクラウドストレージ"
+      ],
+      "More premium features": [
+        "さらなるプレミアム機能"
       ]
     },
     "fido2: Error": {
@@ -6134,6 +6164,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "お客様ご自身のアカウントデータは引き続き表示できますが、すべてのユーザーアカウントがお客様の組織から削除されます。"
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } 分間"
+      ],
+      "A booking slot cannot be added in the past.": [
+        "過去の日時に予約枠を追加することはできません。"
+      ],
+      "Choose a plan that works best for you.": [
+        "お客様に最適なプランをお選びください。"
+      ],
+      "Continue": [
+        "続ける"
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "他のお客様が自動的に時間をご予約いただけるようにします。行き来するメールは不要です。リンクを共有し、お客様の空き状況を管理いただけます。"
+      ],
+      "Upgrade to keep your ${ planTitle } benefits.": [
+        "${ planTitle }の特典を維持するには、アップグレードしてください。"
+      ],
+      "Want to create your own booking page?": [
+        "お客様ご自身の予約ページを作成しますか？"
       ]
     },
     "info": {
@@ -6816,6 +6867,12 @@
       ],
       "Zoom meeting": [
         "Zoom ミーティング"
+      ],
+      "Black Friday": [
+        "ブラックフライデー"
+      ],
+      "Get the deal": [
+        "割引を入手"
       ]
     },
     "Label for contact group color": {
@@ -7083,6 +7140,9 @@
       ],
       "Your free trial has ended. Access to your account will soon be disabled. ${ action }": [
         "無料トライアルは終了しました。アカウントへのアクセスはまもなく無効になります。${ action }"
+      ],
+      "Your free trial has ended. ${ nonAutoRenewalAction }": [
+        "お客様の無料トライアルは終了しました。${ nonAutoRenewalAction }"
       ]
     },
     "Message display when a new app version is available": {
@@ -8695,6 +8755,9 @@
       ],
       "Team policies": [
         "チームポリシー"
+      ],
+      "File attachments (up to 10GB)": [
+        "添付ファイル (最大10GBまで)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -8876,6 +8939,18 @@
       ],
       "Your payment is still being processed": [
         "お支払いが現在処理中です"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "特別割引価格は最初の ${ subscriptionLength } ヶ月間有効です。"
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "特別割引価格は最初の月のみ有効です。クーポンは${ couponRedemptions }の更新で有効です。そのあとは 1 ヶ月${ renewPriceStr }で自動更新されます。いつでもキャンセル可能です。"
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "特別な割引価格は最初の月のみ有効です。その後、毎月${ renewPriceStr }で自動更新されます。いつでもキャンセル可能です。"
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
+        "お客様のサブスクリプションには現在、既存の割引が適用されています。この新しいプロモーションに移行すると、既存の割引は適用されなくなります。"
       ]
     },
     "Payments.Error": {
@@ -9282,6 +9357,9 @@
       ],
       "your subscription": [
         "あなたのサブスクリプション"
+      ],
+      "Once your full subscription starts, you can still cancel within 30 days and get a prorated refund.": [
+        "正規サブスクリプションが開始された後も、お客様は引き続き30日以内にキャンセルし、日割り計算での払い戻しを受けることができます。"
       ]
     },
     "Reload event button tooltip": {
@@ -11412,6 +11490,24 @@
       ],
       "Your shorter address is now ready": [
         "短いアドレスの準備ができました"
+      ],
+      "Booking page": [
+        "予約ページ"
+      ],
+      "Get **${ referralInfo.uiData.refereeRewardAmount }** in credits with ${ planTitle }": [
+        "**${ referralInfo.uiData.refereeRewardAmount }**分のクレジットを${ planTitle }で獲得"
+      ],
+      "Ready to automate your scheduling?": [
+        "スケジュール設定を自動化する準備はできていますか？"
+      ],
+      "This booking page does not exist": [
+        "この予約ページは存在しません"
+      ],
+      "This booking page has expired": [
+        "この予約ページは有効期限切れです"
+      ],
+      "Upgrade to keep your premium benefits.": [
+        "プレミアム特典を維持するには、アップグレードしてください。"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11699,6 +11795,9 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "無料トライアルは ${ textDate } に終了します。${ action }"
+      ],
+      "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
+        "お客様のトライアルは${ textDate }に終了します。${ textDate }までにキャンセルした場合、料金は請求されません。${ action }"
       ]
     },
     "Warning in modal to accept calendar invitation; Description": {
@@ -11935,6 +12034,103 @@
       ],
       "Passcode:": [
         "パスコード："
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "ブラックフライデーセール"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2TBのデータストレージ"
+      ],
+      "3 TB data storage": [
+        "3TBのデータストレージ"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "120か国以上の15,000台以上のサーバーにアクセス"
+      ],
+      "Access advanced AI models": [
+        "高度なAIモデルへのアクセス"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "${ MAIL_SHORT_APP_NAME }、${ PASS_SHORT_APP_NAME }、${ DRIVE_SHORT_APP_NAME }、${ VPN_SHORT_APP_NAME }、および${ CALENDAR_SHORT_APP_NAME }のすべてのプレミアム機能"
+      ],
+      "Block ads, trackers, and malware": [
+        "広告、トラッカー、マルウェアをブロック"
+      ],
+      "Built-in 2FA authenticator": [
+        "2要素認証システム内蔵"
+      ],
+      "Connect 10 devices at once": [
+        "10台のデバイスを同時接続"
+      ],
+      "Full chat history with easy search and favorites": [
+        "簡単な検索とお気に入り機能付きの完全なチャット履歴"
+      ],
+      "Individual accounts for 6 users": [
+        "6ユーザー分の個別アカウント"
+      ],
+      "Individual accounts for you and a partner": [
+        "お客様とパートナー用の個別アカウント"
+      ],
+      "Stronger protection against cyber threats": [
+        "サイバー脅威に対するより強力な保護"
+      ],
+      "Unlimited daily chats": [
+        "無制限の毎日のチャット"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "大切な人がプライバシー革命に参加できるようサポートしましょう。Protonで最もお得なセットが今なら50%オフ！"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "プライバシー革命に参加しましょう。Protonで最もお得なセットが今なら50%オフ！"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "${ durationDeal } の場合"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "期間限定の最もお得なセールで、${ savedAmount }を節約！"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "2年プランに切り替えて、${ savedAmount }を節約！"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "年間プランに切り替えて、${ savedAmount }を節約！"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "大切な人たちに、完全なデジタル保護を。"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "特別に設計されたNetShieldは、デバイスを保護し、広告、トラッカー、マルウェアをブロックしてブラウジングを高速化します。"
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "4倍のストレージを獲得"
+      ],
+      "Share your plan": [
+        "プランを共有"
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "${ BRAND_NAME } Duo でストレージを4倍に"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "${ BRAND_NAME } Duo とお客様のプラン特典を共有"
       ]
     }
   }

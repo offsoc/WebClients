@@ -12099,6 +12099,87 @@
       "Passcode:": [
         "Toegangscode:"
       ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday-aanbieding"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB dataopslag"
+      ],
+      "3 TB data storage": [
+        "3 TB dataopslag"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Toegang tot 15.000+ servers in 120+ landen"
+      ],
+      "Access advanced AI models": [
+        "Toegang tot geavanceerde AI-modellen"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Alle premiumfuncties van ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } en ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Blokkeer advertenties, trackers en malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Ingebouwde 2FA-authenticator"
+      ],
+      "Connect 10 devices at once": [
+        "Verbind 10 apparaten tegelijkertijd"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Volledige chatgeschiedenis met eenvoudige zoekfunctie en favorieten"
+      ],
+      "Individual accounts for 6 users": [
+        "Afzonderlijke accounts voor 6 gebruikers"
+      ],
+      "Individual accounts for you and a partner": [
+        "Afzonderlijke accounts voor u en een partner"
+      ],
+      "Stronger protection against cyber threats": [
+        "Sterkere bescherming tegen cyberdreigingen"
+      ],
+      "Unlimited daily chats": [
+        "Onbeperkt aantal dagelijkse gesprekken"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Help uw dierbaren deelnemen aan de privacyrevolutie met onze voordeligste bundels, nu met 50% korting!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Doe mee met de privacyrevolutie met onze voordeligste bundels, nu met 50% korting!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "voor ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Bespaar ${ savedAmount } met onze voordeligste, tijdelijke aanbieding!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Stap over op ons 2-jarig abonnement en bespaar ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Stap over op ons jaarabonnement en bespaar ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Trakteer uw naasten op complete digitale bescherming."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Het speciaal ontworpen NetShield beschermt uw apparaten en versnelt uw browsen door advertenties, trackers en malware te blokkeren."
+      ]
     }
   }
 }

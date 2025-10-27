@@ -929,6 +929,21 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Din desktop app's gratis prøveperiode slutter den ${ upgradeButton }. ${ formattedEndDate }"
+      ],
+      "Create a booking page": [
+        "Opret en bookingside"
+      ],
+      "Create a new bookings page": [
+        "Opret en ny bookingside"
+      ],
+      "Create an event": [
+        "Opret en begivenhed"
+      ],
+      "Create booking page": [
+        "Opret en bookingside"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Tilmeld dig ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1282,11 +1297,29 @@
       ],
       "Use your own email domain": [
         "Brug dit eget e-mail-domæne"
+      ],
+      "1 user account": [
+        "1 brugerkonto"
+      ],
+      "6 user accounts": [
+        "6 brugerkonti"
+      ],
+      "Admin panel to manage your family": [
+        "Adminpanel til at administrere din familie"
+      ],
+      "Easily add or remove users": [
+        "Tilføj eller fjern nemt brugere"
+      ],
+      "Password health alerts": [
+        "Adgangskode-sundhed advarsler"
       ]
     },
     "BF2024: Offers": {
       "Billed at ${ amount } once": [
         "Faktureret med ${ amount } én gang"
+      ],
+      "Renews after 1 month at ${ regularAmount }.": [
+        "Fornyes efter 1 måned til ${ regularAmount }."
       ]
     },
     "BF2024: Tooltip": {
@@ -1296,6 +1329,25 @@
       "Secure your emails and schedule with end-to-end encryption. Includes ${ addresses } email address, support for custom email domains, unlimited hide-my-email aliases and more.": [
         "Beskyt dine e-mails og din tidsplan med end-to-end-kryptering. Inkluderer ${ addresses } e-mailadresse, understøttelse af brugerdefinerede e-maildomæner, ubegrænsede hide-my-email-aliasser og mere.",
         "Beskyt dine e-mails og din tidsplan med end-to-end-kryptering. Inkluderer ${ addresses } e-mailadresser, understøttelse af brugerdefinerede e-maildomæner, ubegrænsede hide-my-email-aliasser og mere."
+      ],
+      "Access blocked content and browse privately. Includes 8,500+ servers across 110+ countries, 10 devices, high-speed streaming, ad-blocker and malware protection, VPN Accelerator and more.": [
+        "Tilgå blokeret indhold og browse privat. Det inkluderer 8.500+ servere fordelt på 110+ lande, 10 enheder, streaming med høj hastighed, annonceblokering og malware-beskyttelse, VPN Accelerator og meget mere."
+      ],
+      "Secure your emails and schedule with end-to-end encryption. Includes ${ addresses } email address, support for custom email domains, ${ BRAND_NAME } Scribe writing assistant, unlimited hide-my-email aliases and more.": [
+        "Beskyt dine e-mails og din tidsplan med end-to-end-kryptering. Det inkluderer ${ addresses } e-mailadresse, understøttelse af brugerdefinerede e-maildomæner, ${ BRAND_NAME } Scribe skriveassistent, ubegrænsede hide-my-email-aliasser og mere.",
+        "Beskyt dine e-mails og tidsplan med end-to-end-kryptering. Det inkluderer ${ addresses } e-mailadresser, understøttelse af brugerdefinerede e-mail-domæner, ${ BRAND_NAME } Scribe skriveassistent, ubegrænsede hide-my-email-aliasser og mere."
+      ],
+      "Secure your emails and schedule with end-to-end encryption. Includes 15 email addresses, support for custom email domains, ${ BRAND_NAME } Scribe writing assistant, unlimited hide-my-email aliases and more.": [
+        "Beskyt dine e-mails og din tidsplan med end-to-end-kryptering. Det inkluderer 15 e-mailadresser, understøttelse af brugerdefinerede e-mail-domæner, ${ BRAND_NAME } Scribe skriveassistent, ubegrænsede hide-my-email-aliasser og mere."
+      ],
+      "Secure your emails and schedule with end-to-end encryption. Includes 15 email addresses, support for custom email domains, unlimited hide-my-email aliases and more.": [
+        "Beskyt dine e-mails og din tidsplan med end-to-end-kryptering. Det inkluderer 15 e-mailadresser, understøttelse af brugerdefinerede e-mail-domæner, ubegrænsede hide-my-email-aliasser og mere."
+      ],
+      "Secure your files with encrypted cloud storage. Includes online document editor, photo backup, version history, encrypted file sharing, and more.": [
+        "Beskyt dine filer med krypteret lagring i skyen. Det inkluderer en online dokumenteditor, sikkerhedskopiering af billeder, versionshistorik, krypteret fildeling og meget mere."
+      ],
+      "Storage space is shared across all ${ BRAND_NAME } services.": [
+        "Lagerplads er delt mellem alle ${ BRAND_NAME }-tjenester."
       ]
     },
     "Billing cycle option": {
@@ -1666,6 +1718,9 @@
       ],
       "Ultra fast and private VPN": [
         "Ultra hurtig og privat VPN"
+      ],
+      "All premium features from ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Alle premium-funktioner fra ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME } og ${ CALENDAR_SHORT_APP_NAME }"
       ]
     },
     "Checkout row": {
@@ -3710,6 +3765,12 @@
       ],
       "ZIP code is required": [
         "Postnummer er påkrævet"
+      ],
+      "Failed to create ${ MEET_APP_NAME } video conference": [
+        "Kunne ikke oprette ${ MEET_APP_NAME }-videokonference"
+      ],
+      "Failed to decrypt session key": [
+        "Kunne ikke dekryptere sessionsnøgle"
       ]
     },
     "Error accepting calendar invitation": {
@@ -5985,6 +6046,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Du vil stadig kunne se dine egne kontodata, men alle brugerkonti vil blive fjernet fra din organisation."
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } min. varighed"
+      ],
+      "A booking slot cannot be added in the past.": [
+        "En bookingtid kan ikke tilføjes i fortiden."
+      ],
+      "Enter your own password (as trusted contact).": [
+        "Indtast din egen adgangskode (som betroet kontakt)."
+      ],
+      "Failed to update meeting name": [
+        "Det lykkedes ikke at opdatere mødenavnet"
+      ],
+      "Failed to update meeting password": [
+        "Det lykkedes ikke at opdatere mødeadgangskoden"
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "Lad andre booke tid med dig automatisk. Ingen frem- og tilbagegående e-mails. Del et link, og bevar kontrollen over din tilgængelighed."
+      ],
+      "Want to create your own booking page?": [
+        "Ønsker du at oprette din egen bookingside?"
       ]
     },
     "info": {
@@ -6105,6 +6187,9 @@
       ],
       "WKD": [
         "WKD"
+      ],
+      "KOO": [
+        "KOO"
       ]
     },
     "Keyboard shortcut name": {
@@ -6646,6 +6731,21 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Add ${ MEET_APP_NAME } conferencing": [
+        "Tilføj ${ MEET_APP_NAME }-konference"
+      ],
+      "Add Zoom meeting": [
+        "Tilføj Zoom-møde"
+      ],
+      "Video conference": [
+        "Videokonference"
+      ],
+      "Your password (trusted contact)": [
+        "Din adgangskode (betroet kontakt)"
+      ],
+      "Zoom meeting": [
+        "Zoom-møde"
       ]
     },
     "Label for contact group color": {
@@ -6799,6 +6899,9 @@
       ],
       "What’s this?": [
         "Hvad er dette?"
+      ],
+      "Bookings pages": [
+        "Bookingsider"
       ]
     },
     "Link label (optional)": {
@@ -7611,6 +7714,21 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Vi scanner det mørke web for at tjekke, om dine ${ BRAND_NAME }-adresser eller aliasser er blevet lækket, og giver dig straks besked, hvis vi finder noget."
+      ],
+      "1 TB secure storage": [
+        "1 TB sikker lagerplads"
+      ],
+      "All ${ BRAND_NAME } products and features": [
+        "Alle ${ BRAND_NAME }-produkter og funktioner"
+      ],
+      "Generate emails with a prompt": [
+        "Generér e-mails med en besked"
+      ],
+      "Proofread and refine your emails": [
+        "Korrekturlæs og finpuds dine e-mails"
+      ],
+      "Support for up to 2 users": [
+        "Support for op til 2 brugere"
       ]
     },
     "new_plans: feature highlight": {
@@ -8926,6 +9044,12 @@
       ],
       "Upgrade to ${ upsellPlanTitle }": [
         "Opgradér til ${ upsellPlanTitle }"
+      ],
+      "As a **${ currentPlanTitle }** subscriber, you can unlock **${ unlockPlanTitle }** and more ${ BRAND_NAME } services by upgrading to **${ upsellPlanTitle }**.": [
+        "Som **${ currentPlanTitle }**-abonnent kan du låse op for **${ unlockPlanTitle }** og flere ${ BRAND_NAME }-tjenester ved at opgradere til **${ upsellPlanTitle }**."
+      ],
+      "More ${ BRAND_NAME } services.${ br }One easy subscription.": [
+        "Flere ${ BRAND_NAME }-tjenester.${ br }Ét nemt abonnement."
       ]
     },
     "Price": {
@@ -9612,6 +9736,12 @@
       ],
       "Video conferencing is here!": [
         "Videokonferencer er en realitet!"
+      ],
+      "${ MEET_APP_NAME } is here!": [
+        "${ MEET_APP_NAME } er her!"
+      ],
+      "Schedule and join ${ MEET_APP_NAME } calls right from your calendar.": [
+        "Planlæg og deltag i ${ MEET_APP_NAME }-opkald direkte fra din kalender."
       ]
     },
     "sso": {
@@ -10066,6 +10196,9 @@
       ],
       "Your own short @pm.me email alias": [
         "Dit eget korte @pm.me e-mail-alias"
+      ],
+      "${ planName } gives you access to all premium features from ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }. Privacy is built-in so you can get on with it, knowing your data and identity are safe.": [
+        "${ planName } giver dig adgang til alle premium-funktioner fra ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME } og ${ CALENDAR_SHORT_APP_NAME }. Privatliv er indbygget, så du kan fortsætte, velvidende at dine data og din identitet er sikret."
       ]
     },
     "subscription reminder": {
@@ -11148,6 +11281,21 @@
       ],
       "Your shorter address is now ready": [
         "Din kortere adresse er nu klar"
+      ],
+      "Account temporarily locked": [
+        "Konto midlertidigt låst"
+      ],
+      "Booking page": [
+        "Bookingside"
+      ],
+      "Ready to automate your scheduling?": [
+        "Klar til at automatisere din planlægning?"
+      ],
+      "This booking page does not exist": [
+        "Denne bookingside eksisterer ikke"
+      ],
+      "This booking page has expired": [
+        "Denne bookingside er udløbet"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11364,6 +11512,12 @@
       ],
       "Bitcoin via Email": [
         "Bitcoin via e-mail"
+      ],
+      "Encrypted and secure ${ MAIL_APP_NAME } email address. You can easily send Bitcoin to anyone with just their ${ BRAND_NAME } name.": [
+        "Krypteret og sikker ${ MAIL_APP_NAME }-mailadresse. Du kan nemt sende Bitcoin til alle med blot dit ${ BRAND_NAME }-navn."
+      ],
+      "Securely exchange Bitcoin via email instead of complex, 26-character Bitcoin addresses that are prone to error": [
+        "Udveksl sikkert Bitcoin via e-mail i stedet for komplekse, 26-tegns Bitcoin-adresser, der er fejlbehæftede."
       ]
     },
     "wallet_signup_2024:Bug category": {
@@ -11704,6 +11858,106 @@
       ],
       "Passcode:": [
         "Adgangskode:"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday-udsalg"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB datalagerplads"
+      ],
+      "3 TB data storage": [
+        "3 TB datalagerplads"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Adgang til 15.000+ servere i mere end 120 lande"
+      ],
+      "Access advanced AI models": [
+        "Adgang til avancerede AI-modeller"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Alle premium-funktioner i ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } og ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Bloker annoncer, trackere og malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Indbygget 2FA-authenticator"
+      ],
+      "Connect 10 devices at once": [
+        "Tilslut 10 enheder på én gang"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Fuld chathistorik med nem søgning og favoritter"
+      ],
+      "Individual accounts for 6 users": [
+        "Individuelle konti til 6 brugere"
+      ],
+      "Individual accounts for you and a partner": [
+        "Individuelle konti til dig og en partner"
+      ],
+      "Stronger protection against cyber threats": [
+        "Stærkere beskyttelse mod cybertrusler"
+      ],
+      "Unlimited daily chats": [
+        "Ubegrænsede daglige chats"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Hjælp dine kære med at deltage i privacy-revolutionen med vores mest fordelagtige pakker, nu med 50 % rabat!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Deltag i privacy-revolutionen med vores mest fordelagtige pakker, nu med 50 % rabat!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "til ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Spar ${ savedAmount } med vores mest fordelagtige, tidsbegrænsede tilbud!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Skift til vores 2-års abonnement, og spar ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Skift til vores årlige abonnement, og spar ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Forkæl dine nærmeste med komplet digital beskyttelse."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Det specialdesignede NetShield beskytter dine enheder og sætter farten i vejret på din browsing ved at blokere annoncer, trackere og malware."
+      ]
+    },
+    "Plan description": {
+      "All premium features from ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ PASS_SHORT_APP_NAME }.": [
+        "Alle premium-funktioner fra ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ CALENDAR_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } og ${ PASS_SHORT_APP_NAME }."
+      ],
+      "All premium features from ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Alle premium-funktioner fra ${ BRAND_NAME } ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME } og ${ CALENDAR_SHORT_APP_NAME }"
+      ]
+    },
+    "Referral": {
+      "You have **${ daysRemaining } day left** to explore all the powerful features that **${ planTitle }** has to offer.": [
+        "De har **${ daysRemaining } dag tilbage** til at udforske alle de kraftfulde funktioner, som **${ planTitle }** har at tilbyde.",
+        "De har **${ daysRemaining } dage tilbage** til at udforske alle de kraftfulde funktioner, som **${ planTitle }** har at tilbyde."
+      ]
+    },
+    "wallet_signup_2024:app-switcher": {
+      "A safer way to hold Bitcoin": [
+        "En sikrere måde at gemme Bitcoin på"
       ]
     }
   }
