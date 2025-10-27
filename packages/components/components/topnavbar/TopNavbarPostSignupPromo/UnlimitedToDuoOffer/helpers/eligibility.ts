@@ -1,4 +1,4 @@
-import { CYCLE, PLANS, type Subscription } from '@proton/payments';
+import { CYCLE, type FreeSubscription, PLANS, type Subscription } from '@proton/payments';
 import { APPS } from '@proton/shared/lib/constants';
 import type { ProtonConfig, UserModel } from '@proton/shared/lib/interfaces';
 
@@ -17,7 +17,7 @@ import {
 
 interface EligibilityProps {
     user: UserModel;
-    subscription?: Subscription;
+    subscription?: Subscription | FreeSubscription;
     protonConfig: ProtonConfig;
     parentApp?: (typeof APPS)[keyof typeof APPS];
 }
