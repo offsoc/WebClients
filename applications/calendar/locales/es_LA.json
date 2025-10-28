@@ -950,6 +950,21 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "La prueba gratuita de la aplicación de escritorio finaliza en ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Copy Booking link": [
+        "Copiar enlace de la reserva"
+      ],
+      "Create a booking page": [
+        "Crear una página de reservas"
+      ],
+      "Create an event": [
+        "Crear un evento"
+      ],
+      "Create booking page": [
+        "Crear página de reservas"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Unirse a ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1344,6 +1359,12 @@
       ],
       "Use your own email domain": [
         "Use su propio dominio de correo electrónico"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB de almacenamiento: 40 veces su plan actual"
+      ],
+      "Recover previous file versions": [
+        "Recupere las versiones previas de los archivos"
       ]
     },
     "BF2024: Offers": {
@@ -1352,6 +1373,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Se renueva después de 1 mes por ${ regularAmount }."
+      ],
+      "forever": [
+        "para siempre"
       ]
     },
     "BF2024: Tooltip": {
@@ -1488,6 +1512,9 @@
       ],
       "Website access problem": [
         "Problema de acceso web"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -3237,6 +3264,9 @@
       ],
       "Share your plan": [
         "Comparta su plan"
+      ],
+      "Get 4x more storage": [
+        "Obtén 4 veces más almacenamiento"
       ]
     },
     "Duo offer: Title": {
@@ -3245,6 +3275,9 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Comparta los beneficios de su plan con ${ BRAND_NAME } Duo"
+      ],
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Obtenga 4 veces más almacenamiento con ${ BRAND_NAME } Duo"
       ]
     },
     "Duplicate event button tooltip": {
@@ -6249,6 +6282,24 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Podrá seguir viendo los datos de su propia cuenta, pero todas las cuentas de usuario serán eliminadas de su organización."
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } min de duración"
+      ],
+      "A booking slot cannot be added in the past.": [
+        "No se puede añadir un espacio de reserva en el pasado."
+      ],
+      "Booking page example": [
+        "Ejemplo de página de reservas"
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "Permita que otros reserven con usted automáticamente. Comparta un enlace y mantenga el control de su disponibilidad."
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Comparta esta página para permitir a otros reservar una hora en su calendario."
+      ],
+      "Want to create your own booking page?": [
+        "¿Desea crear su propia página de reservas?"
       ]
     },
     "info": {
@@ -6937,6 +6988,12 @@
       ],
       "Zoom meeting": [
         "Reunión de Zoom"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Obtener la oferta"
       ]
     },
     "Label for contact group color": {
@@ -8880,6 +8937,9 @@
       ],
       "Team policies": [
         "Políticas de equipo"
+      ],
+      "File attachments (up to 10GB)": [
+        "Archivos adjuntos (hasta 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -9065,6 +9125,13 @@
       ],
       "Your payment is still being processed": [
         "Su pago aún está siendo procesado"
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "El precio especial con descuento es válido para el primer mes. El cupón es válido para ${ couponRedemptions } renovación. Después se renovará automáticamente por ${ renewPriceStr } por 1 mes. Puede cancelarlo en cualquier momento.",
+        "El precio especial con descuento es válido para el primer mes. El cupón es válido para ${ couponRedemptions } renovaciones. Después se renovará automáticamente por ${ renewPriceStr } por 1 mes. Puede cancelarlo en cualquier momento."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "El precio especial con descuento es válido durante el primer mes. Después se renovará automáticamente por ${ renewPriceStr } cada mes. Puede cancelarlo en cualquier momento."
       ]
     },
     "Payments.Error": {
@@ -10911,6 +10978,9 @@
       ],
       "You have successfully unsubscribed": [
         "Se ha desuscrito satisfactoriamente"
+      ],
+      "Booking link copied to clipboard": [
+        "Enlace de la reserva copiado al portapapeles"
       ]
     },
     "Suffix": {
@@ -11754,6 +11824,21 @@
       ],
       "Your shorter address is now ready": [
         "Su dirección en formato más corto ya está lista."
+      ],
+      "Booking page": [
+        "Página de reservas"
+      ],
+      "Ready to automate your scheduling?": [
+        "¿Listo para automatizar su programación?"
+      ],
+      "This booking page does not exist": [
+        "Esta página de reservas no existe"
+      ],
+      "This booking page has expired": [
+        "Esta página de reservas ha expirado"
+      ],
+      "Your booking page is ready": [
+        "Su página de reservas está lista"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11859,6 +11944,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Inicios de sesión seguros en todos los dispositivos. Incluye alias ilimitados, uso compartido, 2FA integrado y más."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Asistente de IA que respeta su privacidad"
       ]
     },
     "Tooltip; share calendar modal ": {

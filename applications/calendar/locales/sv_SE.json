@@ -962,6 +962,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Gå med ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Kopiera bokningslänk"
       ]
     },
     "action": {
@@ -3238,6 +3241,9 @@
       ],
       "Only": [
         "Endast"
+      ],
+      "2 TB of storage to share": [
+        "2 TB lagringsutrymme att dela"
       ]
     },
     "Duo offer: Link": {
@@ -3257,6 +3263,9 @@
       ],
       "Get 4x more storage with ${ BRAND_NAME } Duo": [
         "Skaffa 4x mer lagringsutrymme med ${ BRAND_NAME } Duo"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Dela dina paketförmåner med ${ BRAND_NAME } Duo"
       ]
     },
     "Duplicate event button tooltip": {
@@ -6258,6 +6267,21 @@
       ],
       "Want to create your own booking page?": [
         "Vill du skapa din egen bokningssida?"
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } min. varaktighet"
+      ],
+      "Booking page example": [
+        "Exempel på bokningssida"
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "Låt andra boka tid med dig automatiskt. Ingen e-post fram och tillbaka. Dela en länk och behåll kontroll över din tillgänglighet."
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Dela denna sida så andra kan boka tid i din kalender."
+      ],
+      "Upgrade to keep your ${ planTitle } benefits.": [
+        "Uppgradera för att behålla dina ${ planTitle }-förmåner."
       ]
     },
     "info": {
@@ -9488,6 +9512,9 @@
       ],
       "your subscription": [
         "din prenumeration"
+      ],
+      "Once your full subscription starts, you can still cancel within 30 days and get a prorated refund.": [
+        "När din fullständiga prenumeration startar kan du fortfarande avbryta inom 30 dagar och få en proportionell återbetalning."
       ]
     },
     "Reload event button tooltip": {
@@ -10829,6 +10856,9 @@
       ],
       "You have successfully unsubscribed": [
         "Du har avslutat din prenumeration"
+      ],
+      "Booking link copied to clipboard": [
+        "Bokningslänk kopierad till urklipp"
       ]
     },
     "Suffix": {
@@ -11684,6 +11714,9 @@
       ],
       "This booking page has expired": [
         "Denna bokningssida har löpt ut"
+      ],
+      "Your booking page is ready": [
+        "Din bokningssida är redo"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11789,6 +11822,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Säkra inloggningar på alla dina enheter. Inkluderar obegränsade alias, delning, integrerad 2FA och mer."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: AI-assistent som respekterar din integritet"
       ]
     },
     "Tooltip; share calendar modal ": {

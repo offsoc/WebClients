@@ -962,6 +962,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Rejoindre ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Copier le lien de réservation"
       ]
     },
     "action": {
@@ -6291,6 +6294,12 @@
       ],
       "Want to create your own booking page?": [
         "Souhaitez-vous créer votre propre page de réservation ?"
+      ],
+      "Booking page example": [
+        "Exemple de page de réservation"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Partagez cette page pour permettre à d'autres de réserver du temps dans votre calendrier."
       ]
     },
     "info": {
@@ -10976,6 +10985,9 @@
       ],
       "You have successfully unsubscribed": [
         "La désinscription a été effectuée."
+      ],
+      "Booking link copied to clipboard": [
+        "Le lien de réservation a été copié dans le presse-papiers"
       ]
     },
     "Suffix": {
@@ -11831,6 +11843,9 @@
       ],
       "This booking page has expired": [
         "Cette page de réservation a expiré"
+      ],
+      "Your booking page is ready": [
+        "Votre page de réservation est prête."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11936,6 +11951,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME } : sécurisez vos identifiants de connexion sur tous vos appareils. Comprend un nombre illimité d'alias, le partage, l'authentification à deux facteurs (A2F) intégrée et bien d'autres fonctionnalités."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME } : Assistant IA qui respecte votre vie privée"
       ]
     },
     "Tooltip; share calendar modal ": {

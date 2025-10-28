@@ -958,6 +958,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "${ CALENDAR_APP_NAME }に参加"
+      ],
+      "Copy Booking link": [
+        "予約リンクをコピー"
       ]
     },
     "action": {
@@ -6185,6 +6188,12 @@
       ],
       "Want to create your own booking page?": [
         "お客様ご自身の予約ページを作成しますか？"
+      ],
+      "Booking page example": [
+        "予約ページの例"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "このページを共有すると、他のお客様がお客様のカレンダーで時間を予約できるようになります。"
       ]
     },
     "info": {
@@ -10668,6 +10677,9 @@
       ],
       "You have successfully unsubscribed": [
         "サブスクリプションをキャンセルしました"
+      ],
+      "Booking link copied to clipboard": [
+        "予約リンクがクリップボードにコピーされました"
       ]
     },
     "Suffix": {
@@ -11508,6 +11520,9 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "プレミアム特典を維持するには、アップグレードしてください。"
+      ],
+      "Your booking page is ready": [
+        "予約ページの準備ができました"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11613,6 +11628,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: すべてのデバイスで安全なログインを実現します。 無制限のエイリアス、共有、統合 2要素認証 などが含まれます。"
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: お客様のプライバシーを尊重するAIアシスタント"
       ]
     },
     "Tooltip; share calendar modal ": {

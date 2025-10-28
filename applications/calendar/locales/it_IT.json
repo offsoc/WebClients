@@ -962,6 +962,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Entra in ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Copia il link di prenotazione"
       ]
     },
     "action": {
@@ -3253,6 +3256,9 @@
       ],
       "Only": [
         "Solo"
+      ],
+      "2 TB of storage to share": [
+        "2 TB di archiviazione da condividere"
       ]
     },
     "Duo offer: Link": {
@@ -6291,6 +6297,12 @@
       ],
       "Want to create your own booking page?": [
         "Vuoi creare la tua pagina di prenotazione?"
+      ],
+      "Booking page example": [
+        "Pagina prenotazione esempio"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Condividi questa pagina per far prenotare agli altri un appuntamento nel tuo calendario."
       ]
     },
     "info": {
@@ -9135,6 +9147,9 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
       ]
     },
     "Payments.Error": {
@@ -10981,6 +10996,9 @@
       ],
       "You have successfully unsubscribed": [
         "Abbonamento annullato con successo"
+      ],
+      "Booking link copied to clipboard": [
+        "Link di prenotazione copiato negli appunti"
       ]
     },
     "Suffix": {
@@ -11836,6 +11854,9 @@
       ],
       "This booking page has expired": [
         "Questa pagina di prenotazione è scaduta"
+      ],
+      "Your booking page is ready": [
+        "La tua pagina di prenotazione è pronta"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11941,6 +11962,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Login sicuri su tutti i tuoi dispositivi. Include alias illimitati, condivisione, 2FA integrata e molto altro."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Assistente AI che tutela la tua privacy"
       ]
     },
     "Tooltip; share calendar modal ": {

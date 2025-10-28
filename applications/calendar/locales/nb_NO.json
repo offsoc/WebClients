@@ -962,6 +962,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Bli med ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Kopier bestillingskobling"
       ]
     },
     "action": {
@@ -6291,6 +6294,12 @@
       ],
       "Want to create your own booking page?": [
         "Vil du opprette din egen bestillingsside?"
+      ],
+      "Booking page example": [
+        "Eksempel på bestillingsside"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Del denne siden for å la andre bestille tid i kalenderen din."
       ]
     },
     "info": {
@@ -9123,6 +9132,13 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "Abonnementet ditt har for øyeblikket en eksisterende rabatt. Hvis du flytter til denne nye kampanjen, vil den eksisterende rabatten ikke lenger gjelde."
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Den spesielle rabattprisen gjelder for den første måneden på ${ subscriptionLength }.",
+        "Den spesielt rabatterte prisen er gyldig de første ${ subscriptionLength } månedene."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Den spesielt rabatterte prisen er gyldig den første måneden. Da blir den automatisk fornyet til ${ renewPriceStr } hver måned. Du kan avbryte når som helst."
       ]
     },
     "Payments.Error": {
@@ -10879,6 +10895,9 @@
       ],
       "You have successfully unsubscribed": [
         "Du har avsluttet abonnementet"
+      ],
+      "Booking link copied to clipboard": [
+        "Bestillingskobling kopiert til utklippstavlen"
       ]
     },
     "Suffix": {
@@ -11734,6 +11753,9 @@
       ],
       "This booking page has expired": [
         "Denne bestillingssiden er utløpt"
+      ],
+      "Your booking page is ready": [
+        "Bestillingssiden din er klar"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11839,6 +11861,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: sikre pålogginger på alle dine enheter. Inkluderer ubegrenset antall aliaser, deling, integrert 2FA og mer."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: KI-assistent som respekterer personvernet ditt"
       ]
     },
     "Tooltip; share calendar modal ": {

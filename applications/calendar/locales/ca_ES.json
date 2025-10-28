@@ -962,6 +962,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Uniu-vos a ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Copieu l'enllaç de reserves"
       ]
     },
     "action": {
@@ -3253,6 +3256,9 @@
       ],
       "Only": [
         "Només"
+      ],
+      "2 TB of storage to share": [
+        "2 TB d'emmagatzematge per compartir"
       ]
     },
     "Duo offer: Link": {
@@ -6291,6 +6297,12 @@
       ],
       "Want to create your own booking page?": [
         "Voleu crear la vostra pròpia pàgina de reserves?"
+      ],
+      "Booking page example": [
+        "Exemple de pàgina de reserves"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Compartiu aquesta pàgina perquè altres usuaris puguin reservar temps al vostre calendari."
       ]
     },
     "info": {
@@ -9130,6 +9142,9 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "La vostra subscripció ja té un descompte. Passar a aquesta nova promoció significa que el descompte actual no s'aplicarà."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "La vostra subscripció ja té un descompte aplicat. Canviar a aquesta nova promoció implica que el descompte actual ja no s'aplicarà."
       ]
     },
     "Payments.Error": {
@@ -10886,6 +10901,9 @@
       ],
       "You have successfully unsubscribed": [
         "Heu anul·lat la subscripció amb èxit"
+      ],
+      "Booking link copied to clipboard": [
+        "S'ha copiat l'enllaç de reserves al porta-retalls"
       ]
     },
     "Suffix": {
@@ -11741,6 +11759,9 @@
       ],
       "This booking page has expired": [
         "Aquesta pàgina de reserves ha caducat"
+      ],
+      "Your booking page is ready": [
+        "La vostra pàgina de reserves és a punt"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11846,6 +11867,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Inicis de sessió segurs en tots els vostres dispositius. Inclou àlies il·limitats, compartició, A2F integrada, etc."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: l'assistent d'IA que respecta la vostra privacitat"
       ]
     },
     "Tooltip; share calendar modal ": {

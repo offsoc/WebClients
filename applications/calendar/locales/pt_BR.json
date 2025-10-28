@@ -962,6 +962,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Juntar ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Copiar link da reserva"
       ]
     },
     "action": {
@@ -6291,6 +6294,12 @@
       ],
       "Want to create your own booking page?": [
         "Quer criar sua própria página de agendamentos?"
+      ],
+      "Booking page example": [
+        "Exemplo de página de reserva"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Compartilhe esta página para permitir que outros agendem um horário no seu calendário."
       ]
     },
     "info": {
@@ -10987,6 +10996,9 @@
       ],
       "You have successfully unsubscribed": [
         "Você cancelou a inscrição"
+      ],
+      "Booking link copied to clipboard": [
+        "Link de agendamento copiado para a área de transferência"
       ]
     },
     "Suffix": {
@@ -11842,6 +11854,9 @@
       ],
       "This booking page has expired": [
         "Esta página de reserva expirou"
+      ],
+      "Your booking page is ready": [
+        "Sua página de agendamento está pronta"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11947,6 +11962,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Inícios de sessão seguros em todos os seus dispositivos. Inclui aliases ilimitados, compartilhamento, 2FA integrado e muito mais."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Um assistente IA que respeita sua privacidade"
       ]
     },
     "Tooltip; share calendar modal ": {
