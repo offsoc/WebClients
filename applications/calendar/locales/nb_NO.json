@@ -9157,6 +9157,9 @@
       ],
       "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
         "Den spesielt rabatterte prisen er gyldig den første måneden. Da blir den automatisk fornyet til ${ renewPriceStr } hver måned. Du kan avbryte når som helst."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Abonnementet ditt har for øyeblikket en eksisterende rabatt. Hvis du flytter til denne nye kampanjen, vil den eksisterende rabatten ikke lenger gjelde."
       ]
     },
     "Payments.Error": {
@@ -12393,6 +12396,9 @@
       ],
       "Only": [
         "Kun"
+      ],
+      "2 TB of storage to share": [
+        "2 TB med lagringsplass å dele"
       ]
     },
     "Duo offer: Link": {
