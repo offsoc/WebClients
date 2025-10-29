@@ -1,0 +1,25 @@
+.recording-controls {
+	.recording-indicator {
+		position: relative;
+
+		.recording-pulse {
+			width: 0.75rem;
+			height: 0.75rem;
+			border-radius: 50%;
+			background-color: var(--signal-danger);
+			animation: pulse 1.5s ease-in-out infinite;
+		}
+	}
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.5;
+		transform: scale(1.2);
+	}
+}

@@ -25,6 +25,7 @@ import { AudioSettings } from '../AudioSettings/AudioSettings';
 import { ChatButton } from '../ChatButton';
 import { LeaveModal } from '../LeaveModal/LeaveModal';
 import { MicrophoneWithVolumeWithMicrophoneState } from '../MicrophoneWithVolume';
+import { RecordingControls } from '../RecordingControls/RecordingControls';
 import { ScreenShareButton } from '../ScreenShareButton';
 import { ToggleButton } from '../ToggleButton/ToggleButton';
 import { VideoSettings } from '../VideoSettings/VideoSettings';
@@ -278,6 +279,7 @@ export const ParticipantControls = () => {
 
                     <div className="flex-nowrap gap-2 hidden lg:flex">
                         <ScreenShareButton />
+                        <RecordingControls />
                         <CircleButton
                             IconComponent={IcMeetParticipants}
                             variant={sideBarState[MeetingSideBars.Participants] ? 'active' : 'default'}
@@ -306,6 +308,7 @@ export const ParticipantControls = () => {
                     </div>
                     <div className="flex lg:hidden gap-2 flex-nowrap">
                         <ScreenShareButton />
+                        <RecordingControls />
                         <MenuButton />
                     </div>
 
