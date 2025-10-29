@@ -966,6 +966,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Alăturați-vă la ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Copiere legătură web rezervare"
       ]
     },
     "action": {
@@ -3275,6 +3278,9 @@
       ],
       "Only": [
         "Doar"
+      ],
+      "2 TB of storage to share": [
+        "2 TiB de stocare pentru partajare"
       ]
     },
     "Duo offer: Link": {
@@ -6375,6 +6381,12 @@
       ],
       "Want to create your own booking page?": [
         "Doriți să vă creați propria pagină de programări?"
+      ],
+      "Booking page example": [
+        "Pagină exemplu de rezervare"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Partajați această pagină pentru a le permite altora să-și rezerve timp în calendarul dvs."
       ]
     },
     "info": {
@@ -9287,6 +9299,9 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "Abonamentul actual are în prezent o reducere existentă. Trecerea la această nouă promoție înseamnă că reducerea curentă nu va mai fi aplicată."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Abonamentul actual are în prezent o reducere existentă. Trecerea la această nouă promoție înseamnă că reducerea curentă nu va mai fi aplicată."
       ]
     },
     "Payments.Error": {
@@ -11082,6 +11097,9 @@
       ],
       "You have successfully unsubscribed": [
         "V-ați dezabonat cu succes"
+      ],
+      "Booking link copied to clipboard": [
+        "Legătura de rezervare s-a copiat în memorie."
       ]
     },
     "Suffix": {
@@ -11952,6 +11970,9 @@
       ],
       "This booking page has expired": [
         "Această pagină de rezervare a expirat"
+      ],
+      "Your booking page is ready": [
+        "Pagina de rezervare este gata."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12057,6 +12078,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Conectări securizate pe toate dispozitivele deținute. Include aliasuri nelimitate, partajare, A2F integrată și multe altele."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Asistent de IA care vă respectă confidențialitatea"
       ]
     },
     "Tooltip; share calendar modal ": {
