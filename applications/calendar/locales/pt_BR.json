@@ -3256,6 +3256,9 @@
       ],
       "Only": [
         "Somente"
+      ],
+      "2 TB of storage to share": [
+        "2 TB de armazenamento para compartilhar"
       ]
     },
     "Duo offer: Link": {
@@ -9149,6 +9152,9 @@
         "O preço com desconto especial é válido no primeiro mês. Em seguida, ele será renovado automaticamente pelo preço de ${ renewPriceStr } todo mês. Você pode cancelar a qualquer momento."
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
+        "Sua assinatura atualmente tem um desconto existente. Mudar para esta nova promoção significa que o desconto atual não será mais aplicado."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Sua assinatura atualmente tem um desconto existente. Mudar para esta nova promoção significa que o desconto atual não será mais aplicado."
       ]
     },

@@ -3256,6 +3256,9 @@
       ],
       "Only": [
         "Solo"
+      ],
+      "2 TB of storage to share": [
+        "2 TB de almacenamiento para compartir"
       ]
     },
     "Duo offer: Link": {
@@ -3266,7 +3269,7 @@
         "Comparta su plan"
       ],
       "Get 4x more storage": [
-        "Obtén 4 veces más almacenamiento"
+        "Obtener 4 veces más almacenamiento"
       ]
     },
     "Duo offer: Title": {
@@ -9132,6 +9135,13 @@
       ],
       "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
         "El precio especial con descuento es válido durante el primer mes. Después se renovará automáticamente por ${ renewPriceStr } cada mes. Puede cancelarlo en cualquier momento."
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "El precio especial con descuento es válido para el primer (${ subscriptionLength }) mes",
+        "El precio especial con descuento es válido para los primeros ${ subscriptionLength } meses"
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Su suscripción actualmente tiene un descuento. Cambiar a esta promoción nueva significa que el descuento existente ya no se aplicará."
       ]
     },
     "Payments.Error": {

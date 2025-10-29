@@ -8863,7 +8863,7 @@
         "Du skal have adgang til organisationsnøglen for at udføre denne handling."
       ],
       "You must delete all groups before generating a new organization key": [
-        "De skal slette alle grupper, før du genererer en ny organisationsnøgle."
+        "Du skal slette alle grupper, før du genererer en ny organisationsnøgle."
       ]
     },
     "Payment method option": {
@@ -12211,8 +12211,8 @@
     },
     "Referral": {
       "You have **${ daysRemaining } day left** to explore all the powerful features that **${ planTitle }** has to offer.": [
-        "De har **${ daysRemaining } dag tilbage** til at udforske alle de kraftfulde funktioner, som **${ planTitle }** har at tilbyde.",
-        "De har **${ daysRemaining } dage tilbage** til at udforske alle de kraftfulde funktioner, som **${ planTitle }** har at tilbyde."
+        "Du har **${ daysRemaining } dag tilbage** til at udforske alle de kraftfulde funktioner, som **${ planTitle }** har at tilbyde.",
+        "Du har **${ daysRemaining } dage tilbage** til at udforske alle de kraftfulde funktioner, som **${ planTitle }** har at tilbyde."
       ],
       "${ referrerRewardAmount } per referral": [
         "${ referrerRewardAmount } pr. henvisning"
@@ -12250,7 +12250,7 @@
         "Begynd at optjene kreditter"
       ],
       "You can get up to **${ maxRewardAmount }** in credit.": [
-        "De kan få op til **${ maxRewardAmount }** i kredit."
+        "Du kan få op til **${ maxRewardAmount }** i kredit."
       ],
       "your subscription": [
         "Dit abonnement"
@@ -12269,22 +12269,22 @@
         "Efter prøveperioden udløber den ${ formattedDate }, vil det blive et betalt abonnement, der automatisk fornyes månedligt. Du vil ikke blive opkrævet betaling, hvis du opsiger før den ${ formattedDate }."
       ],
       "You can have up to ${ TRIAL_MAX_DEDICATED_IPS } dedicated server during the trial period.": [
-        "De kan have op til ${ TRIAL_MAX_DEDICATED_IPS } dedikeret server under prøveperioden."
+        "Du kan have op til ${ TRIAL_MAX_DEDICATED_IPS } dedikeret server i prøveperioden."
       ],
       "You can have up to ${ TRIAL_MAX_LUMO_SEATS } ${ LUMO_SHORT_APP_NAME } seats during the trial period.": [
-        "De kan have op til ${ TRIAL_MAX_LUMO_SEATS } ${ LUMO_SHORT_APP_NAME }-pladser under prøveperioden."
+        "Du kan have op til ${ TRIAL_MAX_LUMO_SEATS } ${ LUMO_SHORT_APP_NAME }-pladser i prøveperioden."
       ],
       "You can have up to ${ TRIAL_MAX_SCRIBE_SEATS } Scribe seats during the trial period.": [
-        "De kan have op til ${ TRIAL_MAX_SCRIBE_SEATS } Scribe-pladser under prøveperioden."
+        "Du kan have op til ${ TRIAL_MAX_SCRIBE_SEATS } Scribe-pladser i prøveperioden."
       ],
       "You can have up to ${ TRIAL_MAX_USERS } users during the trial period.": [
-        "De kan have op til ${ TRIAL_MAX_USERS } brugere under prøveperioden."
+        "Du kan have op til ${ TRIAL_MAX_USERS } brugere i prøveperioden."
       ],
       "You cannot add custom domains during the trial period.": [
-        "De kan ikke tilføje brugerdefinerede domæner under prøveperioden."
+        "Du kan ikke tilføje brugerdefinerede domæner i prøveperioden."
       ],
       "You have reached the trial limit.": [
-        "De har nået grænsen for prøveversionen."
+        "Du har nået grænsen for prøveversionen."
       ]
     },
     "collider_2025: feature": {
