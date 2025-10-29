@@ -1498,10 +1498,7 @@
         "Důvěřovat"
       ],
       "Trust key": [
-        "Důvěřovat klíči",
-        "Důvěřovat klíčům",
-        "Důvěřovat klíčům",
-        "Důvěřovat klíčům"
+        "Důvěřovat klíči"
       ],
       "Trust public key": [
         "Důvěřovat veřejnému klíči"
@@ -2193,6 +2190,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB prostoru: 40x váš současný tarif"
+      ],
+      "Recover previous file versions": [
+        "Obnova předchozích verzí souborů"
       ]
     },
     "BF2024: Offers": {
@@ -2201,6 +2204,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Obnovuje se po 1 měsíci za ${ regularAmount }."
+      ],
+      "forever": [
+        "navždy"
       ]
     },
     "BF2024: Tooltip": {
@@ -2347,6 +2353,9 @@
       ],
       "Website access problem": [
         "Problém s přístupem k webové stránce"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -7661,7 +7670,10 @@
         "Inicializace..."
       ],
       "Insert image": [
-        "Vložit obrázek"
+        "Vložit obrázek",
+        "Vložit obrázky",
+        "Vložit obrázky",
+        "Vložit obrázky"
       ],
       "Insert link": [
         "Vložit odkaz"
@@ -10210,6 +10222,12 @@
       ],
       "ZIP code": [
         "PSČ"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Využít nabídku"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12389,6 +12407,9 @@
       ],
       "Team policies": [
         "Týmové zásady"
+      ],
+      "File attachments (up to 10GB)": [
+        "Přílohy souborů (až 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -12582,6 +12603,24 @@
       ],
       "Your payment is still being processed": [
         "Vaše platba se stále zpracovává"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Speciální zvýhodněná cena platí pro první ${ subscriptionLength } měsíc.",
+        "Speciální zvýhodněná cena platí pro první ${ subscriptionLength } měsíce.",
+        "Speciální zvýhodněná cena platí pro prvních ${ subscriptionLength } měsíců.",
+        "Speciální zvýhodněná cena platí pro prvních ${ subscriptionLength } měsíců."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "Speciální zvýhodněná cena platí první měsíc. Kupón je platný pro ${ couponRedemptions } obnovení. Poté se automaticky obnoví za ${ renewPriceStr } na 1 měsíc. Předplatné můžete kdykoli zrušit.",
+        "Speciální zvýhodněná cena platí první měsíc. Kupón je platný pro ${ couponRedemptions } obnovení. Poté se automaticky obnoví za ${ renewPriceStr } na 1 měsíc. Předplatné můžete kdykoli zrušit.",
+        "Speciální zvýhodněná cena platí první měsíc. Kupón je platný pro ${ couponRedemptions } obnovení. Poté se automaticky obnoví za ${ renewPriceStr } na 1 měsíc. Předplatné můžete kdykoli zrušit.",
+        "Speciální zvýhodněná cena platí první měsíc. Kupón je platný pro ${ couponRedemptions } obnovení. Poté se automaticky obnoví za ${ renewPriceStr } na 1 měsíc. Předplatné můžete kdykoli zrušit."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Speciální zvýhodněná cena platí první měsíc. Poté dojde každý měsíc k automatickému obnovení za ${ renewPriceStr }. Předplatné můžete kdykoli zrušit."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Vaše předplatné má v současné době platnou slevu. Přechodem na tuto novou akci bude stávající sleva zrušena."
       ]
     },
     "Payments.Error": {
@@ -16143,7 +16182,7 @@
         "Jak funguje bezplatná zkušební verze"
       ],
       "Upgrade to keep your premium benefits.": [
-        "Navyšte tarif a zachovejte si své prémiové výhody"
+        "Navyšte tarif pro zachování prémiových výhod."
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16243,6 +16282,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Bezpečené přihlašování na všech zařízeních. Zahrnuje neomezený počet aliasů, sdílení, integrované 2FA a další funkce."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: AI asistent, který respektuje vaše soukromí"
       ]
     },
     "Tor out of date": {
@@ -16825,6 +16867,111 @@
       ],
       "Only": [
         "Pouze"
+      ],
+      "2 TB of storage to share": [
+        "2 TB prostoru ke sdílení"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Výprodej Black Friday"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB datové úložiště"
+      ],
+      "3 TB data storage": [
+        "3 TB datové úložiště"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Přístup k 15 000+ serverům ve 120+ zemích"
+      ],
+      "Access advanced AI models": [
+        "Přístup k pokročilým modelům AI"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Všechny prémiové funkce ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } a ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Blokování reklam, sledovacích prvků a malwaru"
+      ],
+      "Built-in 2FA authenticator": [
+        "Vestavěné 2FA ověřování"
+      ],
+      "Connect 10 devices at once": [
+        "Připojte 10 zařízení najednou"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Plná historie chatu s jednoduchým vyhledáváním a oblíbenými položkami"
+      ],
+      "Individual accounts for 6 users": [
+        "Individuální účty pro 6 uživatelů"
+      ],
+      "Individual accounts for you and a partner": [
+        "Individuální účty pro vás a partnera"
+      ],
+      "Stronger protection against cyber threats": [
+        "Silnější ochrana proti kybernetickým hrozbám"
+      ],
+      "Unlimited daily chats": [
+        "Neomezený denní limit konverzací"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Pomozte svým blízkým připojit se k revoluci v oblasti soukromí s našimi nejvýhodnějšími balíčky, nyní s 50% slevou!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Připojte se k revoluci v oblasti soukromí s našimi nejvýhodnějšími balíčky, nyní s 50% slevou!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "na ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Ušetřete ${ savedAmount } s naší nejvýhodnější, časově omezenou nabídkou!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Přejděte na náš dvouletý tarif a ušetřete ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Přejděte na náš roční tarif a ušetřete ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Dopřejte svým blízkým kompletní digitální ochranu."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "NetShield chrání vaše zařízení a zrychluje prohlížení tím, že blokuje reklamy, sledovací prvky a malware."
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "Získat 4x více prostoru"
+      ],
+      "Share your plan": [
+        "Sdílejte svůj tarif"
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Získejte 4x více prostoru s ${ BRAND_NAME } Duo"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Sdílejte výhody svého tarifu s ${ BRAND_NAME } Duo"
+      ]
+    },
+    "sheets_2025:Action": {
+      "Open in ${ appName }": [
+        "Otevřít v ${ appName }"
       ]
     }
   }

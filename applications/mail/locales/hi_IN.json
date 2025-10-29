@@ -11695,6 +11695,21 @@
       "Passcode:": [
         "पासकोड:"
       ]
+    },
+    "BF2025: Deal details": {
+      "Access 15,000+ servers in 120+ countries": [
+        "120+ देशो में 15,000+ सर्वर एक्सेस करें"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "sheets_2025:Action": {
+      "Open in ${ appName }": [
+        "${ appName } में खोलें"
+      ]
     }
   }
 }

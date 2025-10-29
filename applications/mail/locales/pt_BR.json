@@ -1490,8 +1490,7 @@
         "Confiar"
       ],
       "Trust key": [
-        "Chave de confiança",
-        "Chaves de confiança"
+        "Chave de confiança"
       ],
       "Trust public key": [
         "Confiar na chave pública"
@@ -2169,6 +2168,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB de armazenamento: 40x o seu plano atual"
+      ],
+      "Recover previous file versions": [
+        "Recuperar versões anteriores de arquivos"
       ]
     },
     "BF2024: Offers": {
@@ -2177,6 +2182,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Renova após 1 mês a ${ regularAmount }."
+      ],
+      "forever": [
+        "para sempre"
       ]
     },
     "BF2024: Tooltip": {
@@ -2319,6 +2327,9 @@
       ],
       "Website access problem": [
         "Problema de acesso ao site"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -7427,7 +7438,8 @@
         "Inicializando…"
       ],
       "Insert image": [
-        "Inserir imagem"
+        "Inserir imagem",
+        "Inserir imagens"
       ],
       "Insert link": [
         "Inserir link"
@@ -9914,6 +9926,12 @@
       ],
       "ZIP code": [
         "CEP"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Obtenha a oferta"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12026,6 +12044,9 @@
       ],
       "Team policies": [
         "Políticas de equipe"
+      ],
+      "File attachments (up to 10GB)": [
+        "Anexar arquivos (até 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -12217,6 +12238,20 @@
       ],
       "Your payment is still being processed": [
         "Seu pagamento ainda está sendo processado"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "O preço com desconto especial é válido para o primeiro ${ subscriptionLength } mês.",
+        "O preço com desconto especial é valido para os primeiros ${ subscriptionLength } meses."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "O preço com desconto especial é válido para o primeiro mês. O cupom é válido para renovação de ${ couponRedemptions }. Em seguida, ele será renovado automaticamente a ${ renewPriceStr } por 1 mês. Você pode cancelar a qualquer momento.",
+        "O preço com desconto especial de $ é válido para o primeiro mês. O cupom é válido para renovações de ${ couponRedemptions }. Em seguida, ele será renovado automaticamente a ${ renewPriceStr } por 1 mês. Você pode cancelar a qualquer momento."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "O preço com desconto especial é válido no primeiro mês. Em seguida, ele será renovado automaticamente pelo preço de ${ renewPriceStr } todo mês. Você pode cancelar a qualquer momento."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Sua assinatura atualmente tem um desconto existente. Mudar para esta nova promoção significa que o desconto atual não será mais aplicado."
       ]
     },
     "Payments.Error": {
@@ -15781,6 +15816,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Inícios de sessão seguros em todos os seus dispositivos. Inclui aliases ilimitados, compartilhamento, 2FA integrado e muito mais."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Um assistente IA que respeita sua privacidade"
       ]
     },
     "Tor out of date": {
@@ -16273,6 +16311,106 @@
       ],
       "Only": [
         "Somente"
+      ],
+      "2 TB of storage to share": [
+        "2 TB de armazenamento para compartilhar"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Oferta Black Friday"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB de armazenamento de dados"
+      ],
+      "3 TB data storage": [
+        "3 TB de armazenamento de dados"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Acesse mais de 15.000 servidores em mais de 120 países"
+      ],
+      "Access advanced AI models": [
+        "Acesso a modelos de IA avançados"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Todos os recursos premium de ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } e ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Bloqueie anúncios, rastreadores e malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Autenticador A2F integrado"
+      ],
+      "Connect 10 devices at once": [
+        "Conecte 10 dispositivos de uma só vez"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Histórico de bate-papo completo com busca fácil e favoritos."
+      ],
+      "Individual accounts for 6 users": [
+        "Contas individuais para 6 usuários"
+      ],
+      "Individual accounts for you and a partner": [
+        "Contas individuais para você e um parceiro"
+      ],
+      "Stronger protection against cyber threats": [
+        "Proteção mais forte contra ameaças cibernéticas"
+      ],
+      "Unlimited daily chats": [
+        "Bate-papos diários ilimitados"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Ajude quem você ama a se juntar à revolução da privacidade com nossos pacotes de melhor valor, agora com 50% de desconto!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Junte-se à revolução da privacidade com nossos pacotes de melhor valor, agora com 50% de desconto!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "por ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Economize ${ savedAmount } com nossa melhor oferta por tempo limitado!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Mude para nosso plano de 2 anos e economize ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Mude para nosso plano anual e economize ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Ofereça à sua galera proteção digital completa."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Especialmente projetado, o NetShield protege os dispositivos e acelera sua navegação ao bloquear anúncios, rastreadores e malware."
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "Obter 4x mais armazenamento"
+      ],
+      "Share your plan": [
+        "Compartilhe seu plano"
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Ganhe 4x mais armazenamento com ${ BRAND_NAME } Duo"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Compartilhe os benefícios do seu plano com ${ BRAND_NAME } Duo"
       ]
     }
   }

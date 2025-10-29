@@ -1490,8 +1490,7 @@
         "Confiar"
       ],
       "Trust key": [
-        "Clave de confianza",
-        "Claves de confianza"
+        "Confiar clave"
       ],
       "Trust public key": [
         "Confiar clave pública"
@@ -2169,6 +2168,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB de almacenamiento: 40 veces su plan actual"
+      ],
+      "Recover previous file versions": [
+        "Recupere las versiones previas de los archivos"
       ]
     },
     "BF2024: Offers": {
@@ -2177,6 +2182,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Se renueva después de 1 mes por ${ regularAmount }."
+      ],
+      "forever": [
+        "para siempre"
       ]
     },
     "BF2024: Tooltip": {
@@ -2319,6 +2327,9 @@
       ],
       "Website access problem": [
         "Problema de acceso web"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -7427,7 +7438,8 @@
         "Inicializando…"
       ],
       "Insert image": [
-        "Insertar imagen"
+        "Insertar imagen",
+        "Insertar imágenes"
       ],
       "Insert link": [
         "Insertar enlace"
@@ -9914,6 +9926,12 @@
       ],
       "ZIP code": [
         "Código postal"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Obtener la oferta"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12021,6 +12039,9 @@
       ],
       "Team policies": [
         "Políticas de equipo"
+      ],
+      "File attachments (up to 10GB)": [
+        "Archivos adjuntos (hasta 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -12206,6 +12227,20 @@
       ],
       "Your payment is still being processed": [
         "Su pago aún está siendo procesado"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "El precio especial con descuento es válido para el primer (${ subscriptionLength }) mes",
+        "El precio especial con descuento es válido para los primeros ${ subscriptionLength } meses"
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "El precio especial con descuento es válido para el primer mes. El cupón es válido para ${ couponRedemptions } renovación. Después se renovará automáticamente por ${ renewPriceStr } por 1 mes. Puede cancelarlo en cualquier momento.",
+        "El precio especial con descuento es válido para el primer mes. El cupón es válido para ${ couponRedemptions } renovaciones. Después se renovará automáticamente por ${ renewPriceStr } por 1 mes. Puede cancelarlo en cualquier momento."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "El precio especial con descuento es válido durante el primer mes. Después se renovará automáticamente por ${ renewPriceStr } cada mes. Puede cancelarlo en cualquier momento."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Su suscripción actualmente tiene un descuento. Cambiar a esta promoción nueva significa que el descuento existente ya no se aplicará."
       ]
     },
     "Payments.Error": {
@@ -15770,6 +15805,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Inicios de sesión seguros en todos los dispositivos. Incluye alias ilimitados, uso compartido, 2FA integrado y más."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Asistente de IA que respeta su privacidad"
       ]
     },
     "Tor out of date": {
@@ -16262,6 +16300,9 @@
       ],
       "Only": [
         "Solo"
+      ],
+      "2 TB of storage to share": [
+        "2 TB de almacenamiento para compartir"
       ]
     },
     "Duo offer: Link": {
@@ -16270,6 +16311,9 @@
       ],
       "Share your plan": [
         "Comparta su plan"
+      ],
+      "Get 4x more storage": [
+        "Obtener 4 veces más almacenamiento"
       ]
     },
     "Duo offer: Title": {
@@ -16278,6 +16322,90 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Comparta los beneficios de su plan con ${ BRAND_NAME } Duo"
+      ],
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Obtenga 4 veces más almacenamiento con ${ BRAND_NAME } Duo"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Oferta de Black Friday"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB de almacenamiento de datos"
+      ],
+      "3 TB data storage": [
+        "3 TB de almacenamiento de datos"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Acceda a más de 15 000 servidores en más de 120 países"
+      ],
+      "Access advanced AI models": [
+        "Acceso a modelos de IA avanzados"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Todas las funciones prémium de ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } y ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Bloquee anuncios, rastreadores y malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Autenticador de 2FA integrado"
+      ],
+      "Connect 10 devices at once": [
+        "Conecte 10 dispositivos a la vez"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Historial de chat completo con búsqueda fácil y favoritos"
+      ],
+      "Individual accounts for 6 users": [
+        "Cuentas individuales para 6 usuarios"
+      ],
+      "Individual accounts for you and a partner": [
+        "Cuentas individuales para usted y otra persona"
+      ],
+      "Stronger protection against cyber threats": [
+        "Mayor protección contra ciberamenazas"
+      ],
+      "Unlimited daily chats": [
+        "Chats diarios ilimitados"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Ayude a sus seres queridos a unirse a la revolución de la privacidad con nuestros paquetes de mejor valor, ¡ahora con un 50 % de descuento!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "¡Únase a la revolución de la privacidad con nuestros paquetes de mejor valor, ahora con un 50 % de descuento!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "por ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "¡Ahorre ${ savedAmount } con nuestra mejor oferta por tiempo limitado!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "¡Cámbiese a nuestro plan de 2 años y ahorre ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "¡Cámbiese a nuestro plan anual y ahorre ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Brinde a los suyos protección digital completa."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "La tecnología NetShield tiene como fin proteger los dispositivos y que pueda navegar mucho más rápido bloqueando anuncios, rastreadores y malware."
       ]
     }
   }

@@ -2073,6 +2073,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB 存储空间：您当前套餐的 40 倍"
+      ],
+      "Recover previous file versions": [
+        "恢复先前的文件版本"
       ]
     },
     "BF2024: Offers": {
@@ -2081,6 +2087,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "次月起按 ${ regularAmount } 续费。"
+      ],
+      "forever": [
+        "永久"
       ]
     },
     "BF2024: Tooltip": {
@@ -7082,7 +7091,7 @@
         "初始化中..."
       ],
       "Insert image": [
-        "插入图片"
+        "插入图像"
       ],
       "Insert link": [
         "插入链接"
@@ -15292,6 +15301,37 @@
       ],
       "You have **${ daysRemaining } day left** to explore all the powerful features that **${ planTitle }** has to offer.": [
         "您还有**${ daysRemaining }天**的时间，可以尽情探索**${ planTitle }**提供的所有强大功能。"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Block ads, trackers, and malware": [
+        "屏蔽广告、跟踪器和恶意软件"
+      ],
+      "Built-in 2FA authenticator": [
+        "内置 2FA 验证器"
+      ],
+      "Unlimited daily chats": [
+        "无限聊天次数"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "黑色星期五"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "仅限 ${ durationDeal }"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "完善的 NetShield 机制能够屏蔽广告、追踪脚本和恶意软件，增强设备安全性，提升网络性能."
+      ]
+    },
+    "sheets_2025:Action": {
+      "Open in ${ appName }": [
+        "在 ${ appName } 中打开"
       ]
     }
   }

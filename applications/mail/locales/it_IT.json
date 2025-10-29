@@ -2169,6 +2169,12 @@
       ],
       "VPN Accelerator": [
         "VPN Accelerator"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB di archiviazione: 40 volte il tuo piano attuale"
+      ],
+      "Recover previous file versions": [
+        "Recupera versioni precedenti del file"
       ]
     },
     "BF2024: Offers": {
@@ -2177,6 +2183,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Si rinnova dopo 1 mese a ${ regularAmount }."
+      ],
+      "forever": [
+        "per sempre"
       ]
     },
     "BF2024: Tooltip": {
@@ -2319,6 +2328,9 @@
       ],
       "Website access problem": [
         "Problema di accesso al sito web"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -5526,6 +5538,12 @@
     "Feature": {
       "Unlimited hide-my-email aliases": [
         "Alias Hide-my-email illimitati"
+      ],
+      "Encrypted cloud storage for files, photos and documents": [
+        "Archiviazione cloud crittografata per foto e documenti"
+      ],
+      "More premium features": [
+        "Altre  funzionalità premium"
       ]
     },
     "fido2: Error": {
@@ -7421,7 +7439,8 @@
         "Inizializzazione…"
       ],
       "Insert image": [
-        "Inserisci immagine"
+        "Inserisci immagine",
+        "Inserisci immagini"
       ],
       "Insert link": [
         "Inserisci link"
@@ -8855,6 +8874,15 @@
       ],
       "Includes marketing emails and non-urgent app notifications.": [
         "Include email di marketing e notifiche non urgenti dell'app."
+      ],
+      "Choose a plan that works best for you.": [
+        "Scegli un piano che funziona meglio per te."
+      ],
+      "Continue": [
+        "Continua"
+      ],
+      "Upgrade to keep your ${ planTitle } benefits.": [
+        "Effettua l'upgrade per mantenere i tuoi ${ planTitle } vantaggi."
       ]
     },
     "info": {
@@ -9899,6 +9927,12 @@
       ],
       "ZIP code": [
         "Codice postale"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Approfitta dell'offerta"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -10362,6 +10396,9 @@
       ],
       "Your free trial has ended. Access to your account will soon be disabled. ${ action }": [
         "La tua prova gratuita è terminata. L'accesso al tuo profilo sarà presto disabilitato. ${ action }"
+      ],
+      "Your free trial has ended. ${ nonAutoRenewalAction }": [
+        "La tua prova gratuita termina tra ${ nonAutoRenewalAction }."
       ]
     },
     "Message display when a new app version is available": {
@@ -11626,6 +11663,12 @@
       ],
       "Your subscription renews soon": [
         "Il tuo abbonamento si rinnoverà presto"
+      ],
+      "Don't show this again": [
+        "Non mostrare più"
+      ],
+      "Get ${ BRAND_NAME } Duo": [
+        "Ottieni ${ BRAND_NAME } Duo"
       ]
     },
     "Offer fearue": {
@@ -12002,6 +12045,9 @@
       ],
       "Team policies": [
         "Politiche del Team"
+      ],
+      "File attachments (up to 10GB)": [
+        "Allegati di file (fino a 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -12187,6 +12233,20 @@
       ],
       "Your payment is still being processed": [
         "Il tuo pagamento è ancora in fase di elaborazione."
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Il prezzo con sconto speciale è valido per il primo ${ subscriptionLength } mese.",
+        "Il prezzo scontato è valido per i primi ${ subscriptionLength } mesi."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "Il prezzo speciale scontato è valido per il primo mese. Il coupon è valido per ${ couponRedemptions } rinnovo. Successivamente verrà rinnovato automaticamente a ${ renewPriceStr } per 1 mese. Puoi annullare in qualsiasi momento.",
+        "Il prezzo scontato è valido per il primo mese. Il coupon è valido per ${ couponRedemptions } rinnovi. Successivamente verrà rinnovato automaticamente a ${ renewPriceStr } per 1 mese. Puoi annullare in qualsiasi momento."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Il prezzo scontato speciale è valido per il primo mese. Successivamente, verrà rinnovato automaticamente a ${ renewPriceStr } ogni mese. Puoi annullare in qualsiasi momento."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
       ]
     },
     "Payments.Error": {
@@ -12764,6 +12824,9 @@
       ],
       "your subscription": [
         "il tuo abbonamento"
+      ],
+      "Once your full subscription starts, you can still cancel within 30 days and get a prorated refund.": [
+        "Una volta che il tuo abbonamento completo inizia, puoi ancora annullare entro 30 giorni e ottenere un rimborso proporzionale."
       ]
     },
     "Remaining days before the message expire": {
@@ -15640,6 +15703,12 @@
       ],
       "How your free trial works": [
         "Come funziona la tua prova gratuita"
+      ],
+      "Get **${ referralInfo.uiData.refereeRewardAmount }** in credits with ${ planTitle }": [
+        "Ricevi **${ referralInfo.uiData.refereeRewardAmount }** in crediti con ${ planTitle }"
+      ],
+      "Upgrade to keep your premium benefits.": [
+        "Effettua l'upgrade per mantenere i tuoi vantaggi premium."
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15739,6 +15808,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Login sicuri su tutti i tuoi dispositivi. Include alias illimitati, condivisione, 2FA integrata e molto altro."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Assistente AI che tutela la tua privacy"
       ]
     },
     "Tor out of date": {
@@ -15942,6 +16014,9 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "La tua prova gratuita termina il ${ textDate }. ${ action }"
+      ],
+      "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
+        "La tua prova finirà il ${ textDate }. Non ti verrà addebitato alcun costo se annulli prima del ${ textDate }. ${ action }"
       ]
     },
     "WeekDay": {
@@ -16211,6 +16286,120 @@
       ],
       "Passcode:": [
         "Codice di accesso:"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Saldi del Black Friday"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB di archiviazione dati"
+      ],
+      "3 TB data storage": [
+        "3 TB di archiviazione dati"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Accedi a oltre 15.000 server in oltre 120 Paesi"
+      ],
+      "Access advanced AI models": [
+        "Accedi a modelli di IA avanzati"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Tutte le funzionalità premium di ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } e ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Blocca annunci, tracker e malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Strumento di autenticazione 2FA integrato"
+      ],
+      "Connect 10 devices at once": [
+        "Connetti 10 dispositivi contemporaneamente"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Cronologia chat completa con ricerca facile e preferiti"
+      ],
+      "Individual accounts for 6 users": [
+        "Account individuali per 6 utenti"
+      ],
+      "Individual accounts for you and a partner": [
+        "Account individuali per te e un'altra persona"
+      ],
+      "Stronger protection against cyber threats": [
+        "Protezione più efficace dalle minacce informatiche"
+      ],
+      "Unlimited daily chats": [
+        "Numero illimitato di chat al giorno"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Aiuta i tuoi cari a unirsi alla rivoluzione della privacy con i nostri pacchetti dal miglior rapporto qualità-prezzo, ora con il 50% di sconto."
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Unisciti alla rivoluzione della privacy con i nostri pacchetti dal miglior rapporto qualità-prezzo, ora con il 50% di sconto."
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "per ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Risparmia ${ savedAmount } con la nostra migliore offerta a tempo limitato!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Passa al nostro piano biennale e risparmia ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Passa al nostro piano annuale e risparmia ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Offri al tuo gruppo una protezione digitale completa."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "NetShield è progettato appositamente per proteggere i dispositivi e accelerare la navigazione bloccando annunci, tracker e malware."
+      ]
+    },
+    "Duo offer": {
+      "/month": [
+        "/ mese"
+      ],
+      "2 TB of storage to share": [
+        "2 TB di archiviazione da condividere"
+      ],
+      "2 user accounts": [
+        "2 account utente"
+      ],
+      "All premium features from your current plan": [
+        "Tutte le funzionalità premium del tuo piano attuale"
+      ],
+      "Only": [
+        "Solo"
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "Ottieni 4 volte più archiviazione"
+      ],
+      "Share your plan": [
+        "Condividi il tuo piano"
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Ottieni 4 volte più archiviazione con ${ BRAND_NAME } Duo"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Condividi i benefici del tuo piano con ${ BRAND_NAME } Duo"
       ]
     }
   }

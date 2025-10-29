@@ -2364,7 +2364,7 @@
         "${ participantName } vroeg om de laatste updates voor een afspraak die niet meer bestaat. U hebt geen kalenders."
       ],
       "${ participantName } asked for the latest updates to an event which does not exist in your calendar anymore.": [
-        "${ participantName } vroeg om de laatste updates voor een afspraak die niet meer bestaat in uw kalender."
+        "${ participantName } vroeg om de laatste updates voor een afspraak die niet meer bestaat in uw agenda."
       ],
       "${ participantName } asked for the latest updates to an event which doesn't match your invitation details. Please verify the invitation details in your calendar.": [
         "${ participantName } heeft gevraagd om de laatste updates voor een evenement dat niet overeenkomt met uw uitnodigingsgegevens. Controleer de uitnodigingsgegevens in uw agenda."
@@ -4988,7 +4988,7 @@
         "Probeer enkel letters, nummers en _.- te gebruiken"
       ],
       "Unable to load VPN dashboard. Please check your connection and try again.": [
-        "Kan VPN dashboard niet laden. Controleer uw verbinding en probeer het opnieuw."
+        "Kan VPN-dashboard niet laden. Controleer uw verbinding en probeer het opnieuw."
       ],
       "Unexpected error, we can't import the contacts": [
         "Onverwachte fout, we kunnen de contacten niet importeren"
@@ -6391,12 +6391,12 @@
         "${ elementsCount } gesprekken worden als ongelezen gemarkeerd."
       ],
       "${ elementsCount } conversation will be moved": [
-        "${ elementsCount }gesprek wordt verplaatst",
-        "${ elementsCount }gesprekken worden verplaatst"
+        "${ elementsCount } gesprek wordt verplaatst",
+        "${ elementsCount } gesprekken worden verplaatst"
       ],
       "${ elementsCount } conversation will be unlabelled from:": [
         "${ elementsCount }gesprek zal niet gelabeld zijn van:",
-        "${ elementsCount }gesprekken zal niet gelabeld zijn van:"
+        "${ elementsCount } gesprekken zal niet gelabeld zijn van:"
       ],
       "${ elementsCount } message will be labelled as:": [
         "${ elementsCount } berichten worden gelabeld als:",
@@ -6412,7 +6412,7 @@
       ],
       "${ elementsCount } message will be moved": [
         "${ elementsCount } bericht wordt verplaatst",
-        "${ elementsCount }berichten worden verplaatst"
+        "${ elementsCount } berichten worden verplaatst"
       ],
       "${ elementsCount } message will be unlabelled from:": [
         "${ elementsCount } bericht wordt ongelabeld van:",
@@ -6708,7 +6708,7 @@
         "Er is een onbekende openbare sleutel gevonden voor deze ontvanger."
       ],
       "An unsubscribe email will be sent on your behalf.": [
-        "Er wordt namens u een afmeld-e-mail verzonden."
+        "Er wordt namens u een e-mail verzonden om u uit te schrijven."
       ],
       "and": [
         "en"
@@ -7334,7 +7334,8 @@
         "Initialiseren..."
       ],
       "Insert image": [
-        "Afbeelding invoegen"
+        "Afbeelding toevoegen",
+        "Afbeeldingen toevoegen"
       ],
       "Insert link": [
         "Koppeling invoegen"
@@ -7788,7 +7789,7 @@
         "Vergeet niet om dit bij te werken in uw wachtwoordbeheerder of waar u ook uw account- en logingegevens bewaart."
       ],
       "Removes all data associated with this app (including downloaded messages, …)": [
-        "Verwijder alle gegevens geassocieerd met deze app (inclusief gedownloade berichten, ...)"
+        "Verwijder alle gegevens geassocieerd met deze app (inclusief gedownloade berichten...)"
       ],
       "Reporting a message as a phishing attempt will send the message to us, so we can analyze it and improve our filters. This means that we will be able to see the contents of the message in full.": [
         "Door een bericht als phishing aan te merken, wordt het naar ProtonMail verzonden, zodat het mogelijk is de inhoud te analyseren en de spamfilters te verbeteren. Dit betekent dat we alle inhoud van dit betreffende bericht kunnen zien."
@@ -8573,7 +8574,7 @@
         "Je hebt een trial ${ planTitle } abonnement. Er is geen betaling vereist op dit moment. Uw abonnement wordt automatisch verlengd aan het einde van de proefperiode."
       ],
       "You have not given your email any subject. Do you want to send the message anyway?": [
-        "U hebt uw e-mail geen onderwerp gegeven. Wilt u het bericht toch versturen?"
+        "U heef uw e-mail geen onderwerp gegeven. Wilt u het bericht toch versturen?"
       ],
       "You have reached 100% of your storage capacity. Consider freeing up some space or upgrading your account with additional storage space to compose new messages.": [
         "U heeft 100% van uw opslagruimte gebruikt. Maak wat ruimte vrij of upgrade uw abonnement om nieuwe berichten te verzenden."
@@ -11584,7 +11585,7 @@
         "Activeer geselecteerde"
       ],
       "Ad-free promise": [
-        "Beloofd vrij van reclame"
+        "Reclamevrij, Altijd"
       ],
       "Advanced encryption": [
         "Geavanceerde versleuteling"
@@ -14216,7 +14217,7 @@
         "${ label.Name } verwijderd"
       ],
       "The filter has been disabled": [
-        "Het filter is uitgeschakeld"
+        "De filter is uitgeschakeld"
       ],
       "The filter has been enabled": [
         "Het filter is ingeschakeld"
@@ -15973,6 +15974,87 @@
       ],
       "Passcode:": [
         "Toegangscode:"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday-aanbieding"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB dataopslag"
+      ],
+      "3 TB data storage": [
+        "3 TB dataopslag"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Toegang tot 15.000+ servers in 120+ landen"
+      ],
+      "Access advanced AI models": [
+        "Toegang tot geavanceerde AI-modellen"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Alle premiumfuncties van ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } en ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Block ads, trackers, and malware": [
+        "Blokkeer advertenties, trackers en malware"
+      ],
+      "Built-in 2FA authenticator": [
+        "Ingebouwde 2FA-authenticator"
+      ],
+      "Connect 10 devices at once": [
+        "Verbind 10 apparaten tegelijkertijd"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Volledige chatgeschiedenis met eenvoudige zoekfunctie en favorieten"
+      ],
+      "Individual accounts for 6 users": [
+        "Afzonderlijke accounts voor 6 gebruikers"
+      ],
+      "Individual accounts for you and a partner": [
+        "Afzonderlijke accounts voor u en een partner"
+      ],
+      "Stronger protection against cyber threats": [
+        "Sterkere bescherming tegen cyberdreigingen"
+      ],
+      "Unlimited daily chats": [
+        "Onbeperkt aantal dagelijkse gesprekken"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Help uw dierbaren deelnemen aan de privacyrevolutie met onze voordeligste bundels, nu met 50% korting!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Doe mee met de privacyrevolutie met onze voordeligste bundels, nu met 50% korting!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "voor ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Bespaar ${ savedAmount } met onze voordeligste, tijdelijke aanbieding!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Stap over op ons 2-jarig abonnement en bespaar ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Stap over op ons jaarabonnement en bespaar ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Trakteer uw naasten op complete digitale bescherming."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Het speciaal ontworpen NetShield beschermt uw apparaten en versnelt uw browsen door advertenties, trackers en malware te blokkeren."
       ]
     }
   }
