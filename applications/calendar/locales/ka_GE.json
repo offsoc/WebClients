@@ -1264,6 +1264,9 @@
       ],
       "You have reached the trial limit.": [
         "მიაღწიეთ გამოსაცდელი პერიოდის ზღვარს."
+      ],
+      "You can have up to ${ TRIAL_MAX_SCRIBE_SEATS } Scribe seats during the trial period.": [
+        "გამოსაცდელი პერიოდისას შეგიძლიათ ${ TRIAL_MAX_SCRIBE_SEATS } Scribe-ის მომხმარებლის შექმნა."
       ]
     },
     "b2b_trials_Action": {
@@ -6181,6 +6184,12 @@
       ],
       "Want to create your own booking page?": [
         "გნებავთ საკუთარი დაჯავშნის გვერდის შექმნა?"
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**ნაბიჯი 2:** თქვენი მეგობრები მიიღებენ 2 კვირას უფასოდ თავიანთ ${ BRAND_NAME }-ის სატარიფო გეგმაზე."
+      ],
+      "If you change your mind, you can subscribe again at any time. Sorry to see you go!": [
+        "თუ აზრს შეიცვლით, გამოწერა ნებისმიერ დროს შეგიძლიათ, განაახლოთ. ვწუხვართ, რომ მიდიხართ!"
       ]
     },
     "info": {
@@ -8975,6 +8984,13 @@
       ],
       "This payment method will become your new default for all future renewals.": [
         "ეს გადახდის მეთოდი თქვენი ნაგულისხმევი იქნება ყველა მომავალი განახლებისთვის."
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "გადახდის მეთოდი აუცილებელია გამოწერის გასააქტიურებლად, როცა სატესტო პერიოდი ამოიწურება."
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "სპეციალურად დაკლებული ფასები ვარგისია პირველ ${ subscriptionLength } თვეში.",
+        "სპეციალურად დაკლებული ფასები ვარგისია პირველ ${ subscriptionLength } თვეში."
       ]
     },
     "Payments.Error": {
@@ -11544,6 +11560,9 @@
       ],
       "Your booking page is ready": [
         "თქვენი დაჯავშნის გვერდი მზადაა"
+      ],
+      "Get **${ referralInfo.uiData.refereeRewardAmount }** in credits with ${ planTitle }": [
+        "მიიღეთ **${ referralInfo.uiData.refereeRewardAmount }** კრედიტებში ${ planTitle }-ისთან ერთად"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

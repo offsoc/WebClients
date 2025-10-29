@@ -6291,6 +6291,12 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Uppgradera för att behålla dina ${ planTitle }-förmåner."
+      ],
+      "${ booking.duration } min duration": [
+        "${ booking.duration } min. varaktighet"
+      ],
+      "Booking page example": [
+        "Exempel på bokningssida"
       ]
     },
     "info": {
@@ -9521,6 +9527,9 @@
       ],
       "your subscription": [
         "din prenumeration"
+      ],
+      "Once your full subscription starts, you can still cancel within 30 days and get a prorated refund.": [
+        "När din fullständiga prenumeration startar kan du fortfarande avbryta inom 30 dagar och få en proportionell återbetalning."
       ]
     },
     "Reload event button tooltip": {
@@ -12310,6 +12319,9 @@
       ],
       "Only": [
         "Endast"
+      ],
+      "2 TB of storage to share": [
+        "2 TB lagringsutrymme att dela"
       ]
     },
     "Duo offer: Link": {

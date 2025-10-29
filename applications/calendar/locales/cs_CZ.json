@@ -970,6 +970,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Připojit se k ${ CALENDAR_APP_NAME }"
+      ],
+      "Copy Booking link": [
+        "Kopírovat rezervační odkaz"
       ]
     },
     "action": {
@@ -6477,6 +6480,12 @@
       ],
       "Want to create your own booking page?": [
         "Chcete si vytvořit vlastní rezervační stránku?"
+      ],
+      "Booking page example": [
+        "Příklad rezervační stránky"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "Sdílejte tuto stránku, aby si ostatní mohli rezervovat termín ve vašem kalendáři."
       ]
     },
     "info": {
@@ -9462,6 +9471,9 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "Vaše předplatné má v současné době slevu. Přechodem na tuto novou akci bude stávající sleva zrušena."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Vaše předplatné má v současné době platnou slevu. Přechodem na tuto novou akci bude stávající sleva zrušena."
       ]
     },
     "Payments.Error": {
@@ -11299,6 +11311,9 @@
       ],
       "You have successfully unsubscribed": [
         "Předplatné bylo úspěšně zrušeno"
+      ],
+      "Booking link copied to clipboard": [
+        "Rezervační odkaz zkopírován do schránky"
       ]
     },
     "Suffix": {
@@ -12184,6 +12199,9 @@
       ],
       "This booking page has expired": [
         "Tato rezervační stránka vypršela"
+      ],
+      "Your booking page is ready": [
+        "Vaše rezervační stránka je připravena"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12289,6 +12307,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Bezpečené přihlašování na všech zařízeních. Zahrnuje neomezený počet aliasů, sdílení, integrované 2FA a další funkce."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: AI asistent, který respektuje vaše soukromí"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -12859,6 +12880,9 @@
       ],
       "Only": [
         "Pouze"
+      ],
+      "2 TB of storage to share": [
+        "2 TB prostoru ke sdílení"
       ]
     },
     "BF2025: Action (top button in header)": {

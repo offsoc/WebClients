@@ -9162,6 +9162,9 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
       ]
     },
     "Payments.Error": {
@@ -12540,6 +12543,9 @@
       ],
       "Only": [
         "Solo"
+      ],
+      "2 TB of storage to share": [
+        "2 TB di archiviazione da condividere"
       ]
     },
     "Duo offer: Link": {
