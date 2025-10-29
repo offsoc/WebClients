@@ -2621,7 +2621,7 @@
         "Κρυπτογραφημένη εφαρμογή διαχείρισης κωδικών πρόσβασης"
       ],
       "Our basic, free plan with end-to-end encrypted email and storage. No premium features included.": [
-        "Το βασικό, δωρεάν πλάνο μας με κρυπτογραφημένο ηλεκτρονικό ταχυδρομείο και αποθηκευτικό χώρο από άκρο σε άκρο. Δεν περιλαμβάνονται premium δυνατότητες."
+        "Το βασικό, δωρεάν πλάνο μας με διατερματικά κρυπτογραφημένο ηλεκτρονικό ταχυδρομείο και αποθηκευτικό χώρο. Δεν περιλαμβάνονται premium δυνατότητες."
       ],
       "Save ${ upsellSavings }": [
         "Εξοικονομίστε ${ upsellSavings }"
@@ -2913,7 +2913,7 @@
     },
     "Composer email icon": {
       "End-to-end encrypted": [
-        "Κρυπτογραφημένο από άκρο σε άκρο (διατερματικά)"
+        "Διατερματικά κρυπτογραφημένο"
       ],
       "End-to-end encrypted to verified recipient": [
         "Διατερματικά κρυπτογραφημένο προς επαληθευμένο παραλήπτη"
@@ -4314,6 +4314,9 @@
       ],
       "Only": [
         "Μόνο"
+      ],
+      "2 TB of storage to share": [
+        "2 TB αποθηκευτικού χώρου για κοινή χρήση"
       ]
     },
     "Duo offer: Link": {
@@ -4322,6 +4325,9 @@
       ],
       "Share your plan": [
         "Κοινοποιήστε το πλάνο σας"
+      ],
+      "Get 4x more storage": [
+        "Αποκτήστε 4x περισσότερο χώρο αποθήκευσης"
       ]
     },
     "Duo offer: Title": {
@@ -4330,6 +4336,9 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Μοιραστείτε τα οφέλη του πλάνου σας με το ${ BRAND_NAME } Duo"
+      ],
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Αποκτήστε 4x περισσότερο χώρο αποθήκευσης με το ${ BRAND_NAME } Duo"
       ]
     },
     "Edit billing address form note": {
@@ -4463,7 +4472,7 @@
     },
     "email_forwarding_2023: Composer email icon": {
       "Zero-access encrypted. Recipient has disabled end-to-end encryption on their account.": [
-        "Κρυπτογράφηση μηδενικής πρόσβασης. Ο παραλήπτης έχει απενεργοποιήσει την κρυπτογράφηση από άκρο σε άκρο στον λογαριασμό του."
+        "Κρυπτογράφηση μηδενικής πρόσβασης. Ο παραλήπτης έχει απενεργοποιήσει τη διατερματική κρυπτογράφηση στον λογαριασμό του."
       ]
     },
     "emergency_access": {
@@ -4814,10 +4823,10 @@
         "Παρακαλούμε εισάγετε έναν έγκυρο Ταχυδρομικό Κώδικα."
       ],
       "Please enter postal code": [
-        "Παρακαλώ εισάγετε τον ταχυδρομικό κώδικα"
+        "Παρακαλούμε εισάγετε τον ταχυδρομικό κώδικα"
       ],
       "Please enter ZIP code": [
-        "Παρακαλώ εισάγετε τον ταχυδρομικό κώδικα"
+        "Παρακαλούμε εισάγετε τον ταχυδρομικό κώδικα"
       ],
       "Please fix the highlighted conflict to proceed.": [
         "Παρακαλούμε επιλύστε την τονισμένη διένεξη προς συνέχιση.",
@@ -9902,6 +9911,12 @@
       ],
       "ZIP code": [
         "Τ.Κ."
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Αποκτήστε την προσφορά"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12009,6 +12024,9 @@
       ],
       "Team policies": [
         "Πολιτικές ομάδας"
+      ],
+      "File attachments (up to 10GB)": [
+        "Συνημμένα αρχεία (έως 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -12194,6 +12212,20 @@
       ],
       "Your payment is still being processed": [
         "Η πληρωμή σας βρίσκεται ακόμα υπό επεξεργασία"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο ${ subscriptionLength } μήνα.",
+        "Η ειδικά μειωμένη τιμή ισχύει για τους πρώτους ${ subscriptionLength } μήνες."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο μήνα. Το κουπόνι ισχύει για ${ couponRedemptions } ανανέωση. Στη συνέχεια, θα ανανεώνεται αυτόματα με τιμή ${ renewPriceStr } για 1 μήνα. Μπορείτε να ακυρώσετε οποιαδήποτε στιγμή.",
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο μήνα. Το κουπόνι ισχύει για ${ couponRedemptions } ανανεώσεις. Στη συνέχεια, θα ανανεώνεται αυτόματα με τιμή ${ renewPriceStr } για 1 μήνα. Μπορείτε να ακυρώσετε οποιαδήποτε στιγμή."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Η ειδικά μειωμένη τιμή ισχύει για τον πρώτο μήνα. Στη συνέχεια, θα ανανεωθεί αυτόματα σε ${ renewPriceStr } κάθε μήνα. Μπορείτε να ακυρώσετε ανά πάσα στιγμή."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Η συνδρομή σας έχει ήδη μια υπάρχουσα έκπτωση. Η μετάβαση σε αυτή τη νέα προσφορά σημαίνει ότι η υπάρχουσα έκπτωση δε θα ισχύει πλέον."
       ]
     },
     "Payments.Error": {
@@ -12835,7 +12867,7 @@
     },
     "Send email with encryption disabled": {
       "The contacts for the following addresses have disabled end-to-end encryption on their account, so the corresponding encryption preferences have been updated accordingly:": [
-        "Οι επαφές για τις ακόλουθες διευθύνσεις έχουν απενεργοποιήσει την κρυπτογράφηση από άκρο σε άκρο στον λογαριασμό τους, επομένως οι αντίστοιχες προτιμήσεις κρυπτογράφησης έχουν ενημερωθεί ανάλογα:"
+        "Οι επαφές για τις ακόλουθες διευθύνσεις έχουν απενεργοποιήσει τη διατερματική κρυπτογράφηση στον λογαριασμό τους, επομένως οι αντίστοιχες προτιμήσεις κρυπτογράφησης έχουν ενημερωθεί ανάλογα:"
       ]
     },
     "Send email with errors": {
@@ -12882,7 +12914,7 @@
         "Κρυπτογραφημένο από ${ MAIL_APP_NAME } προς επαληθευμένο παραλήπτη"
       ],
       "End-to-end encrypted": [
-        "Κρυπτογραφημένο από άκρο σε άκρο (διατερματικά)"
+        "Διατερματικά κρυπτογραφημένο"
       ],
       "End-to-end encrypted to PGP recipient": [
         "Διατερματικά κρυπτογραφημένο προς παραλήπτη PGP"
@@ -15660,6 +15692,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Ασφαλείς συνδέσεις σε όλες τις συσκευές σας. Περιλαμβάνει απεριόριστα ψευδώνυμα, κοινή χρήση, ενσωματωμένο έλεγχο ταυτότητας δύο παραγόντων (2FA) και πολλά άλλα."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Βοηθός τεχνητής νοημοσύνης που σέβεται την ιδιωτικότητά σας"
       ]
     },
     "Tor out of date": {
@@ -16135,6 +16170,37 @@
       ],
       "Passcode:": [
         "Κωδικός πρόσβασης:"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Block ads, trackers, and malware": [
+        "Αποκλείστε διαφημίσεις, ιχνηλάτες και κακόβουλο λογισμικό"
+      ],
+      "Built-in 2FA authenticator": [
+        "Ενσωματωμένη εφαρμογή ταυτοποίησης 2FA"
+      ],
+      "Unlimited daily chats": [
+        "Απεριόριστες καθημερινές συνομιλίες"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "για ${ durationDeal }"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Το ειδικά σχεδιασμένο NetShield προστατεύει τις συσκευές σας και επιταχύνει την περιήγησή σας εμποδίζοντας διαφημίσεις, ιχνηλάτες και κακόβουλο λογισμικό."
+      ]
+    },
+    "sheets_2025:Action": {
+      "Open in ${ appName }": [
+        "Άνοιγμα σε ${ appName }"
       ]
     }
   }

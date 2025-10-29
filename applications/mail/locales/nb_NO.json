@@ -4311,6 +4311,9 @@
       ],
       "Only": [
         "Kun"
+      ],
+      "2 TB of storage to share": [
+        "2 TB med lagringsplass å dele"
       ]
     },
     "Duo offer: Link": {
@@ -4319,6 +4322,9 @@
       ],
       "Share your plan": [
         "Del planen din"
+      ],
+      "Get 4x more storage": [
+        "Skaff deg 4x mer lagringskapasitet"
       ]
     },
     "Duo offer: Title": {
@@ -4327,6 +4333,9 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Del fordelene med planen din med ${ BRAND_NAME } Duo"
+      ],
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Få 4x mer lagring med ${ BRAND_NAME } Duo"
       ]
     },
     "Edit billing address form note": {
@@ -9899,6 +9908,12 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Skaff deg tilbudet"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12006,6 +12021,9 @@
       ],
       "Team policies": [
         "Retningslinjer for teamet"
+      ],
+      "File attachments (up to 10GB)": [
+        "Filvedlegg (opptil 10 GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -12191,6 +12209,20 @@
       ],
       "Your payment is still being processed": [
         "Betalingen din behandles fortsatt"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Den spesielle rabattprisen gjelder for den første måneden på ${ subscriptionLength }.",
+        "Den spesielt rabatterte prisen er gyldig de første ${ subscriptionLength } månedene."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "Den spesielt rabatterte prisen er gyldig den første måneden. Kupongen er gyldig for ${ couponRedemptions } fornyelse. Deretter vil den automatisk bli fornyet til ${ renewPriceStr } for 1 måned. Du kan avbryte når som helst.",
+        "Den spesielt rabatterte prisen er gyldig den første måneden. Kupongen er gyldig for ${ couponRedemptions } fornyelser. Deretter vil den automatisk bli fornyet til ${ renewPriceStr } for 1 måned. Du kan avbryte når som helst."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Den spesielt rabatterte prisen er gyldig den første måneden. Da blir den automatisk fornyet til ${ renewPriceStr } hver måned. Du kan avbryte når som helst."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Abonnementet ditt har for øyeblikket en eksisterende rabatt. Hvis du flytter til denne nye kampanjen, vil den eksisterende rabatten ikke lenger gjelde."
       ]
     },
     "Payments.Error": {
@@ -15657,6 +15689,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: sikre pålogginger på alle dine enheter. Inkluderer ubegrenset antall aliaser, deling, integrert 2FA og mer."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: KI-assistent som respekterer personvernet ditt"
       ]
     },
     "Tor out of date": {
@@ -16132,6 +16167,40 @@
       ],
       "Passcode:": [
         "Adgangskode:"
+      ]
+    },
+    "BF2025: Deal details": {
+      "Access 15,000+ servers in 120+ countries": [
+        "Tilgang til 15,000+ tjenere i 120+ land"
+      ],
+      "Block ads, trackers, and malware": [
+        "Blokkér annonser, sporere og skadelig programvare"
+      ],
+      "Built-in 2FA authenticator": [
+        "Innebygget 2FA-autentisering"
+      ],
+      "Unlimited daily chats": [
+        "Ubegrenset antall daglige chatter"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Black Friday"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "for ${ durationDeal }"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Spesialdesignet NetShield beskytter enheten din og øker hastigheten på surfingen din ved å blokkere annonser, sporere og skadelig programvare."
+      ]
+    },
+    "sheets_2025:Action": {
+      "Open in ${ appName }": [
+        "Åpne i ${ appName }"
       ]
     }
   }

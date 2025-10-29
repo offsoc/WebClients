@@ -2089,7 +2089,7 @@
         "1 kullanıcı hesabı"
       ],
       "200 GB storage: 40x your current plan": [
-        "200 GB depolama alanı: mevcut tarifenizin 40 katı"
+        "200 GB depolama alanı: Geçerli tarifenizin 40 katı"
       ],
       "6 user accounts": [
         "6 kullanıcı hesabı"
@@ -2113,7 +2113,7 @@
         "Parola sağlığı uyarıları"
       ],
       "Recover previous file versions": [
-        "Önceki dosya sürümlerini kurtarın"
+        "Önceki dosya sürümlerini geri yükleyin"
       ],
       "Unlimited folders, labels and filters": [
         "Sınırsız sayıda klasör, etiket ve süzgeç"
@@ -4301,7 +4301,7 @@
     },
     "Duo offer": {
       "/month": [
-        "/aylık"
+        "/ay"
       ],
       "1 TB of storage to share": [
         "Paylaşım için 1 TB depolama alanı"
@@ -4310,10 +4310,13 @@
         "2 kullanıcı hesabı"
       ],
       "All premium features from your current plan": [
-        "Mevcut tarifenizdeki tüm ücretli özellikler"
+        "Geçerli tarifenizdeki tüm ücretli özellikler"
       ],
       "Only": [
         "Yalnızca"
+      ],
+      "2 TB of storage to share": [
+        "Paylaşılabilen 2 TB depolama alanı"
       ]
     },
     "Duo offer: Link": {
@@ -4322,6 +4325,9 @@
       ],
       "Share your plan": [
         "Tarifenizi paylaşın"
+      ],
+      "Get 4x more storage": [
+        "4 kat daha fazla depolama alanı edinin"
       ]
     },
     "Duo offer: Title": {
@@ -4330,6 +4336,9 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "${ BRAND_NAME } Duo ile tarifenizin avantajlarını paylaşın"
+      ],
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "${ BRAND_NAME } Duo ile 4 kat daha fazla depolama alanı edinin"
       ]
     },
     "Edit billing address form note": {
@@ -5515,7 +5524,7 @@
         "Dosyalar, fotoğraflar ve belgeler için şifrelenmiş bulut depolama alanı"
       ],
       "More premium features": [
-        "Daha fazla ücretli özellik"
+        "Diğer ücretli özellikler"
       ],
       "Unlimited hide-my-email aliases": [
         "Sınırsız sayıda hide-my-email takma adı"
@@ -6926,7 +6935,7 @@
         "Kişi denetleniyor ${ progress }/${ max }..."
       ],
       "Choose a plan that works best for you.": [
-        "Sizin için en uygun tarifeyi seçin."
+        "Size en uygun tarifeyi seçin."
       ],
       "Clear browser data": [
         "Tarayıcı verilerini temizle"
@@ -8408,7 +8417,7 @@
         "Daha fazla klasör, süzgeç ve adres oluşturmak için tarifenizi yükseltin."
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
-        "${ planTitle } avantajlarınızı korumak için yükseltin."
+        "${ planTitle } avantajlarınızı korumak için tarifenizi yükseltin."
       ],
       "Upgrade to level up your privacy.": [
         "Gizliliğinizi artırmak için tarifenizi yükseltin."
@@ -9902,6 +9911,12 @@
       ],
       "ZIP code": [
         "Posta kodu"
+      ],
+      "Black Friday": [
+        "Muhteşem Cuma"
+      ],
+      "Get the deal": [
+        "Tekliften yararlanın"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -10364,7 +10379,7 @@
         "Ynt:"
       ],
       "Your free trial has ended. ${ nonAutoRenewalAction }": [
-        "Ücretsiz tarifeniz sona erdi. ${ nonAutoRenewalAction }"
+        "Ücretsiz deneme süreniz sona erdi. ${ nonAutoRenewalAction }"
       ],
       "Your free trial has ended. Access to your account will soon be disabled. ${ action }": [
         "Ücretsiz deneme süreniz doldu. Hesabınıza erişim yakında kapatılacak. ${ action }"
@@ -10935,7 +10950,7 @@
         "Kuruluş için iki adımlı doğrulama gereksin"
       ],
       "Router support": [
-        "Yöneltici desteği"
+        "Yönlendirici desteği"
       ],
       "Save time emailing": [
         "E-posta yazma süresini azaltın"
@@ -11367,7 +11382,7 @@
         "Kullanıcı parolalarını ve kullanıcıların iki adımlı doğrulama ayarlarını sıfırla"
       ],
       "Route your internet traffic through the Tor network with a single click": [
-        "İnternet trafiğinizi tek bir tıklamayla Tor ağı üzerinden yöneltin"
+        "İnternet trafiğinizi tek bir tıklamayla Tor ağı üzerinden geçirin"
       ],
       "Secure your files with encrypted cloud storage. Includes automatic sync, encrypted file sharing, and more.": [
         "Dosyalarınızı şifrelenmiş bulut depolama alanı ile koruyun. Otomatik eşitleme, şifrelenmiş dosya paylaşımı ve diğer özellikler."
@@ -12009,6 +12024,9 @@
       ],
       "Team policies": [
         "Ekip ilkeleri"
+      ],
+      "File attachments (up to 10GB)": [
+        "Ek dosyalar (10GB boyutuna kadar)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -12194,6 +12212,20 @@
       ],
       "Your payment is still being processed": [
         "Ödeme işleminiz sürüyor"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "Özel indirimli fiyat yalnızca ilk ${ subscriptionLength } ay için geçerlidir.",
+        "Özel indirimli fiyat yalnızca ilk ${ subscriptionLength } ay için geçerlidir."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "İndirimli fiyat yalnızca ilk ay için geçerlidir. Kupon, ${ couponRedemptions } yenileme için geçerlidir. Sonrasında aylık ${ renewPriceStr } ile otomatik olarak yenilenir. İstediğiniz zaman iptal edebilirsiniz.",
+        "İndirimli fiyat yalnızca ilk ay için geçerlidir. Kupon, ${ couponRedemptions } yenileme için geçerlidir. Sonrasında aylık ${ renewPriceStr } ile otomatik olarak yenilenir. İstediğiniz zaman iptal edebilirsiniz."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "Özel indirimli fiyat yalnızca ilk ay için geçerlidir. Ardından her ay otomatik olarak ${ renewPriceStr } ile yenilenir. İstediğiniz zaman iptal edebilirsiniz."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Aboneliğinizde şu anda uygulanan bir indirim var. Yeni indirime geçmek bu indirimin artık uygulanmayacağı anlamına gelir."
       ]
     },
     "Payments.Error": {
@@ -15755,6 +15787,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Tüm aygıtlarınızda oturum açma işlemlerinin güvenliğini sağlayın. Sınırsız takma ad, paylaşım, bütünleşik iki adımlı doğrulama ve diğer özellikler."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: Gizliliğinize saygı duyan yapay zeka yardımcısı"
       ]
     },
     "Tor out of date": {
@@ -15960,7 +15995,7 @@
         "Ücretsiz denemeniz ${ textDate } tarihinde sona erecek. ${ action }"
       ],
       "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
-        "Deneme tarifeniz ${ textDate } tarihinde sona erecektir. ${ textDate } tarihinden önce iptal etmeniz durumunda sizden ücret alınmayacaktır. ${ action }"
+        "Deneme süreniz ${ textDate } tarihinde sona erecek. ${ textDate } tarihinden önce iptal ederseniz sizden ücret alınmayacak. ${ action }"
       ]
     },
     "WeekDay": {
@@ -16230,6 +16265,87 @@
       ],
       "Passcode:": [
         "Parola:"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday İndirimi"
+      ]
+    },
+    "BF2025: Deal details": {
+      "2 TB data storage": [
+        "2 TB veri depolama alanı"
+      ],
+      "3 TB data storage": [
+        "3 TB veri depolama alanı"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "120'den fazla ülkede 15.000'den fazla sunucuya erişin"
+      ],
+      "Access advanced AI models": [
+        "Gelişmiş yapay zeka modellerine erişim"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } ve ${ CALENDAR_SHORT_APP_NAME } uygulamalarının tüm premium özellikleri"
+      ],
+      "Block ads, trackers, and malware": [
+        "Reklamları, izleyicileri ve kötü amaçlı yazılımları engelleyin"
+      ],
+      "Built-in 2FA authenticator": [
+        "Hazır iki adımlı kimlik doğrulayıcı"
+      ],
+      "Connect 10 devices at once": [
+        "Aynı anda 10 aygıta bağlanın"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Kolay arama ve sık kullanılanlar ile tam sohbet geçmişi"
+      ],
+      "Individual accounts for 6 users": [
+        "6 kullanıcı için bireysel hesaplar"
+      ],
+      "Individual accounts for you and a partner": [
+        "Siz ve bir partneriniz için bireysel hesaplar"
+      ],
+      "Stronger protection against cyber threats": [
+        "Siber tehditlere karşı daha güçlü koruma"
+      ],
+      "Unlimited daily chats": [
+        "Sınırsız günlük sohbet"
+      ]
+    },
+    "BF2025: Heading alt": {
+      "Black Friday": [
+        "Muhteşem Cuma"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Sevdiklerinizin, şimdi %50 indirimli en avantajlı paketlerimizle gizlilik devrimine katılmasına yardımcı olun!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Şimdi %50 indirimli, en avantajlı paketlerimizle gizlilik devrimine katılın!"
+      ]
+    },
+    "BF2025: Offers": {
+      "for ${ durationDeal }": [
+        "${ durationDeal } için"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "En avantajlı, sınırlı süreli fırsatımızla ${ savedAmount } tasarruf edin!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "2 yıllık planımıza geçin ve ${ savedAmount } tasarruf edin!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Yıllık planımıza geçin ve ${ savedAmount } tasarruf edin!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Sevdiklerinize tam dijital koruma sağlayın."
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Özel olarak tasarlanmış NetShield aygıtlarınızı korur ve reklamları, etkinlik izleyicileri ve kötü amaçlı yazılımları engelleyerek gezinmenizi hızlandırır."
       ]
     }
   }
