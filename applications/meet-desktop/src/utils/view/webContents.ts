@@ -29,6 +29,17 @@ import {
 } from "./viewManagement";
 import { mainLogger, viewLogger } from "../log";
 
+function isSafeUrl(
+    handlerDetails: Electron.HandlerDetails | Electron.Event<Electron.WebContentsWillNavigateEventParams>,
+): boolean {
+    try {
+        const parsed = new URL(handlerDetails.url);
+        return parsed.protocol === "https:";
+    } catch {
+        return false;
+    }
+}
+
 export function handleWebContents(contents: WebContents) {
     const logger = () => {
         const viewName = getWebContentsViewName(contents);
@@ -133,6 +144,10 @@ export function handleWebContents(contents: WebContents) {
     contents.on("will-navigate", (details) => {
         logger().info("will-navigate", details.url);
 
+        if (!isSafeUrl(details)) {
+            return details.preventDefault();
+        }
+
         // Open calendar URLs in external browser
         // This catches navigation from allowed about:blank windows (e.g., from window.open())
         if (isCalendar(details.url)) {
@@ -168,6 +183,10 @@ export function handleWebContents(contents: WebContents) {
         if (url === "about:blank" || url === "") {
             logWindowOpen("allowed", `blank window - will handle navigation ${url}`);
             return { action: "allow" };
+        }
+
+        if (!isSafeUrl(details)) {
+            return { action: "deny" };
         }
 
         // Open calendar URLs in external browser
