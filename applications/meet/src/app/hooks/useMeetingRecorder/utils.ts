@@ -60,6 +60,7 @@ export const createVideoElement = (trackInfo: RecordingTrackInfo) => {
                 await videoElement.play();
             }
         } catch (error) {
+            // eslint-disable-next-line no-console
             console.error('Failed to play video:', error);
         }
     };

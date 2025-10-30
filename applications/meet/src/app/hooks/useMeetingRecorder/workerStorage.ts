@@ -100,6 +100,7 @@ export class WorkerRecordingStorage {
                     data: {},
                 } as WorkerMessage);
             } catch (err) {
+                // eslint-disable-next-line no-console
                 console.error('[WorkerStorage] Error sending close message:', err);
             }
         }

@@ -12,3 +12,10 @@ export interface RecordingState {
     duration: number;
     recordedChunks: Blob[];
 }
+
+export interface FrameReaderInfo {
+    reader: ReadableStreamDefaultReader<VideoFrame> | null;
+    videoElement: HTMLVideoElement;
+    rafHandle: number | null;
+    participantKey: string;
+}

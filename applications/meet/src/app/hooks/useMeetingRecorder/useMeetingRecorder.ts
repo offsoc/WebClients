@@ -6,24 +6,15 @@ import { Track } from '@proton-meet/livekit-client';
 import { wait } from '@proton/shared/lib/helpers/promise';
 
 import { useMeetContext } from '../../contexts/MeetContext';
-import { calculateGridLayout } from '../../utils/calculateGridLayout';
 import { useIsLargerThanMd } from '../useIsLargerThanMd';
 import { useIsNarrowHeight } from '../useIsNarrowHeight';
-import {
-    drawParticipantBorder,
-    drawParticipantName,
-    drawParticipantPlaceholder,
-    drawVideoWithAspectRatio,
-} from './drawingUtils';
-import type { RecordingState, RecordingTrackInfo } from './types';
+import type { FrameReaderInfo, RecordingState, RecordingTrackInfo } from './types';
 import { cleanupVideoElement, createVideoElement, getRecordingDetails, getTracksForRecording } from './utils';
 import { WorkerRecordingStorage } from './workerStorage';
 
 const CANVAS_WIDTH = 1920;
 const CANVAS_HEIGHT = 1080;
 const FPS = 30;
-const GAP = 11;
-const BORDER_RADIUS = 28;
 
 const { mimeType, extension } = getRecordingDetails();
 
@@ -40,7 +31,8 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
 
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-    const animationFrameRef = useRef<number>();
+    const renderWorkerRef = useRef<Worker | null>(null);
+    const frameReadersRef = useRef<Map<string, FrameReaderInfo>>(new Map());
     const videoElementsRef = useRef<Map<string, HTMLVideoElement>>(new Map());
     const audioContextRef = useRef<AudioContext | null>(null);
     const audioDestinationRef = useRef<MediaStreamAudioDestinationNode | null>(null);
@@ -48,6 +40,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
     const startTimeRef = useRef<number>(0);
     const durationIntervalRef = useRef<number>();
     const workerStorageRef = useRef<WorkerRecordingStorage | null>(null);
+    const visibilityListenerRef = useRef<(() => void) | null>(null);
 
     const cameraTracks = useTracks([Track.Source.Camera]);
     const screenShareTracks = useTracks([Track.Source.ScreenShare]);
@@ -68,8 +61,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         pagedParticipants,
     };
 
-    const { cols, rows } = calculateGridLayout(pagedParticipants.length, !isLargerThanMd || isNarrowHeight);
-
     const getVideoElement = useCallback((trackInfo: RecordingTrackInfo) => {
         if (!trackInfo.track) {
             return null;
@@ -86,243 +77,190 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         return videoElement;
     }, []);
 
-    const drawRecordingCanvas = useCallback(
-        (canvas: HTMLCanvasElement, tracks: RecordingTrackInfo[]) => {
-            const ctx = canvas.getContext('2d');
-            if (!ctx) {
-                return;
-            }
+    // Prepare render state for worker
+    const prepareRenderState = useCallback(() => {
+        const tracks = getTracksForRecording(
+            renderInfoRef.current.pagedParticipants,
+            renderInfoRef.current.cameraTracks,
+            renderInfoRef.current.screenShareTracks
+        );
 
-            // Clear canvas with black background
-            ctx.fillStyle = '#000000';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            if (tracks.length === 0) {
-                // Draw "No participants" text
-                ctx.fillStyle = '#ffffff';
-                ctx.font = '48px Arial';
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                ctx.fillText('Recording...', canvas.width / 2, canvas.height / 2);
-                return;
-            }
-
-            // Check if there's a screenshare
-            const screenShareTrack = tracks.find((t) => t.isScreenShare);
-            const participantTracks = tracks.filter((t) => !t.isScreenShare);
-
-            if (screenShareTrack && participantTracks.length > 0) {
-                // Layout: Large screenshare on left, participants on right sidebar
-                const screenShareWidth = canvas.width * 0.85;
-                const sidebarWidth = canvas.width * 0.15;
-                const sidebarItemHeight = canvas.height / Math.min(participantTracks.length, 6);
-
-                // Draw screenshare
-                const screenShareVideo =
-                    videoElementsRef.current.get(screenShareTrack.track?.sid || '') ||
-                    getVideoElement(screenShareTrack);
-                if (screenShareVideo) {
-                    drawVideoWithAspectRatio({
-                        ctx,
-                        videoElement: screenShareVideo,
-                        x: 0,
-                        y: 0,
-                        width: screenShareWidth,
-                        height: canvas.height,
-                    });
-                }
-
-                const screenShareName = participantNameMap[screenShareTrack.participant?.identity || ''] || 'Unknown';
-                drawParticipantName({
-                    ctx,
-                    name: `${screenShareName} (Screen)`,
-                    x: 0,
-                    y: 0,
-                    height: canvas.height,
-                });
-
-                participantTracks.slice(0, 6).forEach((trackInfo, index) => {
-                    const yPos = index * sidebarItemHeight + GAP;
-                    const tileWidth = sidebarWidth - GAP;
-                    const tileHeight = sidebarItemHeight - GAP;
-
-                    const hasVideo = trackInfo.track && !trackInfo.track.isMuted;
-                    const name = participantNameMap[trackInfo.participant?.identity || ''] || 'Unknown';
-
-                    const colorIndex = trackInfo.participantIndex % 6;
-                    const backgroundColor = `meet-background-${colorIndex + 1}`;
-                    const profileColor = `profile-background-${colorIndex + 1}`;
-
-                    if (hasVideo) {
-                        const videoElement = getVideoElement(trackInfo);
-                        if (videoElement) {
-                            drawVideoWithAspectRatio({
-                                ctx,
-                                videoElement,
-                                x: screenShareWidth + GAP / 2,
-                                y: yPos,
-                                width: tileWidth,
-                                height: tileHeight,
-                                radius: BORDER_RADIUS / 2,
-                            });
-                        }
-                    } else {
-                        drawParticipantPlaceholder({
-                            ctx,
-                            name,
-                            x: screenShareWidth + GAP / 2,
-                            y: yPos,
-                            width: tileWidth,
-                            height: tileHeight,
-                            backgroundColor,
-                            profileColor,
-                            radius: BORDER_RADIUS / 2,
-                        });
-                    }
-
-                    const audioPublication = Array.from(trackInfo.participant.trackPublications.values()).find(
-                        (pub) => pub.kind === 'audio' && pub.track
-                    );
-                    const hasActiveAudio = audioPublication ? !audioPublication.isMuted : false;
-
-                    const borderColor = `tile-border-${colorIndex + 1}`;
-
-                    drawParticipantBorder({
-                        ctx,
-                        x: screenShareWidth + GAP / 2,
-                        y: yPos,
-                        width: tileWidth,
-                        height: tileHeight,
-                        borderColor,
-                        isActive: hasActiveAudio,
-                        radius: BORDER_RADIUS / 2,
-                    });
-
-                    drawParticipantName({
-                        ctx,
-                        name,
-                        x: screenShareWidth + GAP / 2,
-                        y: yPos,
-                        height: tileHeight,
-                    });
-                });
-            } else if (screenShareTrack) {
-                const screenShareVideo = getVideoElement(screenShareTrack);
-                if (screenShareVideo) {
-                    drawVideoWithAspectRatio({
-                        ctx,
-                        videoElement: screenShareVideo,
-                        x: 0,
-                        y: 0,
-                        width: canvas.width,
-                        height: canvas.height,
-                    });
-                }
-
-                const screenShareName = participantNameMap[screenShareTrack.participant?.identity || ''] || 'Unknown';
-                drawParticipantName({
-                    ctx,
-                    name: `${screenShareName} (Screen)`,
-                    x: 0,
-                    y: 0,
-                    height: canvas.height,
-                });
-            } else {
-                const cellWidth = canvas.width / cols;
-                const cellHeight = canvas.height / rows;
-
-                participantTracks.forEach((trackInfo, index) => {
-                    const col = index % cols;
-                    const row = Math.floor(index / cols);
-
-                    const x = col * cellWidth + GAP;
-                    const y = row * cellHeight + GAP;
-                    const tileWidth = cellWidth - GAP;
-                    const tileHeight = cellHeight - GAP;
-
-                    const participantName = participantNameMap[trackInfo.participant?.identity || ''] || 'Unknown';
-
-                    const colorIndex = trackInfo.participantIndex % 6;
-                    const backgroundColor = `meet-background-${colorIndex + 1}`;
-                    const profileColor = `profile-background-${colorIndex + 1}`;
-                    const borderColor = `tile-border-${colorIndex + 1}`;
-
-                    const hasVideo = trackInfo.track && !trackInfo.track.isMuted;
-
-                    if (hasVideo) {
-                        const videoElement = getVideoElement(trackInfo);
-                        if (videoElement) {
-                            drawVideoWithAspectRatio({
-                                ctx,
-                                videoElement,
-                                x,
-                                y,
-                                width: tileWidth,
-                                height: tileHeight,
-                                radius: BORDER_RADIUS,
-                            });
-                        }
-                    } else {
-                        drawParticipantPlaceholder({
-                            ctx,
-                            name: participantName,
-                            x,
-                            y,
-                            width: tileWidth,
-                            height: tileHeight,
-                            backgroundColor,
-                            profileColor,
-                            radius: BORDER_RADIUS,
-                        });
-                    }
-
-                    const audioPublication = Array.from(trackInfo.participant.trackPublications.values()).find(
-                        (pub) => pub.kind === 'audio' && pub.track
-                    );
-                    const hasActiveAudio = audioPublication ? !audioPublication.isMuted : false;
-
-                    drawParticipantBorder({
-                        ctx,
-                        x,
-                        y,
-                        width: tileWidth,
-                        height: tileHeight,
-                        borderColor,
-                        isActive: hasActiveAudio,
-                        radius: BORDER_RADIUS,
-                    });
-
-                    drawParticipantName({
-                        ctx,
-                        name: participantName,
-                        x,
-                        y,
-                        height: tileHeight,
-                    });
-                });
-            }
-        },
-        [createVideoElement, participantNameMap, cols, rows]
-    );
-
-    const startRenderingLoop = useCallback(
-        (canvas: HTMLCanvasElement) => {
-            const render = () => {
-                drawRecordingCanvas(
-                    canvas,
-                    getTracksForRecording(
-                        renderInfoRef.current.pagedParticipants,
-                        renderInfoRef.current.cameraTracks,
-                        renderInfoRef.current.screenShareTracks
-                    )
+        const participants = tracks.map((track) => ({
+            identity: track.participant?.identity || '',
+            name: participantNameMap[track.participant?.identity || ''] || 'Unknown',
+            participantIndex: track.participantIndex,
+            isScreenShare: track.isScreenShare,
+            hasVideo: Boolean(track.track && !track.track.isMuted),
+            hasActiveAudio: (() => {
+                const audioPublication = Array.from(track.participant.trackPublications.values()).find(
+                    (pub) => pub.kind === Track.Kind.Audio && pub.track
                 );
+                return audioPublication ? !audioPublication.isMuted : false;
+            })(),
+        }));
 
-                animationFrameRef.current = requestAnimationFrame(render);
-            };
-            render();
+        return {
+            participants,
+            isLargerThanMd,
+            isNarrowHeight,
+        };
+    }, [participantNameMap, isLargerThanMd, isNarrowHeight]);
+
+    // Check if MediaStreamTrackProcessor is available
+    const supportsTrackProcessor = useCallback(() => {
+        return (
+            typeof (window as any).MediaStreamTrackProcessor !== 'undefined' &&
+            typeof (window as any).VideoFrame !== 'undefined'
+        );
+    }, []);
+
+    const startFrameCaptureWithProcessor = useCallback(
+        (trackInfo: RecordingTrackInfo, participantKey: string) => {
+            const mediaTrack = trackInfo.track?.mediaStreamTrack;
+            if (!mediaTrack || !supportsTrackProcessor() || !renderWorkerRef.current) {
+                return false;
+            }
+
+            const trackId = trackInfo.track?.sid || `track-${Date.now()}`;
+
+            try {
+                // @ts-expect-error - MediaStreamTrackProcessor is not yet in TypeScript types
+                const processor = new MediaStreamTrackProcessor({ track: mediaTrack });
+                const reader = processor.readable.getReader();
+
+                const videoElement = getVideoElement(trackInfo);
+                if (!videoElement) {
+                    return false;
+                }
+
+                frameReadersRef.current.set(trackId, {
+                    reader,
+                    videoElement,
+                    rafHandle: null,
+                    participantKey,
+                });
+
+                const pump = async () => {
+                    try {
+                        while (frameReadersRef.current.has(trackId)) {
+                            const { value: frame, done } = await reader.read();
+                            if (done) {
+                                break;
+                            }
+
+                            if (renderWorkerRef.current && frame) {
+                                renderWorkerRef.current.postMessage(
+                                    {
+                                        type: 'updateFrame',
+                                        frameData: { participantIdentity: participantKey, frame },
+                                    },
+                                    [frame]
+                                );
+                            }
+                        }
+                    } catch (error) {
+                        // Reader was cancelled or track ended
+                    }
+                };
+
+                void pump();
+                return true;
+            } catch (error) {
+                return false;
+            }
         },
-        [drawRecordingCanvas]
+        [getVideoElement, supportsTrackProcessor]
     );
+
+    // Start frame capture using requestVideoFrameCallback (fallback for Firefox)
+    const startFrameCaptureWithRVFC = useCallback(
+        (trackInfo: RecordingTrackInfo, participantKey: string) => {
+            const trackId = trackInfo.track?.sid || `track-${Date.now()}`;
+            const videoElement = getVideoElement(trackInfo);
+            if (!videoElement || !renderWorkerRef.current) {
+                return;
+            }
+
+            const onFrame = async () => {
+                const readerInfo = frameReadersRef.current.get(trackId);
+                if (!readerInfo || !renderWorkerRef.current) {
+                    return;
+                }
+
+                try {
+                    // Create ImageBitmap from video element
+                    const bitmap = await createImageBitmap(videoElement);
+                    renderWorkerRef.current.postMessage(
+                        {
+                            type: 'updateFrame',
+                            frameData: { participantIdentity: participantKey, frame: bitmap },
+                        },
+                        [bitmap]
+                    );
+                } catch (error) {}
+
+                if (frameReadersRef.current.has(trackId)) {
+                    const handle = videoElement.requestVideoFrameCallback(onFrame);
+                    const info = frameReadersRef.current.get(trackId);
+                    if (info) {
+                        info.rafHandle = handle;
+                    }
+                }
+            };
+
+            const handle = videoElement.requestVideoFrameCallback(onFrame);
+            frameReadersRef.current.set(trackId, {
+                reader: null,
+                videoElement,
+                rafHandle: handle,
+                participantKey,
+            });
+        },
+        [getVideoElement]
+    );
+
+    const startFrameCapture = useCallback(
+        (trackInfo: RecordingTrackInfo) => {
+            if (!trackInfo.track || trackInfo.track.isMuted) {
+                return;
+            }
+
+            const participantKey = trackInfo.isScreenShare
+                ? `${trackInfo.participant?.identity || ''}-screenshare`
+                : trackInfo.participant?.identity || '';
+
+            if (startFrameCaptureWithProcessor(trackInfo, participantKey)) {
+                return;
+            }
+
+            startFrameCaptureWithRVFC(trackInfo, participantKey);
+        },
+        [startFrameCaptureWithProcessor, startFrameCaptureWithRVFC]
+    );
+
+    const stopFrameCapture = useCallback((trackId: string) => {
+        const readerInfo = frameReadersRef.current.get(trackId);
+        if (!readerInfo) {
+            return;
+        }
+
+        if (readerInfo.reader) {
+            void readerInfo.reader.cancel();
+        }
+
+        if (readerInfo.rafHandle !== null) {
+            readerInfo.videoElement.cancelVideoFrameCallback(readerInfo.rafHandle);
+        }
+
+        frameReadersRef.current.delete(trackId);
+    }, []);
+
+    const stopAllFrameCaptures = useCallback(() => {
+        frameReadersRef.current.forEach((_, trackId) => {
+            stopFrameCapture(trackId);
+        });
+        frameReadersRef.current.clear();
+    }, [stopFrameCapture]);
 
     const setupAudioMixing = useCallback(() => {
         const audioContext = new AudioContext();
@@ -344,6 +282,15 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         audioContextRef.current = audioContext;
         audioDestinationRef.current = destination;
 
+        const handleVisibilityChange = () => {
+            if (audioContextRef.current && audioContextRef.current.state === 'suspended') {
+                void audioContextRef.current.resume();
+            }
+        };
+
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+        visibilityListenerRef.current = handleVisibilityChange;
+
         return { stream: destination.stream, hasAudio: connectedSources > 0 };
     }, [audioTracks]);
 
@@ -353,9 +300,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                 try {
                     await workerStorageRef.current.clear();
                     workerStorageRef.current.terminate();
-                } catch (error) {
-                    console.warn('Failed to clean up previous recording:', error);
-                }
+                } catch (error) {}
                 workerStorageRef.current = null;
             }
 
@@ -364,23 +309,32 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             await storage.init();
             workerStorageRef.current = storage;
 
+            // Create canvas
             const canvas = document.createElement('canvas');
             canvas.width = CANVAS_WIDTH;
             canvas.height = CANVAS_HEIGHT;
             canvasRef.current = canvas;
 
-            const ctx = canvas.getContext('2d');
-            if (ctx) {
-                ctx.fillStyle = '#000000';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                ctx.fillStyle = '#ffffff';
-                ctx.font = '48px Arial';
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                ctx.fillText('Starting recording...', canvas.width / 2, canvas.height / 2);
-            }
-
             const canvasStream = canvas.captureStream(FPS);
+
+            const worker = new Worker(new URL('./renderWorker.ts', import.meta.url), {
+                type: 'module',
+            });
+            renderWorkerRef.current = worker;
+
+            // Transfer canvas to worker as OffscreenCanvas
+            const offscreen = canvas.transferControlToOffscreen();
+            worker.postMessage(
+                {
+                    type: 'init',
+                    canvas: offscreen,
+                    state: prepareRenderState(),
+                },
+                [offscreen]
+            );
+
+            // Start rendering in worker
+            worker.postMessage({ type: 'render' });
 
             const { stream: audioStream, hasAudio } = setupAudioMixing();
 
@@ -401,21 +355,34 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                         chunkCount++;
                         await workerStorageRef.current.addChunk(event.data);
                     } catch (error) {
+                        // eslint-disable-next-line no-console
                         console.error(`✗ Failed to store chunk ${chunkCount} in OPFS:`, error);
                     }
                 } else {
+                    // eslint-disable-next-line no-console
                     console.warn('ondataavailable called with empty data or no storage');
                 }
             };
 
             mediaRecorder.onerror = (event) => {
+                // eslint-disable-next-line no-console
                 console.error('MediaRecorder error:', event);
             };
 
             mediaRecorder.start(1000);
             mediaRecorderRef.current = mediaRecorder;
 
-            startRenderingLoop(canvas);
+            // Start video elements and frame capture for tracks
+            const recordingTracks = getTracksForRecording(
+                renderInfoRef.current.pagedParticipants,
+                renderInfoRef.current.cameraTracks,
+                renderInfoRef.current.screenShareTracks
+            );
+            recordingTracks.forEach((trackInfo) => {
+                if (trackInfo.track && !trackInfo.track.isMuted) {
+                    startFrameCapture(trackInfo);
+                }
+            });
 
             startTimeRef.current = Date.now();
             durationIntervalRef.current = window.setInterval(() => {
@@ -431,6 +398,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                 recordedChunks: [],
             });
         } catch (error) {
+            // eslint-disable-next-line no-console
             console.error('Failed to start recording:', error);
             throw error;
         }
@@ -445,28 +413,40 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                     // Small delay to ensure all async ondataavailable handlers complete
                     await wait(100);
 
-                    if (workerStorageRef.current) {
-                        try {
-                            const file = await workerStorageRef.current.getFile();
+                    if (!workerStorageRef.current) {
+                        resolve(null);
 
-                            if (file.type && file.type !== '') {
-                                blob = file;
-                            } else {
-                                blob = file.slice(0, file.size, mimeType);
-                            }
-                        } catch (error) {
-                            console.error('Failed to retrieve file from OPFS:', error);
-                        }
-                    } else {
-                        console.error('No OPFS storage reference available');
+                        return;
                     }
 
-                    if (animationFrameRef.current) {
-                        cancelAnimationFrame(animationFrameRef.current);
+                    try {
+                        const file = await workerStorageRef.current.getFile();
+
+                        if (file.type && file.type !== '') {
+                            blob = file;
+                        } else {
+                            blob = file.slice(0, file.size, mimeType);
+                        }
+                    } catch (error) {
+                        // eslint-disable-next-line no-console
+                        console.error('Failed to retrieve file from OPFS:', error);
+                    }
+
+                    stopAllFrameCaptures();
+
+                    if (renderWorkerRef.current) {
+                        renderWorkerRef.current.postMessage({ type: 'stop' });
+                        renderWorkerRef.current.terminate();
+                        renderWorkerRef.current = null;
                     }
 
                     if (audioContextRef.current) {
-                        audioContextRef.current.close();
+                        void audioContextRef.current.close();
+                    }
+
+                    if (visibilityListenerRef.current) {
+                        document.removeEventListener('visibilitychange', visibilityListenerRef.current);
+                        visibilityListenerRef.current = null;
                     }
 
                     if (durationIntervalRef.current) {
@@ -519,31 +499,93 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             await wait(1000);
             URL.revokeObjectURL(url);
         } catch (error) {
+            // eslint-disable-next-line no-console
             console.error('Failed to download recording:', error);
         }
     };
 
+    // Update render state when layout changes (only during recording)
+    useEffect(() => {
+        if (!recordingState.isRecording || !renderWorkerRef.current) {
+            return;
+        }
+
+        // Push updated state to worker
+        renderWorkerRef.current.postMessage({
+            type: 'updateState',
+            state: prepareRenderState(),
+        });
+    }, [recordingState.isRecording, isLargerThanMd, isNarrowHeight, pagedParticipants, prepareRenderState]);
+
+    // Handle track changes during recording (start/stop frame capture as needed)
+    useEffect(() => {
+        if (!recordingState.isRecording) {
+            return;
+        }
+
+        const tracks = getTracksForRecording(
+            renderInfoRef.current.pagedParticipants,
+            renderInfoRef.current.cameraTracks,
+            renderInfoRef.current.screenShareTracks
+        );
+
+        // Get current track IDs
+        const currentTrackIds = new Set(Array.from(frameReadersRef.current.keys()));
+
+        const newTrackIds = new Set(tracks.filter((t) => t.track && !t.track.isMuted).map((t) => t.track!.sid || ''));
+
+        // Stop captures for tracks that are no longer active
+        currentTrackIds.forEach((trackId) => {
+            if (!newTrackIds.has(trackId)) {
+                stopFrameCapture(trackId);
+            }
+        });
+
+        // Start captures for new tracks
+        tracks.forEach((trackInfo) => {
+            const trackId = trackInfo.track?.sid;
+            if (trackId && !currentTrackIds.has(trackId) && trackInfo.track && !trackInfo.track.isMuted) {
+                startFrameCapture(trackInfo);
+            }
+        });
+    }, [
+        recordingState.isRecording,
+        cameraTracks,
+        screenShareTracks,
+        pagedParticipants,
+        startFrameCapture,
+        stopFrameCapture,
+    ]);
+
     // Cleanup on unmount
     useEffect(() => {
         return () => {
-            if (animationFrameRef.current) {
-                cancelAnimationFrame(animationFrameRef.current);
+            stopAllFrameCaptures();
+            if (renderWorkerRef.current) {
+                renderWorkerRef.current.postMessage({ type: 'stop' });
+                renderWorkerRef.current.terminate();
+                renderWorkerRef.current = null;
             }
             if (audioContextRef.current) {
-                audioContextRef.current.close();
+                void audioContextRef.current.close();
+            }
+            if (visibilityListenerRef.current) {
+                document.removeEventListener('visibilitychange', visibilityListenerRef.current);
+                visibilityListenerRef.current = null;
             }
             if (durationIntervalRef.current) {
                 clearInterval(durationIntervalRef.current);
             }
             if (workerStorageRef.current) {
-                workerStorageRef.current.clear().catch(console.error);
+                // eslint-disable-next-line no-console
+                void workerStorageRef.current.clear().catch(console.error);
                 workerStorageRef.current.terminate();
                 workerStorageRef.current = null;
             }
             videoElementsRef.current.forEach(cleanupVideoElement);
             videoElementsRef.current.clear();
         };
-    }, []);
+    }, [stopAllFrameCaptures]);
 
     return {
         recordingState,

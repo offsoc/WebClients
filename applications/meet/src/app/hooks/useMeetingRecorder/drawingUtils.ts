@@ -1,7 +1,10 @@
+// Type that accepts both regular and offscreen canvas contexts
+type CanvasContext = CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D;
+
 /**
  * Helper to draw a rounded rectangle path
  */
-function roundRect(ctx: CanvasRenderingContext2D, x: number, y: number, width: number, height: number, radius: number) {
+function roundRect(ctx: CanvasContext, x: number, y: number, width: number, height: number, radius: number) {
     ctx.beginPath();
     ctx.moveTo(x + radius, y);
     ctx.lineTo(x + width - radius, y);
@@ -27,7 +30,7 @@ export function drawVideoWithAspectRatio({
     height,
     radius = 12,
 }: {
-    ctx: CanvasRenderingContext2D;
+    ctx: CanvasContext;
     videoElement: HTMLVideoElement;
     x: number;
     y: number;
@@ -70,6 +73,7 @@ export function drawVideoWithAspectRatio({
 
             ctx.drawImage(videoElement, drawX, drawY, drawWidth, drawHeight);
         } catch (error) {
+            // eslint-disable-next-line no-console
             console.warn('Failed to draw video:', error);
             // Draw error placeholder
             ctx.fillStyle = '#1a1a1a';
@@ -95,7 +99,7 @@ export function drawParticipantName({
     y,
     height,
 }: {
-    ctx: CanvasRenderingContext2D;
+    ctx: CanvasContext;
     name: string;
     x: number;
     y: number;
@@ -172,7 +176,7 @@ export function drawParticipantPlaceholder({
     profileColor,
     radius = 12,
 }: {
-    ctx: CanvasRenderingContext2D;
+    ctx: CanvasContext;
     name: string;
     x: number;
     y: number;
@@ -240,7 +244,7 @@ export function drawParticipantBorder({
     isActive,
     radius = 12,
 }: {
-    ctx: CanvasRenderingContext2D;
+    ctx: CanvasContext;
     x: number;
     y: number;
     width: number;
