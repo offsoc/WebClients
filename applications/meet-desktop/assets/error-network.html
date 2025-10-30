@@ -101,7 +101,17 @@
             buttonElement.textContent = buttonText;
 
             buttonElement.addEventListener("click", () => {
-                window.location.href = buttonTarget;
+                // Validate protocol before navigation (security: only allow HTTPS)
+                try {
+                    const url = new URL(buttonTarget);
+                    if (url.protocol === "https:") {
+                        window.location.href = buttonTarget;
+                    } else {
+                        console.error("Blocked navigation to unsafe protocol:", buttonTarget);
+                    }
+                } catch (error) {
+                    console.error("Invalid URL:", buttonTarget, error);
+                }
             });
 
             const maxCooldown = 300;
