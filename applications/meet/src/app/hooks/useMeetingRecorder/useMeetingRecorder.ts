@@ -3,8 +3,12 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTracks } from '@livekit/components-react';
 import { Track } from '@proton-meet/livekit-client';
 
-import isTruthy from '@proton/utils/isTruthy';
+import { wait } from '@proton/shared/lib/helpers/promise';
 
+import { useMeetContext } from '../../contexts/MeetContext';
+import { calculateGridLayout } from '../../utils/calculateGridLayout';
+import { useIsLargerThanMd } from '../useIsLargerThanMd';
+import { useIsNarrowHeight } from '../useIsNarrowHeight';
 import {
     drawParticipantBorder,
     drawParticipantName,
@@ -12,17 +16,24 @@ import {
     drawVideoWithAspectRatio,
 } from './drawingUtils';
 import type { RecordingState, RecordingTrackInfo } from './types';
+import { cleanupVideoElement, createVideoElement, getRecordingDetails, getTracksForRecording } from './utils';
+import { WorkerRecordingStorage } from './workerStorage';
 
 const CANVAS_WIDTH = 1920;
 const CANVAS_HEIGHT = 1080;
 const FPS = 30;
-const GAP = 11; // Gap between tiles (matching 0.6875rem from ParticipantGrid)
-const BORDER_RADIUS = 12; // Border radius for rounded corners
+const GAP = 11;
+const BORDER_RADIUS = 28;
+
+const { mimeType, extension } = getRecordingDetails();
 
 export function useMeetingRecorder(participantNameMap: Record<string, string>) {
+    const isLargerThanMd = useIsLargerThanMd();
+
+    const isNarrowHeight = useIsNarrowHeight();
+
     const [recordingState, setRecordingState] = useState<RecordingState>({
         isRecording: false,
-        isPaused: false,
         duration: 0,
         recordedChunks: [],
     });
@@ -36,90 +47,45 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
     const recordedChunksRef = useRef<Blob[]>([]);
     const startTimeRef = useRef<number>(0);
     const durationIntervalRef = useRef<number>();
+    const workerStorageRef = useRef<WorkerRecordingStorage | null>(null);
 
-    // Get all camera and screenshare tracks
     const cameraTracks = useTracks([Track.Source.Camera]);
     const screenShareTracks = useTracks([Track.Source.ScreenShare]);
     const audioTracks = useTracks([Track.Source.Microphone, Track.Source.ScreenShareAudio]);
+    const { pagedParticipants } = useMeetContext();
 
-    // Prepare tracks for recording
-    const tracksForRecording = useRef<RecordingTrackInfo[]>([]);
+    const renderInfoRef = useRef({
+        cameraTracks,
+        screenShareTracks,
+        audioTracks,
+        pagedParticipants,
+    });
 
-    useEffect(() => {
-        const screenShare = screenShareTracks[0];
-        const cameras = cameraTracks.filter((track) => !track.publication.isMuted && track.publication.track);
+    renderInfoRef.current = {
+        cameraTracks,
+        screenShareTracks,
+        audioTracks,
+        pagedParticipants,
+    };
 
-        tracksForRecording.current = [screenShare, ...cameras]
-            .map((trackRef) => {
-                if (!trackRef?.publication.track) {
-                    return null;
-                }
-                return {
-                    track: trackRef.publication.track,
-                    participant: trackRef.participant!,
-                    isScreenShare: trackRef.source === Track.Source.ScreenShare,
-                };
-            })
-            .filter(isTruthy);
-    }, [cameraTracks, screenShareTracks]);
+    const { cols, rows } = calculateGridLayout(pagedParticipants.length, !isLargerThanMd || isNarrowHeight);
 
-    // Create video element for a track
-    const createVideoElement = useCallback((trackInfo: RecordingTrackInfo) => {
+    const getVideoElement = useCallback((trackInfo: RecordingTrackInfo) => {
+        if (!trackInfo.track) {
+            return null;
+        }
+
         const trackId = trackInfo.track.sid || `track-${Date.now()}`;
         let videoElement = videoElementsRef.current.get(trackId);
 
         if (!videoElement) {
-            videoElement = document.createElement('video');
-            videoElement.muted = true;
-            videoElement.autoplay = true;
-            videoElement.playsInline = true;
-
-            trackInfo.track.attach(videoElement);
-
-            const playVideo = async () => {
-                try {
-                    if (videoElement) {
-                        await videoElement.play();
-                    }
-                } catch (error) {
-                    console.error('Failed to play video:', error);
-                }
-            };
-
-            videoElement.addEventListener('canplay', playVideo, { once: true });
+            videoElement = createVideoElement(trackInfo);
             videoElementsRef.current.set(trackId, videoElement);
         }
 
         return videoElement;
     }, []);
 
-    // Calculate grid layout
-    const calculateGridLayout = (count: number) => {
-        if (count === 0) {
-            return { cols: 0, rows: 0 };
-        }
-        if (count === 1) {
-            return { cols: 1, rows: 1 };
-        }
-        if (count === 2) {
-            return { cols: 2, rows: 1 };
-        }
-        if (count <= 4) {
-            return { cols: 2, rows: 2 };
-        }
-        if (count <= 6) {
-            return { cols: 3, rows: 2 };
-        }
-        if (count <= 9) {
-            return { cols: 3, rows: 3 };
-        }
-        if (count <= 12) {
-            return { cols: 4, rows: 3 };
-        }
-        return { cols: 4, rows: 4 };
-    };
-
-    // Draw the recording canvas
     const drawRecordingCanvas = useCallback(
         (canvas: HTMLCanvasElement, tracks: RecordingTrackInfo[]) => {
             const ctx = canvas.getContext('2d');
@@ -147,20 +113,24 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
 
             if (screenShareTrack && participantTracks.length > 0) {
                 // Layout: Large screenshare on left, participants on right sidebar
-                const screenShareWidth = canvas.width * 0.75;
-                const sidebarWidth = canvas.width * 0.25;
+                const screenShareWidth = canvas.width * 0.85;
+                const sidebarWidth = canvas.width * 0.15;
                 const sidebarItemHeight = canvas.height / Math.min(participantTracks.length, 6);
 
                 // Draw screenshare
-                const screenShareVideo = createVideoElement(screenShareTrack);
-                drawVideoWithAspectRatio({
-                    ctx,
-                    videoElement: screenShareVideo,
-                    x: 0,
-                    y: 0,
-                    width: screenShareWidth,
-                    height: canvas.height,
-                });
+                const screenShareVideo =
+                    videoElementsRef.current.get(screenShareTrack.track?.sid || '') ||
+                    getVideoElement(screenShareTrack);
+                if (screenShareVideo) {
+                    drawVideoWithAspectRatio({
+                        ctx,
+                        videoElement: screenShareVideo,
+                        x: 0,
+                        y: 0,
+                        width: screenShareWidth,
+                        height: canvas.height,
+                    });
+                }
 
                 const screenShareName = participantNameMap[screenShareTrack.participant?.identity || ''] || 'Unknown';
                 drawParticipantName({
@@ -168,36 +138,35 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                     name: `${screenShareName} (Screen)`,
                     x: 0,
                     y: 0,
+                    height: canvas.height,
                 });
 
-                // Draw participants in sidebar
                 participantTracks.slice(0, 6).forEach((trackInfo, index) => {
                     const yPos = index * sidebarItemHeight + GAP;
                     const tileWidth = sidebarWidth - GAP;
                     const tileHeight = sidebarItemHeight - GAP;
 
-                    // Check if video is available (camera track and not muted)
                     const hasVideo = trackInfo.track && !trackInfo.track.isMuted;
                     const name = participantNameMap[trackInfo.participant?.identity || ''] || 'Unknown';
 
-                    // Get colors from metadata
-                    const metadata = JSON.parse(trackInfo.participant.metadata || '{}');
-                    const backgroundColor = metadata?.backgroundColor || 'meet-background-1';
-                    const profileColor = metadata?.profileColor || 'profile-background-1';
+                    const colorIndex = trackInfo.participantIndex % 6;
+                    const backgroundColor = `meet-background-${colorIndex + 1}`;
+                    const profileColor = `profile-background-${colorIndex + 1}`;
 
                     if (hasVideo) {
-                        const videoElement = createVideoElement(trackInfo);
-                        drawVideoWithAspectRatio({
-                            ctx,
-                            videoElement,
-                            x: screenShareWidth + GAP / 2,
-                            y: yPos,
-                            width: tileWidth,
-                            height: tileHeight,
-                            radius: BORDER_RADIUS / 2, // Smaller radius for sidebar
-                        });
+                        const videoElement = getVideoElement(trackInfo);
+                        if (videoElement) {
+                            drawVideoWithAspectRatio({
+                                ctx,
+                                videoElement,
+                                x: screenShareWidth + GAP / 2,
+                                y: yPos,
+                                width: tileWidth,
+                                height: tileHeight,
+                                radius: BORDER_RADIUS / 2,
+                            });
+                        }
                     } else {
-                        // Draw placeholder with initials
                         drawParticipantPlaceholder({
                             ctx,
                             name,
@@ -211,16 +180,13 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                         });
                     }
 
-                    // Check if participant has active audio
                     const audioPublication = Array.from(trackInfo.participant.trackPublications.values()).find(
                         (pub) => pub.kind === 'audio' && pub.track
                     );
                     const hasActiveAudio = audioPublication ? !audioPublication.isMuted : false;
 
-                    // Get border color from metadata
-                    const borderColor = metadata?.borderColor || 'tile-border-1';
+                    const borderColor = `tile-border-${colorIndex + 1}`;
 
-                    // Draw colored border if audio is active
                     drawParticipantBorder({
                         ctx,
                         x: screenShareWidth + GAP / 2,
@@ -237,19 +203,21 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                         name,
                         x: screenShareWidth + GAP / 2,
                         y: yPos,
+                        height: tileHeight,
                     });
                 });
             } else if (screenShareTrack) {
-                // Only screenshare, no participants
-                const screenShareVideo = createVideoElement(screenShareTrack);
-                drawVideoWithAspectRatio({
-                    ctx,
-                    videoElement: screenShareVideo,
-                    x: 0,
-                    y: 0,
-                    width: canvas.width,
-                    height: canvas.height,
-                });
+                const screenShareVideo = getVideoElement(screenShareTrack);
+                if (screenShareVideo) {
+                    drawVideoWithAspectRatio({
+                        ctx,
+                        videoElement: screenShareVideo,
+                        x: 0,
+                        y: 0,
+                        width: canvas.width,
+                        height: canvas.height,
+                    });
+                }
 
                 const screenShareName = participantNameMap[screenShareTrack.participant?.identity || ''] || 'Unknown';
                 drawParticipantName({
@@ -257,10 +225,9 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                     name: `${screenShareName} (Screen)`,
                     x: 0,
                     y: 0,
+                    height: canvas.height,
                 });
             } else {
-                // Grid layout for participants
-                const { cols, rows } = calculateGridLayout(participantTracks.length);
                 const cellWidth = canvas.width / cols;
                 const cellHeight = canvas.height / rows;
 
@@ -268,35 +235,34 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                     const col = index % cols;
                     const row = Math.floor(index / cols);
 
-                    // Calculate position with gaps
                     const x = col * cellWidth + GAP;
                     const y = row * cellHeight + GAP;
                     const tileWidth = cellWidth - GAP;
                     const tileHeight = cellHeight - GAP;
 
-                    // Get participant info
                     const participantName = participantNameMap[trackInfo.participant?.identity || ''] || 'Unknown';
-                    const participantMetadata = JSON.parse(trackInfo.participant.metadata || '{}');
-                    const backgroundColor = participantMetadata?.backgroundColor || 'meet-background-1';
-                    const profileColor = participantMetadata?.profileColor || 'profile-background-1';
-                    const borderColor = participantMetadata?.borderColor || 'tile-border-1';
 
-                    // Check if video is available (camera track and not muted)
+                    const colorIndex = trackInfo.participantIndex % 6;
+                    const backgroundColor = `meet-background-${colorIndex + 1}`;
+                    const profileColor = `profile-background-${colorIndex + 1}`;
+                    const borderColor = `tile-border-${colorIndex + 1}`;
+
                     const hasVideo = trackInfo.track && !trackInfo.track.isMuted;
 
                     if (hasVideo) {
-                        const videoElement = createVideoElement(trackInfo);
-                        drawVideoWithAspectRatio({
-                            ctx,
-                            videoElement,
-                            x,
-                            y,
-                            width: tileWidth,
-                            height: tileHeight,
-                            radius: BORDER_RADIUS,
-                        });
+                        const videoElement = getVideoElement(trackInfo);
+                        if (videoElement) {
+                            drawVideoWithAspectRatio({
+                                ctx,
+                                videoElement,
+                                x,
+                                y,
+                                width: tileWidth,
+                                height: tileHeight,
+                                radius: BORDER_RADIUS,
+                            });
+                        }
                     } else {
-                        // Draw placeholder with initials
                         drawParticipantPlaceholder({
                             ctx,
                             name: participantName,
@@ -310,13 +276,11 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                         });
                     }
 
-                    // Check if participant has active audio
                     const audioPublication = Array.from(trackInfo.participant.trackPublications.values()).find(
                         (pub) => pub.kind === 'audio' && pub.track
                     );
                     const hasActiveAudio = audioPublication ? !audioPublication.isMuted : false;
 
-                    // Draw colored border if audio is active
                     drawParticipantBorder({
                         ctx,
                         x,
@@ -333,49 +297,42 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                         name: participantName,
                         x,
                         y,
+                        height: tileHeight,
                     });
                 });
             }
         },
-        [createVideoElement, participantNameMap]
+        [createVideoElement, participantNameMap, cols, rows]
     );
 
-    // Start rendering loop
     const startRenderingLoop = useCallback(
         (canvas: HTMLCanvasElement) => {
-            let frameCount = 0;
-
             const render = () => {
-                drawRecordingCanvas(canvas, tracksForRecording.current);
-                frameCount++;
-
-                // Log every 30 frames (once per second at 30fps)
-                if (frameCount % 30 === 0) {
-                    console.log(`Rendered ${frameCount} frames, tracks: ${tracksForRecording.current.length}`);
-                }
+                drawRecordingCanvas(
+                    canvas,
+                    getTracksForRecording(
+                        renderInfoRef.current.pagedParticipants,
+                        renderInfoRef.current.cameraTracks,
+                        renderInfoRef.current.screenShareTracks
+                    )
+                );
 
                 animationFrameRef.current = requestAnimationFrame(render);
             };
-            console.log('Starting rendering loop');
             render();
         },
         [drawRecordingCanvas]
     );
 
-    // Setup audio mixing
     const setupAudioMixing = useCallback(() => {
-        console.log('setupAudioMixing called, available audio tracks:', audioTracks.length);
-
         const audioContext = new AudioContext();
         const destination = audioContext.createMediaStreamDestination();
         let connectedSources = 0;
 
-        // Mix all audio tracks
         audioTracks.forEach((trackRef) => {
             if (trackRef.publication.track && !trackRef.publication.isMuted) {
                 const mediaStreamTrack = trackRef.publication.track.mediaStreamTrack;
                 if (mediaStreamTrack) {
-                    console.log('Connecting audio track:', trackRef.participant?.identity);
                     const stream = new MediaStream([mediaStreamTrack]);
                     const source = audioContext.createMediaStreamSource(stream);
                     source.connect(destination);
@@ -384,24 +341,34 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             }
         });
 
-        console.log('Connected audio sources:', connectedSources);
-
         audioContextRef.current = audioContext;
         audioDestinationRef.current = destination;
 
         return { stream: destination.stream, hasAudio: connectedSources > 0 };
     }, [audioTracks]);
 
-    // Start recording
-    const startRecording = useCallback(async () => {
+    const startRecording = async () => {
         try {
-            // Create canvas
+            if (workerStorageRef.current) {
+                try {
+                    await workerStorageRef.current.clear();
+                    workerStorageRef.current.terminate();
+                } catch (error) {
+                    console.warn('Failed to clean up previous recording:', error);
+                }
+                workerStorageRef.current = null;
+            }
+
+            const recordingId = `recording-${Date.now()}`;
+            const storage = new WorkerRecordingStorage(recordingId, extension);
+            await storage.init();
+            workerStorageRef.current = storage;
+
             const canvas = document.createElement('canvas');
             canvas.width = CANVAS_WIDTH;
             canvas.height = CANVAS_HEIGHT;
             canvasRef.current = canvas;
 
-            // Draw initial frame to canvas BEFORE capturing stream
             const ctx = canvas.getContext('2d');
             if (ctx) {
                 ctx.fillStyle = '#000000';
@@ -413,57 +380,31 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                 ctx.fillText('Starting recording...', canvas.width / 2, canvas.height / 2);
             }
 
-            // Get canvas stream with fixed FPS
             const canvasStream = canvas.captureStream(FPS);
-            console.log('Canvas stream created:', canvasStream);
-            console.log('Video tracks:', canvasStream.getVideoTracks().length);
-            canvasStream.getVideoTracks().forEach((track, i) => {
-                console.log(
-                    `Video track ${i}:`,
-                    track.label,
-                    'enabled:',
-                    track.enabled,
-                    'readyState:',
-                    track.readyState
-                );
-            });
 
-            // Setup audio mixing
             const { stream: audioStream, hasAudio } = setupAudioMixing();
-            console.log('Audio mixing setup complete, hasAudio:', hasAudio);
 
-            // Combine video and audio (only add audio if we have any)
             const videoTracks = canvasStream.getVideoTracks();
-            const tracks = [...videoTracks];
-
-            if (hasAudio) {
-                const audioTracks = audioStream.getAudioTracks();
-                console.log('Adding audio tracks:', audioTracks.length);
-                tracks.push(...audioTracks);
-            } else {
-                console.log('No audio tracks to add - video only recording');
-            }
+            const tracks = [...videoTracks, ...(hasAudio ? audioStream.getAudioTracks() : [])];
 
             const combinedStream = new MediaStream(tracks);
-            console.log('Combined stream tracks:', combinedStream.getTracks().length);
 
-            // Create MediaRecorder with NO options for testing
-            const mediaRecorder = new MediaRecorder(combinedStream);
-            console.log('MediaRecorder created with default settings');
-            console.log('MediaRecorder state:', mediaRecorder.state);
-            console.log('MediaRecorder mimeType:', mediaRecorder.mimeType);
+            const options = { mimeType };
+            const mediaRecorder = new MediaRecorder(combinedStream, options);
 
             recordedChunksRef.current = [];
 
-            mediaRecorder.ondataavailable = (event) => {
-                console.log('ondataavailable fired, data size:', event.data.size);
-                if (event.data.size > 0) {
-                    recordedChunksRef.current.push(event.data);
-                    console.log('Chunk added, total chunks:', recordedChunksRef.current.length);
-                    setRecordingState((prev) => ({
-                        ...prev,
-                        recordedChunks: [...recordedChunksRef.current],
-                    }));
+            let chunkCount = 0;
+            mediaRecorder.ondataavailable = async (event) => {
+                if (event.data.size > 0 && workerStorageRef.current) {
+                    try {
+                        chunkCount++;
+                        await workerStorageRef.current.addChunk(event.data);
+                    } catch (error) {
+                        console.error(`✗ Failed to store chunk ${chunkCount} in OPFS:`, error);
+                    }
+                } else {
+                    console.warn('ondataavailable called with empty data or no storage');
                 }
             };
 
@@ -471,23 +412,11 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                 console.error('MediaRecorder error:', event);
             };
 
-            mediaRecorder.onstart = () => {
-                console.log('MediaRecorder onstart event fired');
-            };
-
-            mediaRecorder.onstop = () => {
-                console.log('MediaRecorder onstop event fired (from event handler)');
-            };
-
-            console.log('Starting MediaRecorder...');
-            mediaRecorder.start(1000); // Collect data every second
-            console.log('MediaRecorder started, state:', mediaRecorder.state);
+            mediaRecorder.start(1000);
             mediaRecorderRef.current = mediaRecorder;
 
-            // NOW start rendering loop after MediaRecorder is started
             startRenderingLoop(canvas);
 
-            // Start duration counter
             startTimeRef.current = Date.now();
             durationIntervalRef.current = window.setInterval(() => {
                 setRecordingState((prev) => ({
@@ -498,7 +427,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
 
             setRecordingState({
                 isRecording: true,
-                isPaused: false,
                 duration: 0,
                 recordedChunks: [],
             });
@@ -506,53 +434,52 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             console.error('Failed to start recording:', error);
             throw error;
         }
-    }, [startRenderingLoop, setupAudioMixing]);
+    };
 
-    // Stop recording
-    const stopRecording = useCallback(() => {
-        console.log('stopRecording called, isRecording:', recordingState.isRecording);
-        console.log('MediaRecorder state:', mediaRecorderRef.current?.state);
-        console.log('Chunks available:', recordedChunksRef.current.length);
-
-        return new Promise<Blob>((resolve) => {
+    const stopRecording = () => {
+        return new Promise<Blob | null>(async (resolve) => {
             if (mediaRecorderRef.current && recordingState.isRecording) {
-                console.log('Setting up onstop handler');
+                mediaRecorderRef.current.onstop = async () => {
+                    let blob: Blob | null = null;
 
-                mediaRecorderRef.current.onstop = () => {
-                    console.log('MediaRecorder onstop fired');
-                    console.log('Final chunks count:', recordedChunksRef.current.length);
+                    // Small delay to ensure all async ondataavailable handlers complete
+                    await wait(100);
 
-                    const mimeType = mediaRecorderRef.current?.mimeType || 'video/webm';
-                    const blob = new Blob(recordedChunksRef.current, { type: mimeType });
+                    if (workerStorageRef.current) {
+                        try {
+                            const file = await workerStorageRef.current.getFile();
 
-                    console.log('Blob created:', blob.size, 'bytes, type:', blob.type);
+                            if (file.type && file.type !== '') {
+                                blob = file;
+                            } else {
+                                blob = file.slice(0, file.size, mimeType);
+                            }
+                        } catch (error) {
+                            console.error('Failed to retrieve file from OPFS:', error);
+                        }
+                    } else {
+                        console.error('No OPFS storage reference available');
+                    }
 
-                    // Stop rendering loop
                     if (animationFrameRef.current) {
                         cancelAnimationFrame(animationFrameRef.current);
                     }
 
-                    // Cleanup audio context
                     if (audioContextRef.current) {
                         audioContextRef.current.close();
                     }
 
-                    // Clear duration interval
                     if (durationIntervalRef.current) {
                         clearInterval(durationIntervalRef.current);
                     }
 
-                    // Cleanup video elements
-                    videoElementsRef.current.forEach((video) => {
-                        video.pause();
-                        video.src = '';
-                        video.load();
-                    });
+                    videoElementsRef.current.forEach(cleanupVideoElement);
                     videoElementsRef.current.clear();
+
+                    recordedChunksRef.current = [];
 
                     setRecordingState({
                         isRecording: false,
-                        isPaused: false,
                         duration: 0,
                         recordedChunks: [],
                     });
@@ -560,55 +487,41 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                     resolve(blob);
                 };
 
-                console.log('Calling mediaRecorder.stop()');
                 mediaRecorderRef.current.stop();
             } else {
-                console.log('Not recording or no mediaRecorder, resolving empty blob');
-                resolve(new Blob());
+                if (workerStorageRef.current) {
+                    workerStorageRef.current.terminate();
+                    workerStorageRef.current = null;
+                }
+                resolve(null);
             }
         });
-    }, [recordingState.isRecording]);
+    };
 
-    // Pause recording
-    const pauseRecording = useCallback(() => {
-        if (mediaRecorderRef.current && recordingState.isRecording && !recordingState.isPaused) {
-            mediaRecorderRef.current.pause();
-            setRecordingState((prev) => ({ ...prev, isPaused: true }));
-        }
-    }, [recordingState.isRecording, recordingState.isPaused]);
-
-    // Resume recording
-    const resumeRecording = useCallback(() => {
-        if (mediaRecorderRef.current && recordingState.isRecording && recordingState.isPaused) {
-            mediaRecorderRef.current.resume();
-            setRecordingState((prev) => ({ ...prev, isPaused: false }));
-        }
-    }, [recordingState.isRecording, recordingState.isPaused]);
-
-    // Download recording
-    const downloadRecording = useCallback(async () => {
-        console.log('downloadRecording called, isRecording:', recordingState.isRecording);
-        console.log('Recorded chunks before stop:', recordedChunksRef.current.length);
-
+    const downloadRecording = async () => {
         const blob = await stopRecording();
 
-        console.log('Blob received:', blob.size, 'bytes');
-        console.log('Blob type:', blob.type);
+        if (!blob || blob.size === 0) {
+            return;
+        }
 
-        if (blob.size > 0) {
+        try {
+            // Download file from OPFS
             const url = URL.createObjectURL(blob);
+
             const a = document.createElement('a');
             a.href = url;
-            a.download = `meeting-recording-${new Date().toISOString()}.webm`;
+            a.download = `meeting-recording-${new Date().toISOString()}.${extension}`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
+
+            await wait(1000);
             URL.revokeObjectURL(url);
-            console.log('Download triggered successfully');
-        } else {
-            console.warn('Blob is empty, no download triggered');
+        } catch (error) {
+            console.error('Failed to download recording:', error);
         }
-    }, [stopRecording, recordingState.isRecording]);
+    };
 
     // Cleanup on unmount
     useEffect(() => {
@@ -622,11 +535,12 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             if (durationIntervalRef.current) {
                 clearInterval(durationIntervalRef.current);
             }
-            videoElementsRef.current.forEach((video) => {
-                video.pause();
-                video.src = '';
-                video.load();
-            });
+            if (workerStorageRef.current) {
+                workerStorageRef.current.clear().catch(console.error);
+                workerStorageRef.current.terminate();
+                workerStorageRef.current = null;
+            }
+            videoElementsRef.current.forEach(cleanupVideoElement);
             videoElementsRef.current.clear();
         };
     }, []);
@@ -635,8 +549,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         recordingState,
         startRecording,
         stopRecording,
-        pauseRecording,
-        resumeRecording,
         downloadRecording,
     };
 }

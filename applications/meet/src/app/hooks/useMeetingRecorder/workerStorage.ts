@@ -1,0 +1,148 @@
+import { isFirefox } from '@proton/shared/lib/helpers/browser';
+
+// Main-thread wrapper for the recording worker. Provides the same interface as OPFSRecordingStorage but uses a Web Worker
+interface WorkerMessage {
+    type: 'init' | 'addChunk' | 'closeHandles' | 'clear' | 'close';
+    id: string;
+    data?: any;
+}
+
+interface WorkerResponse {
+    type: 'success' | 'error' | 'progress';
+    id: string;
+    data?: any;
+    error?: string;
+}
+
+export class WorkerRecordingStorage {
+    private worker: Worker | null = null;
+    private messageId = 0;
+    private pendingMessages = new Map<string, { resolve: (value: any) => void; reject: (error: Error) => void }>();
+    private recordingId: string;
+    private fileExtension: string;
+
+    constructor(recordingId: string, fileExtension: string = 'webm') {
+        this.recordingId = recordingId;
+        this.fileExtension = fileExtension;
+    }
+
+    async init(): Promise<void> {
+        this.worker = new Worker(new URL('./recordingWorker.ts', import.meta.url), {
+            type: 'module',
+        });
+
+        this.worker.onmessage = (event: MessageEvent<WorkerResponse>) => {
+            const { type, id, data, error } = event.data;
+            const pending = this.pendingMessages.get(id);
+
+            if (!pending) {
+                return;
+            }
+
+            this.pendingMessages.delete(id);
+
+            if (type === 'error') {
+                pending.reject(new Error(error || 'Unknown worker error'));
+            } else {
+                pending.resolve(data);
+            }
+        };
+
+        this.worker.onerror = () => {
+            for (const pending of this.pendingMessages.values()) {
+                pending.reject(new Error('Worker error'));
+            }
+            this.pendingMessages.clear();
+        };
+
+        await this.sendMessage('init', {
+            recordingId: this.recordingId,
+            fileExtension: this.fileExtension,
+        });
+    }
+
+    async addChunk(chunk: Blob): Promise<void> {
+        if (!this.worker) {
+            throw new Error('Worker not initialized');
+        }
+
+        const chunkBuffer = await chunk.arrayBuffer();
+
+        await this.sendMessage('addChunk', { chunkBuffer }, [chunkBuffer]);
+    }
+
+    async getFile(): Promise<File> {
+        const result = await this.sendMessage('closeHandles', {});
+        const { fileName } = result;
+
+        if (isFirefox()) {
+            this.terminate();
+            await new Promise((resolve) => setTimeout(resolve, 50));
+        }
+
+        const root = await navigator.storage.getDirectory();
+        const fileHandle = await root.getFileHandle(fileName);
+        const file = await fileHandle.getFile();
+
+        return file;
+    }
+
+    async clear(): Promise<void> {
+        await this.sendMessage('clear', {});
+    }
+
+    close(): void {
+        if (this.worker) {
+            try {
+                this.worker.postMessage({
+                    type: 'close',
+                    id: this.generateMessageId(),
+                    data: {},
+                } as WorkerMessage);
+            } catch (err) {
+                console.error('[WorkerStorage] Error sending close message:', err);
+            }
+        }
+    }
+
+    terminate(): void {
+        if (this.worker) {
+            this.worker.terminate();
+            this.worker = null;
+        }
+
+        for (const pending of this.pendingMessages.values()) {
+            pending.reject(new Error('Worker terminated'));
+        }
+        this.pendingMessages.clear();
+    }
+
+    private generateMessageId(): string {
+        return `msg-${++this.messageId}`;
+    }
+
+    private sendMessage(type: WorkerMessage['type'], data: any, transfer?: Transferable[]): Promise<any> {
+        return new Promise((resolve, reject) => {
+            if (!this.worker) {
+                reject(new Error('Worker not initialized'));
+                return;
+            }
+
+            const id = this.generateMessageId();
+            this.pendingMessages.set(id, { resolve, reject });
+
+            const message: WorkerMessage = { type, id, data };
+
+            try {
+                if (transfer && transfer.length > 0) {
+                    this.worker.postMessage(message, transfer);
+                } else {
+                    this.worker.postMessage(message);
+                }
+            } catch (err) {
+                this.pendingMessages.delete(id);
+                reject(err);
+            }
+        });
+    }
+}

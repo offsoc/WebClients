@@ -1,14 +1,14 @@
-import type { Track as LiveKitTrack, Participant } from '@proton-meet/livekit-client';
+import type { Participant, Track } from '@proton-meet/livekit-client';
 
 export interface RecordingTrackInfo {
-    track: LiveKitTrack;
+    track: Track | null;
     participant: Participant;
     isScreenShare: boolean;
+    participantIndex: number;
 }
 
 export interface RecordingState {
     isRecording: boolean;
-    isPaused: boolean;
     duration: number;
     recordedChunks: Blob[];
 }

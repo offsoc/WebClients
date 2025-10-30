@@ -93,16 +93,18 @@ export function drawParticipantName({
     name,
     x,
     y,
+    height,
 }: {
     ctx: CanvasRenderingContext2D;
     name: string;
     x: number;
     y: number;
+    height: number;
 }) {
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 16px Arial';
     ctx.textAlign = 'left';
-    ctx.textBaseline = 'top';
+    ctx.textBaseline = 'bottom';
 
     // Add text shadow for better visibility
     ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
@@ -110,7 +112,8 @@ export function drawParticipantName({
     ctx.shadowOffsetX = 1;
     ctx.shadowOffsetY = 1;
 
-    ctx.fillText(name, x + 10, y + 10);
+    // Draw text at bottom-left corner (10px padding from left and bottom)
+    ctx.fillText(name, x + 10, y + height - 10);
 
     // Reset shadow
     ctx.shadowColor = 'transparent';
