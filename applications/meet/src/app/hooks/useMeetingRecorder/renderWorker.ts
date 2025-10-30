@@ -79,7 +79,7 @@ function drawVideoFrame(
             return;
         }
 
-        // Calculate aspect ratio
+        // Calculate aspect ratio - use "contain" behavior to fit entire video
         const videoAspect = videoWidth / videoHeight;
         const targetAspect = width / height;
 
@@ -89,25 +89,30 @@ function drawVideoFrame(
         let drawY = y;
 
         if (videoAspect > targetAspect) {
-            drawWidth = height * videoAspect;
-            drawX = x - (drawWidth - width) / 2;
-        } else {
+            // Video is wider - fit to width
+            drawWidth = width;
             drawHeight = width / videoAspect;
-            drawY = y - (drawHeight - height) / 2;
+            drawY = y + (height - drawHeight) / 2;
+        } else {
+            // Video is taller - fit to height
+            drawHeight = height;
+            drawWidth = height * videoAspect;
+            drawX = x + (width - drawWidth) / 2;
         }
 
+        // Always clip to bounds to prevent overflow
+        ctx.save();
+        ctx.beginPath();
         if (radius > 0) {
-            ctx.save();
-            ctx.beginPath();
             ctx.roundRect(x, y, width, height, radius);
-            ctx.clip();
+        } else {
+            ctx.rect(x, y, width, height);
         }
+        ctx.clip();
 
         ctx.drawImage(frame, drawX, drawY, drawWidth, drawHeight);
 
-        if (radius > 0) {
-            ctx.restore();
-        }
+        ctx.restore();
     } catch (error) {
         // eslint-disable-next-line no-console
         console.warn('Failed to draw video frame:', error);
@@ -142,29 +147,39 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
 
     if (screenShareParticipant && regularParticipants.length > 0) {
         // Layout: Large screenshare on left, participants on right sidebar
-        const screenShareWidth = canvas.width * 0.85;
-        const sidebarWidth = canvas.width * 0.15;
-        const sidebarItemHeight = canvas.height / Math.min(regularParticipants.length, 6);
+        const sidebarWidth = 320; // Fixed sidebar width
+        const numParticipantsInSidebar = Math.min(regularParticipants.length, 6);
+        const sidebarItemHeight = (canvas.height - GAP * (numParticipantsInSidebar + 1)) / numParticipantsInSidebar;
+
+        // Calculate screen share area (left side, leaving room for sidebar on right)
+        const screenShareX = GAP;
+        const screenShareY = GAP;
+        const screenShareWidth = canvas.width - sidebarWidth - GAP * 2; // Total width minus sidebar minus gaps
+        const screenShareHeight = canvas.height - GAP * 2;
 
         // Draw screenshare - use the screenshare-specific key
         const screenShareKey = `${screenShareParticipant.identity}-screenshare`;
         const screenShareBitmap = state.videoFrames.get(screenShareKey);
         if (screenShareBitmap) {
-            drawVideoFrame(ctx, screenShareBitmap, 0, 0, screenShareWidth, canvas.height);
+            drawVideoFrame(ctx, screenShareBitmap, screenShareX, screenShareY, screenShareWidth, screenShareHeight);
         }
 
         drawParticipantName({
             ctx,
             name: `${screenShareParticipant.name} (Screen)`,
-            x: 0,
-            y: 0,
-            height: canvas.height,
+            x: screenShareX,
+            y: screenShareY,
+            height: screenShareHeight,
         });
 
+        // Sidebar starts after screen share area
+        const sidebarX = screenShareX + screenShareWidth + GAP;
+
         regularParticipants.slice(0, 6).forEach((participant, index) => {
-            const yPos = index * sidebarItemHeight + GAP;
+            const xPos = sidebarX;
+            const yPos = GAP + index * (sidebarItemHeight + GAP);
             const tileWidth = sidebarWidth - GAP;
-            const tileHeight = sidebarItemHeight - GAP;
+            const tileHeight = sidebarItemHeight;
 
             const colorIndex = participant.participantIndex % 6;
             const backgroundColor = `meet-background-${colorIndex + 1}`;
@@ -174,21 +189,13 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             if (participant.hasVideo) {
                 const bitmap = state.videoFrames.get(participant.identity);
                 if (bitmap) {
-                    drawVideoFrame(
-                        ctx,
-                        bitmap,
-                        screenShareWidth + GAP / 2,
-                        yPos,
-                        tileWidth,
-                        tileHeight,
-                        BORDER_RADIUS / 2
-                    );
+                    drawVideoFrame(ctx, bitmap, xPos, yPos, tileWidth, tileHeight, BORDER_RADIUS / 2);
                 }
             } else {
                 drawParticipantPlaceholder({
                     ctx,
                     name: participant.name,
-                    x: screenShareWidth + GAP / 2,
+                    x: xPos,
                     y: yPos,
                     width: tileWidth,
                     height: tileHeight,
@@ -200,7 +207,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
 
             drawParticipantBorder({
                 ctx,
-                x: screenShareWidth + GAP / 2,
+                x: xPos,
                 y: yPos,
                 width: tileWidth,
                 height: tileHeight,
@@ -212,7 +219,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             drawParticipantName({
                 ctx,
                 name: participant.name,
-                x: screenShareWidth + GAP / 2,
+                x: xPos,
                 y: yPos,
                 height: tileHeight,
             });
