@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { useTracks } from '@livekit/components-react';
 import { Track } from '@proton-meet/livekit-client';
@@ -8,8 +8,15 @@ import { wait } from '@proton/shared/lib/helpers/promise';
 import { useMeetContext } from '../../contexts/MeetContext';
 import { useIsLargerThanMd } from '../useIsLargerThanMd';
 import { useIsNarrowHeight } from '../useIsNarrowHeight';
+import { MessageType } from './recordingWorkerTypes';
 import type { FrameReaderInfo, RecordingState, RecordingTrackInfo } from './types';
-import { cleanupVideoElement, createVideoElement, getRecordingDetails, getTracksForRecording } from './utils';
+import {
+    cleanupVideoElement,
+    createVideoElement,
+    getRecordingDetails,
+    getTracksForRecording,
+    supportsTrackProcessor,
+} from './utils';
 import { WorkerRecordingStorage } from './workerStorage';
 
 const CANVAS_WIDTH = 1920;
@@ -52,6 +59,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         screenShareTracks,
         audioTracks,
         pagedParticipants,
+        participantNameMap,
     });
 
     renderInfoRef.current = {
@@ -59,9 +67,10 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         screenShareTracks,
         audioTracks,
         pagedParticipants,
+        participantNameMap,
     };
 
-    const getVideoElement = useCallback((trackInfo: RecordingTrackInfo) => {
+    const getVideoElement = (trackInfo: RecordingTrackInfo) => {
         if (!trackInfo.track) {
             return null;
         }
@@ -75,170 +84,108 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         }
 
         return videoElement;
-    }, []);
+    };
 
-    // Prepare render state for worker
-    const prepareRenderState = useCallback(() => {
+    const prepareRenderState = () => {
         const tracks = getTracksForRecording(
             renderInfoRef.current.pagedParticipants,
             renderInfoRef.current.cameraTracks,
             renderInfoRef.current.screenShareTracks
         );
 
-        const participants = tracks.map((track) => ({
-            identity: track.participant?.identity || '',
-            name: participantNameMap[track.participant?.identity || ''] || 'Unknown',
-            participantIndex: track.participantIndex,
-            isScreenShare: track.isScreenShare,
-            hasVideo: Boolean(track.track && !track.track.isMuted),
-            hasActiveAudio: (() => {
-                const audioPublication = Array.from(track.participant.trackPublications.values()).find(
-                    (pub) => pub.kind === Track.Kind.Audio && pub.track
-                );
-                return audioPublication ? !audioPublication.isMuted : false;
-            })(),
-        }));
+        const participants = tracks.map((track) => {
+            const audioPublication = Array.from(track.participant.trackPublications.values()).find(
+                (pub) => pub.kind === Track.Kind.Audio && pub.track
+            );
+            const hasActiveAudio = audioPublication ? !audioPublication.isMuted : false;
+
+            return {
+                identity: track.participant?.identity || '',
+                name: renderInfoRef.current.participantNameMap[track.participant?.identity || ''] || 'Unknown',
+                participantIndex: track.participantIndex,
+                isScreenShare: track.isScreenShare,
+                hasVideo: Boolean(track.track && !track.track.isMuted),
+                hasActiveAudio,
+            };
+        });
 
         return {
             participants,
             isLargerThanMd,
             isNarrowHeight,
         };
-    }, [participantNameMap, isLargerThanMd, isNarrowHeight]);
+    };
 
-    // Check if MediaStreamTrackProcessor is available
-    const supportsTrackProcessor = useCallback(() => {
-        return (
-            typeof (window as any).MediaStreamTrackProcessor !== 'undefined' &&
-            typeof (window as any).VideoFrame !== 'undefined'
-        );
-    }, []);
+    const startFrameCaptureWithProcessor = (trackInfo: RecordingTrackInfo, participantKey: string) => {
+        const mediaTrack = trackInfo.track?.mediaStreamTrack;
+        if (!mediaTrack || !supportsTrackProcessor() || !renderWorkerRef.current) {
+            return false;
+        }
 
-    const startFrameCaptureWithProcessor = useCallback(
-        (trackInfo: RecordingTrackInfo, participantKey: string) => {
-            const mediaTrack = trackInfo.track?.mediaStreamTrack;
-            if (!mediaTrack || !supportsTrackProcessor() || !renderWorkerRef.current) {
-                return false;
-            }
+        const trackId = trackInfo.track?.sid || `track-${Date.now()}`;
 
-            const trackId = trackInfo.track?.sid || `track-${Date.now()}`;
+        try {
+            // @ts-expect-error - MediaStreamTrackProcessor is not yet in TypeScript types
+            const processor = new MediaStreamTrackProcessor({ track: mediaTrack });
+            const reader = processor.readable.getReader();
 
-            try {
-                // @ts-expect-error - MediaStreamTrackProcessor is not yet in TypeScript types
-                const processor = new MediaStreamTrackProcessor({ track: mediaTrack });
-                const reader = processor.readable.getReader();
-
-                const videoElement = getVideoElement(trackInfo);
-                if (!videoElement) {
-                    return false;
-                }
-
-                frameReadersRef.current.set(trackId, {
-                    reader,
-                    videoElement,
-                    rafHandle: null,
-                    participantKey,
-                });
-
-                const pump = async () => {
-                    try {
-                        while (frameReadersRef.current.has(trackId)) {
-                            const { value: frame, done } = await reader.read();
-                            if (done) {
-                                break;
-                            }
-
-                            if (renderWorkerRef.current && frame) {
-                                renderWorkerRef.current.postMessage(
-                                    {
-                                        type: 'updateFrame',
-                                        frameData: { participantIdentity: participantKey, frame },
-                                    },
-                                    [frame]
-                                );
-                            }
-                        }
-                    } catch (error) {
-                        // Reader was cancelled or track ended
-                    }
-                };
-
-                void pump();
-                return true;
-            } catch (error) {
-                return false;
-            }
-        },
-        [getVideoElement, supportsTrackProcessor]
-    );
-
-    // Start frame capture using requestVideoFrameCallback (fallback for Firefox)
-    const startFrameCaptureWithRVFC = useCallback(
-        (trackInfo: RecordingTrackInfo, participantKey: string) => {
-            const trackId = trackInfo.track?.sid || `track-${Date.now()}`;
             const videoElement = getVideoElement(trackInfo);
-            if (!videoElement || !renderWorkerRef.current) {
-                return;
+            if (!videoElement) {
+                return false;
             }
 
-            const onFrame = async () => {
-                const readerInfo = frameReadersRef.current.get(trackId);
-                if (!readerInfo || !renderWorkerRef.current) {
-                    return;
-                }
+            frameReadersRef.current.set(trackId, {
+                reader,
+                videoElement,
+                rafHandle: null,
+                participantKey,
+            });
 
+            const pump = async () => {
                 try {
-                    // Create ImageBitmap from video element
-                    const bitmap = await createImageBitmap(videoElement);
-                    renderWorkerRef.current.postMessage(
-                        {
-                            type: 'updateFrame',
-                            frameData: { participantIdentity: participantKey, frame: bitmap },
-                        },
-                        [bitmap]
-                    );
-                } catch (error) {}
+                    while (frameReadersRef.current.has(trackId)) {
+                        const { value: frame, done } = await reader.read();
+                        if (done) {
+                            break;
+                        }
 
-                if (frameReadersRef.current.has(trackId)) {
-                    const handle = videoElement.requestVideoFrameCallback(onFrame);
-                    const info = frameReadersRef.current.get(trackId);
-                    if (info) {
-                        info.rafHandle = handle;
+                        if (renderWorkerRef.current && frame) {
+                            renderWorkerRef.current.postMessage(
+                                {
+                                    type: 'updateFrame',
+                                    frameData: { participantIdentity: participantKey, frame },
+                                },
+                                [frame]
+                            );
+                        }
                     }
+                } catch (error) {
+                    // Reader was cancelled or track ended
                 }
             };
 
-            const handle = videoElement.requestVideoFrameCallback(onFrame);
-            frameReadersRef.current.set(trackId, {
-                reader: null,
-                videoElement,
-                rafHandle: handle,
-                participantKey,
-            });
-        },
-        [getVideoElement]
-    );
+            void pump();
+            return true;
+        } catch (error) {
+            return false;
+        }
+    };
 
-    const startFrameCapture = useCallback(
-        (trackInfo: RecordingTrackInfo) => {
-            if (!trackInfo.track || trackInfo.track.isMuted) {
-                return;
-            }
+    const startFrameCapture = (trackInfo: RecordingTrackInfo) => {
+        if (!trackInfo.track || trackInfo.track.isMuted) {
+            return;
+        }
 
-            const participantKey = trackInfo.isScreenShare
-                ? `${trackInfo.participant?.identity || ''}-screenshare`
-                : trackInfo.participant?.identity || '';
+        const participantKey = trackInfo.isScreenShare
+            ? `${trackInfo.participant?.identity || ''}-screenshare`
+            : trackInfo.participant?.identity || '';
 
-            if (startFrameCaptureWithProcessor(trackInfo, participantKey)) {
-                return;
-            }
+        if (startFrameCaptureWithProcessor(trackInfo, participantKey)) {
+            return;
+        }
+    };
 
-            startFrameCaptureWithRVFC(trackInfo, participantKey);
-        },
-        [startFrameCaptureWithProcessor, startFrameCaptureWithRVFC]
-    );
-
-    const stopFrameCapture = useCallback((trackId: string) => {
+    const stopFrameCapture = (trackId: string) => {
         const readerInfo = frameReadersRef.current.get(trackId);
         if (!readerInfo) {
             return;
@@ -253,19 +200,19 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         }
 
         frameReadersRef.current.delete(trackId);
-    }, []);
+    };
 
-    const stopAllFrameCaptures = useCallback(() => {
+    const stopAllFrameCaptures = () => {
         frameReadersRef.current.forEach((_, trackId) => {
             stopFrameCapture(trackId);
         });
         frameReadersRef.current.clear();
-    }, [stopFrameCapture]);
+    };
 
-    const setupAudioMixing = useCallback(() => {
+    const setupAudioMixing = () => {
         const audioContext = new AudioContext();
         const destination = audioContext.createMediaStreamDestination();
-        let connectedSources = 0;
+        let hasAudio = false;
 
         audioTracks.forEach((trackRef) => {
             if (trackRef.publication.track && !trackRef.publication.isMuted) {
@@ -274,7 +221,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                     const stream = new MediaStream([mediaStreamTrack]);
                     const source = audioContext.createMediaStreamSource(stream);
                     source.connect(destination);
-                    connectedSources++;
+                    hasAudio = true;
                 }
             }
         });
@@ -291,8 +238,8 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         document.addEventListener('visibilitychange', handleVisibilityChange);
         visibilityListenerRef.current = handleVisibilityChange;
 
-        return { stream: destination.stream, hasAudio: connectedSources > 0 };
-    }, [audioTracks]);
+        return { stream: destination.stream, hasAudio };
+    };
 
     const startRecording = async () => {
         try {
@@ -326,7 +273,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             const offscreen = canvas.transferControlToOffscreen();
             worker.postMessage(
                 {
-                    type: 'init',
+                    type: MessageType.INIT,
                     canvas: offscreen,
                     state: prepareRenderState(),
                 },
@@ -504,18 +451,16 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         }
     };
 
-    // Update render state when layout changes (only during recording)
     useEffect(() => {
         if (!recordingState.isRecording || !renderWorkerRef.current) {
             return;
         }
 
-        // Push updated state to worker
         renderWorkerRef.current.postMessage({
             type: 'updateState',
             state: prepareRenderState(),
         });
-    }, [recordingState.isRecording, isLargerThanMd, isNarrowHeight, pagedParticipants, prepareRenderState]);
+    }, [recordingState.isRecording, isLargerThanMd, isNarrowHeight, pagedParticipants]);
 
     // Handle track changes during recording (start/stop frame capture as needed)
     useEffect(() => {
@@ -548,14 +493,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                 startFrameCapture(trackInfo);
             }
         });
-    }, [
-        recordingState.isRecording,
-        cameraTracks,
-        screenShareTracks,
-        pagedParticipants,
-        startFrameCapture,
-        stopFrameCapture,
-    ]);
+    }, [recordingState.isRecording, cameraTracks, screenShareTracks, pagedParticipants]);
 
     // Cleanup on unmount
     useEffect(() => {
@@ -585,7 +523,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             videoElementsRef.current.forEach(cleanupVideoElement);
             videoElementsRef.current.clear();
         };
-    }, [stopAllFrameCaptures]);
+    }, []);
 
     return {
         recordingState,

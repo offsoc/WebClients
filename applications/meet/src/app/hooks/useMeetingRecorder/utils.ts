@@ -110,3 +110,10 @@ export const getTracksForRecording = (
 
     return allTracks;
 };
+
+export const supportsTrackProcessor = () => {
+    return (
+        typeof (window as any).MediaStreamTrackProcessor !== 'undefined' &&
+        typeof (window as any).VideoFrame !== 'undefined'
+    );
+};

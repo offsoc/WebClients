@@ -1,13 +1,10 @@
-/**
- * Rendering Worker for Meeting Recorder
- * Handles canvas rendering in a Web Worker to avoid background tab throttling
- */
 import { calculateGridLayout } from '../../utils/calculateGridLayout';
 import { drawParticipantBorder, drawParticipantName, drawParticipantPlaceholder } from './drawingUtils';
 
 const FPS = 30;
 const GAP = 11;
 const BORDER_RADIUS = 28;
+const SIDEBAR_WIDTH = 320;
 
 interface VideoFrameData {
     participantIdentity: string;
@@ -62,15 +59,17 @@ const state: WorkerState = {
     renderInterval: null,
 };
 
-function drawVideoFrame(
-    ctx: OffscreenCanvasRenderingContext2D,
-    frame: VideoFrame | ImageBitmap,
-    x: number,
-    y: number,
-    width: number,
-    height: number,
-    radius = 0
-) {
+interface DrawVideoFrameParams {
+    ctx: OffscreenCanvasRenderingContext2D;
+    frame: VideoFrame | ImageBitmap;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    radius?: number;
+}
+
+function drawVideoFrame({ ctx, frame, x, y, width, height, radius = 0 }: DrawVideoFrameParams) {
     try {
         const videoWidth = 'displayWidth' in frame ? frame.displayWidth : frame.width;
         const videoHeight = 'displayHeight' in frame ? frame.displayHeight : frame.height;
@@ -79,7 +78,6 @@ function drawVideoFrame(
             return;
         }
 
-        // Calculate aspect ratio - use "contain" behavior to fit entire video
         const videoAspect = videoWidth / videoHeight;
         const targetAspect = width / height;
 
@@ -89,18 +87,15 @@ function drawVideoFrame(
         let drawY = y;
 
         if (videoAspect > targetAspect) {
-            // Video is wider - fit to width
             drawWidth = width;
             drawHeight = width / videoAspect;
             drawY = y + (height - drawHeight) / 2;
         } else {
-            // Video is taller - fit to height
             drawHeight = height;
             drawWidth = height * videoAspect;
             drawX = x + (width - drawWidth) / 2;
         }
 
-        // Always clip to bounds to prevent overflow
         ctx.save();
         ctx.beginPath();
         if (radius > 0) {
@@ -113,55 +108,40 @@ function drawVideoFrame(
         ctx.drawImage(frame, drawX, drawY, drawWidth, drawHeight);
 
         ctx.restore();
-    } catch (error) {
-        // eslint-disable-next-line no-console
-        console.warn('Failed to draw video frame:', error);
-        // Draw error placeholder
-        ctx.fillStyle = '#1a1a1a';
-        ctx.fillRect(x, y, width, height);
-    }
+    } catch (error) {}
 }
 
 function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRenderingContext2D) {
-    // Clear canvas with black background
     ctx.fillStyle = '#000000';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     const { participants, isLargerThanMd, isNarrowHeight } = state.renderState;
 
-    if (participants.length === 0) {
-        // Draw "Recording..." text
-        ctx.fillStyle = '#ffffff';
-        ctx.font = '48px Arial';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText('Recording...', canvas.width / 2, canvas.height / 2);
-        return;
-    }
-
-    // Check if there's a screenshare
     const screenShareParticipant = participants.find((p) => p.isScreenShare);
     const regularParticipants = participants.filter((p) => !p.isScreenShare);
 
     const { cols, rows } = calculateGridLayout(regularParticipants.length, !isLargerThanMd || isNarrowHeight);
 
     if (screenShareParticipant && regularParticipants.length > 0) {
-        // Layout: Large screenshare on left, participants on right sidebar
-        const sidebarWidth = 320; // Fixed sidebar width
         const numParticipantsInSidebar = Math.min(regularParticipants.length, 6);
         const sidebarItemHeight = (canvas.height - GAP * (numParticipantsInSidebar + 1)) / numParticipantsInSidebar;
 
-        // Calculate screen share area (left side, leaving room for sidebar on right)
         const screenShareX = GAP;
         const screenShareY = GAP;
-        const screenShareWidth = canvas.width - sidebarWidth - GAP * 2; // Total width minus sidebar minus gaps
+        const screenShareWidth = canvas.width - SIDEBAR_WIDTH - GAP * 2;
         const screenShareHeight = canvas.height - GAP * 2;
 
-        // Draw screenshare - use the screenshare-specific key
         const screenShareKey = `${screenShareParticipant.identity}-screenshare`;
         const screenShareBitmap = state.videoFrames.get(screenShareKey);
         if (screenShareBitmap) {
-            drawVideoFrame(ctx, screenShareBitmap, screenShareX, screenShareY, screenShareWidth, screenShareHeight);
+            drawVideoFrame({
+                ctx,
+                frame: screenShareBitmap,
+                x: screenShareX,
+                y: screenShareY,
+                width: screenShareWidth,
+                height: screenShareHeight,
+            });
         }
 
         drawParticipantName({
@@ -172,13 +152,12 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             height: screenShareHeight,
         });
 
-        // Sidebar starts after screen share area
         const sidebarX = screenShareX + screenShareWidth + GAP;
 
         regularParticipants.slice(0, 6).forEach((participant, index) => {
             const xPos = sidebarX;
             const yPos = GAP + index * (sidebarItemHeight + GAP);
-            const tileWidth = sidebarWidth - GAP;
+            const tileWidth = SIDEBAR_WIDTH - GAP;
             const tileHeight = sidebarItemHeight;
 
             const colorIndex = participant.participantIndex % 6;
@@ -189,7 +168,15 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             if (participant.hasVideo) {
                 const bitmap = state.videoFrames.get(participant.identity);
                 if (bitmap) {
-                    drawVideoFrame(ctx, bitmap, xPos, yPos, tileWidth, tileHeight, BORDER_RADIUS / 2);
+                    drawVideoFrame({
+                        ctx,
+                        frame: bitmap,
+                        x: xPos,
+                        y: yPos,
+                        width: tileWidth,
+                        height: tileHeight,
+                        radius: BORDER_RADIUS / 2,
+                    });
                 }
             } else {
                 drawParticipantPlaceholder({
@@ -225,16 +212,22 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             });
         });
     } else if (screenShareParticipant) {
-        // Draw screenshare fullscreen - use the screenshare-specific key
         const screenShareKey = `${screenShareParticipant.identity}-screenshare`;
         const screenShareBitmap = state.videoFrames.get(screenShareKey);
         if (screenShareBitmap) {
-            drawVideoFrame(ctx, screenShareBitmap, 0, 0, canvas.width, canvas.height);
+            drawVideoFrame({
+                ctx,
+                frame: screenShareBitmap,
+                x: 0,
+                y: 0,
+                width: canvas.width,
+                height: canvas.height,
+            });
         }
 
         drawParticipantName({
             ctx,
-            name: `${screenShareParticipant.name} (Screen)`,
+            name: `${screenShareParticipant.name} (is presenting)`,
             x: 0,
             y: 0,
             height: canvas.height,
@@ -260,7 +253,15 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             if (participant.hasVideo) {
                 const bitmap = state.videoFrames.get(participant.identity);
                 if (bitmap) {
-                    drawVideoFrame(ctx, bitmap, x, y, tileWidth, tileHeight, BORDER_RADIUS);
+                    drawVideoFrame({
+                        ctx,
+                        frame: bitmap,
+                        x,
+                        y,
+                        width: tileWidth,
+                        height: tileHeight,
+                        radius: BORDER_RADIUS,
+                    });
                 }
             } else {
                 drawParticipantPlaceholder({
@@ -300,7 +301,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
 
 function startRenderLoop() {
     if (state.renderInterval !== null) {
-        return; // Already running
+        return;
     }
 
     const render = () => {
@@ -309,9 +310,7 @@ function startRenderLoop() {
         }
     };
 
-    // Use setInterval in worker - workers are NOT throttled like main thread
-    // This is the key advantage: worker timers run at full speed even in background tabs
-    render(); // Initial render
+    render();
     state.renderInterval = setInterval(render, 1000 / FPS) as unknown as number;
 }
 
@@ -321,7 +320,6 @@ function stopRenderLoop() {
         state.renderInterval = null;
     }
 
-    // Cleanup frames/bitmaps
     state.videoFrames.forEach((frame) => {
         if ('close' in frame) {
             frame.close();
@@ -336,7 +334,6 @@ function cleanupFrame(frame: VideoFrame | ImageBitmap) {
     }
 }
 
-// Message handler
 self.onmessage = (event: MessageEvent<RenderWorkerMessage>) => {
     const { type, canvas, state: newState, frames, frameData } = event.data;
 
@@ -346,7 +343,6 @@ self.onmessage = (event: MessageEvent<RenderWorkerMessage>) => {
                 state.canvas = canvas;
                 state.ctx = canvas.getContext('2d');
                 if (state.ctx) {
-                    // Initial black screen
                     state.ctx.fillStyle = '#000000';
                     state.ctx.fillRect(0, 0, canvas.width, canvas.height);
                 }
@@ -367,7 +363,6 @@ self.onmessage = (event: MessageEvent<RenderWorkerMessage>) => {
             break;
 
         case 'updateFrame':
-            // Handle single frame update (from requestVideoFrameCallback or MediaStreamTrackProcessor)
             if (frameData) {
                 const { participantIdentity, frame } = frameData;
                 const oldFrame = state.videoFrames.get(participantIdentity);
@@ -380,7 +375,6 @@ self.onmessage = (event: MessageEvent<RenderWorkerMessage>) => {
 
         case 'updateFrames':
             if (frames) {
-                // Close old bitmaps to free memory
                 frames.forEach(({ participantIdentity, bitmap }) => {
                     const oldBitmap = state.videoFrames.get(participantIdentity);
                     if (oldBitmap) {

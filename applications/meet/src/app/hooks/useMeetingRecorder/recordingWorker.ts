@@ -1,8 +1,5 @@
-/**
- * Web Worker for handling OPFS-based recording storage
- * This allows Safari to use the sync OPFS API (createSyncAccessHandle)
- * which is only available in worker contexts.
- */
+import type { WorkerMessage, WorkerResponse } from './recordingWorkerTypes';
+import { MessageType, WorkerResponseType } from './recordingWorkerTypes';
 
 interface FileSystemSyncAccessHandle {
     write(buffer: ArrayBuffer | ArrayBufferView, options?: { at?: number }): number;
@@ -11,19 +8,6 @@ interface FileSystemSyncAccessHandle {
     close(): void;
     getSize(): number;
     truncate(newSize: number): void;
-}
-
-interface WorkerMessage {
-    type: 'init' | 'addChunk' | 'closeHandles' | 'clear' | 'close';
-    id: string;
-    data?: any;
-}
-
-interface WorkerResponse {
-    type: 'success' | 'error' | 'progress';
-    id: string;
-    data?: any;
-    error?: string;
 }
 
 class OPFSWorkerStorage {
@@ -107,6 +91,7 @@ class OPFSWorkerStorage {
                 this.syncAccessHandle = null;
             }
         } catch (err) {
+            // eslint-disable-next-line no-console
             console.error('[Worker] Error closing sync handle:', err);
         }
     }
@@ -119,26 +104,26 @@ self.onmessage = async (event: MessageEvent<WorkerMessage>) => {
 
     try {
         switch (type) {
-            case 'init': {
+            case MessageType.INIT: {
                 const { recordingId, fileExtension } = data;
                 await storage.init(recordingId, fileExtension);
-                const response: WorkerResponse = { type: 'success', id };
+                const response: WorkerResponse = { type: WorkerResponseType.SUCCESS, id };
                 self.postMessage(response);
                 break;
             }
 
-            case 'addChunk': {
+            case MessageType.ADD_CHUNK: {
                 const { chunkBuffer } = data;
                 await storage.addChunk(chunkBuffer);
-                const response: WorkerResponse = { type: 'success', id };
+                const response: WorkerResponse = { type: WorkerResponseType.SUCCESS, id };
                 self.postMessage(response);
                 break;
             }
 
-            case 'closeHandles': {
+            case MessageType.CLOSE_HANDLES: {
                 const fileName = await storage.closeHandles();
                 const response: WorkerResponse = {
-                    type: 'success',
+                    type: WorkerResponseType.SUCCESS,
                     id,
                     data: { fileName },
                 };
@@ -146,16 +131,16 @@ self.onmessage = async (event: MessageEvent<WorkerMessage>) => {
                 break;
             }
 
-            case 'clear': {
+            case MessageType.CLEAR: {
                 await storage.clear();
-                const response: WorkerResponse = { type: 'success', id };
+                const response: WorkerResponse = { type: WorkerResponseType.SUCCESS, id };
                 self.postMessage(response);
                 break;
             }
 
-            case 'close': {
+            case MessageType.CLOSE: {
                 storage.close();
-                const response: WorkerResponse = { type: 'success', id };
+                const response: WorkerResponse = { type: WorkerResponseType.SUCCESS, id };
                 self.postMessage(response);
                 break;
             }
@@ -165,7 +150,7 @@ self.onmessage = async (event: MessageEvent<WorkerMessage>) => {
         }
     } catch (error) {
         const response: WorkerResponse = {
-            type: 'error',
+            type: WorkerResponseType.ERROR,
             id,
             error: error instanceof Error ? error.message : String(error),
         };

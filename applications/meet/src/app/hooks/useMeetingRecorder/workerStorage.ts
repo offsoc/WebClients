@@ -1,18 +1,9 @@
 import { isFirefox } from '@proton/shared/lib/helpers/browser';
 
-// Main-thread wrapper for the recording worker. Provides the same interface as OPFSRecordingStorage but uses a Web Worker
-interface WorkerMessage {
-    type: 'init' | 'addChunk' | 'closeHandles' | 'clear' | 'close';
-    id: string;
-    data?: any;
-}
+import { MessageType, WorkerResponseType } from './recordingWorkerTypes';
+import type { WorkerMessage, WorkerResponse } from './recordingWorkerTypes';
 
-interface WorkerResponse {
-    type: 'success' | 'error' | 'progress';
-    id: string;
-    data?: any;
-    error?: string;
-}
+// Main-thread wrapper for the recording worker. Provides the same interface as OPFSRecordingStorage but uses a Web Worker
 
 export class WorkerRecordingStorage {
     private worker: Worker | null = null;
@@ -41,7 +32,7 @@ export class WorkerRecordingStorage {
 
             this.pendingMessages.delete(id);
 
-            if (type === 'error') {
+            if (type === WorkerResponseType.ERROR) {
                 pending.reject(new Error(error || 'Unknown worker error'));
             } else {
                 pending.resolve(data);
@@ -55,7 +46,7 @@ export class WorkerRecordingStorage {
             this.pendingMessages.clear();
         };
 
-        await this.sendMessage('init', {
+        await this.sendMessage(MessageType.INIT, {
             recordingId: this.recordingId,
             fileExtension: this.fileExtension,
         });
@@ -68,11 +59,11 @@ export class WorkerRecordingStorage {
 
         const chunkBuffer = await chunk.arrayBuffer();
 
-        await this.sendMessage('addChunk', { chunkBuffer }, [chunkBuffer]);
+        await this.sendMessage(MessageType.ADD_CHUNK, { chunkBuffer }, [chunkBuffer]);
     }
 
     async getFile(): Promise<File> {
-        const result = await this.sendMessage('closeHandles', {});
+        const result = await this.sendMessage(MessageType.CLOSE_HANDLES, {});
         const { fileName } = result;
 
         if (isFirefox()) {
@@ -88,14 +79,14 @@ export class WorkerRecordingStorage {
     }
 
     async clear(): Promise<void> {
-        await this.sendMessage('clear', {});
+        await this.sendMessage(MessageType.CLEAR, {});
     }
 
     close(): void {
         if (this.worker) {
             try {
                 this.worker.postMessage({
-                    type: 'close',
+                    type: MessageType.CLOSE,
                     id: this.generateMessageId(),
                     data: {},
                 } as WorkerMessage);
