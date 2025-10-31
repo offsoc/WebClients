@@ -1,5 +1,5 @@
 import { calculateGridLayout } from '../../utils/calculateGridLayout';
-import { drawParticipantBorder, drawParticipantName, drawParticipantPlaceholder } from './drawingUtils';
+import { drawParticipantBorder, drawParticipantName, drawParticipantPlaceholder, roundRect } from './drawingUtils';
 
 const FPS = 30;
 const GAP = 11;
@@ -67,9 +67,10 @@ interface DrawVideoFrameParams {
     width: number;
     height: number;
     radius?: number;
+    objectFit?: 'cover' | 'contain';
 }
 
-function drawVideoFrame({ ctx, frame, x, y, width, height, radius = 0 }: DrawVideoFrameParams) {
+function drawVideoFrame({ ctx, frame, x, y, width, height, radius = 0, objectFit = 'cover' }: DrawVideoFrameParams) {
     try {
         const videoWidth = 'displayWidth' in frame ? frame.displayWidth : frame.width;
         const videoHeight = 'displayHeight' in frame ? frame.displayHeight : frame.height;
@@ -86,23 +87,43 @@ function drawVideoFrame({ ctx, frame, x, y, width, height, radius = 0 }: DrawVid
         let drawX = x;
         let drawY = y;
 
-        if (videoAspect > targetAspect) {
-            drawWidth = width;
-            drawHeight = width / videoAspect;
-            drawY = y + (height - drawHeight) / 2;
+        if (objectFit === 'cover') {
+            if (videoAspect > targetAspect) {
+                drawHeight = height;
+                drawWidth = height * videoAspect;
+                drawX = x - (drawWidth - width) / 2;
+                drawY = y;
+            } else {
+                drawWidth = width;
+                drawHeight = width / videoAspect;
+                drawX = x;
+                drawY = y - (drawHeight - height) / 2;
+            }
         } else {
-            drawHeight = height;
-            drawWidth = height * videoAspect;
-            drawX = x + (width - drawWidth) / 2;
+            if (videoAspect > targetAspect) {
+                drawWidth = width;
+                drawHeight = width / videoAspect;
+                drawX = x;
+                drawY = y + (height - drawHeight) / 2;
+            } else {
+                drawHeight = height;
+                drawWidth = height * videoAspect;
+                drawX = x + (width - drawWidth) / 2;
+                drawY = y;
+            }
         }
 
         ctx.save();
-        ctx.beginPath();
+
         if (radius > 0) {
-            ctx.roundRect(x, y, width, height, radius);
+            const maxRadius = Math.min(radius, Math.min(width, height) / 2);
+            roundRect(ctx, x, y, width, height, maxRadius);
         } else {
+            ctx.beginPath();
             ctx.rect(x, y, width, height);
+            ctx.closePath();
         }
+
         ctx.clip();
 
         ctx.drawImage(frame, drawX, drawY, drawWidth, drawHeight);
@@ -141,6 +162,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
                 y: screenShareY,
                 width: screenShareWidth,
                 height: screenShareHeight,
+                objectFit: 'contain',
             });
         }
 
@@ -222,6 +244,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
                 y: 0,
                 width: canvas.width,
                 height: canvas.height,
+                objectFit: 'contain',
             });
         }
 

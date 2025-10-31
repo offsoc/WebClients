@@ -4,7 +4,7 @@ type CanvasContext = CanvasRenderingContext2D | OffscreenCanvasRenderingContext2
 /**
  * Helper to draw a rounded rectangle path
  */
-function roundRect(ctx: CanvasContext, x: number, y: number, width: number, height: number, radius: number) {
+export function roundRect(ctx: CanvasContext, x: number, y: number, width: number, height: number, radius: number) {
     ctx.beginPath();
     ctx.moveTo(x + radius, y);
     ctx.lineTo(x + width - radius, y);
