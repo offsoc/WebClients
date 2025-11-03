@@ -6,7 +6,7 @@ import { c } from 'ttag';
 import { CircleLoader } from '@proton/atoms';
 import useAppLink from '@proton/components/components/link/useAppLink';
 import useNotifications from '@proton/components/hooks/useNotifications';
-import { IcCalendarToday, IcPhone, IcUser } from '@proton/icons';
+import { IcCalendarToday, IcLink, IcPhone, IcUser } from '@proton/icons';
 import { getMeetingLink } from '@proton/meet';
 import { APPS, CALENDAR_APP_NAME } from '@proton/shared/lib/constants';
 import { isElectronApp } from '@proton/shared/lib/helpers/desktop';
@@ -15,6 +15,7 @@ import useFlag from '@proton/unleash/useFlag';
 import isTruthy from '@proton/utils/isTruthy';
 
 import { CardButton } from '../atoms/CardButton/CardButton';
+import { JoinWithLinkModal } from '../components/JoinWithLinkModal/JoinWithLinkModal';
 import { MeetingRow } from '../components/MeetingRow/MeetingRow';
 import { NoUpcomingMeetings } from '../components/NoUpcomingMeetings/NoUpcomingMeetings';
 import { PageHeader } from '../components/PageHeader/PageHeader';
@@ -24,6 +25,7 @@ import { getNextOccurrence } from '../utils/getNextOccurrence';
 
 export const DashboardContainer = () => {
     const [isPersonalMeetingModalOpen, setIsPersonalMeetingModalOpen] = useState(false);
+    const [isJoinWithLinkModalOpen, setIsJoinWithLinkModalOpen] = useState(false);
 
     const notifications = useNotifications();
     const history = useHistory();
@@ -105,6 +107,12 @@ export const DashboardContainer = () => {
                     loadingRotatePersonalMeeting={loadingRotatePersonalMeeting}
                 />
             )}
+            {isJoinWithLinkModalOpen && (
+                <JoinWithLinkModal
+                    onClose={() => setIsJoinWithLinkModalOpen(false)}
+                    onJoin={(meetingId, meetingPassword) => history.push(getMeetingLink(meetingId, meetingPassword))}
+                />
+            )}
             <PageHeader isScheduleInAdvanceEnabled={false} guestMode={false} showAppSwitcher={!isElectronApp} />
             <div className="flex gap-4 py-4 flex-nowrap w-full shrink-0">
                 <div className="flex flex-column md:flex-row flex-nowrap gap-1 md:gap-3 xl:gap-4 w-full">
@@ -126,6 +134,17 @@ export const DashboardContainer = () => {
                         iconColor="var(--ui-purple-interaction-minor-1)"
                         onClick={() => setIsPersonalMeetingModalOpen(true)}
                     />
+                    {isElectronApp && (
+                        <CardButton
+                            className="w-full md:w-1/3"
+                            title={c('Title').t`Join with link`}
+                            description={c('Description').t`Use a link to join a meeting.`}
+                            icon={<IcLink size={5} />}
+                            circleColor="var(--ui-blue-interaction-minor-3)"
+                            iconColor="var(-ui-blue-interaction-minor-1)"
+                            onClick={() => setIsJoinWithLinkModalOpen(true)}
+                        />
+                    )}
                     <CardButton
                         className="w-full md:w-1/3"
                         title={c('Title').t`Start secure meeting`}
