@@ -53,7 +53,7 @@ export const JoinWithLinkModal = ({ onClose, onJoin }: JoinWithLinkModalProps) =
                 >
                     <label className="color-weak text-left">{c('Info').t`Meeting link`}</label>
                     <TextAreaTwo
-                        className="resize-none"
+                        className="meeting-link-textarea resize-none"
                         value={meetingLink}
                         onChange={(e) => setMeetingLink(e.target.value)}
                         // eslint-disable-next-line no-restricted-syntax
