@@ -9,4 +9,8 @@
 			color: var(--text-invert);
 		}
 	}
+
+	.meeting-link-textarea::placeholder {
+		color: var(--text-disabled);
+	}
 }
