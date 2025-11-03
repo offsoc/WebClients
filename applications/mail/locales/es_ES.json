@@ -9834,6 +9834,15 @@
       ],
       "ZIP code": [
         "Código postal"
+      ],
+      "Always label sender's emails": [
+        "Etiquetar siempre los correos de remitentes"
+      ],
+      "Always move sender's emails": [
+        "Mover siempre los correos de remitentes"
+      ],
+      "Move messages to": [
+        "Mover los mensajes a"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12004,6 +12013,9 @@
       ],
       "New credit/debit card": [
         "Nueva tarjeta de crédito/débito"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12114,6 +12126,12 @@
       ],
       "Your payment is still being processed": [
         "Tu pago aún está siendo procesado."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Pronto serás redirigido a PayPal para verificar tu pago."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Pronto serás redirigido para verificar tu pago."
       ]
     },
     "Payments.Error": {
@@ -12155,6 +12173,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Transferencia bancaria - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - tarjeta terminada en ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -15567,6 +15588,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ ¡Llegan las categorías!"
+      ],
+      "Create folder \"${ search }\"": [
+        "Crear carpeta \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Crear la etiqueta «${ search }»"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16235,6 +16262,11 @@
     "Duo offer: Title": {
       "Get 4x more storage with ${ BRAND_NAME } Duo": [
         "Obtén 4 veces más almacenamiento con ${ BRAND_NAME } Duo"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Se ha producido un error. Falló la verificación de Google Pay."
       ]
     }
   }

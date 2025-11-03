@@ -1454,7 +1454,7 @@
         "Feu una visita guiada"
       ],
       "This message contains embedded images.": [
-        "Aquest missatge conté imatges en el cos."
+        "Aquest missatge conté imatges incrustades."
       ],
       "This message contains remote content.": [
         "Aquest missatge conté contingut remot."
@@ -8867,6 +8867,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Sou tot just a uns quants clics d'una safata d'entrada ordenada"
+      ],
+      "Google Pay mark": [
+        "Marca de Google Pay"
       ]
     },
     "info": {
@@ -9917,6 +9920,15 @@
       ],
       "Get the deal": [
         "Aconseguiu l'oferta"
+      ],
+      "Always label sender's emails": [
+        "Etiqueteu sempre els correus electrònics del remitent"
+      ],
+      "Always move sender's emails": [
+        "Moveu sempre els correus electrònics del remitent"
+      ],
+      "Move messages to": [
+        "Mou els missatges a"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11832,7 +11844,7 @@
         "Ja està tot a punt!"
       ],
       "Your domain ${ domain } and ${ subscriptionName } subscription are ready to use.": [
-        "El vostre domini ${ domain } i subscripció a ${ subscriptionName } ja estan disponibles."
+        "El vostre domini ${ domain } i la subscripció a ${ subscriptionName } ja estan disponibles."
       ],
       "Your domain and subscription are ready to use.": [
         "El vostre domini i la subscripció ja es poden utilitzar."
@@ -11927,7 +11939,7 @@
         "Criptomoneda"
       ],
       "E-commerce and Retail": [
-        "Comerç electrònic i botiga"
+        "Comerç electrònic i venda al detall"
       ],
       "Entertainment": [
         "Entreteniment"
@@ -12090,6 +12102,9 @@
       ],
       "New credit/debit card": [
         "Nova targeta de crèdit/dèbit"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12226,6 +12241,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "La vostra subscripció ja té un descompte aplicat. Canviar a aquesta nova promoció implica que el descompte actual ja no s'aplicarà."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Aviat se us redirigirà a PayPal per verificar el vostre pagament."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Aviat se us redirigirà per verificar el vostre pagament."
       ]
     },
     "Payments.Error": {
@@ -12267,6 +12288,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Transferència bancària - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - targeta que acaba en ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -15593,6 +15617,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ Arriben les categories!"
+      ],
+      "Create folder \"${ search }\"": [
+        "Crea una carpeta \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Crea una etiqueta \"${ search }\""
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16256,6 +16286,11 @@
     "sheets_2025:Action": {
       "Open in ${ appName }": [
         "Obre al ${ appName }"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Alguna cosa ha anat malament. La verificació de Google Pay ha fallat."
       ]
     }
   }

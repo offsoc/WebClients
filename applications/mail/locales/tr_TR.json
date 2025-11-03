@@ -8867,6 +8867,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Dağınıklıktan arındırılmış bir gelen kutusundan yalnızca birkaç tık uzaktasınız."
+      ],
+      "Google Pay mark": [
+        "Google Pay işareti"
       ]
     },
     "info": {
@@ -9917,6 +9920,15 @@
       ],
       "Get the deal": [
         "Tekliften yararlanın"
+      ],
+      "Always label sender's emails": [
+        "Göndericinin e-postaları her zaman etiketlensin"
+      ],
+      "Always move sender's emails": [
+        "Göndericinin e-postaları her zaman taşınsın"
+      ],
+      "Move messages to": [
+        "İletileri şuraya taşı"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12090,6 +12102,9 @@
       ],
       "New credit/debit card": [
         "Yeni kredi ya da banka kartı"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12226,6 +12241,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Aboneliğinizde şu anda uygulanan bir indirim var. Yeni indirime geçmek bu indirimin artık uygulanmayacağı anlamına gelir."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Birazdan ödemenizi doğrulamak için PayPal sitesine yönlendirileceksiniz."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Birazdan ödemenizi doğrulamak için yönlendirileceksiniz."
       ]
     },
     "Payments.Error": {
@@ -12267,6 +12288,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banka havalesi - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - ${ paymentMethod.Details.Last4 } ile biten kart"
       ]
     },
     "Payments.Sepa": {
@@ -15688,6 +15712,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ Kategoriler özelliği geliyor!"
+      ],
+      "Create folder \"${ search }\"": [
+        "\"${ search }\" klasörü ekle"
+      ],
+      "Create label \"${ search }\"": [
+        "\"${ search }\" etiketi ekle"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16346,6 +16376,11 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "Özel olarak tasarlanmış NetShield aygıtlarınızı korur ve reklamları, etkinlik izleyicileri ve kötü amaçlı yazılımları engelleyerek gezinmenizi hızlandırır."
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Bir sorun çıktı. Google Pay doğrulaması tamamlanamadı."
       ]
     }
   }

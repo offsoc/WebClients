@@ -8864,6 +8864,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Sei a pochi clic da una posta in arrivo organizzata"
+      ],
+      "Google Pay mark": [
+        "Marchio Google Pay"
       ]
     },
     "info": {
@@ -9914,6 +9917,15 @@
       ],
       "Get the deal": [
         "Approfitta dell'offerta"
+      ],
+      "Always label sender's emails": [
+        "Etichetta sempre le email del mittente"
+      ],
+      "Always move sender's emails": [
+        "Sposta sempre le email del mittente"
+      ],
+      "Move messages to": [
+        "Sposta messaggi in"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12092,6 +12104,9 @@
       ],
       "New credit/debit card": [
         "Nuova carta di credito/debito"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12228,6 +12243,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Sarai presto reindirizzato a PayPal per verificare il pagamento."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Sarai presto reindirizzato per verificare il pagamento."
       ]
     },
     "Payments.Error": {
@@ -12269,6 +12290,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Bonifico bancario - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - carta che termina con ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -15690,6 +15714,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ Le categorie stanno arrivando!"
+      ],
+      "Create folder \"${ search }\"": [
+        "Crea cartella \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Crea etichetta \"${ search }\""
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16348,6 +16378,11 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "NetShield è progettato appositamente per proteggere i dispositivi e accelerare la navigazione bloccando annunci, tracker e malware."
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Qualcosa è andato storto. La verifica di Google Pay non è riuscita."
       ]
     }
   }
