@@ -973,6 +973,9 @@
       ],
       "Copy Booking link": [
         "Скапіяваць спасылку на браніраванне"
+      ],
+      "Book": [
+        "Заказаць"
       ]
     },
     "action": {
@@ -2963,6 +2966,9 @@
         "падзеі",
         "падзей",
         "падзей"
+      ],
+      "Doesn't end": [
+        "Не завяршаць"
       ]
     },
     "customer_support.feature.all": {
@@ -3359,6 +3365,24 @@
       ],
       "90 minutes": [
         "90 хвілін"
+      ],
+      "1.5h": [
+        "1,5 гадз"
+      ],
+      "15 minutes": [
+        "15 хвілін"
+      ],
+      "15m": [
+        "15 хв"
+      ],
+      "1h": [
+        "1 гадз"
+      ],
+      "2h": [
+        "2 гадз"
+      ],
+      "30m": [
+        "30 хв"
       ]
     },
     "Edit billing address form note": {
@@ -3535,7 +3559,7 @@
         "Адбылася памылка пры загрузцы параметраў псеўданіма"
       ],
       "An error occurred while saving your alias": [
-        "Адбылася памылка пры вашага псеўданіма"
+        "Адбылася памылка пры захаванні вашага псеўданіма"
       ],
       "Answer failed to be sent": [
         "Не ўдалося адправіць адказ"
@@ -6486,6 +6510,33 @@
       ],
       "Share this page to let others book time in your calendar.": [
         "Абагуліце гэту старонку, каб іншыя маглі забраніраваць час у вашым календары."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "Працягласць ${ bookingDetails.duration } хв"
+      ],
+      "Enable password protection": [
+        "Уключыць абарону паролем"
+      ],
+      "Google Pay mark": [
+        "Пазнака Google Pay"
+      ],
+      "How long should an appointment last?": [
+        "Як доўга павінна доўжыцца сустрэча?"
+      ],
+      "In which calendar should bookings appear?": [
+        "У якім календары павінны з'яўляцца браніраванні?"
+      ],
+      "Name your booking page": [
+        "Назавіце старонку браніравання"
+      ],
+      "Password copied": [
+        "Пароль скапіяваны"
+      ],
+      "What should people know before booking?": [
+        "Што людзям неабходна ведаць перад браніраваннем?"
+      ],
+      "Where will the appointment take place?": [
+        "Дзе адбудзецца сустрэча?"
       ]
     },
     "info": {
@@ -9323,6 +9374,9 @@
       ],
       "New credit/debit card": [
         "Новая банкаўская картка"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9474,6 +9528,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Ваша падпіска мае бягучую скідку. Пераход на гэту новую акцыю азначае, што ранейшая скідка больш не будзе ўжывацца."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Неўзабаве вы будзеце перанакіраваны на сайт PayPal для спраўджання плацяжу."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Неўзабаве вы будзеце перанакіраваны для спраўджання плацяжу."
       ]
     },
     "Payments.Error": {
@@ -9515,6 +9575,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Банкаўскі перавод - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay — картка, якая заканчваецца на ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9722,6 +9785,15 @@
       ],
       "ZIP code": [
         "Паштовы індэкс"
+      ],
+      "Add a booking page description": [
+        "Дадаць апісанне старонкі браніравання"
+      ],
+      "Add password": [
+        "Дадаць пароль"
+      ],
+      "Booking page title": [
+        "Загаловак старонкі браніравання"
       ]
     },
     "Placeholder for contact group name": {
@@ -12309,7 +12381,7 @@
         "${ PASS_APP_NAME }: Бяспечныя запісы ўваходу на ўсіх вашых прыладах. Уключае неабмежаваную колькасць псеўданімаў, абагульненне, інтэграцыю з 2ФА і іншыя функцыі."
       ],
       "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
-        "${ LUMO_APP_NAME }: Памочнік ШІ, які паважае вашу прыватнасць"
+        "${ LUMO_APP_NAME }: памочнік ШІ, які паважае вашу прыватнасць"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -12894,6 +12966,36 @@
       ],
       "Unlimited daily chats": [
         "Неабмежаваная колькасць штодзённых чатаў"
+      ],
+      "2 TB data storage": [
+        "Сховішча даных памерам у 2 ТБ"
+      ],
+      "3 TB data storage": [
+        "Сховішча даных памерам у 3 ТБ"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Доступ да 15 000+ сервераў у 120+ краінах"
+      ],
+      "Access advanced AI models": [
+        "Доступ да перадавых мадэляў ШІ"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Усе прэміяльныя функцыі ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } і ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Connect 10 devices at once": [
+        "Падключыце 10 прылад адначасова"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Поўная гісторыя чатаў з простым пошукам і абранымі"
+      ],
+      "Individual accounts for 6 users": [
+        "Індывідуальныя ўліковыя запісы для 6 карыстальнікаў"
+      ],
+      "Individual accounts for you and a partner": [
+        "Індывідуальныя ўліковыя запісы для вас і партнёра"
+      ],
+      "Stronger protection against cyber threats": [
+        "Больш моцная абарона ад кіберпагроз"
       ]
     },
     "BF2025: Heading alt": {
@@ -12904,6 +13006,18 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "за ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Зэканомце ${ savedAmount } з нашай самай выгаднай абмежаванай па часе прапановай!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Пераключыцеся на наш 2-гадовы тарыфны план і зэканомце ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Пераключыцеся на наш гадавы тарыфны план і зэканомце ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Абараніце сваё плямя поўнай лічбавай абаронай."
       ]
     },
     "BF2025: Tooltip": {
@@ -12925,6 +13039,29 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Абагульвайце свае перавагі тарыфнага плана з ${ BRAND_NAME } Duo"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Распродаж з нагоды \"Чорнай пятніцы\""
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Дапамажыце сваім блізкім далучыцца да рэвалюцыі прыватнасці з нашымі самымі выгаднымі камплектамі, зараз са зніжкай 50%!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Далучайцеся да рэвалюцыі прыватнасці з нашымі самымі выгаднымі камплектамі, зараз са зніжкай 50%!"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Асабістае"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Нешта пайшло не так. Збой праверкі Google Pay."
       ]
     }
   }

@@ -5813,6 +5813,9 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "您的系統時區似乎已更改為 ${ timezone }。您要更新您的時區喜好設定嗎？"
+      ],
+      "Password copied": [
+        "已複製密碼"
       ]
     },
     "info": {
@@ -8594,6 +8597,9 @@
       ],
       "ZIP code": [
         "郵遞區號"
+      ],
+      "Add password": [
+        "新增密碼"
       ]
     },
     "Placeholder for contact group name": {

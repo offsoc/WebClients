@@ -958,6 +958,12 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "${ CALENDAR_APP_NAME }에 합류"
+      ],
+      "Book": [
+        "예약"
+      ],
+      "Copy Booking link": [
+        "예약 링크 복사"
       ]
     },
     "action": {
@@ -2906,6 +2912,9 @@
       ],
       "event": [
         "이벤트"
+      ],
+      "Doesn't end": [
+        "끝나지 않음"
       ]
     },
     "customer_support.feature.all": {
@@ -3290,6 +3299,24 @@
       ],
       "90 minutes": [
         "90분"
+      ],
+      "1.5h": [
+        "1시간 30분"
+      ],
+      "15 minutes": [
+        "15분"
+      ],
+      "15m": [
+        "15분"
+      ],
+      "1h": [
+        "1시간"
+      ],
+      "2h": [
+        "2시간"
+      ],
+      "30m": [
+        "30분"
       ]
     },
     "Edit billing address form note": {
@@ -6220,6 +6247,39 @@
       ],
       "Want to create your own booking page?": [
         "나만의 예약 페이지를 만들고 싶으신가요?"
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "예상 소요 시간 ${ bookingDetails.duration }분"
+      ],
+      "Booking page example": [
+        "예약 페이지 예시"
+      ],
+      "Enable password protection": [
+        "비밀번호 보호 활성화"
+      ],
+      "Google Pay mark": [
+        "Google Pay 표시"
+      ],
+      "How long should an appointment last?": [
+        "일정 소요시간이 얼마입니까?"
+      ],
+      "In which calendar should bookings appear?": [
+        "어떤 캘린더에 예약이 표시되어야 하나요?"
+      ],
+      "Name your booking page": [
+        "예약 페이지 이름을 지정하세요."
+      ],
+      "Password copied": [
+        "비밀번호를 복사했습니다"
+      ],
+      "Share this page to let others book time in your calendar.": [
+        "다른 사람들이 사용자의 캘린더에 시간을 예약할 수 있도록 이 페이지를 공유하세요."
+      ],
+      "What should people know before booking?": [
+        "예약 전에 알아두어야 할 사항은 무엇인가요?"
+      ],
+      "Where will the appointment take place?": [
+        "약속은 어디에서 진행되나요?"
       ]
     },
     "info": {
@@ -8856,6 +8916,9 @@
       ],
       "New credit/debit card": [
         "신용/체크카드 추가"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -8989,6 +9052,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "구독에 현재 기존 할인이 적용되어 있습니다. 새로운 프로모션으로 변경하면 기존 할인이 더 이상 적용되지 않습니다."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "결제를 인증하기 위해 곧 PayPal로 이동됩니다."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "결제를 인증하기 위해 곧 리디렉션됩니다."
       ]
     },
     "Payments.Error": {
@@ -9022,6 +9091,9 @@
       ],
       "Bank transfer - ${ details }": [
         "은행 송금 - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - 번호가 ${ paymentMethod.Details.Last4 }(으)로 끝나는 카드"
       ]
     },
     "Payments.Sepa": {
@@ -9229,6 +9301,15 @@
       ],
       "ZIP code": [
         "우편 번호"
+      ],
+      "Add a booking page description": [
+        "예약 페이지 설명 추가"
+      ],
+      "Add password": [
+        "비밀번호 추가"
+      ],
+      "Booking page title": [
+        "예약 페이지 제목"
       ]
     },
     "Placeholder for contact group name": {
@@ -10642,6 +10723,9 @@
       ],
       "You have successfully unsubscribed": [
         "성공적으로 구독 취소했습니다."
+      ],
+      "Booking link copied to clipboard": [
+        "예약 링크가 클립보드로 복샤되었습니다"
       ]
     },
     "Suffix": {
@@ -11476,6 +11560,12 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "프리미엄 기능 혜택을 놓치지 않기 위해 업그레이드하세요."
+      ],
+      "Get **${ referralInfo.uiData.refereeRewardAmount }** in credits with ${ planTitle }": [
+        "${ planTitle }(으)로 크레딧으로 **${ referralInfo.uiData.refereeRewardAmount }** 받기"
+      ],
+      "Your booking page is ready": [
+        "예약 페이지가 준비되었습니다"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12194,6 +12284,16 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "${ BRAND_NAME } Duo로 플랜 혜택을 함께 누려보세요"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "대면"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "문제가 발생했습니다. Google Pay 인증에 실패했습니다."
       ]
     }
   }

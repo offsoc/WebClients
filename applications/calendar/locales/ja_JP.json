@@ -961,6 +961,9 @@
       ],
       "Copy Booking link": [
         "予約リンクをコピー"
+      ],
+      "Book": [
+        "予約"
       ]
     },
     "action": {
@@ -3293,6 +3296,24 @@
       ],
       "90 minutes": [
         "90分"
+      ],
+      "1.5h": [
+        "1.5時間"
+      ],
+      "15 minutes": [
+        "15 分"
+      ],
+      "15m": [
+        "15分"
+      ],
+      "1h": [
+        "1時間"
+      ],
+      "2h": [
+        "2時間"
+      ],
+      "30m": [
+        "30分"
       ]
     },
     "Edit billing address form note": {
@@ -6234,6 +6255,33 @@
       ],
       "Share this page to let others book time in your calendar.": [
         "このページを共有すると、他のお客様がお客様のカレンダーで時間を予約できるようになります。"
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } 分間"
+      ],
+      "Enable password protection": [
+        "パスワード保護を有効にする"
+      ],
+      "Google Pay mark": [
+        "Google Pay マーク"
+      ],
+      "How long should an appointment last?": [
+        "予約時間はどのくらいに設定しますか？"
+      ],
+      "In which calendar should bookings appear?": [
+        "どのカレンダーに予約を表示しますか？"
+      ],
+      "Name your booking page": [
+        "予約ページに名前を付けてください"
+      ],
+      "Password copied": [
+        "パスワードをコピーしました"
+      ],
+      "What should people know before booking?": [
+        "予約前に知っておくべきことは何ですか？"
+      ],
+      "Where will the appointment take place?": [
+        "ご予定はどこで行われますか？"
       ]
     },
     "info": {
@@ -8870,6 +8918,9 @@
       ],
       "New credit/debit card": [
         "新しいクレジットカード/デビットカード"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9000,6 +9051,15 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "お客様のサブスクリプションには現在、既存の割引が適用されています。この新しいプロモーションに移行すると、既存の割引は適用されなくなります。"
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "支払いの検証のため、まもなく PayPal のサイトへリダイレクトされます。"
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "支払いの検証のため、まもなくリダイレクトされます。"
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "お客様のサブスクリプションには現在、既存の割引が適用されています。この新しいプロモーションに移行すると、既存の割引は適用されなくなります。"
       ]
     },
     "Payments.Error": {
@@ -9041,6 +9101,9 @@
       ],
       "Bank transfer - ${ details }": [
         "銀行振込 - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - 末尾が${ paymentMethod.Details.Last4 }のカード"
       ]
     },
     "Payments.Sepa": {
@@ -9248,6 +9311,15 @@
       ],
       "ZIP code": [
         "郵便番号"
+      ],
+      "Add a booking page description": [
+        "予約ページの説明を追加"
+      ],
+      "Add password": [
+        "パスワードを追加"
+      ],
+      "Booking page title": [
+        "予約ページタイトル"
       ]
     },
     "Placeholder for contact group name": {
@@ -12112,6 +12184,9 @@
       ],
       "Only": [
         "のみ"
+      ],
+      "2 TB of storage to share": [
+        "2 TBのストレージを共有"
       ]
     },
     "BF2025: Action (top button in header)": {
@@ -12209,6 +12284,16 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "${ BRAND_NAME } Duo とお客様のプラン特典を共有"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "対面"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "何か問題が発生しました。Google Payの認証に失敗しました。"
       ]
     }
   }

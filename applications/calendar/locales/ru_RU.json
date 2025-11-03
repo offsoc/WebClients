@@ -6074,6 +6074,9 @@
       ],
       "Your system time zone seems to have changed to ${ timezone }. Do you want to update your time zone preference?": [
         "Похоже, что ваш часовой пояс изменился на ${ timezone }. Вы хотите обновить настройки часового пояса?"
+      ],
+      "Password copied": [
+        "Пароль скопирован"
       ]
     },
     "info": {
@@ -9021,6 +9024,9 @@
       ],
       "ZIP code": [
         "Почтовый индекс"
+      ],
+      "Add password": [
+        "Добавить пароль"
       ]
     },
     "Placeholder for contact group name": {

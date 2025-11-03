@@ -965,6 +965,9 @@
       ],
       "Copy Booking link": [
         "Copier le lien de réservation"
+      ],
+      "Book": [
+        "Réserver"
       ]
     },
     "action": {
@@ -2927,6 +2930,9 @@
       "event": [
         "événement",
         "événements"
+      ],
+      "Doesn't end": [
+        "Sans date de fin"
       ]
     },
     "customer_support.feature.all": {
@@ -3315,6 +3321,24 @@
       ],
       "90 minutes": [
         "90 minutes"
+      ],
+      "1.5h": [
+        "1,5 h"
+      ],
+      "15 minutes": [
+        "15 minutes"
+      ],
+      "15m": [
+        "15 min"
+      ],
+      "1h": [
+        "1h"
+      ],
+      "2h": [
+        "2h"
+      ],
+      "30m": [
+        "30 min"
       ]
     },
     "Edit billing address form note": {
@@ -6318,6 +6342,33 @@
       ],
       "Share this page to let others book time in your calendar.": [
         "Partagez cette page pour permettre à d'autres de réserver du temps dans votre calendrier."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } min de durée"
+      ],
+      "Enable password protection": [
+        "Activer la protection par mot de passe"
+      ],
+      "Google Pay mark": [
+        "Marquer Google Pay"
+      ],
+      "How long should an appointment last?": [
+        "Combien de temps un rendez-vous doit-il durer ?"
+      ],
+      "In which calendar should bookings appear?": [
+        "Dans quel calendrier les réservations doivent-elles apparaître ?"
+      ],
+      "Name your booking page": [
+        "Nommez votre page de réservation"
+      ],
+      "Password copied": [
+        "Le mot de passe a été copié."
+      ],
+      "What should people know before booking?": [
+        "Que faut-il savoir avant de réserver ?"
+      ],
+      "Where will the appointment take place?": [
+        "Où aura lieu le rendez-vous ?"
       ]
     },
     "info": {
@@ -9021,6 +9072,9 @@
       ],
       "New credit/debit card": [
         "Nouvelle carte de paiement"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9157,6 +9211,15 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the exiting discount will no longer be applied.": [
         "Votre abonnement bénéficie actuellement d'une réduction existante. Le passage à cette nouvelle promotion signifie que la réduction existante ne sera plus appliquée."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Vous serez bientôt redirigé vers PayPal pour vérifier votre paiement."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Vous serez bientôt redirigé vers PayPal pour vérifier votre paiement."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Votre abonnement bénéficie actuellement d'une réduction existante. Le passage à cette nouvelle promotion signifie que la réduction existante ne sera plus appliquée."
       ]
     },
     "Payments.Error": {
@@ -9198,6 +9261,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Virement bancaire - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - carte se terminant par les chiffres ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9405,6 +9471,15 @@
       ],
       "ZIP code": [
         "Code postal"
+      ],
+      "Add a booking page description": [
+        "Ajouter une description à la page de réservation"
+      ],
+      "Add password": [
+        "Ajouter un mot de passe"
+      ],
+      "Booking page title": [
+        "Titre de la page de réservation"
       ]
     },
     "Placeholder for contact group name": {
@@ -12457,6 +12532,9 @@
       ],
       "Only": [
         "Seulement"
+      ],
+      "2 TB of storage to share": [
+        "2 To d'espace de stockage à partager"
       ]
     },
     "Duo offer: Link": {
@@ -12560,6 +12638,16 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "La fonctionnalité NetShield est spécialement conçue pour protéger vos appareils et accélérer votre navigation en bloquant les publicités, les traqueurs et les logiciels malveillants."
+      ]
+    },
+    "Location": {
+      "In person": [
+        "En présentiel"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Une erreur s'est produite. La vérification Google Pay n'a pas abouti."
       ]
     }
   }

@@ -965,6 +965,9 @@
       ],
       "Copy Booking link": [
         "Kopiera bokningslänk"
+      ],
+      "Book": [
+        "Boka"
       ]
     },
     "action": {
@@ -2912,6 +2915,9 @@
       "event": [
         "händelse",
         "händelser"
+      ],
+      "Doesn't end": [
+        "Slutar inte"
       ]
     },
     "customer_support.feature.all": {
@@ -3300,6 +3306,24 @@
       ],
       "90 minutes": [
         "90 minuter"
+      ],
+      "1.5h": [
+        "1,5 tim."
+      ],
+      "15 minutes": [
+        "15 minuter"
+      ],
+      "15m": [
+        "15 min."
+      ],
+      "1h": [
+        "1 tim."
+      ],
+      "2h": [
+        "2 tim."
+      ],
+      "30m": [
+        "30 min."
       ]
     },
     "Edit billing address form note": {
@@ -6297,6 +6321,30 @@
       ],
       "Booking page example": [
         "Exempel på bokningssida"
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } min. varaktighet"
+      ],
+      "Enable password protection": [
+        "Aktivera lösenordsskydd"
+      ],
+      "How long should an appointment last?": [
+        "Hur långt ska ett möte vara?"
+      ],
+      "In which calendar should bookings appear?": [
+        "I vilken kalender ska bokningar visas?"
+      ],
+      "Name your booking page": [
+        "Namnge din bokningssida"
+      ],
+      "Password copied": [
+        "Lösenord kopierat"
+      ],
+      "What should people know before booking?": [
+        "Vad bör folk veta innan de bokar?"
+      ],
+      "Where will the appointment take place?": [
+        "Var kommer mötet att äga rum?"
       ]
     },
     "info": {
@@ -8810,6 +8858,9 @@
       ],
       "You’ll be able to use ${ planTitle } until the trial ends, free of charge.": [
         "Du kommer att kunna använda ${ planTitle } tills provperioden slutar, utan kostnad."
+      ],
+      "Enjoy free business security features until ${ trialEndsOnFormatted }.": [
+        "Njut av gratis företagssäkerhetsfunktioner fram till ${ trialEndsOnFormatted }."
       ]
     },
     "Option": {
@@ -9008,6 +9059,9 @@
       ],
       "PayPal": [
         "PayPal"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9121,6 +9175,12 @@
       ],
       "Your payment is still being processed": [
         "Din betalning håller fortfarande på att behandlas"
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Du kommer snart att omdirigeras till PayPal för att verifiera din betalning."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Du kommer snart att omdirigeras för att verifiera din betalning."
       ]
     },
     "Payments.Error": {
@@ -9162,6 +9222,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banköverföring - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - kort slutar på ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9363,6 +9426,15 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Add a booking page description": [
+        "Lägg till en beskrivning av bokningssida"
+      ],
+      "Add password": [
+        "Lägg till lösenord"
+      ],
+      "Booking page title": [
+        "Rubrik på bokningssida"
       ]
     },
     "Placeholder for contact group name": {
@@ -12419,6 +12491,16 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Dela dina paketförmåner med ${ BRAND_NAME } Duo"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Personligen"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Något gick fel. Google Pay-verifiering misslyckades."
       ]
     }
   }

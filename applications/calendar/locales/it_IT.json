@@ -965,6 +965,9 @@
       ],
       "Copy Booking link": [
         "Copia il link di prenotazione"
+      ],
+      "Book": [
+        "Prenota"
       ]
     },
     "action": {
@@ -2927,6 +2930,9 @@
       "event": [
         "evento",
         "eventi"
+      ],
+      "Doesn't end": [
+        "Senza data di fine"
       ]
     },
     "customer_support.feature.all": {
@@ -3315,6 +3321,21 @@
       ],
       "90 minutes": [
         "90 minuti"
+      ],
+      "1.5h": [
+        "1,5h"
+      ],
+      "15m": [
+        "15min"
+      ],
+      "1h": [
+        "1h"
+      ],
+      "2h": [
+        "2h"
+      ],
+      "30m": [
+        "30m"
       ]
     },
     "Edit billing address form note": {
@@ -6318,6 +6339,24 @@
       ],
       "Share this page to let others book time in your calendar.": [
         "Condividi questa pagina per far prenotare agli altri un appuntamento nel tuo calendario."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "durata di ${ bookingDetails.duration } min"
+      ],
+      "Google Pay mark": [
+        "Marchio Google Pay"
+      ],
+      "In which calendar should bookings appear?": [
+        "In quale calendario dovrebbero comparire le prenotazioni?"
+      ],
+      "Password copied": [
+        "Password copiata"
+      ],
+      "What should people know before booking?": [
+        "Cosa dovrebbero sapere le persone prima di prenotare?"
+      ],
+      "Where will the appointment take place?": [
+        "Dove si terrà l'appuntamento?"
       ]
     },
     "info": {
@@ -9026,6 +9065,9 @@
       ],
       "New credit/debit card": [
         "Nuova carta di credito/debito"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9165,6 +9207,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Sarai presto reindirizzato a PayPal per verificare il pagamento."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Sarai presto reindirizzato per verificare il pagamento."
       ]
     },
     "Payments.Error": {
@@ -9206,6 +9254,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Bonifico bancario - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - carta che termina con ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9413,6 +9464,9 @@
       ],
       "ZIP code": [
         "Codice postale"
+      ],
+      "Add password": [
+        "Aggiungi una password"
       ]
     },
     "Placeholder for contact group name": {
@@ -12562,6 +12616,16 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Condividi i benefici del tuo piano con ${ BRAND_NAME } Duo"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Di persona"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Qualcosa è andato storto. La verifica di Google Pay non è riuscita."
       ]
     }
   }

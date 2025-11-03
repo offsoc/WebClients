@@ -5994,6 +5994,9 @@
       ],
       "Your trial will end in ${ timeRemaining }.": [
         "Vaše preizkusno obdobje se bo končalo čez ${ timeRemaining }."
+      ],
+      "Password copied": [
+        "Geslo je bilo kopirano"
       ]
     },
     "info": {
@@ -8950,6 +8953,9 @@
       ],
       "ZIP code": [
         "Poštna številka"
+      ],
+      "Add password": [
+        "Dodaj geslo"
       ]
     },
     "Placeholder for contact group name": {
@@ -11859,6 +11865,42 @@
     "BF2025: Deal details": {
       "Block ads, trackers, and malware": [
         "Blokiranje oglasov, sledilnikov in zlonamerne programske opreme"
+      ],
+      "2 TB data storage": [
+        "2 TB shrambe podatkov"
+      ],
+      "3 TB data storage": [
+        "3 TB shrambe podatkov"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Dostop do več kot 15.000 strežnikov v več kot 120 državah"
+      ],
+      "Access advanced AI models": [
+        "Dostop do naprednih modelov umetne inteligence"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Vse premium funkcije ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } in ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Built-in 2FA authenticator": [
+        "Vgrajen overitelj 2FA"
+      ],
+      "Connect 10 devices at once": [
+        "Povežite 10 naprav hkrati"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Celotna zgodovina klepetov z enostavnim iskanjem in priljubljenimi"
+      ],
+      "Individual accounts for 6 users": [
+        "Posamezni računi za 6 uporabnikov"
+      ],
+      "Individual accounts for you and a partner": [
+        "Posamezni računi za vas in partnerja"
+      ],
+      "Stronger protection against cyber threats": [
+        "Močnejša zaščita pred kibernetskimi grožnjami"
+      ],
+      "Unlimited daily chats": [
+        "Neomejeno število dnevnih klepetov"
       ]
     },
     "BF2025: Heading alt": {
@@ -11869,11 +11911,36 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "za ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Prihranite ${ savedAmount } z našo najugodnejšo, časovno omejeno ponudbo!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Preklopite na naš dvoletni paket in prihranite ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Preklopite na naš letni paket in prihranite ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Poskrbite za svoje bližnje s popolno digitalno zaščito."
       ]
     },
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "Posebej zasnovan NetShield ščiti vaše naprave in pospeši vaše brskanje z blokiranjem oglasov, sledilnikov in zlonamerne programske opreme."
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Črnopetkova razprodaja"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Pomagajte svojim bližnjim, da se pridružijo revoluciji zasebnosti z našimi najugodnejšimi paketi, zdaj s 50 % popusta!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Pridružite se revoluciji zasebnosti z našimi najugodnejšimi paketi, zdaj s 50 % popusta!"
       ]
     }
   }

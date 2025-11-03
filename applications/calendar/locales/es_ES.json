@@ -953,6 +953,9 @@
       ],
       "Create booking page": [
         "Crear página de reservas"
+      ],
+      "Book": [
+        "Reservar"
       ]
     },
     "action": {
@@ -2903,6 +2906,9 @@
       "event": [
         "evento",
         "eventos"
+      ],
+      "Doesn't end": [
+        "Recurrente"
       ]
     },
     "customer_support.feature.all": {
@@ -3291,6 +3297,24 @@
       ],
       "90 minutes": [
         "90 minutos"
+      ],
+      "1.5h": [
+        "1,5h"
+      ],
+      "15 minutes": [
+        "15 minutos"
+      ],
+      "15m": [
+        "15 min"
+      ],
+      "1h": [
+        "1 h"
+      ],
+      "2h": [
+        "2h"
+      ],
+      "30m": [
+        "30min"
       ]
     },
     "Edit billing address form note": {
@@ -6279,6 +6303,30 @@
       ],
       "A booking slot cannot be added in the past.": [
         "No se pueden añadir reservas en franjas horarias pasadas."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } min de duración"
+      ],
+      "Enable password protection": [
+        "Activar protección por contraseña"
+      ],
+      "How long should an appointment last?": [
+        "¿Cuánto debería durar una cita?"
+      ],
+      "In which calendar should bookings appear?": [
+        "¿En qué calendario deberían aparecer las reservas?"
+      ],
+      "Name your booking page": [
+        "Nombra tu página de reservas"
+      ],
+      "Password copied": [
+        "Se ha copiado la contraseña."
+      ],
+      "What should people know before booking?": [
+        "¿Qué debería saber la gente antes de reservar?"
+      ],
+      "Where will the appointment take place?": [
+        "¿Dónde tendrá lugar la cita?"
       ]
     },
     "info": {
@@ -8973,6 +9021,9 @@
       ],
       "New credit/debit card": [
         "Nueva tarjeta de crédito/débito"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9083,6 +9134,12 @@
       ],
       "Your payment is still being processed": [
         "Tu pago aún está siendo procesado."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Pronto serás redirigido a PayPal para verificar tu pago."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Pronto serás redirigido para verificar tu pago."
       ]
     },
     "Payments.Error": {
@@ -9124,6 +9181,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Transferencia bancaria - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - tarjeta terminada en ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9331,6 +9391,15 @@
       ],
       "ZIP code": [
         "Código postal"
+      ],
+      "Add a booking page description": [
+        "Añadir una descripción de la página de reservas"
+      ],
+      "Add password": [
+        "Añadir una contraseña"
+      ],
+      "Booking page title": [
+        "Título de la página de reservas"
       ]
     },
     "Placeholder for contact group name": {
@@ -12459,6 +12528,16 @@
     "Duo offer: Title": {
       "Get 4x more storage with ${ BRAND_NAME } Duo": [
         "Obtén 4 veces más almacenamiento con ${ BRAND_NAME } Duo"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Presencial"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Se ha producido un error. Falló la verificación de Google Pay."
       ]
     }
   }

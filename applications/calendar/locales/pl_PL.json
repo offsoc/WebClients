@@ -6284,6 +6284,9 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Nadal będziesz mógł przeglądać dane konta, ale wszystkie konta użytkowników zostaną usunięte z organizacji."
+      ],
+      "Password copied": [
+        "Hasło zostało skopiowane"
       ]
     },
     "info": {
@@ -9392,6 +9395,9 @@
       ],
       "ZIP code": [
         "Kod pocztowy"
+      ],
+      "Add password": [
+        "Dodaj hasło"
       ]
     },
     "Placeholder for contact group name": {
