@@ -1,0 +1,12 @@
+.join-with-link-modal {
+	.join-button {
+		background-color: var(--interaction-norm);
+		color: var(--text-invert);
+
+		&:hover,
+		&:focus {
+			background-color: var(--interaction-norm-minor-1);
+			color: var(--text-invert);
+		}
+	}
+}
