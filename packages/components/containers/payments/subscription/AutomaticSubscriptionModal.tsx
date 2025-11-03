@@ -42,8 +42,6 @@ import { blackFriday2025DriveFreeMonthlyConfig } from '../../offers/operations/b
 import blackFriday2025DriveFreeMonthlyConfigEligibility from '../../offers/operations/blackFriday2025DriveFreeMonthly/eligibility';
 import { blackFriday2025DriveFreeYearlyConfig } from '../../offers/operations/blackFriday2025DriveFreeYearly/configuration';
 import blackFriday2025DriveFreeYearlyConfigEligibility from '../../offers/operations/blackFriday2025DriveFreeYearly/eligibility';
-import { blackFriday2025DrivePlusMonthly2Config } from '../../offers/operations/blackFriday2025DrivePlusMonthly2/configuration';
-import blackFriday2025DrivePlusMonthly2ConfigEligibility from '../../offers/operations/blackFriday2025DrivePlusMonthly2/eligibility';
 import { blackFriday2025DrivePlusMonthlyConfig } from '../../offers/operations/blackFriday2025DrivePlusMonthly/configuration';
 import blackFriday2025DrivePlusMonthlyConfigEligibility from '../../offers/operations/blackFriday2025DrivePlusMonthly/eligibility';
 import { blackFriday2025DrivePlusYearlyConfig } from '../../offers/operations/blackFriday2025DrivePlusYearly/configuration';
@@ -56,12 +54,8 @@ import { blackFriday2025InboxFreeMonthlyConfig } from '../../offers/operations/b
 import blackFriday2025InboxFreeMonthlyConfigEligibility from '../../offers/operations/blackFriday2025InboxFreeMonthly/eligibility';
 import { blackFriday2025InboxFreeYearlyConfig } from '../../offers/operations/blackFriday2025InboxFreeYearly/configuration';
 import blackFriday2025InboxFreeYearlyConfigEligibility from '../../offers/operations/blackFriday2025InboxFreeYearly/eligibility';
-import { blackFriday2025InboxPlusMonthly2Config } from '../../offers/operations/blackFriday2025InboxPlusMonthly2/configuration';
-import blackFriday2025InboxPlusMonthly2ConfigEligibility from '../../offers/operations/blackFriday2025InboxPlusMonthly2/eligibility';
 import { blackFriday2025InboxPlusMonthlyConfig } from '../../offers/operations/blackFriday2025InboxPlusMonthly/configuration';
 import blackFriday2025InboxPlusMonthlyConfigEligibility from '../../offers/operations/blackFriday2025InboxPlusMonthly/eligibility';
-import { blackFriday2025InboxPlusYearly2Config } from '../../offers/operations/blackFriday2025InboxPlusYearly2/configuration';
-import blackFriday2025InboxPlusYearly2ConfigEligibility from '../../offers/operations/blackFriday2025InboxPlusYearly2/eligibility';
 import { blackFriday2025InboxPlusYearlyConfig } from '../../offers/operations/blackFriday2025InboxPlusYearly/configuration';
 import blackFriday2025InboxPlusYearlyConfigEligibility from '../../offers/operations/blackFriday2025InboxPlusYearly/eligibility';
 import { blackFriday2025LumoFreeYearlyConfig } from '../../offers/operations/blackFriday2025LumoFreeYearly/configuration';
@@ -90,8 +84,6 @@ import { blackFriday2025VPNPlusMonthlyConfig } from '../../offers/operations/bla
 import blackFriday2025VPNPlusMonthlyConfigEligibility from '../../offers/operations/blackFriday2025VPNPlusMonthly/eligibility';
 import { blackFriday2025VPNPlusTwoYearConfig } from '../../offers/operations/blackFriday2025VPNPlusTwoYear/configuration';
 import blackFriday2025VPNPlusTwoYearConfigEligibility from '../../offers/operations/blackFriday2025VPNPlusTwoYear/eligibility';
-import { blackFriday2025VPNPlusYearly2Config } from '../../offers/operations/blackFriday2025VPNPlusYearly2/configuration';
-import blackFriday2025VPNPlusYearly2ConfigEligibility from '../../offers/operations/blackFriday2025VPNPlusYearly2/eligibility';
 import { blackFriday2025VPNPlusYearlyConfig } from '../../offers/operations/blackFriday2025VPNPlusYearly/configuration';
 import blackFriday2025VPNPlusYearlyConfigEligibility from '../../offers/operations/blackFriday2025VPNPlusYearly/eligibility';
 import type { Eligibility, PlanCombination } from './subscriptionEligbility';
@@ -312,16 +304,8 @@ const AutomaticSubscriptionModal = () => {
                 config: blackFriday2025InboxPlusMonthlyConfig,
             },
             {
-                eligibility: blackFriday2025InboxPlusMonthly2ConfigEligibility,
-                config: blackFriday2025InboxPlusMonthly2Config,
-            },
-            {
                 eligibility: blackFriday2025InboxPlusYearlyConfigEligibility,
                 config: blackFriday2025InboxPlusYearlyConfig,
-            },
-            {
-                eligibility: blackFriday2025InboxPlusYearly2ConfigEligibility,
-                config: blackFriday2025InboxPlusYearly2Config,
             },
             {
                 eligibility: blackFriday2025UnlimitedConfigEligibility,
@@ -356,10 +340,6 @@ const AutomaticSubscriptionModal = () => {
                 config: blackFriday2025VPNPlusYearlyConfig,
             },
             {
-                eligibility: blackFriday2025VPNPlusYearly2ConfigEligibility,
-                config: blackFriday2025VPNPlusYearly2Config,
-            },
-            {
                 eligibility: blackFriday2025VPNPlusTwoYearConfigEligibility,
                 config: blackFriday2025VPNPlusTwoYearConfig,
             },
@@ -374,10 +354,6 @@ const AutomaticSubscriptionModal = () => {
             {
                 eligibility: blackFriday2025DrivePlusMonthlyConfigEligibility,
                 config: blackFriday2025DrivePlusMonthlyConfig,
-            },
-            {
-                eligibility: blackFriday2025DrivePlusMonthly2ConfigEligibility,
-                config: blackFriday2025DrivePlusMonthly2Config,
             },
             {
                 eligibility: blackFriday2025DrivePlusYearlyConfigEligibility,
