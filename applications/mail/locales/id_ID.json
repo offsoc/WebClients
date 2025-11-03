@@ -15865,6 +15865,36 @@
       ],
       "Unlimited daily chats": [
         "Tanpa batasan jumlah percakapan harian"
+      ],
+      "2 TB data storage": [
+        "Penyimpanan data 2 TB"
+      ],
+      "3 TB data storage": [
+        "Penyimpanan data 3 TB"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Akses 15.000+ server di 120+ negara"
+      ],
+      "Access advanced AI models": [
+        "Akses model AI lanjutan"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Semua fitur premium dari ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, dan ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Connect 10 devices at once": [
+        "Sambungkan 10 perangkat sekaligus"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Riwayat chat lengkap dengan pencarian mudah dan favorit"
+      ],
+      "Individual accounts for 6 users": [
+        "Akun individual untuk 6 pengguna"
+      ],
+      "Individual accounts for you and a partner": [
+        "Akun individual untuk Anda dan pasangan"
+      ],
+      "Stronger protection against cyber threats": [
+        "Perlindungan lebih kuat terhadap ancaman siber"
       ]
     },
     "BF2025: Heading alt": {
@@ -15875,6 +15905,18 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "untuk ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Hemat ${ savedAmount } dengan penawaran bernilai terbaik kami yang terbatas!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Beralih ke paket 2 tahun kami dan hemat ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Beralih ke paket tahunan kami dan hemat ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Manjakan kelompok Anda dengan perlindungan digital lengkap."
       ]
     },
     "BF2025: Tooltip": {
@@ -15885,6 +15927,19 @@
     "sheets_2025:Action": {
       "Open in ${ appName }": [
         "Buka di ${ appName }"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Diskon Jumat Hitam"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Bantu orang yang Anda cintai bergabung dengan revolusi privasi dengan bundel bernilai terbaik kami, kini diskon 50%!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Bergabunglah dengan revolusi privasi dengan bundel bernilai terbaik kami, kini diskon 50%!"
       ]
     }
   }

@@ -8883,6 +8883,9 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Effettua l'upgrade per mantenere i tuoi ${ planTitle } vantaggi."
+      ],
+      "Google Pay mark": [
+        "Marchio Google Pay"
       ]
     },
     "info": {
@@ -9933,6 +9936,15 @@
       ],
       "Get the deal": [
         "Approfitta dell'offerta"
+      ],
+      "Always label sender's emails": [
+        "Etichetta sempre le email del mittente"
+      ],
+      "Always move sender's emails": [
+        "Sposta sempre le email del mittente"
+      ],
+      "Move messages to": [
+        "Sposta messaggi in"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12111,6 +12123,9 @@
       ],
       "New credit/debit card": [
         "Nuova carta di credito/debito"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12247,6 +12262,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Il tuo abbonamento ha attualmente uno sconto esistente. Passare a questa nuova promozione significa che lo sconto esistente non sarà più applicato."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Sarai presto reindirizzato a PayPal per verificare il pagamento."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Sarai presto reindirizzato per verificare il pagamento."
       ]
     },
     "Payments.Error": {
@@ -12288,6 +12309,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Bonifico bancario - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - carta che termina con ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -15709,6 +15733,12 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "Effettua l'upgrade per mantenere i tuoi vantaggi premium."
+      ],
+      "Create folder \"${ search }\"": [
+        "Crea cartella \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Crea etichetta \"${ search }\""
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16400,6 +16430,11 @@
       ],
       "Share your plan benefits with ${ BRAND_NAME } Duo": [
         "Condividi i benefici del tuo piano con ${ BRAND_NAME } Duo"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Qualcosa è andato storto. La verifica di Google Pay non è riuscita."
       ]
     }
   }

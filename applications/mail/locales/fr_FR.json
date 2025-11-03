@@ -8882,6 +8882,9 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Passez à la version supérieure pour conserver vos avantages de ${ planTitle }."
+      ],
+      "Google Pay mark": [
+        "Marquer Google Pay"
       ]
     },
     "info": {
@@ -9932,6 +9935,15 @@
       ],
       "Get the deal": [
         "Profitez de l'offre"
+      ],
+      "Always label sender's emails": [
+        "Toujours labelliser les messages des expéditeurs"
+      ],
+      "Always move sender's emails": [
+        "Toujours déplacer les messages des expéditeurs"
+      ],
+      "Move messages to": [
+        "Déplacer les messages vers"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12105,6 +12117,9 @@
       ],
       "New credit/debit card": [
         "Nouvelle carte de paiement"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12238,6 +12253,15 @@
       ],
       "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
         "Le tarif exceptionnel s'applique le premier mois. Ensuite, l'abonnement sera automatiquement renouvelé au prix de ${ renewPriceStr } par mois. Vous pouvez résilier l'abonnement à tout moment."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Vous serez bientôt redirigé vers PayPal pour vérifier votre paiement."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Vous serez bientôt redirigé vers PayPal pour vérifier votre paiement."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Votre abonnement bénéficie actuellement d'une réduction existante. Le passage à cette nouvelle promotion signifie que la réduction existante ne sera plus appliquée."
       ]
     },
     "Payments.Error": {
@@ -12279,6 +12303,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Virement bancaire - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - carte se terminant par les chiffres ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -15703,6 +15730,12 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "Passez à la version supérieure pour conserver vos avantages premium."
+      ],
+      "Create folder \"${ search }\"": [
+        "Créer un dossier « ${ search } »"
+      ],
+      "Create label \"${ search }\"": [
+        "Créer un label « ${ search } »"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16297,6 +16330,9 @@
       ],
       "Only": [
         "Seulement"
+      ],
+      "2 TB of storage to share": [
+        "2 To d'espace de stockage à partager"
       ]
     },
     "Duo offer: Link": {
@@ -16400,6 +16436,11 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "La fonctionnalité NetShield est spécialement conçue pour protéger vos appareils et accélérer votre navigation en bloquant les publicités, les traqueurs et les logiciels malveillants."
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Une erreur s'est produite. La vérification Google Pay n'a pas abouti."
       ]
     }
   }

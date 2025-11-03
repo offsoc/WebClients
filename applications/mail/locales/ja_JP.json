@@ -8742,6 +8742,9 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "${ planTitle }の特典を維持するには、アップグレードしてください。"
+      ],
+      "Google Pay mark": [
+        "Google Pay マーク"
       ]
     },
     "info": {
@@ -9784,6 +9787,15 @@
       ],
       "Get the deal": [
         "割引を入手"
+      ],
+      "Always label sender's emails": [
+        "この差出人のメールを常にラベル付け"
+      ],
+      "Always move sender's emails": [
+        "この差出人のメールを常に移動"
+      ],
+      "Move messages to": [
+        "メッセージを移動"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11921,6 +11933,9 @@
       ],
       "New credit/debit card": [
         "新しいクレジットカード/デビットカード"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12048,6 +12063,15 @@
       ],
       "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
         "特別な割引価格は最初の月のみ有効です。その後、毎月${ renewPriceStr }で自動更新されます。いつでもキャンセル可能です。"
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "支払いの検証のため、まもなく PayPal のサイトへリダイレクトされます。"
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "支払いの検証のため、まもなくリダイレクトされます。"
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "お客様のサブスクリプションには現在、既存の割引が適用されています。この新しいプロモーションに移行すると、既存の割引は適用されなくなります。"
       ]
     },
     "Payments.Error": {
@@ -12089,6 +12113,9 @@
       ],
       "Bank transfer - ${ details }": [
         "銀行振込 - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - 末尾が${ paymentMethod.Details.Last4 }のカード"
       ]
     },
     "Payments.Sepa": {
@@ -15322,6 +15349,12 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "プレミアム特典を維持するには、アップグレードしてください。"
+      ],
+      "Create folder \"${ search }\"": [
+        "「${ search }」フォルダを作成"
+      ],
+      "Create label \"${ search }\"": [
+        "「${ search }」ラベルを作成"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15871,6 +15904,9 @@
       ],
       "Only": [
         "のみ"
+      ],
+      "2 TB of storage to share": [
+        "2 TBのストレージを共有"
       ]
     },
     "BF2025: Action (top button in header)": {
@@ -15973,6 +16009,11 @@
     "sheets_2025:Action": {
       "Open in ${ appName }": [
         "${ appName } で開く"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "何か問題が発生しました。Google Payの認証に失敗しました。"
       ]
     }
   }

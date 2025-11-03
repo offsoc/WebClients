@@ -9162,6 +9162,9 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Navyšte tarif a zachovejte si své výhody ${ planTitle }."
+      ],
+      "Google Pay mark": [
+        "Značka Google Pay"
       ]
     },
     "info": {
@@ -10228,6 +10231,15 @@
       ],
       "Get the deal": [
         "Využít nabídku"
+      ],
+      "Always label sender's emails": [
+        "Vždy označit e-maily odesílatele"
+      ],
+      "Always move sender's emails": [
+        "Vždy přesunout e-maily odesílatele"
+      ],
+      "Move messages to": [
+        "Přesunout zprávy do"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12473,6 +12485,9 @@
       ],
       "New credit/debit card": [
         "Nová kreditní/debetní karta"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12621,6 +12636,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Vaše předplatné má v současné době platnou slevu. Přechodem na tuto novou akci bude stávající sleva zrušena."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Za účelem ověření platby budete přesměrováni na PayPal."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Za účelem ověření platby budete přesměrováni."
       ]
     },
     "Payments.Error": {
@@ -12662,6 +12683,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Bankovní převod - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - karta končící čísly ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -16183,6 +16207,12 @@
       ],
       "Upgrade to keep your premium benefits.": [
         "Navyšte tarif pro zachování prémiových výhod."
+      ],
+      "Create folder \"${ search }\"": [
+        "Vytvořit složku \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Vytvořit štítek \"${ search }\""
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16972,6 +17002,11 @@
     "sheets_2025:Action": {
       "Open in ${ appName }": [
         "Otevřít v ${ appName }"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Něco se pokazilo. Ověření Google Pay selhalo."
       ]
     }
   }
