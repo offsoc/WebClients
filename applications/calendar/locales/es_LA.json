@@ -965,6 +965,9 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Unirse a ${ CALENDAR_APP_NAME }"
+      ],
+      "Book": [
+        "Reservar"
       ]
     },
     "action": {
@@ -3300,6 +3303,24 @@
       ],
       "90 minutes": [
         "90 minutos"
+      ],
+      "1.5h": [
+        "1,5h"
+      ],
+      "15 minutes": [
+        "15 minutos"
+      ],
+      "15m": [
+        "15 min"
+      ],
+      "1h": [
+        "1 h"
+      ],
+      "2h": [
+        "2h"
+      ],
+      "30m": [
+        "30min"
       ]
     },
     "Edit billing address form note": {
@@ -6303,6 +6324,33 @@
       ],
       "Want to create your own booking page?": [
         "¿Desea crear su propia página de reservas?"
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } min de duración"
+      ],
+      "Enable password protection": [
+        "Activar protección por contraseña"
+      ],
+      "Google Pay mark": [
+        "Marca de Google Pay"
+      ],
+      "How long should an appointment last?": [
+        "¿Cuánto debería durar una cita?"
+      ],
+      "In which calendar should bookings appear?": [
+        "¿En cuál calendario deberían aparecer las reservas?"
+      ],
+      "Name your booking page": [
+        "Nombre su página de reservas"
+      ],
+      "Password copied": [
+        "La contraseña ha sido copiada."
+      ],
+      "What should people know before booking?": [
+        "¿Qué debería saber la gente antes de reservar?"
+      ],
+      "Where will the appointment take place?": [
+        "¿Dónde tendrá lugar la cita?"
       ]
     },
     "info": {
@@ -9006,6 +9054,9 @@
       ],
       "New credit/debit card": [
         "Tarjeta de crédito/débito nueva"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9142,6 +9193,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Su suscripción actualmente tiene un descuento. Cambiar a esta promoción nueva significa que el descuento existente ya no se aplicará."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Pronto se le redirigirá a PayPal para verificar el pago."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Pronto se le redirigirá para verificar el pago."
       ]
     },
     "Payments.Error": {
@@ -9183,6 +9240,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Transferencia bancaria - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - tarjeta terminada en ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9390,6 +9450,15 @@
       ],
       "ZIP code": [
         "Código ZIP"
+      ],
+      "Add a booking page description": [
+        "Añadir una descripción de la página de reservas"
+      ],
+      "Add password": [
+        "Agregar una contraseña"
+      ],
+      "Booking page title": [
+        "Título de la página de reservas"
       ]
     },
     "Placeholder for contact group name": {
@@ -12503,6 +12572,16 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "La tecnología NetShield tiene como fin proteger los dispositivos y que pueda navegar mucho más rápido bloqueando anuncios, rastreadores y malware."
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Presencial"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Algo salió mal. Falló la verificación de Google Pay."
       ]
     }
   }

@@ -7655,6 +7655,39 @@
       ],
       "Built-in 2FA authenticator": [
         "Ugrađeni 2FA autentifikator"
+      ],
+      "2 TB data storage": [
+        "2 TB prostora za pohranu"
+      ],
+      "3 TB data storage": [
+        "3 TB prostora za pohranu"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Pristup 15,000+ poslužitelja u 120+ država"
+      ],
+      "Access advanced AI models": [
+        "Pristup naprednim AI modelima"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Sve premium značajke usluga ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } i ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Connect 10 devices at once": [
+        "Povežite 10 uređaja istovremeno"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Potpuna povijest razgovora s jednostavnom pretragom i favoritima"
+      ],
+      "Individual accounts for 6 users": [
+        "Individualni korisnički računi za 6 korisnika"
+      ],
+      "Individual accounts for you and a partner": [
+        "Individualni korisnički računi za Vas i partnera"
+      ],
+      "Stronger protection against cyber threats": [
+        "Jača zaštita od kibernetičkih prijetnji"
+      ],
+      "Unlimited daily chats": [
+        "Neograničeni dnevni razgovori"
       ]
     },
     "BF2025: Heading alt": {
@@ -7665,6 +7698,36 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "za ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Uštedite ${ savedAmount } uz našu najpovoljniju ponudu s ograničenim vremenom!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Prijeđite na naš dvogodišnji plan i uštedite ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Prijeđite na naš godišnji plan i uštedite ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Osigurajte svom plemenu potpunu digitalnu zaštitu."
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday rasprodaja"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Pomozite svojim voljenima da se pridruže revoluciji privatnosti uz naše najpovoljnije pakete, sada uz 50% popusta!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Pridružite se revoluciji privatnosti uz naše najpovoljnije pakete, sada uz 50% popusta!"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "Posebno dizajniran NetShield štiti Vaše uređaje i ubrzava Vaše pregledavanje blokiranjem oglasa, pratitelja i zlonamjernih programa."
       ]
     }
   }

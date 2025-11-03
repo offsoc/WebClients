@@ -965,6 +965,9 @@
       ],
       "Copy Booking link": [
         "Buchungs-Link kopieren"
+      ],
+      "Book": [
+        "Buche"
       ]
     },
     "action": {
@@ -2870,6 +2873,9 @@
       "event": [
         "Termin",
         "Termine"
+      ],
+      "Doesn't end": [
+        "Endet nie"
       ]
     },
     "customer_support.feature.all": {
@@ -3300,6 +3306,24 @@
       ],
       "90 minutes": [
         "90 Minuten"
+      ],
+      "1.5h": [
+        "1,5 Std."
+      ],
+      "15 minutes": [
+        "15 Minuten"
+      ],
+      "15m": [
+        "15 Min."
+      ],
+      "1h": [
+        "1 Std."
+      ],
+      "2h": [
+        "2 Std."
+      ],
+      "30m": [
+        "30 Min."
       ]
     },
     "Edit billing address form note": {
@@ -6303,6 +6327,33 @@
       ],
       "Share this page to let others book time in your calendar.": [
         "Teile diese Seite, damit Andere Zeit in deinem Kalender buchen können."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } Mindestdauer"
+      ],
+      "Enable password protection": [
+        "Passwortschutz aktivieren"
+      ],
+      "Google Pay mark": [
+        "Google Pay markieren"
+      ],
+      "How long should an appointment last?": [
+        "Wie lange sollte ein Termin dauern?"
+      ],
+      "In which calendar should bookings appear?": [
+        "In welchem Kalender sollen Buchungen erscheinen?"
+      ],
+      "Name your booking page": [
+        "Deine Buchungsseite benennen"
+      ],
+      "Password copied": [
+        "Passwort kopiert"
+      ],
+      "What should people know before booking?": [
+        "Was sollten die Personen vor dem Buchen wissen?"
+      ],
+      "Where will the appointment take place?": [
+        "Wo findet der Termin statt?"
       ]
     },
     "info": {
@@ -9006,6 +9057,9 @@
       ],
       "New credit/debit card": [
         "Neue Kredit-/Debitkarte"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9145,6 +9199,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Dein Abonnement hat derzeit einen bestehenden Rabatt. Der Wechsel zu dieser neuen Aktion bedeutet, dass der bestehende Rabatt nicht länger angewendet wird."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Du wirst in Kürze zu PayPal weitergeleitet, um deine Zahlung zu bestätigen."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Du wirst in Kürze weitergeleitet, um deine Zahlung zu bestätigen."
       ]
     },
     "Payments.Error": {
@@ -9186,6 +9246,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banküberweisung - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - Karte endet mit ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9393,6 +9456,15 @@
       ],
       "ZIP code": [
         "Postleitzahl"
+      ],
+      "Add a booking page description": [
+        "Eine Beschreibung der Buchungsseite hinzufügen"
+      ],
+      "Add password": [
+        "Passwort hinzufügen"
+      ],
+      "Booking page title": [
+        "Titel der Buchungsseite"
       ]
     },
     "Placeholder for contact group name": {
@@ -12506,6 +12578,16 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "Das speziell entwickelte NetShield schützt deine Geräte und beschleunigt das Surfen durch das Blockieren von Werbung, Trackern und Malware."
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Persönlich"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Etwas ist schiefgelaufen. Die Google Pay-Verifizierung ist fehlgeschlagen."
       ]
     }
   }

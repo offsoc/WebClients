@@ -965,6 +965,9 @@
       ],
       "Copy Booking link": [
         "Rezervasyon bağlantısını kopyala"
+      ],
+      "Book": [
+        "Rezerve et"
       ]
     },
     "action": {
@@ -2870,6 +2873,9 @@
       "event": [
         "etkinlik",
         "etkinlik"
+      ],
+      "Doesn't end": [
+        "Bitmesin"
       ]
     },
     "customer_support.feature.all": {
@@ -3300,6 +3306,24 @@
       ],
       "90 minutes": [
         "90 dakika"
+      ],
+      "1.5h": [
+        "1.5s"
+      ],
+      "15 minutes": [
+        "15 dakika"
+      ],
+      "15m": [
+        "15dk"
+      ],
+      "1h": [
+        "1s"
+      ],
+      "2h": [
+        "2s"
+      ],
+      "30m": [
+        "30dk"
       ]
     },
     "Edit billing address form note": {
@@ -6303,6 +6327,33 @@
       ],
       "Share this page to let others book time in your calendar.": [
         "Başkalarının takviminizde rezervasyon yapabilmesi için bu sayfayı paylaşın."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } en az süre"
+      ],
+      "Enable password protection": [
+        "Parola korumasını aç"
+      ],
+      "Google Pay mark": [
+        "Google Pay işareti"
+      ],
+      "How long should an appointment last?": [
+        "Randevu ne kadar sürmeli?"
+      ],
+      "In which calendar should bookings appear?": [
+        "Rezervasyonlar hangi takvimde görünsün?"
+      ],
+      "Name your booking page": [
+        "Rezervasyon sayfanıza bir ad verin"
+      ],
+      "Password copied": [
+        "Parola kopyalandı"
+      ],
+      "What should people know before booking?": [
+        "İnsanlar rezervasyon yapmadan önce nelere dikkat etmeliler?"
+      ],
+      "Where will the appointment take place?": [
+        "Randevu nerede gerçekleşecek?"
       ]
     },
     "info": {
@@ -9006,6 +9057,9 @@
       ],
       "New credit/debit card": [
         "Yeni kredi ya da banka kartı"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9145,6 +9199,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Aboneliğinizde şu anda uygulanan bir indirim var. Yeni indirime geçmek bu indirimin artık uygulanmayacağı anlamına gelir."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Birazdan ödemenizi doğrulamak için PayPal sitesine yönlendirileceksiniz."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Birazdan ödemenizi doğrulamak için yönlendirileceksiniz."
       ]
     },
     "Payments.Error": {
@@ -9186,6 +9246,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banka havalesi - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - ${ paymentMethod.Details.Last4 } ile biten kart"
       ]
     },
     "Payments.Sepa": {
@@ -9393,6 +9456,15 @@
       ],
       "ZIP code": [
         "Posta kodu"
+      ],
+      "Add a booking page description": [
+        "Bir rezervasyon sayfası açıklaması ekleyin"
+      ],
+      "Add password": [
+        "Parola ekle"
+      ],
+      "Booking page title": [
+        "Rezervasyon sayfası başlığı"
       ]
     },
     "Placeholder for contact group name": {
@@ -12506,6 +12578,16 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "Özel olarak tasarlanmış NetShield aygıtlarınızı korur ve reklamları, etkinlik izleyicileri ve kötü amaçlı yazılımları engelleyerek gezinmenizi hızlandırır."
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Bizzat"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Bir sorun çıktı. Google Pay doğrulaması tamamlanamadı."
       ]
     }
   }

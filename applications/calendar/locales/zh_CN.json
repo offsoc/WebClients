@@ -6000,6 +6000,9 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "您仍然可以查看您自己的账户数据，但所有用户账户将从您的组织中移除。"
+      ],
+      "Password copied": [
+        "密码已复制"
       ]
     },
     "info": {
@@ -8865,6 +8868,9 @@
       ],
       "ZIP code": [
         "邮政编码"
+      ],
+      "Add password": [
+        "添加密码"
       ]
     },
     "Placeholder for contact group name": {
@@ -11598,6 +11604,36 @@
       ],
       "Unlimited daily chats": [
         "无限聊天次数"
+      ],
+      "2 TB data storage": [
+        "2 TB 数据存储空间"
+      ],
+      "3 TB data storage": [
+        "3 TB 数据存储空间"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "访问 120 多个国家/地区的 15,000 多个伺服器"
+      ],
+      "Access advanced AI models": [
+        "访问高级 AI 模型"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "${ MAIL_SHORT_APP_NAME }、${ PASS_SHORT_APP_NAME }、${ DRIVE_SHORT_APP_NAME }、${ VPN_SHORT_APP_NAME } 和 ${ CALENDAR_SHORT_APP_NAME } 的所有高级功能"
+      ],
+      "Connect 10 devices at once": [
+        "可同时连接 10 台设备"
+      ],
+      "Full chat history with easy search and favorites": [
+        "完整的聊天记录，方便搜索和收藏"
+      ],
+      "Individual accounts for 6 users": [
+        "为 6 位用户提供独立账户"
+      ],
+      "Individual accounts for you and a partner": [
+        "为您和伴侣提供独立账户"
+      ],
+      "Stronger protection against cyber threats": [
+        "更强大的网络威胁防护"
       ]
     },
     "BF2025: Heading alt": {
@@ -11608,11 +11644,36 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "仅限 ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "通过我们的超值限时优惠，节省 ${ savedAmount }！"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "切换到我们的 2 年套餐，节省 ${ savedAmount }！"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "切换到我们的年度套餐，节省 ${ savedAmount }！"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "为您的亲友提供全面的数字保护。"
       ]
     },
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "完善的 NetShield 机制能够屏蔽广告、追踪脚本和恶意软件，增强设备安全性，提升网络性能."
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "黑色星期五特惠"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "帮助您所爱的人加入隐私革命，我们的超值套装现可享 50% 折扣！"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "加入隐私革命，我们的超值套装现可享 50% 折扣！"
       ]
     }
   }
