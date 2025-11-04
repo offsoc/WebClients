@@ -46,7 +46,7 @@ export function drawParticipantName({
     ctx.shadowOffsetY = 1;
 
     // Draw text at bottom-left corner (10px padding from left and bottom)
-    ctx.fillText(name, x + 10, y + height - 10);
+    ctx.fillText(name, x + 32, y + height - 16);
 
     // Reset shadow
     ctx.shadowColor = 'transparent';

@@ -158,7 +158,7 @@ function drawVideoFrame({ ctx, frame, x, y, width, height, radius = 0, objectFit
 }
 
 function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRenderingContext2D) {
-    ctx.fillStyle = '#000000';
+    ctx.fillStyle = '#1a1a28';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     const { participants, isLargerThanMd, isNarrowHeight } = state.renderState;
@@ -192,7 +192,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
 
         drawParticipantName({
             ctx,
-            name: `${screenShareParticipant.name} (Screen)`,
+            name: `${screenShareParticipant.name} (is presenting)`,
             x: screenShareX,
             y: screenShareY,
             height: screenShareHeight,
@@ -200,10 +200,10 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
 
         const sidebarX = screenShareX + screenShareWidth + GAP;
 
-        regularParticipants.slice(0, PROFILE_COLORS.length).forEach((participant, index) => {
+        regularParticipants.slice(0, SCREEN_SHARE_PAGE_SIZE).forEach((participant, index) => {
             const xPos = sidebarX;
             const yPos = GAP + index * (sidebarItemHeight + GAP);
-            const tileWidth = SIDEBAR_WIDTH - GAP;
+            const tileWidth = SIDEBAR_WIDTH - 2 * GAP;
             const tileHeight = sidebarItemHeight;
 
             const colorIndex = participant.participantIndex % PROFILE_COLORS.length;
@@ -276,8 +276,8 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             height: canvas.height,
         });
     } else {
-        const cellWidth = canvas.width / cols;
-        const cellHeight = canvas.height / rows;
+        const cellWidth = (canvas.width - GAP * 2) / cols;
+        const cellHeight = (canvas.height - GAP * 2) / rows;
 
         regularParticipants.forEach((participant, index) => {
             const col = index % cols;
@@ -439,7 +439,7 @@ self.onmessage = (event: MessageEvent<RenderWorkerMessage>) => {
                     desynchronized: true,
                 });
                 if (state.ctx) {
-                    state.ctx.fillStyle = '#000000';
+                    state.ctx.fillStyle = '#1a1a28';
                     state.ctx.fillRect(0, 0, canvas.width, canvas.height);
                 }
             }
