@@ -23,12 +23,28 @@ interface SingleFrameData {
     frame: VideoFrame | ImageBitmap;
 }
 
+interface TrackCaptureData {
+    participantIdentity: string;
+    track: MediaStreamTrack;
+    trackId: string;
+}
+
 interface RenderWorkerMessage {
-    type: 'init' | 'render' | 'updateState' | 'updateFrames' | 'updateFrame' | 'stop';
+    type:
+        | 'init'
+        | 'render'
+        | 'updateState'
+        | 'updateFrames'
+        | 'updateFrame'
+        | 'stop'
+        | 'startTrackCapture'
+        | 'stopTrackCapture';
     canvas?: OffscreenCanvas;
     state?: RenderState;
     frames?: VideoFrameData[];
     frameData?: SingleFrameData;
+    trackData?: TrackCaptureData;
+    trackId?: string;
 }
 
 interface ParticipantInfo {
@@ -52,6 +68,7 @@ interface WorkerState {
     renderState: RenderState;
     videoFrames: Map<string, VideoFrame | ImageBitmap>;
     renderInterval: number | null;
+    trackProcessors: Map<string, { reader: ReadableStreamDefaultReader<VideoFrame>; participantIdentity: string }>;
 }
 
 const state: WorkerState = {
@@ -64,6 +81,7 @@ const state: WorkerState = {
     },
     videoFrames: new Map(),
     renderInterval: null,
+    trackProcessors: new Map(),
 };
 
 interface DrawVideoFrameParams {
@@ -355,14 +373,71 @@ function cleanupFrame(frame: VideoFrame | ImageBitmap) {
     }
 }
 
+async function startTrackCaptureInWorker(trackData: TrackCaptureData) {
+    const { participantIdentity, track, trackId } = trackData;
+
+    try {
+        // In Safari, MediaStreamTrackProcessor is available in Worker context
+        // @ts-expect-error - MediaStreamTrackProcessor is not yet in TypeScript types
+        const processor = new MediaStreamTrackProcessor({ track });
+        const reader = processor.readable.getReader();
+
+        state.trackProcessors.set(trackId, { reader, participantIdentity });
+
+        const pump = async () => {
+            try {
+                while (state.trackProcessors.has(trackId)) {
+                    const { value: frame, done } = await reader.read();
+                    if (done) {
+                        break;
+                    }
+
+                    if (frame) {
+                        try {
+                            // Convert to ImageBitmap for rendering
+                            const bitmap = await createImageBitmap(frame);
+                            frame.close();
+
+                            const oldFrame = state.videoFrames.get(participantIdentity);
+                            if (oldFrame) {
+                                cleanupFrame(oldFrame);
+                            }
+                            state.videoFrames.set(participantIdentity, bitmap);
+                        } catch (err) {
+                            frame.close();
+                        }
+                    }
+                }
+            } catch (error) {
+                // Reader was cancelled or track ended
+            }
+        };
+
+        void pump();
+    } catch (error) {
+        // MediaStreamTrackProcessor not available or failed
+    }
+}
+
+function stopTrackCaptureInWorker(trackId: string) {
+    const processor = state.trackProcessors.get(trackId);
+    if (processor?.reader) {
+        void processor.reader.cancel();
+    }
+    state.trackProcessors.delete(trackId);
+}
+
 self.onmessage = (event: MessageEvent<RenderWorkerMessage>) => {
-    const { type, canvas, state: newState, frames, frameData } = event.data;
+    const { type, canvas, state: newState, frames, frameData, trackData, trackId } = event.data;
 
     switch (type) {
         case 'init':
             if (canvas) {
                 state.canvas = canvas;
-                state.ctx = canvas.getContext('2d');
+                state.ctx = canvas.getContext('2d', {
+                    alpha: false,
+                    desynchronized: true,
+                });
                 if (state.ctx) {
                     state.ctx.fillStyle = '#000000';
                     state.ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -406,7 +481,21 @@ self.onmessage = (event: MessageEvent<RenderWorkerMessage>) => {
             }
             break;
 
+        case 'startTrackCapture':
+            if (trackData) {
+                void startTrackCaptureInWorker(trackData);
+            }
+            break;
+
+        case 'stopTrackCapture':
+            if (trackId) {
+                stopTrackCaptureInWorker(trackId);
+            }
+            break;
+
         case 'stop':
+            // Stop all track processors
+            state.trackProcessors.forEach((_, tid) => stopTrackCaptureInWorker(tid));
             stopRenderLoop();
             break;
     }

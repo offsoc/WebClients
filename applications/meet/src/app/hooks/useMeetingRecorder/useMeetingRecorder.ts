@@ -116,46 +116,74 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
 
     const startFrameCaptureWithProcessor = (trackInfo: RecordingTrackInfo, participantKey: string) => {
         const mediaTrack = trackInfo.track?.mediaStreamTrack;
-        if (!mediaTrack || !supportsTrackProcessor() || !renderWorkerRef.current) {
+        if (!mediaTrack || !renderWorkerRef.current) {
             return false;
         }
 
         const trackId = trackInfo.track?.sid || `track-${Date.now()}`;
 
-        try {
-            // @ts-expect-error - MediaStreamTrackProcessor is not yet in TypeScript types
-            const processor = new MediaStreamTrackProcessor({ track: mediaTrack });
-            const reader = processor.readable.getReader();
+        // In Chrome we use MediaStreamTrackProcessor in main thread
+        if (supportsTrackProcessor()) {
+            try {
+                // @ts-expect-error - MediaStreamTrackProcessor is not yet in TypeScript types
+                const processor = new MediaStreamTrackProcessor({ track: mediaTrack });
+                const reader = processor.readable.getReader();
 
+                frameReadersRef.current.set(trackId, {
+                    reader,
+                    participantKey,
+                });
+
+                const pump = async () => {
+                    try {
+                        while (frameReadersRef.current.has(trackId)) {
+                            const { value: frame, done } = await reader.read();
+                            if (done) {
+                                break;
+                            }
+
+                            if (renderWorkerRef.current && frame) {
+                                // Convert to ImageBitmap for broader compatibility
+                                const bitmap = await createImageBitmap(frame);
+                                frame.close();
+
+                                renderWorkerRef.current.postMessage(
+                                    {
+                                        type: 'updateFrame',
+                                        frameData: { participantIdentity: participantKey, frame: bitmap },
+                                    },
+                                    [bitmap]
+                                );
+                            }
+                        }
+                    } catch (error) {
+                        // Reader was cancelled or track ended
+                    }
+                };
+
+                void pump();
+                return true;
+            } catch (error) {
+                // Fall through to Safari approach
+            }
+        }
+
+        // Safari approach: Send track to worker, let worker create MediaStreamTrackProcessor
+        try {
             frameReadersRef.current.set(trackId, {
-                reader,
+                reader: null,
                 participantKey,
             });
 
-            const pump = async () => {
-                try {
-                    while (frameReadersRef.current.has(trackId)) {
-                        const { value: frame, done } = await reader.read();
-                        if (done) {
-                            break;
-                        }
+            renderWorkerRef.current.postMessage({
+                type: 'startTrackCapture',
+                trackData: {
+                    participantIdentity: participantKey,
+                    track: mediaTrack,
+                    trackId,
+                },
+            });
 
-                        if (renderWorkerRef.current && frame) {
-                            renderWorkerRef.current.postMessage(
-                                {
-                                    type: 'updateFrame',
-                                    frameData: { participantIdentity: participantKey, frame },
-                                },
-                                [frame]
-                            );
-                        }
-                    }
-                } catch (error) {
-                    // Reader was cancelled or track ended
-                }
-            };
-
-            void pump();
             return true;
         } catch (error) {
             return false;
@@ -182,8 +210,15 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             return;
         }
 
+        // Chrome case
         if (readerInfo.reader) {
             void readerInfo.reader.cancel();
+        } else if (renderWorkerRef.current) {
+            // Safari case: stop track processor in worker
+            renderWorkerRef.current.postMessage({
+                type: 'stopTrackCapture',
+                trackId,
+            });
         }
 
         frameReadersRef.current.delete(trackId);
