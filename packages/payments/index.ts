@@ -405,6 +405,7 @@ export {
     hasPlanWithAIAssistantIncluded,
     hasSomeAddonOrPlan,
     hasSomePlan,
+    hasTrialExpiredLessThan4Weeks,
     hasVisionary,
     hasVPN2024,
     hasVpnBusiness,
@@ -426,16 +427,16 @@ export {
     PLANS_WITH_AI_INCLUDED,
     regularCycles,
     willTrialExpireInLessThan1Week,
-    hasTrialExpiredLessThan4Weeks,
 } from './core/subscription/helpers';
 export {
     type Coupon,
     type EnrichedCheckResponse,
+    type EnrichedCoupon,
     type FullPlansMap,
     type Subscription,
+    type SubscriptionCheckForbiddenReason,
     type SubscriptionCheckResponse,
     type Tax,
-    type SubscriptionCheckForbiddenReason,
 } from './core/subscription/interface';
 export {
     getAvailableCycles,
