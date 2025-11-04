@@ -1,5 +1,12 @@
+import { SCREEN_SHARE_PAGE_SIZE } from '../../constants';
 import { calculateGridLayout } from '../../utils/calculateGridLayout';
-import { drawParticipantBorder, drawParticipantName, drawParticipantPlaceholder, roundRect } from './drawingUtils';
+import {
+    PROFILE_COLORS,
+    drawParticipantBorder,
+    drawParticipantName,
+    drawParticipantPlaceholder,
+    roundRect,
+} from './drawingUtils';
 
 const FPS = 30;
 const GAP = 11;
@@ -144,7 +151,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
     const { cols, rows } = calculateGridLayout(regularParticipants.length, !isLargerThanMd || isNarrowHeight);
 
     if (screenShareParticipant && regularParticipants.length > 0) {
-        const numParticipantsInSidebar = Math.min(regularParticipants.length, 6);
+        const numParticipantsInSidebar = Math.min(regularParticipants.length, SCREEN_SHARE_PAGE_SIZE);
         const sidebarItemHeight = (canvas.height - GAP * (numParticipantsInSidebar + 1)) / numParticipantsInSidebar;
 
         const screenShareX = GAP;
@@ -176,13 +183,13 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
 
         const sidebarX = screenShareX + screenShareWidth + GAP;
 
-        regularParticipants.slice(0, 6).forEach((participant, index) => {
+        regularParticipants.slice(0, PROFILE_COLORS.length).forEach((participant, index) => {
             const xPos = sidebarX;
             const yPos = GAP + index * (sidebarItemHeight + GAP);
             const tileWidth = SIDEBAR_WIDTH - GAP;
             const tileHeight = sidebarItemHeight;
 
-            const colorIndex = participant.participantIndex % 6;
+            const colorIndex = participant.participantIndex % PROFILE_COLORS.length;
             const backgroundColor = `meet-background-${colorIndex + 1}`;
             const profileColor = `profile-background-${colorIndex + 1}`;
             const borderColor = `tile-border-${colorIndex + 1}`;
@@ -268,7 +275,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             const tileWidth = cellWidth - GAP;
             const tileHeight = cellHeight - GAP;
 
-            const colorIndex = participant.participantIndex % 6;
+            const colorIndex = participant.participantIndex % PROFILE_COLORS.length;
             const backgroundColor = `meet-background-${colorIndex + 1}`;
             const profileColor = `profile-background-${colorIndex + 1}`;
             const borderColor = `tile-border-${colorIndex + 1}`;

@@ -32,11 +32,16 @@ class OPFSWorkerStorage {
             create: true,
         });
 
-        if (typeof (this.fileHandle as any).createWritable === 'function') {
-            this.writable = await (this.fileHandle as any).createWritable();
+        if (typeof this.fileHandle.createWritable === 'function') {
+            this.writable = await this.fileHandle.createWritable();
             this.useSyncAPI = false;
-        } else if (typeof (this.fileHandle as any).createSyncAccessHandle === 'function') {
-            this.syncAccessHandle = await (this.fileHandle as any).createSyncAccessHandle();
+        } else if (
+            typeof (this.fileHandle as unknown as { createSyncAccessHandle: () => Promise<FileSystemSyncAccessHandle> })
+                .createSyncAccessHandle === 'function'
+        ) {
+            this.syncAccessHandle = await (
+                this.fileHandle as unknown as { createSyncAccessHandle: () => Promise<FileSystemSyncAccessHandle> }
+            ).createSyncAccessHandle();
             this.useSyncAPI = true;
             this.filePosition = 0;
         } else {

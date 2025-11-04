@@ -230,7 +230,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         audioDestinationRef.current = destination;
 
         const handleVisibilityChange = () => {
-            if (audioContextRef.current && audioContextRef.current.state === 'suspended') {
+            if (audioContextRef?.current?.state === 'suspended') {
                 void audioContextRef.current.resume();
             }
         };

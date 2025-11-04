@@ -19,77 +19,6 @@ export function roundRect(ctx: CanvasContext, x: number, y: number, width: numbe
 }
 
 /**
- * Draws a video element onto a canvas context maintaining aspect ratio with rounded corners
- */
-export function drawVideoWithAspectRatio({
-    ctx,
-    videoElement,
-    x,
-    y,
-    width,
-    height,
-    radius = 12,
-}: {
-    ctx: CanvasContext;
-    videoElement: HTMLVideoElement;
-    x: number;
-    y: number;
-    width: number;
-    height: number;
-    radius?: number;
-}) {
-    // Save context state
-    ctx.save();
-
-    // Create rounded rectangle clipping path
-    roundRect(ctx, x, y, width, height, radius);
-    ctx.clip();
-
-    if (videoElement.readyState >= 1 && videoElement.videoWidth > 0 && videoElement.videoHeight > 0) {
-        try {
-            const videoAspectRatio = videoElement.videoWidth / videoElement.videoHeight;
-            const containerAspectRatio = width / height;
-
-            let drawWidth: number;
-            let drawHeight: number;
-            let drawX: number;
-            let drawY: number;
-
-            // Use "cover" behavior like ParticipantTile (object-fit: cover)
-            // This fills the entire container and crops if needed
-            if (videoAspectRatio > containerAspectRatio) {
-                // Video is wider - fit to height and crop sides
-                drawHeight = height;
-                drawWidth = height * videoAspectRatio;
-                drawX = x - (drawWidth - width) / 2;
-                drawY = y;
-            } else {
-                // Video is taller - fit to width and crop top/bottom
-                drawWidth = width;
-                drawHeight = width / videoAspectRatio;
-                drawX = x;
-                drawY = y - (drawHeight - height) / 2;
-            }
-
-            ctx.drawImage(videoElement, drawX, drawY, drawWidth, drawHeight);
-        } catch (error) {
-            // eslint-disable-next-line no-console
-            console.warn('Failed to draw video:', error);
-            // Draw error placeholder
-            ctx.fillStyle = '#1a1a1a';
-            ctx.fillRect(x, y, width, height);
-        }
-    } else {
-        // Draw placeholder if video is not ready
-        ctx.fillStyle = '#1a1a1a';
-        ctx.fillRect(x, y, width, height);
-    }
-
-    // Restore context state
-    ctx.restore();
-}
-
-/**
  * Draws participant name overlay on the video tile
  */
 export function drawParticipantName({
@@ -129,7 +58,7 @@ export function drawParticipantName({
 /**
  * Profile colors for participant borders (matching app.scss $profile-colors)
  */
-const PROFILE_COLORS = [
+export const PROFILE_COLORS = [
     '#b9abff', // purple
     '#88f189', // green
     '#ababf8', // blue-ish
@@ -220,8 +149,8 @@ export function drawParticipantPlaceholder({
 
     // Draw initials
     const initials = getParticipantInitials(name);
-    const fontSize = circleSize * 0.4; // Font size proportional to circle
-    ctx.fillStyle = '#000000'; // color-invert (black text)
+    const fontSize = circleSize * 0.4;
+    ctx.fillStyle = '#000000';
     ctx.font = `600 ${fontSize}px Arial`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
