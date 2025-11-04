@@ -917,6 +917,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Ilmainen työpöytäsovelluksen kokeilujaksosi päättyy ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Subscribe now": [
+        "Tilaa nyt"
       ]
     },
     "action": {
@@ -1446,6 +1449,12 @@
       ],
       "Website access problem": [
         "Verkkosivuston avautumisongelma"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Meet problem": [
+        "Meet-ongelma"
       ]
     },
     "Button": {
@@ -3144,6 +3153,24 @@
       ],
       "90 minutes": [
         "90 minuuttia"
+      ],
+      "1.5h": [
+        "1,5 t"
+      ],
+      "15 minutes": [
+        "15 minuuttia"
+      ],
+      "15m": [
+        "15 min"
+      ],
+      "1h": [
+        "1 t"
+      ],
+      "2h": [
+        "2 t"
+      ],
+      "30m": [
+        "30 min"
       ]
     },
     "Edit event button tooltip": {
@@ -3172,6 +3199,12 @@
       ],
       "This event was updated.": [
         "Tapahtuma päivitettiin."
+      ],
+      "DESCRIPTION:": [
+        "KUVAUS:"
+      ],
+      "TIME:": [
+        "AIKA:"
       ]
     },
     "Email body for invitation (date part)": {
@@ -6005,6 +6038,9 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Voit silti tarkastella omia tilitietojasi, mutta kaikki käyttäjätilit poistetaan organisaatiostasi."
+      ],
+      "Continue": [
+        "Jatka"
       ]
     },
     "info": {
@@ -6678,6 +6714,12 @@
       ],
       "Zoom meeting": [
         "Zoom-kokous"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Hyödynnä tarjous"
       ]
     },
     "Label for contact group color": {
@@ -8585,6 +8627,9 @@
       ],
       "New credit/debit card": [
         "Uusi maksukortti"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -11135,6 +11180,18 @@
       ],
       "Your shorter address is now ready": [
         "Lyhyempi osoittesi on nyt valmis"
+      ],
+      "Date": [
+        "Päiväys"
+      ],
+      "Location": [
+        "Sijainti"
+      ],
+      "Time": [
+        "Aika"
+      ],
+      "Time zone": [
+        "Aikavyöhyke"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11696,6 +11753,11 @@
       ],
       "Passcode:": [
         "Tunnuskoodi:"
+      ]
+    },
+    "Duo offer": {
+      "Only": [
+        "Vain"
       ]
     }
   }

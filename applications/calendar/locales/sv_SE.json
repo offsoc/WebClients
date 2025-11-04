@@ -965,6 +965,12 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Din gratis provperiod av din app för stationär dator slutar den ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Confirm booking": [
+        "Bekräfta bokning"
+      ],
+      "Copy link and close": [
+        "Kopiera länk och stäng"
       ]
     },
     "action": {
@@ -2936,6 +2942,9 @@
       "event": [
         "händelse",
         "händelser"
+      ],
+      "Doesn't end": [
+        "Slutar inte"
       ]
     },
     "customer_support.feature.all": {
@@ -3357,6 +3366,24 @@
       ],
       "90 minutes": [
         "90 minuter"
+      ],
+      "1.5h": [
+        "1,5 tim."
+      ],
+      "15 minutes": [
+        "15 minuter"
+      ],
+      "15m": [
+        "15 min."
+      ],
+      "1h": [
+        "1 tim."
+      ],
+      "2h": [
+        "2 tim."
+      ],
+      "30m": [
+        "30 min."
       ]
     },
     "Edit billing address form note": {
@@ -4005,6 +4032,9 @@
       ],
       "ZIP code is required": [
         "Postnummer är obligatoriskt"
+      ],
+      "Content verification failed": [
+        "Innehållsverifiering misslyckades"
       ]
     },
     "error": {
@@ -6354,6 +6384,40 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Du kommer fortfarande att kunna se dina egna kontodata, men alla användarkonton kommer att tas bort från din organisation."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } min. varaktighet"
+      ],
+      "Booking already exists.": [
+        "Bokning finns redan."
+      ],
+      "Booking cannot be added in the past.": [
+        "Bokning kan inte läggas till i det förflutna."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "Bokning överlappar med en befintlig bokning."
+      ],
+      "How long should an appointment last?": [
+        "Hur långt ska ett möte vara?"
+      ],
+      "In which calendar should bookings appear?": [
+        "I vilken kalender ska bokningar visas?"
+      ],
+      "Name your booking page": [
+        "Namnge din bokningssida"
+      ],
+      "Saving event": [
+        "Sparar händelse",
+        "Sparar händelser"
+      ],
+      "What should people know before booking?": [
+        "Vad bör folk veta innan de bokar?"
+      ],
+      "When are you free?": [
+        "När är du ledig?"
+      ],
+      "Where will the appointment take place?": [
+        "Var kommer mötet att äga rum?"
       ]
     },
     "info": {
@@ -8867,6 +8931,9 @@
       ],
       "You’ll be able to use ${ planTitle } until the trial ends, free of charge.": [
         "Du kommer att kunna använda ${ planTitle } tills provperioden slutar, utan kostnad."
+      ],
+      "Enjoy free business security features until ${ trialEndsOnFormatted }.": [
+        "Njut av gratis företagssäkerhetsfunktioner fram till ${ trialEndsOnFormatted }."
       ]
     },
     "Option": {
@@ -9065,6 +9132,9 @@
       ],
       "PayPal": [
         "PayPal"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9178,6 +9248,12 @@
       ],
       "Your payment is still being processed": [
         "Din betalning håller fortfarande på att behandlas"
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Du kommer snart att omdirigeras till PayPal för att verifiera din betalning."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Du kommer snart att omdirigeras för att verifiera din betalning."
       ]
     },
     "Payments.Error": {
@@ -9219,6 +9295,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banköverföring - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - kort slutar på ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9420,6 +9499,12 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Add a booking page description": [
+        "Lägg till en beskrivning av bokningssida"
+      ],
+      "Booking page title": [
+        "Rubrik på bokningssida"
       ]
     },
     "Placeholder for contact group name": {
@@ -11786,6 +11871,21 @@
       ],
       "Your shorter address is now ready": [
         "Din kortare adress är redo nu"
+      ],
+      "Date": [
+        "Datum"
+      ],
+      "Location": [
+        "Plats"
+      ],
+      "Time": [
+        "Tid"
+      ],
+      "Time zone": [
+        "Tidszon"
+      ],
+      "Your booking is confirmed": [
+        "Din bokning är bekräftad"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12087,6 +12187,9 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Din gratis provperiod slutar den ${ textDate }. ${ action }"
+      ],
+      "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
+        "Din provperiod slutar den ${ textDate }. Du debiteras inte om du avbryter före ${ textDate }. ${ action }"
       ]
     },
     "Warning in modal to accept calendar invitation; Description": {
@@ -12353,6 +12456,27 @@
       ],
       "Passcode:": [
         "Lösenkod:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } fler resultat visas inte",
+        "${ hiddenResultsCount } fler resultat visas inte"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Din kontaktinformation"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Personligen"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Något gick fel. Google Pay-verifiering misslyckades."
       ]
     }
   }

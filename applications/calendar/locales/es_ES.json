@@ -953,6 +953,21 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Tu prueba gratuita de la aplicación de escritorio finaliza en ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Confirm booking": [
+        "Confirmar reserva"
+      ],
+      "Copy link and close": [
+        "Copiar enlace y cerrar"
+      ],
+      "Create a booking page": [
+        "Crear página de reservas"
+      ],
+      "Create an event": [
+        "Crear un evento"
+      ],
+      "Join ${ CALENDAR_APP_NAME }": [
+        "Unirte a ${ CALENDAR_APP_NAME }"
       ]
     },
     "action": {
@@ -1347,6 +1362,12 @@
       ],
       "Use your own email domain": [
         "Usa tu propio dominio de correo electrónico"
+      ],
+      "200 GB storage: 40x your current plan": [
+        "200 GB de almacenamiento: 40 veces tu plan actual"
+      ],
+      "Recover previous file versions": [
+        "Recupera las versiones previas de los archivos"
       ]
     },
     "BF2024: Offers": {
@@ -1355,6 +1376,9 @@
       ],
       "Renews after 1 month at ${ regularAmount }.": [
         "Se renueva después de 1 mes por ${ regularAmount }."
+      ],
+      "forever": [
+        "para siempre"
       ]
     },
     "BF2024: Tooltip": {
@@ -1572,6 +1596,9 @@
       ],
       "Website access problem": [
         "Problema de acceso al sitio web"
+      ],
+      "Black Friday": [
+        "Black Friday"
       ]
     },
     "Button": {
@@ -2927,6 +2954,9 @@
       "event": [
         "evento",
         "eventos"
+      ],
+      "Doesn't end": [
+        "Recurrente"
       ]
     },
     "customer_support.feature.all": {
@@ -3179,6 +3209,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Ya has creado 10 alias. Obtén alias ilimitados y 500 GB de almacenamiento con ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Recibirás un correo electrónico seguro con los detalles en breve."
       ]
     },
     "description": {
@@ -3310,16 +3343,25 @@
       ],
       "Only": [
         "Solamente"
+      ],
+      "2 TB of storage to share": [
+        "2 TB de almacenamiento para compartir"
       ]
     },
     "Duo offer: Link": {
       "Get 4x more storage": [
         "Obtén 4 veces más almacenamiento"
+      ],
+      "Share your plan": [
+        "Comparte tu plan"
       ]
     },
     "Duo offer: Title": {
       "Get 4x more storage with ${ BRAND_NAME } Duo": [
         "Obtén 4 veces más almacenamiento con ${ BRAND_NAME } Duo"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Compartir los beneficios de tu plan con ${ BRAND_NAME } Duo"
       ]
     },
     "Duplicate event button tooltip": {
@@ -3339,6 +3381,24 @@
       ],
       "90 minutes": [
         "90 minutos"
+      ],
+      "1.5h": [
+        "1,5h"
+      ],
+      "15 minutes": [
+        "15 minutos"
+      ],
+      "15m": [
+        "15 min"
+      ],
+      "1h": [
+        "1 h"
+      ],
+      "2h": [
+        "2h"
+      ],
+      "30m": [
+        "30min"
       ]
     },
     "Edit billing address form note": {
@@ -3987,6 +4047,12 @@
       ],
       "ZIP code is required": [
         "Se requiere el código postal."
+      ],
+      "Content verification failed": [
+        "Error de verificación del contenido"
+      ],
+      "No booking page data received": [
+        "No se han recibido datos de la página de reservas."
       ]
     },
     "error": {
@@ -6327,6 +6393,61 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Podrás seguir viendo los datos de tu propia cuenta, pero todas las cuentas de usuario serán eliminadas de tu organización."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } min de duración"
+      ],
+      "Booking already exists.": [
+        "La reserva ya existe."
+      ],
+      "Booking cannot be added in the past.": [
+        "No se pueden añadir reservas con fecha anterior a la actual."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "La reserva se superpone con otra reserva existente."
+      ],
+      "Booking page example": [
+        "Ejemplo de página de reservas"
+      ],
+      "Google Pay mark": [
+        "marca de Google Pay"
+      ],
+      "How long should an appointment last?": [
+        "¿Cuánto debería durar una cita?"
+      ],
+      "In which calendar should bookings appear?": [
+        "¿En qué calendario deberían aparecer las reservas?"
+      ],
+      "Let others book time with you automatically. No back-and-forth emails. Share a link, and stay in control of your availability.": [
+        "Deja que otros reserven tiempo contigo automáticamente. Sin correos electrónicos de ida y vuelta. Comparte un enlace y mantén el control de tu disponibilidad."
+      ],
+      "Name your booking page": [
+        "Nombra tu página de reservas"
+      ],
+      "No available slots for this day": [
+        "No hay horarios disponibles para este día"
+      ],
+      "Saving event": [
+        "Guardando el evento",
+        "Guardando los eventos"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Comparte esta página para que otros puedan reservar tiempo en tu calendario. Puedes administrarlo en cualquier momento en la barra lateral, en Páginas de reserva."
+      ],
+      "Want to create your own booking page?": [
+        "¿Quieres crear tu propia página de reservas?"
+      ],
+      "What should people know before booking?": [
+        "¿Qué debería saber la gente antes de reservar?"
+      ],
+      "When are you free?": [
+        "¿Cuándo estás disponible?"
+      ],
+      "Where will the appointment take place?": [
+        "¿Dónde tendrá lugar la cita?"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "No puedes tener más de ${ MAX_BOOKING_SLOTS } espacios de reserva en una página."
       ]
     },
     "info": {
@@ -7015,6 +7136,12 @@
       ],
       "Zoom meeting": [
         "Reunión de Zoom"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Aprovecha la oferta"
       ]
     },
     "Label for contact group color": {
@@ -8958,6 +9085,9 @@
       ],
       "Team policies": [
         "Políticas de equipo"
+      ],
+      "File attachments (up to 10GB)": [
+        "Archivos adjuntos (hasta 10GB)"
       ]
     },
     "PassFamilyPlan2024": {
@@ -9021,6 +9151,9 @@
       ],
       "New credit/debit card": [
         "Nueva tarjeta de crédito/débito"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9131,6 +9264,38 @@
       ],
       "Your payment is still being processed": [
         "Tu pago aún está siendo procesado."
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Método de pago necesario para que la suscripción se active después de que termine la prueba."
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "El precio especial de descuento es válido para el primer ${ subscriptionLength } mes.",
+        "El precio especial de descuento es válido para los primeros ${ subscriptionLength } meses."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "El precio con descuento especial es válido para el primer mes. El cupón es válido para ${ couponRedemptions } renovación. Después se renovará automáticamente a ${ renewPriceStr } por 1 mes. Puedes cancelar en cualquier momento.",
+        "El precio con descuento especial es válido para el primer mes. El cupón es válido para ${ couponRedemptions } renovaciones. Después se renovará automáticamente a ${ renewPriceStr } por 1 mes. Puedes cancelarlo en cualquier momento."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "La oferta especial es válida durante el primer mes. Después se renovará automáticamente por ${ renewPriceStr } cada mes. Puedes cancelarla en cualquier momento."
+      ],
+      "This offer is not available with your current plan.": [
+        "Esta oferta no está disponible con tu plan actual."
+      ],
+      "You already have a subscription to this plan.": [
+        "Ya tienes una suscripción a este plan."
+      ],
+      "You already have a subscription to this plan. You can change your subscription on ${ subscriptionPlatform }.": [
+        "Ya tienes una suscripción a este plan. Puedes cambiar tu suscripción en ${ subscriptionPlatform }."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Pronto serás redirigido a PayPal para verificar tu pago."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Pronto serás redirigido para verificar tu pago."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Tu suscripción tiene un descuento existente. Al cambiarte a esta nueva promoción, el descuento existente ya no se aplicará."
       ]
     },
     "Payments.Error": {
@@ -9172,6 +9337,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Transferencia bancaria - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - tarjeta terminada en ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9379,6 +9547,12 @@
       ],
       "ZIP code": [
         "Código postal"
+      ],
+      "Add a booking page description": [
+        "Añadir una descripción de la página de reservas"
+      ],
+      "Booking page title": [
+        "Título de la página de reservas"
       ]
     },
     "Placeholder for contact group name": {
@@ -10887,6 +11061,9 @@
       ],
       "You have successfully unsubscribed": [
         "Has cancelado la suscripción."
+      ],
+      "Booking link copied to clipboard": [
+        "Se ha copiado el enlace de reserva al portapapeles."
       ]
     },
     "Suffix": {
@@ -11730,6 +11907,36 @@
       ],
       "Your shorter address is now ready": [
         "Tu dirección en formato más corto ya está lista."
+      ],
+      "Date": [
+        "Fecha"
+      ],
+      "Host": [
+        "Anfitrión"
+      ],
+      "Location": [
+        "Ubicación"
+      ],
+      "Ready to automate your scheduling?": [
+        "¿Listo para automatizar tu planificación?"
+      ],
+      "This booking page does not exist": [
+        "Esta página de reserva no existe"
+      ],
+      "This booking page has expired": [
+        "Esta página de reserva ha expirado"
+      ],
+      "Time": [
+        "Fecha"
+      ],
+      "Time zone": [
+        "Zona horaria"
+      ],
+      "Your booking is confirmed": [
+        "Tu reserva está confirmada"
+      ],
+      "Your booking page is ready": [
+        "Tu página de reservas está lista"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12303,6 +12510,27 @@
       ],
       "Passcode:": [
         "Código de acceso:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } resultado más no mostrado",
+        "${ hiddenResultsCount } más resultados no mostrados"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Tu información de contacto"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Presencial"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Se ha producido un error. Falló la verificación de Google Pay."
       ]
     }
   }

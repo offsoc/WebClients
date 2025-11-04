@@ -11216,6 +11216,18 @@
       ],
       "Your shorter address is now ready": [
         "O seu endereço mais curto já está pronto"
+      ],
+      "Date": [
+        "Data"
+      ],
+      "Location": [
+        "Localização"
+      ],
+      "Time": [
+        "Hora"
+      ],
+      "Time zone": [
+        "Fuso horário"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -11754,6 +11754,18 @@
       ],
       "Your shorter address is now ready": [
         "Krótszy adres jest już gotowy"
+      ],
+      "Date": [
+        "Data"
+      ],
+      "Location": [
+        "Lokalizacja"
+      ],
+      "Time": [
+        "Czas"
+      ],
+      "Time zone": [
+        "Strefa czasu"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -798,7 +798,7 @@
         "Εμφάνιση περισσότερων"
       ],
       "Show more benefits": [
-        "Εμφάνιση περισσότερων οφελών"
+        "Εμφάνιση περισσότερων προνομίων"
       ],
       "Show navigation bar": [
         "Προβολή γραμμής περιήγησης"
@@ -965,6 +965,12 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Η δωρεάν δοκιμή της εφαρμογής για υπολογιστές λήγει στις ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Confirm booking": [
+        "Επιβεβαίωση κράτησης"
+      ],
+      "Copy link and close": [
+        "Αντιγραφή συνδέσμου και κλείσιμο"
       ]
     },
     "action": {
@@ -1415,6 +1421,36 @@
       ],
       "Unlimited daily chats": [
         "Απεριόριστες καθημερινές συνομιλίες"
+      ],
+      "2 TB data storage": [
+        "2 TB αποθηκευτικού χώρου"
+      ],
+      "3 TB data storage": [
+        "3 TB αποθηκευτικού χώρου"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Πρόσβαση σε 15.000+ διακομιστές σε 120+ χώρες"
+      ],
+      "Access advanced AI models": [
+        "Πρόσβαση σε προηγμένα μοντέλα Τεχνητής Νοημοσύνης"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Όλα τα premium χαρακτηριστικά των ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } και ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Connect 10 devices at once": [
+        "Συνδέστε 10 συσκευές ταυτόχρονα"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Πλήρες ιστορικό συνομιλίας με εύκολη αναζήτηση και αγαπημένα"
+      ],
+      "Individual accounts for 6 users": [
+        "Ατομικοί λογαριασμοί για 6 χρήστες"
+      ],
+      "Individual accounts for you and a partner": [
+        "Ατομικοί λογαριασμοί για εσάς και έναν σύντροφο"
+      ],
+      "Stronger protection against cyber threats": [
+        "Ισχυρότερη προστασία από κυβερνοαπειλές"
       ]
     },
     "BF2025: Heading alt": {
@@ -1425,6 +1461,18 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "για ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Εξοικονομήστε ${ savedAmount } με την καλύτερη προσφορά περιορισμένου χρόνου!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Μεταβείτε στο διετές πλάνο μας και εξοικονομήστε ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Μεταβείτε στο ετήσιο πλάνο μας και εξοικονομήστε ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Προσφέρετε στην ομάδα σας πλήρη ψηφιακή προστασία."
       ]
     },
     "BF2025: Tooltip": {
@@ -2896,6 +2944,9 @@
       "event": [
         "εκδήλωση",
         "εκδηλώσεις"
+      ],
+      "Doesn't end": [
+        "Δεν τελειώνει"
       ]
     },
     "customer_support.feature.all": {
@@ -3148,6 +3199,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Έχετε ήδη δημιουργήσει 10 ψευδώνυμα. Αποκτήστε απεριόριστα ψευδώνυμα και 500 GB αποθηκευτικού χώρου με ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Σύντομα θα λάβετε ένα ασφαλές μήνυμα ηλεκτρονικού ταχυδρομείου με τις λεπτομέρειες."
       ]
     },
     "description": {
@@ -3317,6 +3371,24 @@
       ],
       "90 minutes": [
         "90 λεπτά"
+      ],
+      "1.5h": [
+        "1,5 ώρα"
+      ],
+      "15 minutes": [
+        "15 λεπτά"
+      ],
+      "15m": [
+        "15λ"
+      ],
+      "1h": [
+        "1ώρα"
+      ],
+      "2h": [
+        "2ώρες"
+      ],
+      "30m": [
+        "30λ"
       ]
     },
     "Edit billing address form note": {
@@ -3965,6 +4037,12 @@
       ],
       "ZIP code is required": [
         "Απαιτείται ταχυδρομικός κώδικας"
+      ],
+      "Content verification failed": [
+        "Η επαλήθευση του περιεχομένου απέτυχε"
+      ],
+      "No booking page data received": [
+        "Δεν ελήφθησαν δεδομένα σελίδας κράτησης"
       ]
     },
     "error": {
@@ -4313,7 +4391,7 @@
         "Εάν αποδεχτείτε την πρόσκληση, θα σας αλλάξουμε από το τρέχον πλάνο σας και θα πιστώσουμε στον λογαριασμό σας τυχόν υπόλοιπο."
       ],
       "Invited by: ${ inviteEmail }": [
-        "Προσκλήθηκε από: ${ inviteEmail }"
+        "Πρόσκληση από: ${ inviteEmail }"
       ],
       "Lifetime accounts cannot join a family plan.": [
         "Οι λογαριασμοί εφ' όρου ζωής δεν μπορούν να συμμετάσχουν σε οικογενειακό πλάνο."
@@ -6320,6 +6398,52 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Θα εξακολουθείτε να μπορείτε να βλέπετε τα δικά σας δεδομένα λογαριασμού, αλλά όλοι οι λογαριασμοί χρηστών θα καταργηθούν από τον οργανισμό σας."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } λεπτά διάρκεια"
+      ],
+      "Booking already exists.": [
+        "Η κράτηση υπάρχει ήδη."
+      ],
+      "Booking cannot be added in the past.": [
+        "Η κράτηση δεν μπορεί να προστεθεί στο παρελθόν."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "Η κράτηση επικαλύπτεται με μια υπάρχουσα κράτηση."
+      ],
+      "Google Pay mark": [
+        "Σήμα Google Pay"
+      ],
+      "How long should an appointment last?": [
+        "Πόσο πρέπει να διαρκεί ένα ραντεβού;"
+      ],
+      "In which calendar should bookings appear?": [
+        "Σε ποιο ημερολόγιο πρέπει να εμφανίζονται οι κρατήσεις;"
+      ],
+      "Name your booking page": [
+        "Ονομάστε τη σελίδα κράτησής σας"
+      ],
+      "No available slots for this day": [
+        "Δεν υπάρχουν διαθέσιμες χρονοθυρίδες για αυτή την ημέρα"
+      ],
+      "Saving event": [
+        "Αποθήκευση εκδήλωσης",
+        "Αποθήκευση εκδηλώσεων"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Μοιραστείτε αυτή τη σελίδα για να επιτρέψετε σε άλλους να κλείσουν ραντεβού στο ημερολόγιό σας. Μπορείτε να το διαχειριστείτε ανά πάσα στιγμή στην πλαϊνή στήλη, στην ενότητα Σελίδες Κρατήσεων."
+      ],
+      "What should people know before booking?": [
+        "Τι πρέπει να γνωρίζουν οι άνθρωποι πριν κάνουν κράτηση;"
+      ],
+      "When are you free?": [
+        "Πότε είστε ελεύθεροι;"
+      ],
+      "Where will the appointment take place?": [
+        "Πού θα λάβει χώρα το ραντεβού;"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "Δεν μπορείτε να έχετε περισσότερες από ${ MAX_BOOKING_SLOTS } χρονοθυρίδες σε μια σελίδα."
       ]
     },
     "info": {
@@ -9023,6 +9147,9 @@
       ],
       "New credit/debit card": [
         "Νέα πιστωτική/χρεωστική κάρτα"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9159,6 +9286,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Η συνδρομή σας έχει ήδη μια υπάρχουσα έκπτωση. Η μετάβαση σε αυτή τη νέα προσφορά σημαίνει ότι η υπάρχουσα έκπτωση δε θα ισχύει πλέον."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Θα ανακατευθυνθείτε σύντομα στο Paypal, για να επαληθεύσετε την πληρωμή σας."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Θα ανακατευθυνθείτε σύντομα, για να επαληθεύσετε την πληρωμή σας."
       ]
     },
     "Payments.Error": {
@@ -9200,6 +9333,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Τραπεζική μεταφορά - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - κάρτα που λήγει σε ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9407,6 +9543,12 @@
       ],
       "ZIP code": [
         "Ταχυδρομικός κώδικας"
+      ],
+      "Add a booking page description": [
+        "Προσθήκη περιγραφής σελίδας κράτησης"
+      ],
+      "Booking page title": [
+        "Τίτλος σελίδας κρατήσεων"
       ]
     },
     "Placeholder for contact group name": {
@@ -11773,6 +11915,24 @@
       ],
       "Your shorter address is now ready": [
         "Η συντομότερη διεύθυνσή σας είναι τώρα έτοιμη"
+      ],
+      "Date": [
+        "Ημερομηνία"
+      ],
+      "Host": [
+        "Διακομιστής"
+      ],
+      "Location": [
+        "Τοποθεσία"
+      ],
+      "Time": [
+        "Ώρα"
+      ],
+      "Time zone": [
+        "Ζωνη ωρας"
+      ],
+      "Your booking is confirmed": [
+        "Η κράτησή σας επιβεβαιώθηκε"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12346,6 +12506,40 @@
       ],
       "Passcode:": [
         "Κωδικός πρόσβασης:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } ακόμη αποτέλεσμα δεν εμφανίζεται",
+        "${ hiddenResultsCount } ακόμη αποτελέσματα δεν εμφανίζονται"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Προσφορά Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Βοηθήστε τα αγαπημένα σας πρόσωπα να συμμετάσχουν στην επανάσταση της ιδιωτικότητας με τα πακέτα μας με την καλύτερη σχέση ποιότητας-τιμής, τώρα με έκπτωση 50%!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Συμμετάσχετε στην επανάσταση της ιδιωτικότητας με τα πακέτα μας με την καλύτερη σχέση ποιότητας-τιμής, τώρα με έκπτωση 50%!"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Τα στοιχεία επικοινωνίας σας"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Αυτοπροσώπως"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Κάτι πήγε στραβά. Η επαλήθευση του Google Pay απέτυχε."
       ]
     }
   }

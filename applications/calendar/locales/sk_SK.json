@@ -1439,6 +1439,36 @@
       ],
       "Unlimited daily chats": [
         "Neobmedzené denné chaty"
+      ],
+      "2 TB data storage": [
+        "2 TB dátového úložiska"
+      ],
+      "3 TB data storage": [
+        "3 TB dátového úložiska"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Pristupujte k 15 000+ serverom v 120+ krajinách"
+      ],
+      "Access advanced AI models": [
+        "Prístup k pokročilým modelom umelej inteligencie"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Všetky prémiové funkcie ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } a ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Connect 10 devices at once": [
+        "Pripojte 10 zariadení súčasne"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Úplná história chatu s jednoduchým vyhľadávaním a obľúbenými položkami"
+      ],
+      "Individual accounts for 6 users": [
+        "Individuálne účty pre 6 používateľov"
+      ],
+      "Individual accounts for you and a partner": [
+        "Individuálne účty pre vás a partnera"
+      ],
+      "Stronger protection against cyber threats": [
+        "Silnejšia ochrana proti kybernetickým hrozbám"
       ]
     },
     "BF2025: Heading alt": {
@@ -1449,6 +1479,18 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "na ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Ušetrite ${ savedAmount } s našou najvýhodnejšou ponukou na obmedzený čas!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Prejdite na náš 2-ročný plán a ušetrite ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Prejdite na náš ročný plán a ušetrite ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Doprajte svojmu kmeňu kompletnú digitálnu ochranu."
       ]
     },
     "BF2025: Tooltip": {
@@ -2932,6 +2974,9 @@
         "udalosti",
         "udalostí",
         "udalostí"
+      ],
+      "Doesn't end": [
+        "Bez ukončenia"
       ]
     },
     "customer_support.feature.all": {
@@ -3361,6 +3406,24 @@
       ],
       "90 minutes": [
         "90 minút"
+      ],
+      "1.5h": [
+        "1,5h"
+      ],
+      "15 minutes": [
+        "15 minút"
+      ],
+      "15m": [
+        "15m"
+      ],
+      "1h": [
+        "1h"
+      ],
+      "2h": [
+        "2h"
+      ],
+      "30m": [
+        "30m"
       ]
     },
     "Edit billing address form note": {
@@ -6488,6 +6551,27 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Stále si budete môcť prezerať svoje vlastné údaje, ale všetky používateľské účty budú z vašej organizácie odstránené."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "trvanie ${ bookingDetails.duration } minút"
+      ],
+      "Google Pay mark": [
+        "Google Pay mark"
+      ],
+      "How long should an appointment last?": [
+        "Ako dlho by mala trvať schôdzka?"
+      ],
+      "In which calendar should bookings appear?": [
+        "V ktorom kalendári sa majú zobraziť rezervácie?"
+      ],
+      "Name your booking page": [
+        "Pomenujte svoju stránku rezervácií"
+      ],
+      "What should people know before booking?": [
+        "Čo by mali ľudia vedieť pred rezerváciou?"
+      ],
+      "Where will the appointment take place?": [
+        "Kde sa bude konať stretnutie?"
       ]
     },
     "info": {
@@ -9325,6 +9409,9 @@
       ],
       "New credit/debit card": [
         "Nová platobná karta"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9473,6 +9560,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Vaše predplatné má v súčasnosti platnú zľavu. Prechodom na túto novú akciu sa existujúca zľava prestane uplatňovať."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Za účelom overenia platby dôjde o chvíľu k presmerovaniu na PayPal."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Za účelom overenia platby dôjde o chvíľu k presmerovaniu."
       ]
     },
     "Payments.Error": {
@@ -9514,6 +9607,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Bankový prevod – ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - karta končiaca na ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9721,6 +9817,12 @@
       ],
       "ZIP code": [
         "PSČ"
+      ],
+      "Add a booking page description": [
+        "Pridajte popis stránky rezervácie"
+      ],
+      "Booking page title": [
+        "Názov stránky rezervácií"
       ]
     },
     "Placeholder for contact group name": {
@@ -12195,6 +12297,18 @@
       ],
       "Your shorter address is now ready": [
         "Vaša skrátená adresa je pripravená"
+      ],
+      "Date": [
+        "Dátum"
+      ],
+      "Location": [
+        "Umiestnenie"
+      ],
+      "Time": [
+        "Čas"
+      ],
+      "Time zone": [
+        "Časové pásmo"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12856,6 +12970,29 @@
       ],
       "Passcode:": [
         "Prístupový kód:"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday zľavy"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Pomôžte svojim blízkym pripojiť sa k revolúcii súkromia s našimi najvýhodnejšími balíčkami, teraz so zľavou 50 %!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Pripojte sa k revolúcii súkromia s našimi najvýhodnejšími balíčkami, teraz so zľavou 50 %!"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Osobne"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Niečo sa pokazilo. Overenie Google Pay zlyhalo."
       ]
     }
   }

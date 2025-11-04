@@ -965,6 +965,9 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Bilgisayar uygulamasını ücretsiz deneme süreniz ${ formattedEndDate } tarihinde sona erecek. ${ upgradeButton }"
+      ],
+      "Confirm booking": [
+        "Rezervasyonu onayla"
       ]
     },
     "action": {
@@ -2951,6 +2954,9 @@
       "event": [
         "etkinlik",
         "etkinlik"
+      ],
+      "Doesn't end": [
+        "Bitmesin"
       ]
     },
     "customer_support.feature.all": {
@@ -3372,6 +3378,24 @@
       ],
       "90 minutes": [
         "90 dakika"
+      ],
+      "1.5h": [
+        "1.5s"
+      ],
+      "15 minutes": [
+        "15 dakika"
+      ],
+      "15m": [
+        "15dk"
+      ],
+      "1h": [
+        "1s"
+      ],
+      "2h": [
+        "2s"
+      ],
+      "30m": [
+        "30dk"
       ]
     },
     "Edit billing address form note": {
@@ -6375,6 +6399,30 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Kendi hesap bilgilerinizi görmeyi sürdürebileceksiniz. Ancak kuruluşunuzun tüm kullanıcı hesapları silinecek."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } en az süre"
+      ],
+      "Booking already exists.": [
+        "Rezervasyon zaten var"
+      ],
+      "Google Pay mark": [
+        "Google Pay işareti"
+      ],
+      "How long should an appointment last?": [
+        "Randevu ne kadar sürmeli?"
+      ],
+      "In which calendar should bookings appear?": [
+        "Rezervasyonlar hangi takvimde görünsün?"
+      ],
+      "Name your booking page": [
+        "Rezervasyon sayfanıza bir ad verin"
+      ],
+      "What should people know before booking?": [
+        "İnsanlar rezervasyon yapmadan önce nelere dikkat etmeliler?"
+      ],
+      "Where will the appointment take place?": [
+        "Randevu nerede gerçekleşecek?"
       ]
     },
     "info": {
@@ -9078,6 +9126,9 @@
       ],
       "New credit/debit card": [
         "Yeni kredi ya da banka kartı"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9214,6 +9265,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Aboneliğinizde şu anda uygulanan bir indirim var. Yeni indirime geçmek bu indirimin artık uygulanmayacağı anlamına gelir."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Birazdan ödemenizi doğrulamak için PayPal sitesine yönlendirileceksiniz."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Birazdan ödemenizi doğrulamak için yönlendirileceksiniz."
       ]
     },
     "Payments.Error": {
@@ -9255,6 +9312,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banka havalesi - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - ${ paymentMethod.Details.Last4 } ile biten kart"
       ]
     },
     "Payments.Sepa": {
@@ -9462,6 +9522,12 @@
       ],
       "ZIP code": [
         "Posta kodu"
+      ],
+      "Add a booking page description": [
+        "Bir rezervasyon sayfası açıklaması ekleyin"
+      ],
+      "Booking page title": [
+        "Rezervasyon sayfası başlığı"
       ]
     },
     "Placeholder for contact group name": {
@@ -11828,6 +11894,18 @@
       ],
       "Your shorter address is now ready": [
         "Daha kısa adresiniz hazır"
+      ],
+      "Date": [
+        "Tarih"
+      ],
+      "Location": [
+        "Konum"
+      ],
+      "Time": [
+        "Zaman"
+      ],
+      "Time zone": [
+        "Saat dilimi"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12401,6 +12479,16 @@
       ],
       "Passcode:": [
         "Parola:"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Bizzat"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Bir sorun çıktı. Google Pay doğrulaması tamamlanamadı."
       ]
     }
   }

@@ -965,6 +965,12 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Deine kostenlose Testversion der Desktop-App endet am ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Confirm booking": [
+        "Buchung bestätigen"
+      ],
+      "Copy link and close": [
+        "Link kopieren und schließen"
       ]
     },
     "action": {
@@ -2951,6 +2957,9 @@
       "event": [
         "Termin",
         "Termine"
+      ],
+      "Doesn't end": [
+        "Endet nie"
       ]
     },
     "customer_support.feature.all": {
@@ -3203,6 +3212,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Du hast bereits 10 Aliasnamen erstellt. Erhalte unbegrenzte Aliase und 500 GB Speicherplatz mit ${ BRAND_NAME } Unlimitiert."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Du erhältst in Kürze eine sichere E-Mail mit den Details."
       ]
     },
     "description": {
@@ -3372,6 +3384,24 @@
       ],
       "90 minutes": [
         "90 Minuten"
+      ],
+      "1.5h": [
+        "1,5 Std."
+      ],
+      "15 minutes": [
+        "15 Minuten"
+      ],
+      "15m": [
+        "15 Min."
+      ],
+      "1h": [
+        "1 Std."
+      ],
+      "2h": [
+        "2 Std."
+      ],
+      "30m": [
+        "30 Min."
       ]
     },
     "Edit billing address form note": {
@@ -4020,6 +4050,12 @@
       ],
       "ZIP code is required": [
         "Eine Postleitzahl ist erforderlich"
+      ],
+      "Content verification failed": [
+        "Fehler bei der Inhaltsüberprüfung"
+      ],
+      "No booking page data received": [
+        "Keine Buchungsseitendaten erhalten"
       ]
     },
     "error": {
@@ -6375,6 +6411,48 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Du kannst weiterhin deine eigenen Kontodaten ansehen, aber alle Benutzerkonten werden aus deiner Organisation entfernt."
+      ],
+      "${ bookingDetails.duration } min duration": [
+        "${ bookingDetails.duration } Mindestdauer"
+      ],
+      "Booking already exists.": [
+        "Buchung existiert bereits."
+      ],
+      "Booking cannot be added in the past.": [
+        "Eine Buchung kann nicht in der Vergangenheit liegen."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "Buchung überschneidet sich mit einer bestehenden Buchung."
+      ],
+      "Google Pay mark": [
+        "Google Pay markieren"
+      ],
+      "How long should an appointment last?": [
+        "Wie lange sollte ein Termin dauern?"
+      ],
+      "In which calendar should bookings appear?": [
+        "In welchem Kalender sollen Buchungen erscheinen?"
+      ],
+      "Name your booking page": [
+        "Deine Buchungsseite benennen"
+      ],
+      "No available slots for this day": [
+        "Keine verfügbaren Zeiträume für diesen Tag"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Teile diese Seite, damit andere Termine in deinem Kalender buchen können. Du kannst sie jederzeit in der Seitenleiste unter Buchungsseiten verwalten."
+      ],
+      "What should people know before booking?": [
+        "Was sollten die Personen vor dem Buchen wissen?"
+      ],
+      "When are you free?": [
+        "Wann bist du frei?"
+      ],
+      "Where will the appointment take place?": [
+        "Wo findet der Termin statt?"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "Du kannst nicht mehr als ${ MAX_BOOKING_SLOTS } Buchungszeiträume auf einer Seite haben."
       ]
     },
     "info": {
@@ -9078,6 +9156,9 @@
       ],
       "New credit/debit card": [
         "Neue Kredit-/Debitkarte"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -9214,6 +9295,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Dein Abonnement hat derzeit einen bestehenden Rabatt. Der Wechsel zu dieser neuen Aktion bedeutet, dass der bestehende Rabatt nicht länger angewendet wird."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Du wirst in Kürze zu PayPal weitergeleitet, um deine Zahlung zu bestätigen."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Du wirst in Kürze weitergeleitet, um deine Zahlung zu bestätigen."
       ]
     },
     "Payments.Error": {
@@ -9255,6 +9342,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banküberweisung - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - Karte endet mit ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -9462,6 +9552,12 @@
       ],
       "ZIP code": [
         "Postleitzahl"
+      ],
+      "Add a booking page description": [
+        "Eine Beschreibung der Buchungsseite hinzufügen"
+      ],
+      "Booking page title": [
+        "Titel der Buchungsseite"
       ]
     },
     "Placeholder for contact group name": {
@@ -11828,6 +11924,24 @@
       ],
       "Your shorter address is now ready": [
         "Deine kürzere E-Mail-Adresse ist jetzt fertig"
+      ],
+      "Date": [
+        "Datum"
+      ],
+      "Host": [
+        "Host"
+      ],
+      "Location": [
+        "Speicherort"
+      ],
+      "Time": [
+        "Zeit"
+      ],
+      "Time zone": [
+        "Zeitzone"
+      ],
+      "Your booking is confirmed": [
+        "Deine Buchung ist bestätigt"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12401,6 +12515,21 @@
       ],
       "Passcode:": [
         "Passcode:"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Deine Kontaktdaten"
+      ]
+    },
+    "Location": {
+      "In person": [
+        "Persönlich"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Etwas ist schiefgelaufen. Die Google Pay-Verifizierung ist fehlgeschlagen."
       ]
     }
   }
