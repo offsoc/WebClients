@@ -495,33 +495,36 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         });
     }, [recordingState.isRecording, cameraTracks, screenShareTracks, pagedParticipants]);
 
+    const handleCleanup = async () => {
+        stopAllFrameCaptures();
+        if (renderWorkerRef.current) {
+            renderWorkerRef.current.postMessage({ type: 'stop' });
+            renderWorkerRef.current.terminate();
+            renderWorkerRef.current = null;
+        }
+        if (audioContextRef.current) {
+            await audioContextRef.current.close();
+        }
+        if (visibilityListenerRef.current) {
+            document.removeEventListener('visibilitychange', visibilityListenerRef.current);
+            visibilityListenerRef.current = null;
+        }
+        if (durationIntervalRef.current) {
+            clearInterval(durationIntervalRef.current);
+        }
+        if (workerStorageRef.current) {
+            await workerStorageRef.current.clear();
+            workerStorageRef.current.terminate();
+            workerStorageRef.current = null;
+        }
+        videoElementsRef.current.forEach(cleanupVideoElement);
+        videoElementsRef.current.clear();
+    };
+
     // Cleanup on unmount
     useEffect(() => {
         return () => {
-            stopAllFrameCaptures();
-            if (renderWorkerRef.current) {
-                renderWorkerRef.current.postMessage({ type: 'stop' });
-                renderWorkerRef.current.terminate();
-                renderWorkerRef.current = null;
-            }
-            if (audioContextRef.current) {
-                void audioContextRef.current.close();
-            }
-            if (visibilityListenerRef.current) {
-                document.removeEventListener('visibilitychange', visibilityListenerRef.current);
-                visibilityListenerRef.current = null;
-            }
-            if (durationIntervalRef.current) {
-                clearInterval(durationIntervalRef.current);
-            }
-            if (workerStorageRef.current) {
-                // eslint-disable-next-line no-console
-                void workerStorageRef.current.clear().catch(console.error);
-                workerStorageRef.current.terminate();
-                workerStorageRef.current = null;
-            }
-            videoElementsRef.current.forEach(cleanupVideoElement);
-            videoElementsRef.current.clear();
+            void handleCleanup();
         };
     }, []);
 

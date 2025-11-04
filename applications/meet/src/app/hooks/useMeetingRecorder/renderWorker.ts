@@ -190,9 +190,6 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             const tileHeight = sidebarItemHeight;
 
             const colorIndex = participant.participantIndex % PROFILE_COLORS.length;
-            const backgroundColor = `meet-background-${colorIndex + 1}`;
-            const profileColor = `profile-background-${colorIndex + 1}`;
-            const borderColor = `tile-border-${colorIndex + 1}`;
 
             if (participant.hasVideo) {
                 const bitmap = state.videoFrames.get(participant.identity);
@@ -215,8 +212,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
                     y: yPos,
                     width: tileWidth,
                     height: tileHeight,
-                    backgroundColor,
-                    profileColor,
+                    colorIndex,
                     radius: BORDER_RADIUS / 2,
                 });
             }
@@ -227,7 +223,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
                 y: yPos,
                 width: tileWidth,
                 height: tileHeight,
-                borderColor,
+                colorIndex,
                 isActive: participant.hasActiveAudio,
                 radius: BORDER_RADIUS / 2,
             });
@@ -276,9 +272,6 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
             const tileHeight = cellHeight - GAP;
 
             const colorIndex = participant.participantIndex % PROFILE_COLORS.length;
-            const backgroundColor = `meet-background-${colorIndex + 1}`;
-            const profileColor = `profile-background-${colorIndex + 1}`;
-            const borderColor = `tile-border-${colorIndex + 1}`;
 
             if (participant.hasVideo) {
                 const bitmap = state.videoFrames.get(participant.identity);
@@ -301,8 +294,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
                     y,
                     width: tileWidth,
                     height: tileHeight,
-                    backgroundColor,
-                    profileColor,
+                    colorIndex,
                     radius: BORDER_RADIUS,
                 });
             }
@@ -313,7 +305,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
                 y,
                 width: tileWidth,
                 height: tileHeight,
-                borderColor,
+                colorIndex,
                 isActive: participant.hasActiveAudio,
                 radius: BORDER_RADIUS,
             });

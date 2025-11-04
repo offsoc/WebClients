@@ -101,8 +101,7 @@ export function drawParticipantPlaceholder({
     y,
     width,
     height,
-    backgroundColor,
-    profileColor,
+    colorIndex,
     radius = 12,
 }: {
     ctx: CanvasContext;
@@ -111,9 +110,8 @@ export function drawParticipantPlaceholder({
     y: number;
     width: number;
     height: number;
-    backgroundColor: string;
-    profileColor: string;
     radius?: number;
+    colorIndex: number;
 }) {
     // Save context
     ctx.save();
@@ -122,19 +120,14 @@ export function drawParticipantPlaceholder({
     roundRect(ctx, x, y, width, height, radius);
     ctx.clip();
 
-    // Parse background color index
-    const bgMatch = backgroundColor.match(/meet-background-(\d+)/);
-    const bgIndex = bgMatch ? parseInt(bgMatch[1], 10) - 1 : 0;
-    const bgColor = MEET_BACKGROUND_COLORS[bgIndex % MEET_BACKGROUND_COLORS.length];
+    const bgColor = MEET_BACKGROUND_COLORS[colorIndex % MEET_BACKGROUND_COLORS.length];
 
     // Draw background
     ctx.fillStyle = bgColor;
     ctx.fillRect(x, y, width, height);
 
     // Parse profile color index
-    const profMatch = profileColor.match(/profile-background-(\d+)/);
-    const profIndex = profMatch ? parseInt(profMatch[1], 10) - 1 : 0;
-    const profColor = PROFILE_COLORS[profIndex % PROFILE_COLORS.length];
+    const profileColor = PROFILE_COLORS[colorIndex % PROFILE_COLORS.length];
 
     // Calculate circle size based on tile size (proportional to view size)
     const circleSize = Math.min(width, height) * 0.3; // 30% of smallest dimension
@@ -144,7 +137,7 @@ export function drawParticipantPlaceholder({
     // Draw profile circle
     ctx.beginPath();
     ctx.arc(centerX, centerY, circleSize / 2, 0, Math.PI * 2);
-    ctx.fillStyle = profColor;
+    ctx.fillStyle = profileColor;
     ctx.fill();
 
     // Draw initials
@@ -169,7 +162,7 @@ export function drawParticipantBorder({
     y,
     width,
     height,
-    borderColor,
+    colorIndex,
     isActive,
     radius = 12,
 }: {
@@ -178,7 +171,7 @@ export function drawParticipantBorder({
     y: number;
     width: number;
     height: number;
-    borderColor: string;
+    colorIndex: number;
     isActive: boolean;
     radius?: number;
 }) {
@@ -186,11 +179,7 @@ export function drawParticipantBorder({
         return;
     }
 
-    // Parse tile-border-N to get color index
-    const match = borderColor.match(/tile-border-(\d+)/);
-    const colorIndex = match ? parseInt(match[1], 10) - 1 : 0;
     const color = PROFILE_COLORS[colorIndex % PROFILE_COLORS.length];
-
     ctx.strokeStyle = color;
     ctx.lineWidth = 3;
 
