@@ -46,36 +46,6 @@ export const getRecordingDetails = () => {
     };
 };
 
-export const createVideoElement = (trackInfo: RecordingTrackInfo) => {
-    const videoElement = document.createElement('video');
-    videoElement.muted = true;
-    videoElement.autoplay = true;
-    videoElement.playsInline = true;
-
-    trackInfo.track?.attach(videoElement);
-
-    const playVideo = async () => {
-        try {
-            if (videoElement) {
-                await videoElement.play();
-            }
-        } catch (error) {
-            // eslint-disable-next-line no-console
-            console.error('Failed to play video:', error);
-        }
-    };
-
-    videoElement.addEventListener('canplay', playVideo, { once: true });
-
-    return videoElement;
-};
-
-export const cleanupVideoElement = (videoElement: HTMLVideoElement) => {
-    videoElement.pause();
-    videoElement.src = '';
-    videoElement.load();
-};
-
 export const getTracksForRecording = (
     pagedParticipants: (RemoteParticipant | LocalParticipant)[],
     cameraTracks: TrackReference[],

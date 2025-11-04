@@ -10,13 +10,7 @@ import { useIsLargerThanMd } from '../useIsLargerThanMd';
 import { useIsNarrowHeight } from '../useIsNarrowHeight';
 import { MessageType } from './recordingWorkerTypes';
 import type { FrameReaderInfo, RecordingState, RecordingTrackInfo } from './types';
-import {
-    cleanupVideoElement,
-    createVideoElement,
-    getRecordingDetails,
-    getTracksForRecording,
-    supportsTrackProcessor,
-} from './utils';
+import { getRecordingDetails, getTracksForRecording, supportsTrackProcessor } from './utils';
 import { WorkerRecordingStorage } from './workerStorage';
 
 const CANVAS_WIDTH = 1920;
@@ -40,7 +34,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
     const mediaRecorderRef = useRef<MediaRecorder | null>(null);
     const renderWorkerRef = useRef<Worker | null>(null);
     const frameReadersRef = useRef<Map<string, FrameReaderInfo>>(new Map());
-    const videoElementsRef = useRef<Map<string, HTMLVideoElement>>(new Map());
     const audioContextRef = useRef<AudioContext | null>(null);
     const audioDestinationRef = useRef<MediaStreamAudioDestinationNode | null>(null);
     const recordedChunksRef = useRef<Blob[]>([]);
@@ -68,22 +61,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         audioTracks,
         pagedParticipants,
         participantNameMap,
-    };
-
-    const getVideoElement = (trackInfo: RecordingTrackInfo) => {
-        if (!trackInfo.track) {
-            return null;
-        }
-
-        const trackId = trackInfo.track.sid || `track-${Date.now()}`;
-        let videoElement = videoElementsRef.current.get(trackId);
-
-        if (!videoElement) {
-            videoElement = createVideoElement(trackInfo);
-            videoElementsRef.current.set(trackId, videoElement);
-        }
-
-        return videoElement;
     };
 
     const prepareRenderState = () => {
@@ -129,15 +106,8 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             const processor = new MediaStreamTrackProcessor({ track: mediaTrack });
             const reader = processor.readable.getReader();
 
-            const videoElement = getVideoElement(trackInfo);
-            if (!videoElement) {
-                return false;
-            }
-
             frameReadersRef.current.set(trackId, {
                 reader,
-                videoElement,
-                rafHandle: null,
                 participantKey,
             });
 
@@ -193,10 +163,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
 
         if (readerInfo.reader) {
             void readerInfo.reader.cancel();
-        }
-
-        if (readerInfo.rafHandle !== null) {
-            readerInfo.videoElement.cancelVideoFrameCallback(readerInfo.rafHandle);
         }
 
         frameReadersRef.current.delete(trackId);
@@ -399,9 +365,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                         clearInterval(durationIntervalRef.current);
                     }
 
-                    videoElementsRef.current.forEach(cleanupVideoElement);
-                    videoElementsRef.current.clear();
-
                     recordedChunksRef.current = [];
 
                     setRecordingState({
@@ -516,8 +479,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             workerStorageRef.current.terminate();
             workerStorageRef.current = null;
         }
-        videoElementsRef.current.forEach(cleanupVideoElement);
-        videoElementsRef.current.clear();
     };
 
     // Cleanup on unmount

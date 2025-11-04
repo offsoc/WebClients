@@ -15,7 +15,5 @@ export interface RecordingState {
 
 export interface FrameReaderInfo {
     reader: ReadableStreamDefaultReader<VideoFrame> | null;
-    videoElement: HTMLVideoElement;
-    rafHandle: number | null;
     participantKey: string;
 }
