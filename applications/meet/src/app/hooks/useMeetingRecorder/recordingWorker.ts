@@ -15,16 +15,13 @@ class OPFSWorkerStorage {
     private fileHandle: FileSystemFileHandle | null = null;
     private writable: FileSystemWritableFileStream | null = null;
     private syncAccessHandle: FileSystemSyncAccessHandle | null = null;
-    private useSyncAPI = false;
     private filePosition = 0;
-    private recordingId: string = '';
     private fileExtension: string = 'webm';
     private fileName: string = '';
 
-    async init(recordingId: string, fileExtension: string): Promise<void> {
-        this.recordingId = recordingId;
+    async init(fileExtension: string): Promise<void> {
         this.fileExtension = fileExtension;
-        this.fileName = `recording-${this.recordingId}.${this.fileExtension}`;
+        this.fileName = `recording-${Date.now()}.${this.fileExtension}`;
 
         this.root = await navigator.storage.getDirectory();
 
@@ -34,7 +31,6 @@ class OPFSWorkerStorage {
 
         if (typeof this.fileHandle.createWritable === 'function') {
             this.writable = await this.fileHandle.createWritable();
-            this.useSyncAPI = false;
         } else if (
             typeof (this.fileHandle as unknown as { createSyncAccessHandle: () => Promise<FileSystemSyncAccessHandle> })
                 .createSyncAccessHandle === 'function'
@@ -42,7 +38,6 @@ class OPFSWorkerStorage {
             this.syncAccessHandle = await (
                 this.fileHandle as unknown as { createSyncAccessHandle: () => Promise<FileSystemSyncAccessHandle> }
             ).createSyncAccessHandle();
-            this.useSyncAPI = true;
             this.filePosition = 0;
         } else {
             throw new Error('No supported OPFS write API available in worker');
@@ -50,7 +45,7 @@ class OPFSWorkerStorage {
     }
 
     async addChunk(chunkBuffer: ArrayBuffer): Promise<void> {
-        if (this.useSyncAPI && this.syncAccessHandle) {
+        if (this.syncAccessHandle) {
             const bytesWritten = this.syncAccessHandle.write(chunkBuffer, { at: this.filePosition });
             this.filePosition += bytesWritten;
             this.syncAccessHandle.flush();
@@ -110,8 +105,8 @@ self.onmessage = async (event: MessageEvent<WorkerMessage>) => {
     try {
         switch (type) {
             case MessageType.INIT: {
-                const { recordingId, fileExtension } = data;
-                await storage.init(recordingId, fileExtension);
+                const { fileExtension } = data;
+                await storage.init(fileExtension);
                 const response: WorkerResponse = { type: WorkerResponseType.SUCCESS, id };
                 self.postMessage(response);
                 break;

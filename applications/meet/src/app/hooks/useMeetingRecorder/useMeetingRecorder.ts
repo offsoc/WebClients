@@ -251,8 +251,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                 workerStorageRef.current = null;
             }
 
-            const recordingId = `recording-${Date.now()}`;
-            const storage = new WorkerRecordingStorage(recordingId, extension);
+            const storage = new WorkerRecordingStorage(extension);
             await storage.init();
             workerStorageRef.current = storage;
 

@@ -9,11 +9,9 @@ export class WorkerRecordingStorage {
     private worker: Worker | null = null;
     private messageId = 0;
     private pendingMessages = new Map<string, { resolve: (value: any) => void; reject: (error: Error) => void }>();
-    private recordingId: string;
     private fileExtension: string;
 
-    constructor(recordingId: string, fileExtension: string = 'webm') {
-        this.recordingId = recordingId;
+    constructor(fileExtension: string = 'webm') {
         this.fileExtension = fileExtension;
     }
 
@@ -47,7 +45,6 @@ export class WorkerRecordingStorage {
         };
 
         await this.sendMessage(MessageType.INIT, {
-            recordingId: this.recordingId,
             fileExtension: this.fileExtension,
         });
     }
