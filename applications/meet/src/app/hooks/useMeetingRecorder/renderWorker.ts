@@ -13,6 +13,22 @@ const GAP = 11;
 const BORDER_RADIUS = 28;
 const SIDEBAR_WIDTH = 320;
 
+// Load Inter Variable font for use in canvas (supports all weights)
+// Using the same Inter font that's loaded in the main app from inter-ui package
+const interFont = new FontFace('InterVariable', 'url(/assets/fonts/inter-ui/variable/InterVariable.woff2)', {
+    weight: '100 900',
+});
+
+interFont
+    .load()
+    .then((font) => {
+        // @ts-expect-error - fonts is available in Worker context
+        self.fonts.add(font);
+    })
+    .catch(() => {
+        // Fallback to system fonts if Inter fails to load
+    });
+
 interface VideoFrameData {
     participantIdentity: string;
     bitmap: ImageBitmap;

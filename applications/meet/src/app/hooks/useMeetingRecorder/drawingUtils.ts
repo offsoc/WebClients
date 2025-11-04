@@ -1,3 +1,5 @@
+import { getParticipantInitials } from '../../utils/getParticipantInitials';
+
 // Type that accepts both regular and offscreen canvas contexts
 type CanvasContext = CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D;
 
@@ -35,7 +37,7 @@ export function drawParticipantName({
     height: number;
 }) {
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 16px Arial';
+    ctx.font = '600 16px InterVariable, Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif';
     ctx.textAlign = 'left';
     ctx.textBaseline = 'bottom';
 
@@ -78,18 +80,6 @@ const MEET_BACKGROUND_COLORS = [
     '#3d2a3d', // red-minor-2
     '#523a2e', // orange-minor-3
 ];
-
-/**
- * Get participant initials from name
- */
-function getParticipantInitials(participantName: string): string {
-    if (!participantName) {
-        return 'NA';
-    }
-
-    const nameParts = participantName.split(' ');
-    return `${nameParts?.[0]?.charAt(0)?.toLocaleUpperCase()}${nameParts?.[1]?.charAt(0)?.toLocaleUpperCase() ?? ''}`;
-}
 
 /**
  * Draws a placeholder for participants without video (colored background with initials)
@@ -144,10 +134,14 @@ export function drawParticipantPlaceholder({
     const initials = getParticipantInitials(name);
     const fontSize = circleSize * 0.4;
     ctx.fillStyle = '#000000';
-    ctx.font = `600 ${fontSize}px Arial`;
+    ctx.font = `600 ${fontSize}px InterVariable, Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif`;
     ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(initials, centerX, centerY);
+    ctx.textBaseline = 'alphabetic';
+    // Measure text to calculate proper vertical centering
+    const metrics = ctx.measureText(initials);
+    const textHeight = metrics.actualBoundingBoxAscent + metrics.actualBoundingBoxDescent;
+    const textY = centerY + textHeight / 2 - metrics.actualBoundingBoxDescent;
+    ctx.fillText(initials, centerX, textY);
 
     // Restore context
     ctx.restore();
