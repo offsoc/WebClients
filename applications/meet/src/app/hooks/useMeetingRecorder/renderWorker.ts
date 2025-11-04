@@ -151,8 +151,7 @@ function drawRecordingCanvas(canvas: OffscreenCanvas, ctx: OffscreenCanvasRender
     const { cols, rows } = calculateGridLayout(regularParticipants.length, !isLargerThanMd || isNarrowHeight);
 
     if (screenShareParticipant && regularParticipants.length > 0) {
-        const numParticipantsInSidebar = Math.min(regularParticipants.length, SCREEN_SHARE_PAGE_SIZE);
-        const sidebarItemHeight = (canvas.height - GAP * (numParticipantsInSidebar + 1)) / numParticipantsInSidebar;
+        const sidebarItemHeight = canvas.height / SCREEN_SHARE_PAGE_SIZE;
 
         const screenShareX = GAP;
         const screenShareY = GAP;
