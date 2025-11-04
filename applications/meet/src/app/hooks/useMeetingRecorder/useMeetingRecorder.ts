@@ -30,13 +30,10 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         recordedChunks: [],
     });
 
-    const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const mediaRecorderRef = useRef<MediaRecorder | null>(null);
     const renderWorkerRef = useRef<Worker | null>(null);
     const frameReadersRef = useRef<Map<string, FrameReaderInfo>>(new Map());
     const audioContextRef = useRef<AudioContext | null>(null);
-    const audioDestinationRef = useRef<MediaStreamAudioDestinationNode | null>(null);
-    const recordedChunksRef = useRef<Blob[]>([]);
     const startTimeRef = useRef<number>(0);
     const durationIntervalRef = useRef<number>();
     const workerStorageRef = useRef<WorkerRecordingStorage | null>(null);
@@ -63,13 +60,16 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         participantNameMap,
     };
 
-    const prepareRenderState = () => {
-        const tracks = getTracksForRecording(
+    const getRecordedTracks = () => {
+        return getTracksForRecording(
             renderInfoRef.current.pagedParticipants,
             renderInfoRef.current.cameraTracks,
             renderInfoRef.current.screenShareTracks
         );
+    };
 
+    const prepareRenderState = () => {
+        const tracks = getRecordedTracks();
         const participants = tracks.map((track) => {
             const audioPublication = Array.from(track.participant.trackPublications.values()).find(
                 (pub) => pub.kind === Track.Kind.Audio && pub.track
@@ -91,6 +91,27 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             isLargerThanMd,
             isNarrowHeight,
         };
+    };
+
+    const stopRendererWorker = () => {
+        if (renderWorkerRef.current) {
+            renderWorkerRef.current.postMessage({ type: 'stop' });
+            renderWorkerRef.current.terminate();
+            renderWorkerRef.current = null;
+        }
+    };
+
+    const cleanUpVisibilityListener = () => {
+        if (visibilityListenerRef.current) {
+            document.removeEventListener('visibilitychange', visibilityListenerRef.current);
+            visibilityListenerRef.current = null;
+        }
+    };
+
+    const cleanUpDurationInterval = () => {
+        if (durationIntervalRef.current) {
+            clearInterval(durationIntervalRef.current);
+        }
     };
 
     const startFrameCaptureWithProcessor = (trackInfo: RecordingTrackInfo, participantKey: string) => {
@@ -193,7 +214,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         });
 
         audioContextRef.current = audioContext;
-        audioDestinationRef.current = destination;
 
         const handleVisibilityChange = () => {
             if (audioContextRef?.current?.state === 'suspended') {
@@ -225,7 +245,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             const canvas = document.createElement('canvas');
             canvas.width = CANVAS_WIDTH;
             canvas.height = CANVAS_HEIGHT;
-            canvasRef.current = canvas;
 
             const canvasStream = canvas.captureStream(FPS);
 
@@ -258,8 +277,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             const options = { mimeType };
             const mediaRecorder = new MediaRecorder(combinedStream, options);
 
-            recordedChunksRef.current = [];
-
             let chunkCount = 0;
             mediaRecorder.ondataavailable = async (event) => {
                 if (event.data.size > 0 && workerStorageRef.current) {
@@ -284,12 +301,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             mediaRecorder.start(1000);
             mediaRecorderRef.current = mediaRecorder;
 
-            // Start video elements and frame capture for tracks
-            const recordingTracks = getTracksForRecording(
-                renderInfoRef.current.pagedParticipants,
-                renderInfoRef.current.cameraTracks,
-                renderInfoRef.current.screenShareTracks
-            );
+            const recordingTracks = getRecordedTracks();
             recordingTracks.forEach((trackInfo) => {
                 if (trackInfo.track && !trackInfo.track.isMuted) {
                     startFrameCapture(trackInfo);
@@ -346,26 +358,14 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
 
                     stopAllFrameCaptures();
 
-                    if (renderWorkerRef.current) {
-                        renderWorkerRef.current.postMessage({ type: 'stop' });
-                        renderWorkerRef.current.terminate();
-                        renderWorkerRef.current = null;
-                    }
+                    stopRendererWorker();
 
                     if (audioContextRef.current) {
                         void audioContextRef.current.close();
                     }
 
-                    if (visibilityListenerRef.current) {
-                        document.removeEventListener('visibilitychange', visibilityListenerRef.current);
-                        visibilityListenerRef.current = null;
-                    }
-
-                    if (durationIntervalRef.current) {
-                        clearInterval(durationIntervalRef.current);
-                    }
-
-                    recordedChunksRef.current = [];
+                    cleanUpVisibilityListener();
+                    cleanUpDurationInterval();
 
                     setRecordingState({
                         isRecording: false,
@@ -430,11 +430,7 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             return;
         }
 
-        const tracks = getTracksForRecording(
-            renderInfoRef.current.pagedParticipants,
-            renderInfoRef.current.cameraTracks,
-            renderInfoRef.current.screenShareTracks
-        );
+        const tracks = getRecordedTracks();
 
         // Get current track IDs
         const currentTrackIds = new Set(Array.from(frameReadersRef.current.keys()));
@@ -459,21 +455,16 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
 
     const handleCleanup = async () => {
         stopAllFrameCaptures();
-        if (renderWorkerRef.current) {
-            renderWorkerRef.current.postMessage({ type: 'stop' });
-            renderWorkerRef.current.terminate();
-            renderWorkerRef.current = null;
-        }
+        stopRendererWorker();
+
+        cleanUpVisibilityListener();
+
         if (audioContextRef.current) {
             await audioContextRef.current.close();
         }
-        if (visibilityListenerRef.current) {
-            document.removeEventListener('visibilitychange', visibilityListenerRef.current);
-            visibilityListenerRef.current = null;
-        }
-        if (durationIntervalRef.current) {
-            clearInterval(durationIntervalRef.current);
-        }
+
+        cleanUpDurationInterval();
+
         if (workerStorageRef.current) {
             await workerStorageRef.current.clear();
             workerStorageRef.current.terminate();
