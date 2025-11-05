@@ -8909,6 +8909,18 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Du är bara några klick bort från en skräpfri inkorg"
+      ],
+      "Saving draft": [
+        "Sparar utkast"
+      ],
+      "Scheduling message": [
+        "Schemalägger meddelande"
+      ],
+      "Sending message": [
+        "Skickar meddelande"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Vi har uppgraderat ditt ${ DRIVE_APP_NAME } lagringsutrymme till 5 GB. Behåll dina viktiga filer och foton krypterade."
       ]
     },
     "info": {
@@ -9956,6 +9968,15 @@
       ],
       "ZIP code": [
         "Postnummer"
+      ],
+      "Always label sender's emails": [
+        "Märk alltid avsändarens e-post"
+      ],
+      "Always move sender's emails": [
+        "Flytta alltid avsändarens e-post"
+      ],
+      "Move messages to": [
+        "Flytta meddelanden till"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11953,6 +11974,9 @@
       ],
       "You’ll be able to use ${ planTitle } until the trial ends, free of charge.": [
         "Du kommer att kunna använda ${ planTitle } tills provperioden slutar, utan kostnad."
+      ],
+      "Enjoy free business security features until ${ trialEndsOnFormatted }.": [
+        "Njut av gratis företagssäkerhetsfunktioner fram till ${ trialEndsOnFormatted }."
       ]
     },
     "Online accounts": {
@@ -12137,6 +12161,9 @@
       ],
       "PayPal": [
         "PayPal"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12250,6 +12277,18 @@
       ],
       "Your payment is still being processed": [
         "Din betalning håller fortfarande på att behandlas"
+      ],
+      "VAT": [
+        "Moms"
+      ],
+      "VAT number": [
+        "Momsnummer"
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Du kommer snart att omdirigeras till PayPal för att verifiera din betalning."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Du kommer snart att omdirigeras för att verifiera din betalning."
       ]
     },
     "Payments.Error": {
@@ -12291,6 +12330,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Banköverföring - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - kort slutar på ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -12331,6 +12373,12 @@
       ],
       "VAT number": [
         "Momsnummer"
+      ],
+      "Add VAT number": [
+        "Lägg till momsnummer"
+      ],
+      "Edit VAT number": [
+        "Redigera momsnummer"
       ]
     },
     "PGP key encryption warning": {
@@ -15613,6 +15661,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ Kategorier kommer!"
+      ],
+      "Create folder \"${ search }\"": [
+        "Skapa mapp ”${ search }”"
+      ],
+      "Create label \"${ search }\"": [
+        "Skapa etikett ”${ search }”"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15915,6 +15969,9 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Din gratis provperiod slutar den ${ textDate }. ${ action }"
+      ],
+      "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
+        "Din provperiod slutar den ${ textDate }. Du debiteras inte om du avbryter före ${ textDate }. ${ action }"
       ]
     },
     "WeekDay": {
@@ -16184,6 +16241,17 @@
       ],
       "Passcode:": [
         "Lösenkod:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } fler resultat visas inte",
+        "${ hiddenResultsCount } fler resultat visas inte"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Något gick fel. Google Pay-verifiering misslyckades."
       ]
     }
   }

@@ -1639,6 +1639,9 @@
       ],
       "Zoom out": [
         "Loitonna"
+      ],
+      "Subscribe now": [
+        "Tilaa nyt"
       ]
     },
     "action": {
@@ -2204,6 +2207,12 @@
       ],
       "Website access problem": [
         "Verkkosivuston avautumisongelma"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Meet problem": [
+        "Meet-ongelma"
       ]
     },
     "Button": {
@@ -4209,6 +4218,12 @@
       ],
       "This event was updated.": [
         "Tapahtuma päivitettiin."
+      ],
+      "DESCRIPTION:": [
+        "KUVAUS:"
+      ],
+      "TIME:": [
+        "AIKA:"
       ]
     },
     "Email body for invitation (date part)": {
@@ -8557,6 +8572,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Olet vain muutaman klikkauksen päässä siististä postilaatikosta"
+      ],
+      "Continue": [
+        "Jatka"
       ]
     },
     "info": {
@@ -9550,6 +9568,12 @@
       ],
       "ZIP code": [
         "Postinumero"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Get the deal": [
+        "Hyödynnä tarjous"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11621,6 +11645,9 @@
       ],
       "New credit/debit card": [
         "Uusi maksukortti"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -15503,6 +15530,11 @@
       ],
       "Passcode:": [
         "Tunnuskoodi:"
+      ]
+    },
+    "Duo offer": {
+      "Only": [
+        "Vain"
       ]
     }
   }

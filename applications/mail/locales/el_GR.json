@@ -1376,7 +1376,7 @@
         "Εμφάνιση περισσότερων"
       ],
       "Show more benefits": [
-        "Εμφάνιση περισσότερων οφελών"
+        "Εμφάνιση περισσότερων προνομίων"
       ],
       "Show more search options": [
         "Εμφάνιση περισσότερων επιλογών αναζήτησης"
@@ -2173,6 +2173,36 @@
       ],
       "Unlimited daily chats": [
         "Απεριόριστες καθημερινές συνομιλίες"
+      ],
+      "2 TB data storage": [
+        "2 TB αποθηκευτικού χώρου"
+      ],
+      "3 TB data storage": [
+        "3 TB αποθηκευτικού χώρου"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Πρόσβαση σε 15.000+ διακομιστές σε 120+ χώρες"
+      ],
+      "Access advanced AI models": [
+        "Πρόσβαση σε προηγμένα μοντέλα Τεχνητής Νοημοσύνης"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Όλα τα premium χαρακτηριστικά των ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } και ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Connect 10 devices at once": [
+        "Συνδέστε 10 συσκευές ταυτόχρονα"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Πλήρες ιστορικό συνομιλίας με εύκολη αναζήτηση και αγαπημένα"
+      ],
+      "Individual accounts for 6 users": [
+        "Ατομικοί λογαριασμοί για 6 χρήστες"
+      ],
+      "Individual accounts for you and a partner": [
+        "Ατομικοί λογαριασμοί για εσάς και έναν σύντροφο"
+      ],
+      "Stronger protection against cyber threats": [
+        "Ισχυρότερη προστασία από κυβερνοαπειλές"
       ]
     },
     "BF2025: Heading alt": {
@@ -2183,6 +2213,18 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "για ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Εξοικονομήστε ${ savedAmount } με την καλύτερη προσφορά περιορισμένου χρόνου!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Μεταβείτε στο διετές πλάνο μας και εξοικονομήστε ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Μεταβείτε στο ετήσιο πλάνο μας και εξοικονομήστε ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Προσφέρετε στην ομάδα σας πλήρη ψηφιακή προστασία."
       ]
     },
     "BF2025: Tooltip": {
@@ -5439,7 +5481,7 @@
         "Εάν αποδεχτείτε την πρόσκληση, θα σας αλλάξουμε από το τρέχον πλάνο σας και θα πιστώσουμε στον λογαριασμό σας τυχόν υπόλοιπο."
       ],
       "Invited by: ${ inviteEmail }": [
-        "Προσκλήθηκε από: ${ inviteEmail }"
+        "Πρόσκληση από: ${ inviteEmail }"
       ],
       "Lifetime accounts cannot join a family plan.": [
         "Οι λογαριασμοί εφ' όρου ζωής δεν μπορούν να συμμετάσχουν σε οικογενειακό πλάνο."
@@ -8884,6 +8926,21 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Είστε μόνο μερικά κλικ μακριά από τα εισερχόμενα χωρίς ακαταστασία"
+      ],
+      "Google Pay mark": [
+        "Σήμα Google Pay"
+      ],
+      "Saving draft": [
+        "Αποθήκευση προχείρου"
+      ],
+      "Scheduling message": [
+        "Γίνεται προγραμματισμός μηνύματος"
+      ],
+      "Sending message": [
+        "Το μήνυμα αποστέλλεται"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Αναβαθμίσαμε τον ${ DRIVE_APP_NAME } αποθηκευτικό χώρο σας σε 5 GB. Κρατήστε τα σημαντικά αρχεία και τις φωτογραφίες σας κρυπτογραφημένα."
       ]
     },
     "info": {
@@ -9934,6 +9991,15 @@
       ],
       "ZIP code": [
         "Τ.Κ."
+      ],
+      "Always label sender's emails": [
+        "Επισημαίνετε πάντα τα μηνύματα ηλεκτρονικού ταχυδρομείου του αποστολέα"
+      ],
+      "Always move sender's emails": [
+        "Μετακινείτε πάντα τα μηνύματα ηλεκτρονικού ταχυδρομείου του αποστολέα"
+      ],
+      "Move messages to": [
+        "Μετακίνηση μηνυμάτων σε"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12107,6 +12173,9 @@
       ],
       "New credit/debit card": [
         "Νέα πιστωτική/χρεωστική κάρτα"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12243,6 +12312,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Η συνδρομή σας έχει ήδη μια υπάρχουσα έκπτωση. Η μετάβαση σε αυτή τη νέα προσφορά σημαίνει ότι η υπάρχουσα έκπτωση δε θα ισχύει πλέον."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Θα ανακατευθυνθείτε σύντομα στο Paypal, για να επαληθεύσετε την πληρωμή σας."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Θα ανακατευθυνθείτε σύντομα, για να επαληθεύσετε την πληρωμή σας."
       ]
     },
     "Payments.Error": {
@@ -12284,6 +12359,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Τραπεζική μεταφορά - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - κάρτα που λήγει σε ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -15612,6 +15690,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ Οι κατηγορίες έρχονται!"
+      ],
+      "Create folder \"${ search }\"": [
+        "Δημιουργία φακέλου \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Δημιουργία ετικέτας \"${ search }\""
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16189,6 +16273,30 @@
       ],
       "Passcode:": [
         "Κωδικός πρόσβασης:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } ακόμη αποτέλεσμα δεν εμφανίζεται",
+        "${ hiddenResultsCount } ακόμη αποτελέσματα δεν εμφανίζονται"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Προσφορά Black Friday"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Βοηθήστε τα αγαπημένα σας πρόσωπα να συμμετάσχουν στην επανάσταση της ιδιωτικότητας με τα πακέτα μας με την καλύτερη σχέση ποιότητας-τιμής, τώρα με έκπτωση 50%!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Συμμετάσχετε στην επανάσταση της ιδιωτικότητας με τα πακέτα μας με την καλύτερη σχέση ποιότητας-τιμής, τώρα με έκπτωση 50%!"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Κάτι πήγε στραβά. Η επαλήθευση του Google Pay απέτυχε."
       ]
     }
   }

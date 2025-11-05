@@ -2008,6 +2008,39 @@
       ],
       "Block ads, trackers, and malware": [
         "Hirdetések, trackerek és rosszindulatú programok blokkolása"
+      ],
+      "2 TB data storage": [
+        "2 TB adattárhely"
+      ],
+      "3 TB data storage": [
+        "3 TB adattárhely"
+      ],
+      "Access advanced AI models": [
+        "Hozzáférés a fejlett AI-modellekhez"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "A ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } és ${ CALENDAR_SHORT_APP_NAME } összes prémium funkciója"
+      ],
+      "Built-in 2FA authenticator": [
+        "Beépített Kétlépcsős hitelesítés"
+      ],
+      "Connect 10 devices at once": [
+        "Csatlakoztasson 10 eszközt egyszerre"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Teljes csevegési előzmények egyszerű kereséssel és kedvencekkel"
+      ],
+      "Individual accounts for 6 users": [
+        "Egyéni fiókok 6 felhasználó számára"
+      ],
+      "Individual accounts for you and a partner": [
+        "Egyéni fiókok Önnek és partnerének"
+      ],
+      "Stronger protection against cyber threats": [
+        "Erősebb védelem a kiberfenyegetések ellen"
+      ],
+      "Unlimited daily chats": [
+        "Korlátlan napi csevegés"
       ]
     },
     "BF2025: Heading alt": {
@@ -2018,6 +2051,18 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "a következőhöz: ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Spóroljon ${ savedAmount } a legjobb ár-érték arányú, korlátozott ideig érvényes ajánlatunkkal!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Váltson 2 éves Csomagunkra, és spóroljon ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Váltson éves Csomagunkra, és spóroljon ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Kényeztesse családját teljes digitális védelemmel."
       ]
     },
     "Billing cycle option": {
@@ -15228,6 +15273,24 @@
       ],
       "Passcode:": [
         "Belépési kód:"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Black Friday Akció"
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Segítsen szeretteinek csatlakozni az adatvédelmi forradalomhoz a legjobb ár-érték arányú Kombinált csomagjainkkal, most 50% kedvezménnyel!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Csatlakozzon az adatvédelmi forradalomhoz a legjobb ár-érték arányú Kombinált csomagjainkkal, most 50% kedvezménnyel!"
+      ]
+    },
+    "BF2025: Tooltip": {
+      "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
+        "A speciálisan tervezett NetShield megvédi eszközeit, és felgyorsítja a böngészést a hirdetések, követők és rosszindulatú szoftverek blokkolásával."
       ]
     }
   }

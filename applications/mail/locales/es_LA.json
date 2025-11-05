@@ -8939,6 +8939,21 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Está a solo unos clics de tener una bandeja de entrada ordenada"
+      ],
+      "Google Pay mark": [
+        "Marca de Google Pay"
+      ],
+      "Saving draft": [
+        "Guardando borrador"
+      ],
+      "Scheduling message": [
+        "Programando el mensaje"
+      ],
+      "Sending message": [
+        "Enviando el mensaje"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Hemos mejorado su almacenamiento de ${ DRIVE_APP_NAME } a 5 GB. Mantenga sus archivos y fotos importantes cifrados."
       ]
     },
     "info": {
@@ -9989,6 +10004,15 @@
       ],
       "ZIP code": [
         "Código postal"
+      ],
+      "Always label sender's emails": [
+        "Etiquetar siempre los correos de remitentes"
+      ],
+      "Always move sender's emails": [
+        "Mover siempre los correos de remitentes"
+      ],
+      "Move messages to": [
+        "Mover mensajes a"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12162,6 +12186,9 @@
       ],
       "New credit/debit card": [
         "Tarjeta de crédito/débito nueva"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12298,6 +12325,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Su suscripción actualmente tiene un descuento. Cambiar a esta promoción nueva significa que el descuento existente ya no se aplicará."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Pronto se le redirigirá a PayPal para verificar el pago."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Pronto se le redirigirá para verificar el pago."
       ]
     },
     "Payments.Error": {
@@ -12339,6 +12372,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Transferencia bancaria - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - tarjeta terminada en ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -15667,6 +15703,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ ¡Llegan las categorías!"
+      ],
+      "Create folder \"${ search }\"": [
+        "Crear carpeta «${ search }»"
+      ],
+      "Create label \"${ search }\"": [
+        "Crear etiqueta «${ search }»"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16244,6 +16286,17 @@
       ],
       "Passcode:": [
         "Código de acceso:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } resultado más no se muestra",
+        "${ hiddenResultsCount } más resultados no mostrados"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Algo salió mal. Falló la verificación de Google Pay."
       ]
     }
   }

@@ -4368,6 +4368,9 @@
       ],
       "Only": [
         "のみ"
+      ],
+      "2 TB of storage to share": [
+        "2 TBのストレージを共有"
       ]
     },
     "Duo offer: Link": {
@@ -8793,6 +8796,12 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "不要なものが整理された受信トレイまで、あと数クリックです。"
+      ],
+      "Google Pay mark": [
+        "Google Pay マーク"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "${ DRIVE_APP_NAME } のストレージを5GBにアップグレードいたしました。お客様の重要なファイルや写真は、暗号化済みで安全に保管してください。"
       ]
     },
     "info": {
@@ -9835,6 +9844,15 @@
       ],
       "ZIP code": [
         "郵便番号"
+      ],
+      "Always label sender's emails": [
+        "この差出人のメールを常にラベル付け"
+      ],
+      "Always move sender's emails": [
+        "この差出人のメールを常に移動"
+      ],
+      "Move messages to": [
+        "メッセージを移動"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -11972,6 +11990,9 @@
       ],
       "New credit/debit card": [
         "新しいクレジットカード/デビットカード"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12099,6 +12120,15 @@
       ],
       "Your payment is still being processed": [
         "お支払いが現在処理中です"
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "支払いの検証のため、まもなく PayPal のサイトへリダイレクトされます。"
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "支払いの検証のため、まもなくリダイレクトされます。"
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "お客様のサブスクリプションには現在、既存の割引が適用されています。この新しいプロモーションに移行すると、既存の割引は適用されなくなります。"
       ]
     },
     "Payments.Error": {
@@ -12140,6 +12170,9 @@
       ],
       "Bank transfer - ${ details }": [
         "銀行振込 - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay - 末尾が${ paymentMethod.Details.Last4 }のカード"
       ]
     },
     "Payments.Sepa": {
@@ -15372,6 +15405,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ カテゴリがまもなく登場します！"
+      ],
+      "Create folder \"${ search }\"": [
+        "「${ search }」フォルダを作成"
+      ],
+      "Create label \"${ search }\"": [
+        "「${ search }」ラベルを作成"
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -15904,6 +15943,16 @@
       ],
       "Passcode:": [
         "パスコード："
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } 件の追加の結果は表示されていません"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "何か問題が発生しました。Google Payの認証に失敗しました。"
       ]
     }
   }

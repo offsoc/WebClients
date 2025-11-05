@@ -151,7 +151,7 @@
         "Далучыць здымак(-і) экрана"
       ],
       "Attachment": [
-        "Далучэнне"
+        "Далучыць"
       ],
       "Attention required": [
         "Патрабуецца ўвага"
@@ -2199,6 +2199,36 @@
       ],
       "Unlimited daily chats": [
         "Неабмежаваная колькасць штодзённых чатаў"
+      ],
+      "2 TB data storage": [
+        "Сховішча даных памерам у 2 ТБ"
+      ],
+      "3 TB data storage": [
+        "Сховішча даных памерам у 3 ТБ"
+      ],
+      "Access 15,000+ servers in 120+ countries": [
+        "Доступ да 15 000+ сервераў у 120+ краінах"
+      ],
+      "Access advanced AI models": [
+        "Доступ да перадавых мадэляў ШІ"
+      ],
+      "All premium features of ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME }, and ${ CALENDAR_SHORT_APP_NAME }": [
+        "Усе прэміяльныя функцыі ${ MAIL_SHORT_APP_NAME }, ${ PASS_SHORT_APP_NAME }, ${ DRIVE_SHORT_APP_NAME }, ${ VPN_SHORT_APP_NAME } і ${ CALENDAR_SHORT_APP_NAME }"
+      ],
+      "Connect 10 devices at once": [
+        "Падключыце 10 прылад адначасова"
+      ],
+      "Full chat history with easy search and favorites": [
+        "Поўная гісторыя чатаў з простым пошукам і абранымі"
+      ],
+      "Individual accounts for 6 users": [
+        "Індывідуальныя ўліковыя запісы для 6 карыстальнікаў"
+      ],
+      "Individual accounts for you and a partner": [
+        "Індывідуальныя ўліковыя запісы для вас і партнёра"
+      ],
+      "Stronger protection against cyber threats": [
+        "Больш моцная абарона ад кіберпагроз"
       ]
     },
     "BF2025: Heading alt": {
@@ -2209,6 +2239,18 @@
     "BF2025: Offers": {
       "for ${ durationDeal }": [
         "за ${ durationDeal }"
+      ],
+      "Save ${ savedAmount } with our best-value, limited-time deal!": [
+        "Зэканомце ${ savedAmount } з нашай самай выгаднай абмежаванай па часе прапановай!"
+      ],
+      "Switch to our 2-year plan and save ${ savedAmount }!": [
+        "Пераключыцеся на наш 2-гадовы тарыфны план і зэканомце ${ savedAmount }!"
+      ],
+      "Switch to our yearly plan and save ${ savedAmount }!": [
+        "Пераключыцеся на наш гадавы тарыфны план і зэканомце ${ savedAmount }!"
+      ],
+      "Treat your tribe to complete digital protection.": [
+        "Абараніце сваё плямя поўнай лічбавай абаронай."
       ]
     },
     "BF2025: Tooltip": {
@@ -4071,10 +4113,10 @@
     },
     "Density mode": {
       "Comfortable": [
-        "Камфортны"
+        "Камфортная"
       ],
       "Compact": [
-        "Кампактны"
+        "Кампактная"
       ]
     },
     "Description": {
@@ -4596,7 +4638,7 @@
         "Адбылася памылка пры загрузцы параметраў псеўданіма"
       ],
       "An error occurred while saving your alias": [
-        "Адбылася памылка пры вашага псеўданіма"
+        "Адбылася памылка пры захаванні вашага псеўданіма"
       ],
       "Attachments are limited to ${ readableAttachmentMaxSize }": [
         "Далучэнні абмежаваныя да ${ readableAttachmentMaxSize }"
@@ -4839,7 +4881,7 @@
         "Не знойдзена лістоў для імпартавання - уліковы запіс не мае ўваходных"
       ],
       "No external key retrieved for user is valid for sending": [
-        "Ніводны з атрыманых знешніх ключоў для карыстальніка не падыходзіць для адпраўкі"
+        "Ніводны знешніх ключоў, які атрыманы для карыстальніка, не падыходзіць для адпраўкі"
       ],
       "No valid address found": [
         "Не знойдзена сапраўдных адрасоў"
@@ -5085,7 +5127,7 @@
         "Адбылася памылка падчас экспартавання кантактаў vCard"
       ],
       "This action cannot be performed": [
-        "Гэта дзеянне не можа быць выканана"
+        "Гэта дзеянне немагчыма выканаць"
       ],
       "This field exceeds the maximum of ${ maximumLength } characters.": [
         "Гэта поле перавышае максімальную колькасць сімвалаў (максімум: ${ maximumLength })."
@@ -5172,7 +5214,7 @@
         "Вашы лісты не могуць быць расшыфраваны з прычыны нядаўняга скідання пароля. Калі вы памятаеце свой папярэдні пароль, то можна ${ reActivateKeyLink } для атрымання доступу да сваіх паведамленняў. ${ learnMoreLink }"
       ],
       "Your emails cannot be decrypted. This may be due to a password reset. ${ learnMoreLink }": [
-        "Вашы лісты не могуць быць расшыфраваны. Прычынай гэтаму можа быць нядаўняе скіданне пароля. ${ learnMoreLink }"
+        "Вашы лісты немагчыма расшыфраваць. Прычынай гэтаму можа быць нядаўняе скіданне пароля. ${ learnMoreLink }"
       ],
       "Your import will not be processed.": [
         "Ваша імпартаванне не будзе апрацавана."
@@ -5202,7 +5244,7 @@
         "Чарнавікі не могуць быць перамешчаны ва Уваходныя"
       ],
       "Drafts cannot be moved to Spam": [
-        "Чарнавікі не могуць быць перамешчаны ў папку са спамам"
+        "Немагчыма перамясціць чарнавікі ў папку са спамам"
       ],
       "Sent messages cannot be moved to Inbox": [
         "Адпраўленыя паведамленні не могуць быць перамешчаны ў папку Уваходныя"
@@ -5211,7 +5253,7 @@
         "Адпраўленыя паведамленні не могуць быць перамешчаны ў папку са спамам"
       ],
       "This action cannot be performed": [
-        "Гэта дзеянне не можа быць выканана"
+        "Гэта дзеянне немагчыма выканаць"
       ]
     },
     "Error importing calendar": {
@@ -9164,6 +9206,21 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Вам засталося некалькі націскаў, каб навесці парадак у сваёй паштовай скрыні"
+      ],
+      "Google Pay mark": [
+        "Пазнака Google Pay"
+      ],
+      "Saving draft": [
+        "Захаванне чарнавіка"
+      ],
+      "Scheduling message": [
+        "Планаванне паведамлення"
+      ],
+      "Sending message": [
+        "Адпраўка паведамлення"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Ваша сховішча ${ DRIVE_APP_NAME } палепшана да 5 ГБ. Захоўвайце свае важныя файлы і фатаграфіі ў зашыфраваным выглядзе."
       ]
     },
     "info": {
@@ -10230,6 +10287,15 @@
       ],
       "ZIP code": [
         "Паштовы індэкс"
+      ],
+      "Always label sender's emails": [
+        "Заўсёды пазначаць лісты адпраўніка"
+      ],
+      "Always move sender's emails": [
+        "Заўсёды перамяшчаць лісты адпраўніка"
+      ],
+      "Move messages to": [
+        "Перамясціць паведамленні ў"
       ]
     },
     "Label (begin date/advanced search)": {
@@ -12475,6 +12541,9 @@
       ],
       "New credit/debit card": [
         "Новая банкаўская картка"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -12623,6 +12692,12 @@
       ],
       "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
         "Ваша падпіска мае бягучую скідку. Пераход на гэту новую акцыю азначае, што ранейшая скідка больш не будзе ўжывацца."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "Неўзабаве вы будзеце перанакіраваны на сайт PayPal для спраўджання плацяжу."
+      ],
+      "You will soon be redirected to verify your payment.": [
+        "Неўзабаве вы будзеце перанакіраваны для спраўджання вашага плацяжу."
       ]
     },
     "Payments.Error": {
@@ -12664,6 +12739,9 @@
       ],
       "Bank transfer - ${ details }": [
         "Банкаўскі перавод - ${ details }"
+      ],
+      "Google Pay - card ending in ${ paymentMethod.Details.Last4 }": [
+        "Google Pay — картка, якая заканчваецца на ${ paymentMethod.Details.Last4 }"
       ]
     },
     "Payments.Sepa": {
@@ -13292,7 +13370,7 @@
         "Выяўлены памылкі. Ваш ліст не можа быць адпраўлены на любы з уведзеных адрасоў электроннай пошты з прычыны:"
       ],
       "We have detected some errors. Your email cannot be sent to one or more of the email addresses entered due to the following reasons:": [
-        "Выяўлены некаторыя памылкі. Ваш ліст не можа быць адпраўлены на любы з уведзеных адрасоў электроннай пошты з прычыны:"
+        "Выяўлены некаторыя памылкі. Ваш ліст немагчыма адправіць на любы з уведзеных адрасоў электроннай пошты з прычыны:"
       ]
     },
     "Send email with warnings": {
@@ -16184,6 +16262,12 @@
       ],
       "✨ Categories are coming!": [
         "✨ Неўзабаве чакайце катэгорыі!"
+      ],
+      "Create folder \"${ search }\"": [
+        "Стварыць папку \"${ search }\""
+      ],
+      "Create label \"${ search }\"": [
+        "Стварэнне меткі \"${ search }\""
       ]
     },
     "Today icon tooltip in mini calendar": {
@@ -16282,7 +16366,7 @@
     },
     "tooltip": {
       "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
-        "${ LUMO_APP_NAME }: Памочнік ШІ, які паважае вашу прыватнасць"
+        "${ LUMO_APP_NAME }: памочнік ШІ, які паважае вашу прыватнасць"
       ],
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Бяспечныя запісы ўваходу на ўсіх вашых прыладах. Уключае неабмежаваную колькасць псеўданімаў, абагульненне, інтэграцыю з 2ФА і іншыя функцыі."
@@ -16851,6 +16935,32 @@
       ],
       "Passcode:": [
         "Код доступу:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "Яшчэ ${ hiddenResultsCount } вынік не паказаны",
+        "Яшчэ ${ hiddenResultsCount } вынікі не паказаны",
+        "Яшчэ ${ hiddenResultsCount } вынікаў не паказаны",
+        "Яшчэ ${ hiddenResultsCount } вынікаў не паказаны"
+      ]
+    },
+    "BF2025: Action (top button in header)": {
+      "Black Friday sale": [
+        "Распродаж з нагоды \"Чорнай пятніцы\""
+      ]
+    },
+    "BF2025: Offer subtitle": {
+      "Help your loved ones join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Дапамажыце сваім блізкім далучыцца да рэвалюцыі прыватнасці з нашымі самымі выгаднымі камплектамі, зараз са зніжкай 50%!"
+      ],
+      "Join the privacy revolution with our best-value bundles, now at 50% off!": [
+        "Далучайцеся да рэвалюцыі прыватнасці з нашымі самымі выгаднымі камплектамі, зараз са зніжкай 50%!"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Нешта пайшло не так. Збой праверкі Google Pay."
       ]
     }
   }
