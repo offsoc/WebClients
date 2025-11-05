@@ -7186,6 +7186,18 @@
       ],
       "Your plan": [
         "Vaš plan"
+      ],
+      "Date": [
+        "Datum"
+      ],
+      "Location": [
+        "Lokacija"
+      ],
+      "Time": [
+        "Vrijeme"
+      ],
+      "Time zone": [
+        "Vremenska zona"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

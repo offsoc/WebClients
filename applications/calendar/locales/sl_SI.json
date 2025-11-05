@@ -11162,6 +11162,18 @@
       ],
       "Your shorter address is now ready": [
         "Vaš krajši naslov je zdaj pripravljen"
+      ],
+      "Date": [
+        "Datum"
+      ],
+      "Location": [
+        "Lokacija"
+      ],
+      "Time": [
+        "Čas"
+      ],
+      "Time zone": [
+        "Časovni pas"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -968,6 +968,18 @@
       ],
       "Book": [
         "Prenota"
+      ],
+      "Confirm booking": [
+        "Conferma prenotazione"
+      ],
+      "Copy link and close": [
+        "Copia link e chiudi"
+      ],
+      "Remove the booking range": [
+        "Rimuovi l'intervallo di prenotazione"
+      ],
+      "Split current booking range": [
+        "Dividi l'intervallo di prenotazione attuale"
       ]
     },
     "action": {
@@ -3128,6 +3140,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Hai già creato 10 alias. Ottieni alias illimitati e 500 GB di spazio di archiviazione con ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Riceverai a breve una email sicura con i dettagli."
       ]
     },
     "description": {
@@ -3321,6 +3336,9 @@
       ],
       "30m": [
         "30m"
+      ],
+      "15 minutes": [
+        "15 minuti"
       ]
     },
     "Edit billing address form note": {
@@ -3969,6 +3987,12 @@
       ],
       "ZIP code is required": [
         "Il codice postale è obbligatorio"
+      ],
+      "Content verification failed": [
+        "Verifica del contenuto non riuscita"
+      ],
+      "No booking page data received": [
+        "Nessun dato della pagina di prenotazione ricevuto"
       ]
     },
     "error": {
@@ -6342,6 +6366,37 @@
       ],
       "Where will the appointment take place?": [
         "Dove si terrà l'appuntamento?"
+      ],
+      "Booking already exists.": [
+        "La prenotazione esiste già."
+      ],
+      "Booking cannot be added in the past.": [
+        "Non è possibile aggiungere una prenotazione nel passato."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "Questa prenotazione si sovrappone a una prenotazione esistente."
+      ],
+      "How long should an appointment last?": [
+        "Quanto dovrebbe durare un appuntamento?"
+      ],
+      "Name your booking page": [
+        "Dai un nome alla tua pagina di prenotazione"
+      ],
+      "No available slots for this day": [
+        "Nessuno slot disponibile per questo giorno"
+      ],
+      "Saving event": [
+        "Salvataggio evento",
+        "Salvataggio eventi"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Condividi questa pagina per permettere ad altri di prenotare un orario nel tuo calendario. Puoi gestirlo in qualsiasi momento nella barra laterale, sotto Pagine di prenotazione."
+      ],
+      "When are you free?": [
+        "Quando sei libero?"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "Non puoi avere più di ${ MAX_BOOKING_SLOTS } slot di prenotazione su una pagina."
       ]
     },
     "info": {
@@ -9452,6 +9507,12 @@
       ],
       "Add password": [
         "Aggiungi una password"
+      ],
+      "Add a booking page description": [
+        "Aggiungi una descrizione alla pagina di prenotazione"
+      ],
+      "Booking page title": [
+        "Titolo della pagina di prenotazione"
       ]
     },
     "Placeholder for contact group name": {
@@ -11911,6 +11972,24 @@
       ],
       "Your booking page is ready": [
         "La tua pagina di prenotazione è pronta"
+      ],
+      "Date": [
+        "Data"
+      ],
+      "Host": [
+        "Host"
+      ],
+      "Location": [
+        "Posizione"
+      ],
+      "Time": [
+        "Ora"
+      ],
+      "Time zone": [
+        "Fuso orario"
+      ],
+      "Your booking is confirmed": [
+        "La tua prenotazione è confermata"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12575,6 +12654,25 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Qualcosa è andato storto. La verifica di Google Pay non è riuscita."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } altro risultato non mostrato",
+        "${ hiddenResultsCount } altri risultati non mostrati"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Le tue informazioni di contatto"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Data dell'intervallo di prenotazione"
+      ],
+      "End time of the booking range": [
+        "Ora di fine dell'intervallo di prenotazione"
       ]
     }
   }

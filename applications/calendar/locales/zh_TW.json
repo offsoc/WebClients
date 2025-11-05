@@ -904,6 +904,9 @@
       ],
       "Create an event": [
         "建立新活動"
+      ],
+      "Copy link and close": [
+        "複製連結並關閉"
       ]
     },
     "action": {
@@ -10663,6 +10666,21 @@
       ],
       "Your shorter address is now ready": [
         "您的短地址已完成"
+      ],
+      "Date": [
+        "日期"
+      ],
+      "Location": [
+        "位置"
+      ],
+      "Time": [
+        "時間"
+      ],
+      "Time zone": [
+        "時區"
+      ],
+      "Your booking is confirmed": [
+        "你的預約已確認"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

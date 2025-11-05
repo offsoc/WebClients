@@ -964,6 +964,12 @@
       ],
       "Book": [
         "予約"
+      ],
+      "Confirm booking": [
+        "予約の確認"
+      ],
+      "Copy link and close": [
+        "リンクをコピーして閉じる"
       ]
     },
     "action": {
@@ -2855,6 +2861,9 @@
       ],
       "event": [
         "予定"
+      ],
+      "Doesn't end": [
+        "終了しない"
       ]
     },
     "customer_support.feature.all": {
@@ -3103,6 +3112,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "すでに 10 個のエリアスを作成しました。${ BRAND_NAME }Unlimitedで無制限のエイリアスと 500 GBのストレージを獲得しましょう。"
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "まもなく、詳細が記載された安全なメールをお客様にお届けします。"
       ]
     },
     "description": {
@@ -3913,6 +3925,12 @@
       ],
       "ZIP code is required": [
         "郵便番号は必須です"
+      ],
+      "Content verification failed": [
+        "コンテンツの検証に失敗しました。"
+      ],
+      "No booking page data received": [
+        "予約ページのデータを受信できませんでした"
       ]
     },
     "error": {
@@ -6245,6 +6263,27 @@
       ],
       "Where will the appointment take place?": [
         "ご予定はどこで行われますか？"
+      ],
+      "Booking already exists.": [
+        "予約は既に存在します。"
+      ],
+      "Booking cannot be added in the past.": [
+        "過去に予約を追加することはできません。"
+      ],
+      "Booking overlaps with an existing booking.": [
+        "予約が既存の予約と重複しています。"
+      ],
+      "No available slots for this day": [
+        "この日に利用可能な空きがありません"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "他のお客様がお客様のカレンダーで時間を予約できるように、このページを共有してください。サイドバーの「予約ページ」から、いつでも管理できます。"
+      ],
+      "When are you free?": [
+        "いつご都合がよろしいでしょうか？"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "1ページに設定できる予約枠は${ MAX_BOOKING_SLOTS }件までです。"
       ]
     },
     "info": {
@@ -11598,6 +11637,24 @@
       ],
       "Your booking page is ready": [
         "予約ページの準備ができました"
+      ],
+      "Date": [
+        "日付"
+      ],
+      "Host": [
+        "ホスト"
+      ],
+      "Location": [
+        "場所"
+      ],
+      "Time": [
+        "時間"
+      ],
+      "Time zone": [
+        "タイムゾーン"
+      ],
+      "Your booking is confirmed": [
+        "お客様のご予約が確認されました"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12234,6 +12291,16 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "何か問題が発生しました。Google Payの認証に失敗しました。"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } 件の追加の結果は表示されていません"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "お客様の連絡先情報"
       ]
     }
   }

@@ -11578,6 +11578,18 @@
       ],
       "Your booking page is ready": [
         "예약 페이지가 준비되었습니다"
+      ],
+      "Date": [
+        "날짜"
+      ],
+      "Location": [
+        "위치"
+      ],
+      "Time": [
+        "시간"
+      ],
+      "Time zone": [
+        "시간대"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

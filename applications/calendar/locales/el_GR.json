@@ -968,6 +968,12 @@
       ],
       "Book": [
         "Κράτηση"
+      ],
+      "Confirm booking": [
+        "Επιβεβαίωση κράτησης"
+      ],
+      "Copy link and close": [
+        "Αντιγραφή συνδέσμου και κλείσιμο"
       ]
     },
     "action": {
@@ -3128,6 +3134,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Έχετε ήδη δημιουργήσει 10 ψευδώνυμα. Αποκτήστε απεριόριστα ψευδώνυμα και 500 GB αποθηκευτικού χώρου με ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Σύντομα θα λάβετε ένα ασφαλές μήνυμα ηλεκτρονικού ταχυδρομείου με τις λεπτομέρειες."
       ]
     },
     "description": {
@@ -3972,6 +3981,12 @@
       ],
       "ZIP code is required": [
         "Απαιτείται ταχυδρομικός κώδικας"
+      ],
+      "Content verification failed": [
+        "Η επαλήθευση του περιεχομένου απέτυχε"
+      ],
+      "No booking page data received": [
+        "Δεν ελήφθησαν δεδομένα σελίδας κράτησης"
       ]
     },
     "error": {
@@ -6354,6 +6369,31 @@
       ],
       "Where will the appointment take place?": [
         "Πού θα λάβει χώρα το ραντεβού;"
+      ],
+      "Booking already exists.": [
+        "Η κράτηση υπάρχει ήδη."
+      ],
+      "Booking cannot be added in the past.": [
+        "Η κράτηση δεν μπορεί να προστεθεί στο παρελθόν."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "Η κράτηση επικαλύπτεται με μια υπάρχουσα κράτηση."
+      ],
+      "No available slots for this day": [
+        "Δεν υπάρχουν διαθέσιμες χρονοθυρίδες για αυτή την ημέρα"
+      ],
+      "Saving event": [
+        "Αποθήκευση εκδήλωσης",
+        "Αποθήκευση εκδηλώσεων"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Μοιραστείτε αυτή τη σελίδα για να επιτρέψετε σε άλλους να κλείσουν ραντεβού στο ημερολόγιό σας. Μπορείτε να το διαχειριστείτε ανά πάσα στιγμή στην πλαϊνή στήλη, στην ενότητα Σελίδες Κρατήσεων."
+      ],
+      "When are you free?": [
+        "Πότε είστε ελεύθεροι;"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "Δεν μπορείτε να έχετε περισσότερες από ${ MAX_BOOKING_SLOTS } χρονοθυρίδες σε μια σελίδα."
       ]
     },
     "info": {
@@ -11834,6 +11874,24 @@
       ],
       "Your booking page is ready": [
         "Η σελίδα κρατήσεών σας είναι έτοιμη"
+      ],
+      "Date": [
+        "Ημερομηνία"
+      ],
+      "Host": [
+        "Διακομιστής"
+      ],
+      "Location": [
+        "Τοποθεσία"
+      ],
+      "Time": [
+        "Ώρα"
+      ],
+      "Time zone": [
+        "Ζωνη ωρας"
+      ],
+      "Your booking is confirmed": [
+        "Η κράτησή σας επιβεβαιώθηκε"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12498,6 +12556,17 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Κάτι πήγε στραβά. Η επαλήθευση του Google Pay απέτυχε."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } ακόμη αποτέλεσμα δεν εμφανίζεται",
+        "${ hiddenResultsCount } ακόμη αποτελέσματα δεν εμφανίζονται"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Τα στοιχεία επικοινωνίας σας"
       ]
     }
   }

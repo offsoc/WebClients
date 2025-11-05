@@ -10502,6 +10502,18 @@
       ],
       "Your shorter address is now ready": [
         "Ваша коротша адреса готова"
+      ],
+      "Date": [
+        "Дата"
+      ],
+      "Location": [
+        "Розташування"
+      ],
+      "Time": [
+        "Час"
+      ],
+      "Time zone": [
+        "Часовий пояс"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

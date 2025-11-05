@@ -11575,6 +11575,18 @@
       ],
       "Your booking page is ready": [
         "თქვენი დაჯავშნის გვერდი მზადაა"
+      ],
+      "Date": [
+        "თარიღი"
+      ],
+      "Location": [
+        "მდებარეობა"
+      ],
+      "Time": [
+        "დრო"
+      ],
+      "Time zone": [
+        "დროის სარტყელი"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

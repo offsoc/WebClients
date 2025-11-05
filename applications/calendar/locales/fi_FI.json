@@ -11108,6 +11108,18 @@
       ],
       "Your shorter address is now ready": [
         "Lyhyempi osoittesi on nyt valmis"
+      ],
+      "Date": [
+        "Päiväys"
+      ],
+      "Location": [
+        "Sijainti"
+      ],
+      "Time": [
+        "Aika"
+      ],
+      "Time zone": [
+        "Aikavyöhyke"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

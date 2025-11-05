@@ -11022,6 +11022,18 @@
       ],
       "Your shorter address is now ready": [
         "A rövidebb címe elkészült"
+      ],
+      "Date": [
+        "Dátum"
+      ],
+      "Location": [
+        "Hely"
+      ],
+      "Time": [
+        "Idő"
+      ],
+      "Time zone": [
+        "Időzóna"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

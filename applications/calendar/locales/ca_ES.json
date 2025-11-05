@@ -968,6 +968,18 @@
       ],
       "Book": [
         "Reserveu"
+      ],
+      "Confirm booking": [
+        "Confirmeu la reserva"
+      ],
+      "Copy link and close": [
+        "Copieu l'enllaç i tanqueu"
+      ],
+      "Remove the booking range": [
+        "Esborreu l'interval de la reserva"
+      ],
+      "Split current booking range": [
+        "Dividiu l'interval de la reserva actual"
       ]
     },
     "action": {
@@ -3128,6 +3140,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Ja heu creat 10 àlies. Obteniu àlies il·limitats i 500 GB d'emmagatzematge amb ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Aviat rebreu un correu segur amb els detalls."
       ]
     },
     "description": {
@@ -3972,6 +3987,12 @@
       ],
       "ZIP code is required": [
         "Es requereix el codi postal."
+      ],
+      "Content verification failed": [
+        "La verificació del contingut ha fallat"
+      ],
+      "No booking page data received": [
+        "No s'han rebut dades de la pàgina de reserves"
       ]
     },
     "error": {
@@ -6354,6 +6375,31 @@
       ],
       "Where will the appointment take place?": [
         "On tindrà lloc la cita?"
+      ],
+      "Booking already exists.": [
+        "Aquesta reserva ja existeix."
+      ],
+      "Booking cannot be added in the past.": [
+        "No es poden afegir reserves en el passat."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "La reserva es superposa amb una reserva existent."
+      ],
+      "No available slots for this day": [
+        "No hi ha franges horàries disponibles per a aquest dia"
+      ],
+      "Saving event": [
+        "Desant esdeveniment",
+        "S'estan desant els esdeveniments"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Compartiu aquesta pàgina perquè altres puguin reservar temps al vostre calendari. La podreu gestionar en qualsevol moment a la barra lateral sota Pàgines de reserves."
+      ],
+      "When are you free?": [
+        "Quan teniu disponibilitat?"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "No podeu tenir més de ${ MAX_BOOKING_SLOTS } franges de reserva en una pàgina"
       ]
     },
     "info": {
@@ -11834,6 +11880,24 @@
       ],
       "Your booking page is ready": [
         "La vostra pàgina de reserves és a punt"
+      ],
+      "Date": [
+        "Data"
+      ],
+      "Host": [
+        "Amfitrió"
+      ],
+      "Location": [
+        "Ubicació"
+      ],
+      "Time": [
+        "Hora"
+      ],
+      "Time zone": [
+        "Zona horària"
+      ],
+      "Your booking is confirmed": [
+        "La vostra reserva està confirmada"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12498,6 +12562,28 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Alguna cosa ha anat malament. La verificació de Google Pay ha fallat."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } resultat més no mostrat",
+        "${ hiddenResultsCount } resultats més no mostrats"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Les vostres dades de contacte"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Data de l'interval de la reserva"
+      ],
+      "End time of the booking range": [
+        "Hora de finalització de l'interval de la reserva"
+      ],
+      "Start time of the booking range": [
+        "Hora d'inici de l'interval de la reserva"
       ]
     }
   }

@@ -11622,6 +11622,18 @@
       ],
       "Your booking page is ready": [
         "Din bookingside er klar"
+      ],
+      "Date": [
+        "Dato"
+      ],
+      "Location": [
+        "Placering"
+      ],
+      "Time": [
+        "Tid"
+      ],
+      "Time zone": [
+        "Tidszone"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

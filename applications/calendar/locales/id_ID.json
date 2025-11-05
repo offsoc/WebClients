@@ -11461,6 +11461,18 @@
       ],
       "Your shorter address is now ready": [
         "Alamat lebih pendek Anda sudah siap"
+      ],
+      "Date": [
+        "Tanggal"
+      ],
+      "Location": [
+        "Lokasi"
+      ],
+      "Time": [
+        "Waktu"
+      ],
+      "Time zone": [
+        "Zona waktu"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

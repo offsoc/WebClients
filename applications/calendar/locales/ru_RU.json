@@ -11347,6 +11347,18 @@
       ],
       "Your shorter address is now ready": [
         "Ваш укороченный адрес готов"
+      ],
+      "Date": [
+        "Дата"
+      ],
+      "Location": [
+        "Местоположение"
+      ],
+      "Time": [
+        "Время"
+      ],
+      "Time zone": [
+        "Часовой пояс"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

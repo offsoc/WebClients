@@ -968,6 +968,9 @@
       ],
       "Book": [
         "Rezerve et"
+      ],
+      "Confirm booking": [
+        "Rezervasyonu onayla"
       ]
     },
     "action": {
@@ -6354,6 +6357,9 @@
       ],
       "Where will the appointment take place?": [
         "Randevu nerede gerçekleşecek?"
+      ],
+      "Booking already exists.": [
+        "Rezervasyon zaten var"
       ]
     },
     "info": {
@@ -11924,6 +11930,18 @@
       ],
       "Your booking page is ready": [
         "Rezervasyon sayfanız hazır"
+      ],
+      "Date": [
+        "Tarih"
+      ],
+      "Location": [
+        "Konum"
+      ],
+      "Time": [
+        "Zaman"
+      ],
+      "Time zone": [
+        "Saat dilimi"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -968,6 +968,12 @@
       ],
       "Book": [
         "Bestill"
+      ],
+      "Confirm booking": [
+        "Bekreft bestilling"
+      ],
+      "Copy link and close": [
+        "Kopier kobling og lukk"
       ]
     },
     "action": {
@@ -3128,6 +3134,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Du har allerede opprettet 10 aliaser. Få ubegrensede aliaser og 500 GB lagringsplass med ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Du vil motta en sikker e-post med detaljene snart."
       ]
     },
     "description": {
@@ -3972,6 +3981,12 @@
       ],
       "ZIP code is required": [
         "Postnummer kreves"
+      ],
+      "Content verification failed": [
+        "Innholdsverifisering mislyktes"
+      ],
+      "No booking page data received": [
+        "Ingen bestillingssidedata mottatt"
       ]
     },
     "error": {
@@ -6354,6 +6369,31 @@
       ],
       "Where will the appointment take place?": [
         "Hvor vil avtalen finne sted?"
+      ],
+      "Booking already exists.": [
+        "Bestilling finnes allerede."
+      ],
+      "Booking cannot be added in the past.": [
+        "En bestilling kan ikke legges til i fortiden."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "Bestillingen overlapper med en eksisterende bestilling."
+      ],
+      "No available slots for this day": [
+        "Ingen ledige tidspunkter denne dagen"
+      ],
+      "Saving event": [
+        "Lagrer hendelsen",
+        "Lagrer hendelser"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Del denne siden for å la andre bestille tid i kalenderen din. Du kan administrere den når som helst i sidefeltet under bestillingssider."
+      ],
+      "When are you free?": [
+        "Når er du ledig?"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "Du kan ikke ha mer enn ${ MAX_BOOKING_SLOTS } bestillingstider på en side."
       ]
     },
     "info": {
@@ -11834,6 +11874,24 @@
       ],
       "Your booking page is ready": [
         "Bestillingssiden din er klar"
+      ],
+      "Date": [
+        "Dato"
+      ],
+      "Host": [
+        "Vert"
+      ],
+      "Location": [
+        "Plassering"
+      ],
+      "Time": [
+        "Tid"
+      ],
+      "Time zone": [
+        "Tidssone"
+      ],
+      "Your booking is confirmed": [
+        "Bestillingen din er bekreftet"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12498,6 +12556,17 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Noe gikk galt. Google Pay-verifiseringen mislyktes."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } resultat til som ikke vises",
+        "${ hiddenResultsCount } resultater til som ikke vises"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Kontaktinformasjonen din"
       ]
     }
   }

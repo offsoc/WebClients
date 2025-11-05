@@ -8835,6 +8835,18 @@
       ],
       "Your shorter address is now ready": [
         "आपका छोटा पता अब तैयार है"
+      ],
+      "Date": [
+        "दिनांक"
+      ],
+      "Location": [
+        "स्थान"
+      ],
+      "Time": [
+        "समय"
+      ],
+      "Time zone": [
+        "समय क्षेत्र"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

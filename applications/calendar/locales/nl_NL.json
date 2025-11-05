@@ -11537,6 +11537,18 @@
       ],
       "Your shorter address is now ready": [
         "Uw kortere adres is nu klaar"
+      ],
+      "Date": [
+        "Datum"
+      ],
+      "Location": [
+        "Locatie"
+      ],
+      "Time": [
+        "Tijd"
+      ],
+      "Time zone": [
+        "Tijdzone"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
