@@ -9254,6 +9254,12 @@
       ],
       "You will soon be redirected to verify your payment.": [
         "Du kommer snart att omdirigeras för att verifiera din betalning."
+      ],
+      "VAT": [
+        "Moms"
+      ],
+      "VAT number": [
+        "Momsnummer"
       ]
     },
     "Payments.Error": {
@@ -9338,6 +9344,12 @@
       ],
       "VAT number": [
         "Momsnummer"
+      ],
+      "Add VAT number": [
+        "Lägg till momsnummer"
+      ],
+      "Edit VAT number": [
+        "Redigera momsnummer"
       ]
     },
     "PGP key encryption warning": {

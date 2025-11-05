@@ -968,6 +968,9 @@
       ],
       "Confirm booking": [
         "Confirmar agendamento"
+      ],
+      "Copy link and close": [
+        "Copiar link e fechar"
       ]
     },
     "action": {
@@ -3209,6 +3212,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Você já criou 10 aliases. Obtenha aliases ilimitados e 500 GB de armazenamento com ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "Você receberá um e-mail seguro com os detalhes em breve."
       ]
     },
     "description": {
@@ -4047,6 +4053,9 @@
       ],
       "Content verification failed": [
         "Verificação de conteúdo falhou"
+      ],
+      "No booking page data received": [
+        "Nenhum dado de página de reserva recebido"
       ]
     },
     "error": {
@@ -6445,6 +6454,9 @@
       ],
       "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
         "Você não pode ter mais de ${ MAX_BOOKING_SLOTS } horários de agendamento em uma página."
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Compartilhe esta página para que outras pessoas possam agendar um horário no seu calendário. Você pode gerenciá-la a qualquer momento na barra lateral em Páginas de agendamento."
       ]
     },
     "info": {
@@ -11939,6 +11951,12 @@
       ],
       "Time zone": [
         "Fuso horário"
+      ],
+      "Host": [
+        "Anfitrião"
+      ],
+      "Your booking is confirmed": [
+        "Sua reserva está confirmada"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

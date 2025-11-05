@@ -6444,6 +6444,10 @@
       ],
       "Where will the appointment take place?": [
         "Où aura lieu le rendez-vous ?"
+      ],
+      "Saving event": [
+        "Enregistrement de l'événement",
+        "Enregistrement des événements"
       ]
     },
     "info": {
@@ -12521,6 +12525,12 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Une erreur s'est produite. La vérification Google Pay n'a pas abouti."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } autre résultat non affiché",
+        "${ hiddenResultsCount } autres résultats non affichés"
       ]
     }
   }

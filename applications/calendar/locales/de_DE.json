@@ -6453,6 +6453,10 @@
       ],
       "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
         "Du kannst nicht mehr als ${ MAX_BOOKING_SLOTS } Buchungszeiträume auf einer Seite haben."
+      ],
+      "Saving event": [
+        "Termin wird gespeichert",
+        "Termine werden gespeichert"
       ]
     },
     "info": {
@@ -12530,6 +12534,12 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Etwas ist schiefgelaufen. Die Google Pay-Verifizierung ist fehlgeschlagen."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } weiteres Ergebnis nicht angezeigt",
+        "${ hiddenResultsCount } weitere Ergebnisse nicht angezeigt"
       ]
     }
   }
