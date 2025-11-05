@@ -8867,6 +8867,18 @@
       ],
       "Google Pay mark": [
         "Google Pay-merke"
+      ],
+      "Saving draft": [
+        "Lagrer utkast"
+      ],
+      "Scheduling message": [
+        "Planlegger melding"
+      ],
+      "Sending message": [
+        "Sender melding"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Vi har oppgradert lagringsplassen for ${ DRIVE_APP_NAME } til 5 GB. Hold viktige filer og bilder kryptert."
       ]
     },
     "info": {
@@ -16288,6 +16300,12 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Noe gikk galt. Google Pay-verifiseringen mislyktes."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } resultat til som ikke vises",
+        "${ hiddenResultsCount } resultater til som ikke vises"
       ]
     }
   }

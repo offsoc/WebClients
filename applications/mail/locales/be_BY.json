@@ -4822,7 +4822,7 @@
         "Не знойдзена лістоў для імпартавання - уліковы запіс не мае ўваходных"
       ],
       "No external key retrieved for user is valid for sending": [
-        "Ніводны з атрыманых знешніх ключоў для карыстальніка не падыходзіць для адпраўкі"
+        "Ніводны знешніх ключоў, які атрыманы для карыстальніка, не падыходзіць для адпраўкі"
       ],
       "No valid address found": [
         "Не знойдзена сапраўдных адрасоў"
@@ -5185,7 +5185,7 @@
         "Чарнавікі не могуць быць перамешчаны ва Уваходныя"
       ],
       "Drafts cannot be moved to Spam": [
-        "Немагчыма перамясціць чаранвікі ў папку са спамам"
+        "Немагчыма перамясціць чарнавікі ў папку са спамам"
       ],
       "Sent messages cannot be moved to Inbox": [
         "Адпраўленыя паведамленні не могуць быць перамешчаны ў папку Уваходныя"
@@ -9150,6 +9150,18 @@
       ],
       "Google Pay mark": [
         "Пазнака Google Pay"
+      ],
+      "Saving draft": [
+        "Захаванне чарнавіка"
+      ],
+      "Scheduling message": [
+        "Планаванне паведамлення"
+      ],
+      "Sending message": [
+        "Адпраўка паведамлення"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Ваша сховішча ${ DRIVE_APP_NAME } палепшана да 5 ГБ. Захоўвайце свае важныя файлы і фатаграфіі ў зашыфраваным выглядзе."
       ]
     },
     "info": {
@@ -12626,7 +12638,7 @@
         "Неўзабаве вы будзеце перанакіраваны на сайт PayPal для спраўджання плацяжу."
       ],
       "You will soon be redirected to verify your payment.": [
-        "Неўзабаве вы будзеце перанакіраваны для спраўджання плацяжу."
+        "Неўзабаве вы будзеце перанакіраваны для спраўджання вашага плацяжу."
       ]
     },
     "Payments.Error": {
@@ -16953,6 +16965,14 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Нешта пайшло не так. Збой праверкі Google Pay."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "Яшчэ ${ hiddenResultsCount } вынік не паказаны",
+        "Яшчэ ${ hiddenResultsCount } вынікі не паказаны",
+        "Яшчэ ${ hiddenResultsCount } вынікаў не паказаны",
+        "Яшчэ ${ hiddenResultsCount } вынікаў не паказаны"
       ]
     }
   }

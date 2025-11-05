@@ -8705,6 +8705,9 @@
       ],
       "Google Pay mark": [
         "Google Pay マーク"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "${ DRIVE_APP_NAME } のストレージを5GBにアップグレードいたしました。お客様の重要なファイルや写真は、暗号化済みで安全に保管してください。"
       ]
     },
     "info": {
@@ -15951,6 +15954,11 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "何か問題が発生しました。Google Payの認証に失敗しました。"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } 件の追加の結果は表示されていません"
       ]
     }
   }

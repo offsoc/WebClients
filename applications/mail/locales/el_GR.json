@@ -8870,6 +8870,18 @@
       ],
       "Google Pay mark": [
         "Σήμα Google Pay"
+      ],
+      "Saving draft": [
+        "Αποθήκευση προχείρου"
+      ],
+      "Scheduling message": [
+        "Γίνεται προγραμματισμός μηνύματος"
+      ],
+      "Sending message": [
+        "Το μήνυμα αποστέλλεται"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Αναβαθμίσαμε τον ${ DRIVE_APP_NAME } αποθηκευτικό χώρο σας σε 5 GB. Κρατήστε τα σημαντικά αρχεία και τις φωτογραφίες σας κρυπτογραφημένα."
       ]
     },
     "info": {
@@ -16291,6 +16303,12 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Κάτι πήγε στραβά. Η επαλήθευση του Google Pay απέτυχε."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } ακόμη αποτέλεσμα δεν εμφανίζεται",
+        "${ hiddenResultsCount } ακόμη αποτελέσματα δεν εμφανίζονται"
       ]
     }
   }

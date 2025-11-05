@@ -8870,6 +8870,18 @@
       ],
       "Google Pay mark": [
         "Marca Google Pay"
+      ],
+      "Saving draft": [
+        "Salvando rascunho"
+      ],
+      "Scheduling message": [
+        "Agendando a mensagem"
+      ],
+      "Sending message": [
+        "Enviando a mensagem"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Atualizamos o armazenamento do seu ${ DRIVE_APP_NAME } para 5 GB. Mantenha seus arquivos e fotos importantes criptografados."
       ]
     },
     "info": {
@@ -16392,6 +16404,12 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Ocorreu um erro. A verificação do Google Pay falhou."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "Mais ${ hiddenResultsCount } resultado não exibido",
+        "Mais ${ hiddenResultsCount } resultados não exibidos"
       ]
     }
   }

@@ -8837,6 +8837,18 @@
       ],
       "Upgrade to keep your ${ planTitle } benefits.": [
         "Uppgradera för att behålla dina ${ planTitle }-förmåner."
+      ],
+      "Saving draft": [
+        "Sparar utkast"
+      ],
+      "Scheduling message": [
+        "Schemalägger meddelande"
+      ],
+      "Sending message": [
+        "Skickar meddelande"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Vi har uppgraderat ditt ${ DRIVE_APP_NAME } lagringsutrymme till 5 GB. Behåll dina viktiga filer och foton krypterade."
       ]
     },
     "info": {
@@ -12199,6 +12211,12 @@
       ],
       "You will soon be redirected to verify your payment.": [
         "Du kommer snart att omdirigeras för att verifiera din betalning."
+      ],
+      "VAT": [
+        "Moms"
+      ],
+      "VAT number": [
+        "Momsnummer"
       ]
     },
     "Payments.Error": {
@@ -12283,6 +12301,12 @@
       ],
       "VAT number": [
         "Momsnummer"
+      ],
+      "Add VAT number": [
+        "Lägg till momsnummer"
+      ],
+      "Edit VAT number": [
+        "Redigera momsnummer"
       ]
     },
     "PGP key encryption warning": {
@@ -15871,6 +15895,9 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Din gratis provperiod slutar den ${ textDate }. ${ action }"
+      ],
+      "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
+        "Din provperiod slutar den ${ textDate }. Du debiteras inte om du avbryter före ${ textDate }. ${ action }"
       ]
     },
     "WeekDay": {
@@ -16231,6 +16258,12 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Något gick fel. Google Pay-verifiering misslyckades."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } fler resultat visas inte",
+        "${ hiddenResultsCount } fler resultat visas inte"
       ]
     }
   }
