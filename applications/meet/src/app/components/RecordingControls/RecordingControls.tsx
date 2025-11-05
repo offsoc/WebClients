@@ -8,7 +8,7 @@ import { IcMeetRecord, IcStop } from '@proton/icons';
 
 import { CircleButton } from '../../atoms/CircleButton/CircleButton';
 import { useMeetContext } from '../../contexts/MeetContext';
-import { useMeetingRecorder } from '../../hooks/useMeetingRecorder';
+import { useMeetingRecorder } from '../../hooks/useMeetingRecorder/useMeetingRecorder';
 
 import './RecordingControls.scss';
 
@@ -28,7 +28,6 @@ export const RecordingControls = () => {
                 type: 'success',
             });
         } catch (error) {
-            console.error('Failed to start recording:', error);
             createNotification({
                 text: c('Error').t`Failed to start recording`,
                 type: 'error',
@@ -46,7 +45,6 @@ export const RecordingControls = () => {
                 type: 'success',
             });
         } catch (error) {
-            console.error('Failed to save recording:', error);
             createNotification({
                 text: c('Error').t`Failed to save recording`,
                 type: 'error',
