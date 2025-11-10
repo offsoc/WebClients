@@ -65,6 +65,10 @@ export function usePictureInPicture({
     const sessionManager = useRef(new PiPSessionManager());
     const preventBlur = useRef(false);
 
+    const isPipActiveRef = useRef(isPipActive);
+
+    isPipActiveRef.current = isPipActive;
+
     // Use specialized hooks
     const { setupMediaSession } = usePiPMediaSession({
         isVideoEnabled,
@@ -141,11 +145,14 @@ export function usePictureInPicture({
             });
 
             return;
-        } catch (error) {
-            notifications.createNotification({
-                type: 'error',
-                text: c('meet_2025 Error').t`Failed to start Picture-in-Picture`,
-            });
+        } catch (error: any) {
+            if (!error.message.includes('user gesture')) {
+                notifications.createNotification({
+                    type: 'error',
+                    text: c('meet_2025 Error').t`Failed to start Picture-in-Picture`,
+                });
+            }
+
             void stopPiP();
         } finally {
             preventBlur.current = false;
@@ -211,7 +218,7 @@ export function usePictureInPicture({
                 const isTabSwitch = document.hidden;
                 const leftBrowser = !document.hasFocus() && !isTabSwitch;
 
-                if (leftBrowser && isScreenShareActive && !isPipActive) {
+                if (leftBrowser && isScreenShareActive && !isPipActiveRef.current) {
                     await startPiP();
                 }
             }, 200);
