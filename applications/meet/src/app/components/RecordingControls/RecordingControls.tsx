@@ -2,9 +2,10 @@ import { useState } from 'react';
 
 import { c } from 'ttag';
 
-import { CircleLoader } from '@proton/atoms';
+import { CircleLoader } from '@proton/atoms/CircleLoader/CircleLoader';
 import { useNotifications } from '@proton/components';
-import { IcMeetRecord, IcStop } from '@proton/icons';
+import { IcMeetRecord } from '@proton/icons/icons/IcMeetRecord';
+import { IcStop } from '@proton/icons/icons/IcStop';
 
 import { CircleButton } from '../../atoms/CircleButton/CircleButton';
 import { useMeetContext } from '../../contexts/MeetContext';
