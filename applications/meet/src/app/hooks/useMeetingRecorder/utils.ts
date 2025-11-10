@@ -1,5 +1,5 @@
 import type { TrackReference } from '@livekit/components-react';
-import type { LocalParticipant, RemoteParticipant, Track } from '@proton-meet/livekit-client';
+import type { LocalParticipant, RemoteParticipant, Track } from 'livekit-client';
 
 import type { RecordingTrackInfo } from './types';
 

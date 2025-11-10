@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { useTracks } from '@livekit/components-react';
-import { Track } from '@proton-meet/livekit-client';
+import { Track } from 'livekit-client';
 
 import { wait } from '@proton/shared/lib/helpers/promise';
 
