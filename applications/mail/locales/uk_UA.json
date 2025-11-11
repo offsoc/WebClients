@@ -1481,6 +1481,9 @@
       ],
       "Zoom out": [
         "Зменшити"
+      ],
+      "Trust key": [
+        "Довіряти ключу"
       ]
     },
     "action": {
@@ -6901,6 +6904,9 @@
         "Ініціалізація…"
       ],
       "Insert image": [
+        "Вставити зображення",
+        "Вставити зображення",
+        "Вставити зображення",
         "Вставити зображення"
       ],
       "Insert link": [
@@ -8138,6 +8144,12 @@
       ],
       "Your scheduled plan starts on ${ renewalTime } and will auto-renew every month.": [
         "Ваш план починається ${ renewalTime } і буде автоматично поновлюватися щомісяця."
+      ],
+      "Creating multiple free accounts is not permitted by our ${ termsLink }.": [
+        "Створення кількох безплатних облікових записів заборонено нашими ${ termsLink }."
+      ],
+      "For additional information and to remove restrictions, please login at ${ mailLink }.": [
+        "Увійдіть у ${ mailLink } для отримання додаткової інформації та видалення обмежень."
       ]
     },
     "info": {
@@ -14089,6 +14101,9 @@
       ],
       "Your shorter address is now ready": [
         "Ваша коротша адреса готова"
+      ],
+      "Account restricted": [
+        "Обліковий запис обмежено"
       ]
     },
     "Today icon tooltip in mini calendar": {

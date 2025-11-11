@@ -1504,10 +1504,7 @@
         "Důvěřovat"
       ],
       "Trust key": [
-        "Důvěřovat klíči",
-        "Důvěřovat klíčům",
-        "Důvěřovat klíčům",
-        "Důvěřovat klíčům"
+        "Důvěřovat klíči"
       ],
       "Trust public key": [
         "Důvěřovat veřejnému klíči"
@@ -7755,7 +7752,10 @@
         "Inicializace..."
       ],
       "Insert image": [
-        "Vložit obrázek"
+        "Vložit obrázek",
+        "Vložit obrázky",
+        "Vložit obrázky",
+        "Vložit obrázky"
       ],
       "Insert link": [
         "Vložit odkaz"
@@ -9226,6 +9226,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Od doručené pošty bez nepořádku vás dělí jen několik kliknutí"
+      ],
+      "Addresses settings": [
+        "Nastavení adres"
       ]
     },
     "info": {
@@ -10633,6 +10636,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Pro zobrazení upravené pozvánky musíte znovu aktivovat své klíče"
+      ],
+      "Reactivate subscription": [
+        "Znovu aktivovat předplatné"
       ]
     },
     "Link to calendar event": {
@@ -13210,6 +13216,9 @@
       ],
       "your subscription": [
         "vaše předplatné"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Po tomto datu bude váš účet převeden na **${ BRAND_NAME } Free**. Pokud si to rozmyslíte, můžete **znovu aktivovat předplatné** a zachovat si přístup k prémiovým funkcím."
       ]
     },
     "Remaining days before the message expire": {
@@ -14170,6 +14179,9 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Ztratíte přístup k neomezeným přihlášením a poznámkám, neomezeným hide-my-email adresám, 20 trezorům a prioritní podpoře."
+      ],
+      "${ app } storage used": [
+        "${ app } úložiště využito"
       ]
     },
     "Subscription": {

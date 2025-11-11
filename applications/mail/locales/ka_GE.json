@@ -7409,7 +7409,8 @@
         "ინიციალიზაცია…"
       ],
       "Insert image": [
-        "გამოსახულების ჩასმა"
+        "გამოსახულების ჩასმა",
+        "გამოსახულებების ჩასმა"
       ],
       "Insert link": [
         "ბმულის ჩასმა"
@@ -8768,6 +8769,21 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "გაჭედვისგან თავისუფალი საფოსტო ყუთისგან რამდენიმე წკაპი გაშორებთ"
+      ],
+      "Addresses settings": [
+        "მისამართის მორგება"
+      ],
+      "Saving draft": [
+        "მონახაზის შენახვა"
+      ],
+      "Scheduling message": [
+        "დაგეგმვის შეტყობინება"
+      ],
+      "Sending message": [
+        "შეტყობინების გაგზავნა"
+      ],
+      "These conversations are kept here based on your organization's data retention policy.": [
+        "ეს საუბრები აქაა შენარჩუნებული, თქვენი ორგანიზაციის მონაცემების შენარჩუნების პოლიტიკის მიხედვით."
       ]
     },
     "info": {
@@ -10144,6 +10160,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "განახლებული მოსაწვევის სანახავად საჭიროა თქვენი გასაღების თავიდან გააქტიურება"
+      ],
+      "Reactivate subscription": [
+        "გამოწერის ხელახლა გააქტიურება"
       ]
     },
     "Link to calendar event": {
@@ -12545,6 +12564,9 @@
       ],
       "your subscription": [
         "თქვენი გამოწერა"
+      ],
+      "Last chance to explore all the powerful features that **${ planTitle }** has to offer.": [
+        "ბოლო შანსი, დაათვალიეროთ ყველა მძლავრი ფუნქცია, რომელსაც **${ planTitle }** გთავაზობთ."
       ]
     },
     "Remaining days before the message expire": {
@@ -13456,6 +13478,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "დაკარგავთ წვდომას შეუზღუდავ შესვლის დეტალებთან და შენიშვნებთან, შეუზღუდავ hide-my-email-ის ფსევდონიმებთან, 20 საცავთან და პრიორიტეტულ ხარდაჭერასთან."
+      ],
+      "${ app } storage used": [
+        "${ app } გამოყენებული საცავი"
+      ],
+      "Storage used": [
+        "გამოყენებული საცავი"
       ]
     },
     "Subscription": {
@@ -15981,6 +16009,12 @@
       ],
       "Passcode:": [
         "საკვანძო კოდი:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "ნაჩვენები არაა კიდევ ${ hiddenResultsCount } შედეგი",
+        "ნაჩვენები არაა კიდევ ${ hiddenResultsCount } შედეგი"
       ]
     }
   }

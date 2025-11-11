@@ -1654,6 +1654,9 @@
       ],
       "Zoom out": [
         "Zoom uit"
+      ],
+      "Trust key": [
+        "Vertrouwde sleutel"
       ]
     },
     "action": {
@@ -7357,7 +7360,8 @@
         "Initialiseren..."
       ],
       "Insert image": [
-        "Afbeelding invoegen"
+        "Afbeelding toevoegen",
+        "Afbeeldingen toevoegen"
       ],
       "Insert link": [
         "Koppeling invoegen"

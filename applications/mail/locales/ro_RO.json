@@ -7550,7 +7550,7 @@
         "Dacă continuați cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ MAIL_APP_NAME } și ${ VPN_APP_NAME }."
       ],
       "If you proceed with the downgrade, you will lose access to ${ MAIL_APP_NAME } paid features, including additional storage and filters.": [
-        "Dacă continuați cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ MAIL_APP_NAME }, inclusiv spațiul și filtrele suplimentare."
+        "Dacă veți continua cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ MAIL_APP_NAME }, inclusiv spațiul și filtrele suplimentare."
       ],
       "If you proceed with the downgrade, you will lose access to ${ VPN_APP_NAME } paid features.": [
         "Dacă continuați cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ VPN_APP_NAME }."
@@ -7630,7 +7630,9 @@
         "Se inițializează…"
       ],
       "Insert image": [
-        "Inserare imagine"
+        "Inserare imagine",
+        "Inserare imagini",
+        "Inserare imagini"
       ],
       "Insert link": [
         "Inserare legătură web"
@@ -9066,6 +9068,21 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Sunteți la doar câteva clicuri distanță de un cont cu mesaje ordonate."
+      ],
+      "Addresses settings": [
+        "Setări adrese"
+      ],
+      "Saving draft": [
+        "Se salvează ciorna"
+      ],
+      "Scheduling message": [
+        "Se programează mesajul"
+      ],
+      "Sending message": [
+        "Se trimite mesajul"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "V-am mărit spațiul de stocare al ${ DRIVE_APP_NAME } la 5 GiB. Păstrați-vă fișierele și fotografiile importante criptate."
       ]
     },
     "info": {
@@ -10465,6 +10482,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Trebuie să activați cheile pentru a vedea invitația actualizată"
+      ],
+      "Reactivate subscription": [
+        "Reactivare abonament"
       ]
     },
     "Link to calendar event": {
@@ -12994,6 +13014,9 @@
       ],
       "your subscription": [
         "abonament personal"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "După acea dată, contul va fi retrogradat la **${ BRAND_NAME } Free**. Dacă vă răzgândiți, vă puteți **reactiva abonamentul** pentru a vă păstra accesul la funcțiile speciale."
       ]
     },
     "Remaining days before the message expire": {
@@ -13928,6 +13951,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Veți pierde accesul la autentificări și note nelimitate, aliasuri hide-my-email nelimitate, 20 de seifuri, precum și la asistența prioritară."
+      ],
+      "${ app } storage used": [
+        "Spațiu utilizat de ${ app }"
+      ],
+      "Storage used": [
+        "Spațiu utilizat"
       ]
     },
     "Subscription": {
@@ -16578,6 +16607,13 @@
       ],
       "Passcode:": [
         "Cod de acces:"
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "Rezultate neafișate: ${ hiddenResultsCount }",
+        "Rezultate neafișate: ${ hiddenResultsCount }",
+        "Rezultate neafișate: ${ hiddenResultsCount }"
       ]
     }
   }

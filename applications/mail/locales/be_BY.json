@@ -1504,10 +1504,7 @@
         "Давяраць"
       ],
       "Trust key": [
-        "Давяраць ключу",
-        "Давяраць ключам",
-        "Давяраць ключам",
-        "Давяраць ключам"
+        "Давяраць ключу"
       ],
       "Trust public key": [
         "Давяраць публічнаму ключу"
@@ -7755,7 +7752,10 @@
         "Ініцыялізацыя…"
       ],
       "Insert image": [
-        "Уставіць відарыс"
+        "Уставіць відарыс",
+        "Уставіць відарысы",
+        "Уставіць відарысы",
+        "Уставіць відарысы"
       ],
       "Insert link": [
         "Уставіць спасылку"
@@ -9226,6 +9226,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Вам засталося некалькі націскаў, каб навесці парадак у сваёй паштовай скрыні"
+      ],
+      "Addresses settings": [
+        "Налады адрасоў"
       ]
     },
     "info": {
@@ -10633,6 +10636,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Вам неабходна паўторна актываваць ключы, каб паглядзець абноўленае запрашэнне"
+      ],
+      "Reactivate subscription": [
+        "Паўторная актывацыя падпіскі"
       ]
     },
     "Link to calendar event": {
@@ -13210,6 +13216,9 @@
       ],
       "your subscription": [
         "ваша падпіска"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Пасля гэтай даты ваш уліковы запіс будзе паніжаны да ўзроўню **${ BRAND_NAME } Free**. Калі вы перадумаеце, вы можаце **паўторна актываваць сваю падпіску**, каб захаваць доступ да прэміяльных функцый."
       ]
     },
     "Remaining days before the message expire": {
@@ -14167,6 +14176,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Вы згубіце доступ да наступных функцый: неабмежаваную колькасць запісаў уваходу і нататак; неабмежаваную колькасць псеўданімаў hide-my-email; 20 сховішчаў; прыярытэтную падтрымку."
+      ],
+      "${ app } storage used": [
+        "Выкарыстана сховішча ${ app }"
+      ],
+      "Storage used": [
+        "Выкарыстана сховішча"
       ]
     },
     "Subscription": {

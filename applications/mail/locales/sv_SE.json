@@ -1496,8 +1496,7 @@
         "Lita på"
       ],
       "Trust key": [
-        "Lita på nyckel",
-        "Lita på nycklar"
+        "Lita på nyckel"
       ],
       "Trust public key": [
         "Lita på offentlig nyckel"
@@ -7498,7 +7497,8 @@
         "Initierar …"
       ],
       "Insert image": [
-        "Infoga bild"
+        "Infoga bild",
+        "Infoga bilder"
       ],
       "Insert link": [
         "Infoga länk"
@@ -8911,6 +8911,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Du är bara några klick bort från en skräpfri inkorg"
+      ],
+      "Addresses settings": [
+        "Adressinställningar"
       ]
     },
     "info": {
@@ -10299,6 +10302,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Du måste återaktivera dina nycklar för att se den uppdaterade inbjudan"
+      ],
+      "Reactivate subscription": [
+        "Återaktivera prenumeration"
       ]
     },
     "Link to calendar event": {
@@ -13685,6 +13691,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Du kommer förlora åtkomst till obegränsat antal inloggningar och anteckningar, obegränsat antal hide-my-email, 20 valv samt prioriterad support."
+      ],
+      "${ app } storage used": [
+        "${ app } lagringsutrymme använt"
+      ],
+      "Storage used": [
+        "Lagringsutrymme använt"
       ]
     },
     "Subscription": {

@@ -7519,7 +7519,8 @@
         "Wird initialisiert…"
       ],
       "Insert image": [
-        "Bild einfügen"
+        "Bild einfügen",
+        "Bilder einfügen"
       ],
       "Insert link": [
         "Link einfügen"
@@ -8944,6 +8945,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Du bist nur ein paar Klicks von einem aufgeräumten Posteingang entfernt"
+      ],
+      "Addresses settings": [
+        "Adresseneinstellungen"
       ]
     },
     "info": {
@@ -10335,6 +10339,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Du musst deine Schlüssel erneut aktivieren, um die aktualisierte Einladung anzeigen zu können."
+      ],
+      "Reactivate subscription": [
+        "Abonnement reaktivieren"
       ]
     },
     "Link to calendar event": {
@@ -12816,6 +12823,9 @@
       ],
       "your subscription": [
         "Dein Abonnement"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Nach diesem Datum wird dein Konto auf **${ BRAND_NAME } Free** zurückgestuft. Wenn du es dir anders überlegst, kannst du dein **Abonnement reaktivieren**, um den Zugriff auf Premium-Funktionen zu behalten."
       ]
     },
     "Remaining days before the message expire": {

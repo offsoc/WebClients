@@ -7401,7 +7401,7 @@
         "初期化中…"
       ],
       "Insert image": [
-        "画像の挿入"
+        "画像を挿入"
       ],
       "Insert link": [
         "リンクを挿入"
@@ -8794,6 +8794,15 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "不要なものが整理された受信トレイまで、あと数クリックです。"
+      ],
+      "Saving draft": [
+        "下書きを保存中"
+      ],
+      "Scheduling message": [
+        "メッセージを送信予約中"
+      ],
+      "Sending message": [
+        "メッセージを送信中"
       ]
     },
     "info": {
@@ -13498,6 +13507,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "無制限のログインとメモ、無制限のhide-my-email エイリアス、20 個の保管庫、および優先サポートにアクセスできなくなります。"
+      ],
+      "${ app } storage used": [
+        "${ app } のストレージ使用量"
+      ],
+      "Storage used": [
+        "使用中のストレージ"
       ]
     },
     "Subscription": {

@@ -7519,7 +7519,8 @@
         "Inizializzazione…"
       ],
       "Insert image": [
-        "Inserisci immagine"
+        "Inserisci immagine",
+        "Inserisci immagini"
       ],
       "Insert link": [
         "Inserisci link"
@@ -8944,6 +8945,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Sei a pochi clic da una posta in arrivo organizzata"
+      ],
+      "Addresses settings": [
+        "Impostazioni indirizzi"
       ]
     },
     "info": {
@@ -10335,6 +10339,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Devi riattivare le tue chiavi per visualizzare l'invito aggiornato"
+      ],
+      "Reactivate subscription": [
+        "Riattiva l'abbonamento"
       ]
     },
     "Link to calendar event": {
@@ -12821,6 +12828,9 @@
       ],
       "your subscription": [
         "il tuo abbonamento"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Dopo quella data, per il tuo account sarà eseguito il downgrade a **${ BRAND_NAME } Free**. Se cambi idea, puoi **riattivare il tuo abbonamento** per mantenere l'accesso a funzionalità premium."
       ]
     },
     "Remaining days before the message expire": {
@@ -13732,6 +13742,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Perderai l'accesso a login, note e alias hide-my-email illimitati, 20 casseforti e al supporto prioritario."
+      ],
+      "${ app } storage used": [
+        "${ app } archiviazione utilizzata"
+      ],
+      "Storage used": [
+        "Memoria utilizzata"
       ]
     },
     "Subscription": {

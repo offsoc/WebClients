@@ -1496,8 +1496,7 @@
         "Confiar"
       ],
       "Trust key": [
-        "Clave de confianza",
-        "Claves de confianza"
+        "Confiar clave"
       ],
       "Trust public key": [
         "Confiar clave pública"
@@ -7519,7 +7518,8 @@
         "Inicializando…"
       ],
       "Insert image": [
-        "Insertar imagen"
+        "Insertar imagen",
+        "Insertar imágenes"
       ],
       "Insert link": [
         "Insertar enlace"
@@ -8944,6 +8944,9 @@
       ],
       "You’re just a few clicks away from a clutter-free inbox": [
         "Está a solo unos clics de tener una bandeja de entrada ordenada"
+      ],
+      "Addresses settings": [
+        "Ajustes de direcciones"
       ]
     },
     "info": {
@@ -10335,6 +10338,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Necesita reactivar las claves para ver la invitación actualizada"
+      ],
+      "Reactivate subscription": [
+        "Reactivar la suscripción"
       ]
     },
     "Link to calendar event": {
@@ -12816,6 +12822,9 @@
       ],
       "your subscription": [
         "su suscripción"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Después de esa fecha, su cuenta pasará a **${ BRAND_NAME } Free**. Si cambia de opinión, puede **reactivar su suscripción** para mantener el acceso a las funciones premium."
       ]
     },
     "Remaining days before the message expire": {
@@ -13727,6 +13736,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Perderá acceso a notas e inicios de sesión ilimitados, alias ilimitados de hide-my-email y 20 bóvedas así como al soporte prioritario."
+      ],
+      "${ app } storage used": [
+        "almacenamiento de ${ app } usado"
+      ],
+      "Storage used": [
+        "Almacenamiento usado"
       ]
     },
     "Subscription": {

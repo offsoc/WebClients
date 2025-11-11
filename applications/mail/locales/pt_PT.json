@@ -1612,6 +1612,9 @@
       ],
       "Zoom out": [
         "Reduzir"
+      ],
+      "Trust key": [
+        "Confiar na chave"
       ]
     },
     "action": {
@@ -7160,7 +7163,8 @@
         "A inicializar…"
       ],
       "Insert image": [
-        "Inserir uma imagem"
+        "Inserir imagem",
+        "Inserir imagens"
       ],
       "Insert link": [
         "Inserir uma ligação"
@@ -13704,6 +13708,14 @@
       ],
       "You have successfully unsubscribed": [
         "A sua subscrição foi cancelada."
+      ],
+      "${ elementsCount } conversation removed from Starred.": [
+        "${ elementsCount } conversa removida de Com estrela.",
+        "${ elementsCount } conversas removidas de Com estrela."
+      ],
+      "${ elementsCount } message removed from Starred.": [
+        "${ elementsCount } mensagem removida de .",
+        "${ elementsCount } mensagens removidas de ."
       ]
     },
     "Success notification": {
