@@ -1,40 +1,51 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { c } from 'ttag';
 
-import { CircleLoader } from '@proton/atoms/CircleLoader/CircleLoader';
+import { Button } from '@proton/atoms/Button/Button';
 import { useNotifications } from '@proton/components';
 import { IcMeetRecord } from '@proton/icons/icons/IcMeetRecord';
-import { IcStop } from '@proton/icons/icons/IcStop';
+import { IcMeetRecordStop } from '@proton/icons/icons/IcMeetRecordStop';
+import { isFirefox, isMobile } from '@proton/shared/lib/helpers/browser';
+import clsx from '@proton/utils/clsx';
 
 import { CircleButton } from '../../atoms/CircleButton/CircleButton';
-import { useMeetContext } from '../../contexts/MeetContext';
-import { useMeetingRecorder } from '../../hooks/useMeetingRecorder/useMeetingRecorder';
+import { useIsLargerThanMd } from '../../hooks/useIsLargerThanMd';
+import { useIsLocalParticipantHost } from '../../hooks/useIsLocalParticipantHost';
+import type { MeetingRecordingState } from '../../hooks/useMeetingRecorder/types';
 
 import './RecordingControls.scss';
 
-export const RecordingControls = () => {
-    const { participantNameMap } = useMeetContext();
-    const { createNotification } = useNotifications();
-    const [isStarting, setIsStarting] = useState(false);
+interface RecordingControlsProps {
+    startRecording: () => Promise<void>;
+    downloadRecording: () => Promise<void>;
+    recordingState: MeetingRecordingState;
+}
 
-    const { recordingState, startRecording, downloadRecording } = useMeetingRecorder(participantNameMap);
+export const RecordingControls = ({ startRecording, downloadRecording, recordingState }: RecordingControlsProps) => {
+    const { createNotification } = useNotifications();
+
+    const durationIntervalRef = useRef<number>();
+
+    const isLargerThanMd = useIsLargerThanMd();
+
+    const [duration, setDuration] = useState(0);
+
+    const isLocalParticipantHost = useIsLocalParticipantHost();
+
+    const recordingNotSupported = isMobile() || isFirefox();
 
     const handleStartRecording = async () => {
         try {
-            setIsStarting(true);
             await startRecording();
-            createNotification({
-                text: c('Info').t`Recording started`,
-                type: 'success',
-            });
+            durationIntervalRef.current = window.setInterval(() => {
+                setDuration((prev) => prev + 1);
+            }, 1000);
         } catch (error) {
             createNotification({
                 text: c('Error').t`Failed to start recording`,
                 type: 'error',
             });
-        } finally {
-            setIsStarting(false);
         }
     };
 
@@ -45,6 +56,8 @@ export const RecordingControls = () => {
                 text: c('Info').t`Recording saved`,
                 type: 'success',
             });
+            clearInterval(durationIntervalRef.current);
+            setDuration(0);
         } catch (error) {
             createNotification({
                 text: c('Error').t`Failed to save recording`,
@@ -64,54 +77,37 @@ export const RecordingControls = () => {
         return `${minutes}:${secs.toString().padStart(2, '0')}`;
     };
 
+    if (!isLocalParticipantHost || recordingNotSupported) {
+        return null;
+    }
+
     return (
         <div className="recording-controls flex items-center gap-2">
             {!recordingState.isRecording ? (
-                <>
-                    {isStarting ? (
-                        <div className="flex items-center justify-center" style={{ width: '2.5rem', height: '2.5rem' }}>
-                            <CircleLoader
-                                className="color-norm"
-                                style={{ '--w-custom': '1.5rem', '--h-custom': '1.5rem' }}
-                            />
-                        </div>
-                    ) : (
-                        <CircleButton
-                            IconComponent={IcMeetRecord}
-                            onClick={handleStartRecording}
-                            ariaLabel={c('Action').t`Start recording`}
-                            size={5}
-                            buttonStyle={{
-                                'padding-block': 0,
-                                'padding-inline': 0,
-                                width: '2.5rem',
-                                height: '2.5rem',
-                                backgroundColor: 'var(--signal-danger)',
-                            }}
-                        />
-                    )}
-                </>
+                <CircleButton
+                    IconComponent={IcMeetRecord}
+                    onClick={handleStartRecording}
+                    ariaLabel={c('Action').t`Start recording`}
+                    size={6}
+                />
             ) : (
-                <>
-                    <div className="recording-indicator flex items-center gap-2 bg-danger rounded px-3 py-2">
-                        <div className="recording-pulse" />
-                        <span className="text-sm font-bold color-norm">
-                            {c('Info').t`Recording`} {formatDuration(recordingState.duration)}
-                        </span>
+                <Button
+                    className={clsx(
+                        isLargerThanMd ? 'px-5 py-4' : 'px-4 py-3',
+                        'stop-recording-button border-none shrink-0 w-custom'
+                    )}
+                    pill={true}
+                    size="large"
+                    onClick={handleStopAndDownload}
+                    aria-label={c('Alt').t`Leave Meeting`}
+                    style={{ '--w-custom': '15rem' }}
+                >
+                    <div className="w-full flex items-center justify-center gap-2 flex-nowrap">
+                        <IcMeetRecordStop className="shrink-0" size={6} />
+                        <span>{c('Action').t`Stop recording`}</span>
+                        <span>{formatDuration(duration)}</span>
                     </div>
-                    <CircleButton
-                        IconComponent={IcStop}
-                        onClick={handleStopAndDownload}
-                        ariaLabel={c('Action').t`Stop and save recording`}
-                        size={5}
-                        buttonStyle={{
-                            'padding-block': 0,
-                            'padding-inline': 0,
-                            width: '2.5rem',
-                            height: '2.5rem',
-                        }}
-                    />
-                </>
+                </Button>
             )}
         </div>
     );

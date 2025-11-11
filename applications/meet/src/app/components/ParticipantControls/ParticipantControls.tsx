@@ -19,7 +19,9 @@ import { useMediaManagementContext } from '../../contexts/MediaManagementContext
 import { useMeetContext } from '../../contexts/MeetContext';
 import { useUIStateContext } from '../../contexts/UIStateContext';
 import { useIsLargerThanMd } from '../../hooks/useIsLargerThanMd';
+import { useIsLocalParticipantHost } from '../../hooks/useIsLocalParticipantHost';
 import { useIsNarrowHeight } from '../../hooks/useIsNarrowHeight';
+import { useMeetingRecorder } from '../../hooks/useMeetingRecorder/useMeetingRecorder';
 import { MeetingSideBars, PermissionPromptStatus, PopUpControls } from '../../types';
 import { AudioSettings } from '../AudioSettings/AudioSettings';
 import { ChatButton } from '../ChatButton';
@@ -77,6 +79,10 @@ export const ParticipantControls = () => {
         selectedMicrophoneId: audioDeviceId,
         selectedCameraId: videoDeviceId,
     } = useMediaManagementContext();
+
+    const isHost = useIsLocalParticipantHost();
+
+    const { recordingState, startRecording, downloadRecording } = useMeetingRecorder();
 
     // Closing popups with device selection options upon losing permissions
     useEffect(() => {
@@ -279,7 +285,7 @@ export const ParticipantControls = () => {
 
                     <div className="flex-nowrap gap-2 hidden lg:flex">
                         <ScreenShareButton />
-                        <RecordingControls />
+
                         <CircleButton
                             IconComponent={IcMeetParticipants}
                             variant={sideBarState[MeetingSideBars.Participants] ? 'active' : 'default'}
@@ -299,6 +305,13 @@ export const ParticipantControls = () => {
                             }}
                             ariaLabel={c('Alt').t`Toggle settings`}
                         />
+                        {isHost && (
+                            <RecordingControls
+                                startRecording={startRecording}
+                                downloadRecording={downloadRecording}
+                                recordingState={recordingState}
+                            />
+                        )}
                         <CircleButton
                             IconComponent={IcInfoCircle}
                             onClick={() => toggleSideBarState(MeetingSideBars.MeetingDetails)}
@@ -308,7 +321,13 @@ export const ParticipantControls = () => {
                     </div>
                     <div className="flex lg:hidden gap-2 flex-nowrap">
                         <ScreenShareButton />
-                        <RecordingControls />
+                        {isHost && (
+                            <RecordingControls
+                                startRecording={startRecording}
+                                downloadRecording={downloadRecording}
+                                recordingState={recordingState}
+                            />
+                        )}
                         <MenuButton />
                     </div>
 

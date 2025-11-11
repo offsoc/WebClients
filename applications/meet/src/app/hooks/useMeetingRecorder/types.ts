@@ -7,9 +7,8 @@ export interface RecordingTrackInfo {
     participantIndex: number;
 }
 
-export interface RecordingState {
+export interface MeetingRecordingState {
     isRecording: boolean;
-    duration: number;
     recordedChunks: Blob[];
 }
 

@@ -9,7 +9,7 @@ import { useMeetContext } from '../../contexts/MeetContext';
 import { useIsLargerThanMd } from '../useIsLargerThanMd';
 import { useIsNarrowHeight } from '../useIsNarrowHeight';
 import { MessageType } from './recordingWorkerTypes';
-import type { FrameReaderInfo, RecordingState, RecordingTrackInfo } from './types';
+import type { FrameReaderInfo, MeetingRecordingState, RecordingTrackInfo } from './types';
 import { getRecordingDetails, getTracksForRecording, supportsTrackProcessor } from './utils';
 import { WorkerRecordingStorage } from './workerStorage';
 
@@ -19,14 +19,14 @@ const FPS = 30;
 
 const { mimeType, extension } = getRecordingDetails();
 
-export function useMeetingRecorder(participantNameMap: Record<string, string>) {
+export function useMeetingRecorder() {
+    const { participantNameMap } = useMeetContext();
     const isLargerThanMd = useIsLargerThanMd();
 
     const isNarrowHeight = useIsNarrowHeight();
 
-    const [recordingState, setRecordingState] = useState<RecordingState>({
+    const [recordingState, setRecordingState] = useState<MeetingRecordingState>({
         isRecording: false,
-        duration: 0,
         recordedChunks: [],
     });
 
@@ -35,7 +35,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
     const frameReadersRef = useRef<Map<string, FrameReaderInfo>>(new Map());
     const audioContextRef = useRef<AudioContext | null>(null);
     const startTimeRef = useRef<number>(0);
-    const durationIntervalRef = useRef<number>();
     const workerStorageRef = useRef<WorkerRecordingStorage | null>(null);
     const visibilityListenerRef = useRef<(() => void) | null>(null);
 
@@ -105,12 +104,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         if (visibilityListenerRef.current) {
             document.removeEventListener('visibilitychange', visibilityListenerRef.current);
             visibilityListenerRef.current = null;
-        }
-    };
-
-    const cleanUpDurationInterval = () => {
-        if (durationIntervalRef.current) {
-            clearInterval(durationIntervalRef.current);
         }
     };
 
@@ -344,16 +337,9 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
             });
 
             startTimeRef.current = Date.now();
-            durationIntervalRef.current = window.setInterval(() => {
-                setRecordingState((prev) => ({
-                    ...prev,
-                    duration: Math.floor((Date.now() - startTimeRef.current) / 1000),
-                }));
-            }, 1000);
 
             setRecordingState({
                 isRecording: true,
-                duration: 0,
                 recordedChunks: [],
             });
         } catch (error) {
@@ -400,11 +386,9 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
                     }
 
                     cleanUpVisibilityListener();
-                    cleanUpDurationInterval();
 
                     setRecordingState({
                         isRecording: false,
-                        duration: 0,
                         recordedChunks: [],
                     });
 
@@ -497,8 +481,6 @@ export function useMeetingRecorder(participantNameMap: Record<string, string>) {
         if (audioContextRef.current) {
             await audioContextRef.current.close();
         }
-
-        cleanUpDurationInterval();
 
         if (workerStorageRef.current) {
             await workerStorageRef.current.clear();
