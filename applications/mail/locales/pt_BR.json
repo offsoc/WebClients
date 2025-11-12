@@ -1562,7 +1562,7 @@
         "Atualizar frase de recuperação"
       ],
       "Update secret passphrase": [
-        "Atualizar passphrase secreta"
+        "Atualizar frase secreta"
       ],
       "Upgrade": [
         "Fazer upgrade"
@@ -2517,7 +2517,7 @@
         "${ participantName } já havia aceitado provisoriamente seu convite para uma ocorrência do evento."
       ],
       "${ participantName } had previously tentatively accepted your invitation.": [
-        "${ participantName } já havia aceitado provisoriamente seu convite."
+        "${ participantName } havia aceitado provisoriamente seu convite."
       ],
       "${ participantName } had proposed a new time for one occurrence of this event. This proposal is out of date.": [
         "${ participantName } havia proposto um novo horário para uma ocorrência deste evento. Esta proposta está desatualizada."
@@ -8954,6 +8954,9 @@
       ],
       "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
         "Atualizamos o armazenamento do seu ${ DRIVE_APP_NAME } para 5 GB. Mantenha seus arquivos e fotos importantes criptografados."
+      ],
+      "Addresses settings": [
+        "Configurações de endereços"
       ]
     },
     "info": {
@@ -10348,6 +10351,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Você precisa reativar suas chaves para ver o convite atualizado"
+      ],
+      "Reactivate subscription": [
+        "Reativar assinatura"
       ]
     },
     "Link to calendar event": {
@@ -11174,6 +11180,13 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Rastreamos a dark web para verificar se seus endereços ou aliases ${ BRAND_NAME } sofreram vazamento e alertarmos você imediatamente se encontrarmos alguma coisa."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Benefícios atuais do plano ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Compartilhar cofres com até ${ n } pessoa",
+        "Compartilhar cofres com até ${ n } pessoas"
       ]
     },
     "new_plans: feature highlight": {
@@ -12835,6 +12848,9 @@
       ],
       "your subscription": [
         "sua assinatura"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Após essa data, sua conta fará o downgrade para **${ BRAND_NAME } Free**. Se você mudar de ideia, você pode **reativar sua assinatura** para manter o acesso a recursos premium."
       ]
     },
     "Remaining days before the message expire": {
@@ -13746,6 +13762,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Você perderá o acesso a logins e notas ilimitados, aliases ilimitados do hide-my-email, a 20 cofres, assim como ao suporte prioritário."
+      ],
+      "${ app } storage used": [
+        "${ app } de armazenamento usado"
+      ],
+      "Storage used": [
+        "De armazenamento usado"
       ]
     },
     "Subscription": {
@@ -16308,6 +16330,28 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Ocorreu um erro. A verificação do Google Pay falhou."
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Velocidade ultrarrápida"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Tem certeza de que deseja continuar?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Se você optar por modificar seu ${ planTitle } plano, você pode perder o acesso a alguns recursos."
+      ],
+      "Keep ${ planTitle }": [
+        "Manter o ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Sim, tenho certeza"
+      ],
+      "Your plan includes this feature already.": [
+        "Seu plano já inclui esse recurso."
       ]
     }
   }

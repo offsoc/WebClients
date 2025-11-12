@@ -8802,6 +8802,15 @@
       ],
       "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
         "${ DRIVE_APP_NAME } のストレージを5GBにアップグレードいたしました。お客様の重要なファイルや写真は、暗号化済みで安全に保管してください。"
+      ],
+      "Saving draft": [
+        "下書きを保存中"
+      ],
+      "Scheduling message": [
+        "メッセージを送信予約中"
+      ],
+      "Sending message": [
+        "メッセージを送信中"
       ]
     },
     "info": {
@@ -13504,6 +13513,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "無制限のログインとメモ、無制限のhide-my-email エイリアス、20 個の保管庫、および優先サポートにアクセスできなくなります。"
+      ],
+      "${ app } storage used": [
+        "${ app } のストレージ使用量"
+      ],
+      "Storage used": [
+        "使用中のストレージ"
       ]
     },
     "Subscription": {
@@ -15953,6 +15968,11 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "何か問題が発生しました。Google Payの認証に失敗しました。"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "最高速の速度"
       ]
     }
   }

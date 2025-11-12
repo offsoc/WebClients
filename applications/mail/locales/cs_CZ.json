@@ -2818,6 +2818,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Velmi rychlé konverzace a pokročilé funkce AI."
+      ],
+      "Advanced account and network security in one plan": [
+        "Pokročilé zabezpečení účtu a sítě v jednom tarifu"
       ]
     },
     "color": {
@@ -9234,6 +9237,9 @@
       ],
       "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
         "Navýšili jsme vaše úložiště ${ DRIVE_APP_NAME } na 5 GB. Uchovávejte důležité soubory a fotografie v šifrované podobě."
+      ],
+      "Addresses settings": [
+        "Nastavení adres"
       ]
     },
     "info": {
@@ -10644,6 +10650,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Pro zobrazení upravené pozvánky musíte znovu aktivovat své klíče"
+      ],
+      "Reactivate subscription": [
+        "Znovu aktivovat předplatné"
       ]
     },
     "Link to calendar event": {
@@ -11530,6 +11539,15 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Prohledáváme dark web a kontrolujeme, zda nedošlo k úniku vašich adres nebo aliasů ${ BRAND_NAME }, pokud něco najdeme, okamžitě vás upozorníme."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Stávající výhody tarifu ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Sdílení trezoru s ${ n } osobou",
+        "Sdílení trezoru až se ${ n } osobami",
+        "Sdílení trezoru až s ${ n } osobami",
+        "Sdílení trezoru až s ${ n } osobami"
       ]
     },
     "new_plans: feature highlight": {
@@ -13216,6 +13234,9 @@
       ],
       "your subscription": [
         "vaše předplatné"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Po tomto datu bude váš účet převeden na **${ BRAND_NAME } Free**. Pokud si to rozmyslíte, můžete **znovu aktivovat předplatné** a zachovat si přístup k prémiovým funkcím."
       ]
     },
     "Remaining days before the message expire": {
@@ -14173,6 +14194,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Ztratíte přístup k neomezeným přihlášením a poznámkám, neomezeným hide-my-email adresám, 20 trezorům a prioritní podpoře."
+      ],
+      "${ app } storage used": [
+        "${ app } úložiště využito"
+      ],
+      "Storage used": [
+        "Využité úložiště"
       ]
     },
     "Subscription": {
@@ -16961,6 +16988,28 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Něco se pokazilo. Ověření Google Pay selhalo."
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Blesková rychlost"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Určitě chcete pokračovat?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Pokud se rozhodnete upravit váš ${ planTitle } tarif, můžete ztratit přístup k některým funkcím."
+      ],
+      "Keep ${ planTitle }": [
+        "Ponechat ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Ano, potvrzuji"
+      ],
+      "Your plan includes this feature already.": [
+        "Váš tarif již zahrnuje tuto funkci."
       ]
     }
   }

@@ -2788,6 +2788,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Discussions rapides et fonctionnalités d'IA avancées."
+      ],
+      "Advanced account and network security in one plan": [
+        "Sécurité avancée des comptes et du réseau dans un seul abonnement"
       ]
     },
     "color": {
@@ -8954,6 +8957,9 @@
       ],
       "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
         "Nous avons augmenté votre espace de stockage ${ DRIVE_APP_NAME } à 5 Go. Conservez vos fichiers et photos importantes de manière chiffrées."
+      ],
+      "Addresses settings": [
+        "Paramètres des adresses"
       ]
     },
     "info": {
@@ -10348,6 +10354,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Vous devez réactiver vos clés pour voir l'invitation mise à jour."
+      ],
+      "Reactivate subscription": [
+        "Réactiver l'abonnement"
       ]
     },
     "Link to calendar event": {
@@ -11174,6 +11183,13 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Nous analysons le dark web et vérifions si vos adresses ou vos alias ${ BRAND_NAME } ont été divulgués et nous vous informons immédiatement des résultats."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Avantages existants de l'abonnement ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Partage du coffre-fort jusqu'à ${ n } personne",
+        "Partage du coffre-fort avec jusqu'à ${ n } personnes"
       ]
     },
     "new_plans: feature highlight": {
@@ -12824,6 +12840,9 @@
       ],
       "your subscription": [
         "votre abonnement"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Après cette date, votre compte passera à un abonnement inférieur à **${ BRAND_NAME } Gratuit**. Si vous changez d'avis, vous pouvez **réactiver votre abonnement** pour conserver l'accès aux fonctionnalités premium."
       ]
     },
     "Remaining days before the message expire": {
@@ -13735,6 +13754,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Vous n'aurez plus accès à un nombre illimité d'identifiants et de notes, à un nombre illimité d'alias « hide-my-email », à 20 coffres-forts, ainsi qu'à l'assistance prioritaire."
+      ],
+      "${ app } storage used": [
+        "Espace de stockage utilisé de ${ app }"
+      ],
+      "Storage used": [
+        "Espace de stockage utilisé"
       ]
     },
     "Subscription": {
@@ -16297,6 +16322,11 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Une erreur s'est produite. La vérification Google Pay n'a pas abouti."
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Vitesses extrêmement élevées"
       ]
     }
   }

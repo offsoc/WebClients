@@ -2800,6 +2800,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Conversații rapide și funcții avansate de inteligență artificială."
+      ],
+      "Advanced account and network security in one plan": [
+        "Securitate avansată a contului și a rețelei într-un singur plan"
       ]
     },
     "color": {
@@ -7540,7 +7543,7 @@
         "Dacă continuați cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ MAIL_APP_NAME } și ${ VPN_APP_NAME }."
       ],
       "If you proceed with the downgrade, you will lose access to ${ MAIL_APP_NAME } paid features, including additional storage and filters.": [
-        "Dacă continuați cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ MAIL_APP_NAME }, inclusiv spațiul și filtrele suplimentare."
+        "Dacă veți continua cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ MAIL_APP_NAME }, inclusiv spațiul și filtrele suplimentare."
       ],
       "If you proceed with the downgrade, you will lose access to ${ VPN_APP_NAME } paid features.": [
         "Dacă continuați cu retrogradarea, veți pierde accesul la funcțiile cu plată din ${ VPN_APP_NAME }."
@@ -9079,6 +9082,21 @@
       ],
       "Google Pay mark": [
         "Marcare Google Pay"
+      ],
+      "Addresses settings": [
+        "Setări adrese"
+      ],
+      "Saving draft": [
+        "Se salvează ciorna"
+      ],
+      "Scheduling message": [
+        "Se programează mesajul"
+      ],
+      "Sending message": [
+        "Se trimite mesajul"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "V-am mărit spațiul de stocare al ${ DRIVE_APP_NAME } la 5 GiB. Păstrați-vă fișierele și fotografiile importante criptate."
       ]
     },
     "info": {
@@ -10481,6 +10499,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Trebuie să activați cheile pentru a vedea invitația actualizată"
+      ],
+      "Reactivate subscription": [
+        "Reactivare abonament"
       ]
     },
     "Link to calendar event": {
@@ -11337,6 +11358,14 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Scanăm internetul ascuns pentru a verifica dacă adresele sau aliasurile ${ BRAND_NAME } v-au fost divulgate și vă avertizăm imediat dacă găsim ceva."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Beneficiile existente ale planului ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Partajare seifuri cu ${ n } persoană",
+        "Partajare seifuri cu ${ n } persoane",
+        "Partajare seifuri cu ${ n } de persoane"
       ]
     },
     "new_plans: feature highlight": {
@@ -13005,6 +13034,9 @@
       ],
       "your subscription": [
         "abonament personal"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "După acea dată, contul va fi retrogradat la **${ BRAND_NAME } Free**. Dacă vă răzgândiți, vă puteți **reactiva abonamentul** pentru a vă păstra accesul la funcțiile speciale."
       ]
     },
     "Remaining days before the message expire": {
@@ -13939,6 +13971,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Veți pierde accesul la autentificări și note nelimitate, aliasuri hide-my-email nelimitate, 20 de seifuri, precum și la asistența prioritară."
+      ],
+      "${ app } storage used": [
+        "Spațiu utilizat de ${ app }"
+      ],
+      "Storage used": [
+        "Spațiu utilizat"
       ]
     },
     "Subscription": {
@@ -16607,6 +16645,35 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "A apărut o problemă. Verificarea Google Pay a eșuat."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "Rezultate neafișate: ${ hiddenResultsCount }",
+        "Rezultate neafișate: ${ hiddenResultsCount }",
+        "Rezultate neafișate: ${ hiddenResultsCount }"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Viteză foarte mare"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Sigur doriți să continuați?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Dacă alegeți să vă modificați planul ${ planTitle }, este posibil să pierdeți accesul la unele funcții."
+      ],
+      "Keep ${ planTitle }": [
+        "Păstrez ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Da, sigur"
+      ],
+      "Your plan includes this feature already.": [
+        "Planul actual include deja această funcție."
       ]
     }
   }

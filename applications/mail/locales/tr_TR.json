@@ -8942,6 +8942,21 @@
       ],
       "Google Pay mark": [
         "Google Pay işareti"
+      ],
+      "Addresses settings": [
+        "Adres ayarları"
+      ],
+      "Saving draft": [
+        "Taslak kaydediliyor"
+      ],
+      "Scheduling message": [
+        "İleti zamanlanıyor"
+      ],
+      "Sending message": [
+        "İleti gönderiliyor"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "${ DRIVE_APP_NAME } depolama alanınızı 5 GB boyutuna yükselttik. Önemli dosyalarınızı ve fotoğraflarınızı şifrelenmiş olarak saklayın."
       ]
     },
     "info": {
@@ -10336,6 +10351,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Güncellenen daveti görmek için anahtarlarınızı yeniden kullanıma almalısınız"
+      ],
+      "Reactivate subscription": [
+        "Aboneliği yeniden etkinleştir"
       ]
     },
     "Link to calendar event": {
@@ -12812,6 +12830,9 @@
       ],
       "your subscription": [
         "aboneliğiniz"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Bu tarihten sonra, hesabınız **${ BRAND_NAME } Free** tarifesine düşürülecek. Fikrinizi değiştirirseniz, ücretli özelliklere erişmeyi sürdürmek için **aboneliğinizi yeniden etkinleştirebilirsiniz**."
       ]
     },
     "Remaining days before the message expire": {
@@ -13723,6 +13744,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Sınırsız oturum açma kaydı ve notlara, sınırsız hide-my-email takma adına, 20 kasaya ve öncelikli desteğe erişiminizi kaydedeceksiniz."
+      ],
+      "${ app } storage used": [
+        "${ app } depolama alanı kullanıldı"
+      ],
+      "Storage used": [
+        "Kullanılan depolama alanı"
       ]
     },
     "Subscription": {
@@ -16279,6 +16306,17 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Bir sorun çıktı. Google Pay doğrulaması tamamlanamadı."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "Görüntülenmeyen ${ hiddenResultsCount } sonuç daha var",
+        "Görüntülenmeyen ${ hiddenResultsCount } sonuç daha var"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Işık hızında"
       ]
     }
   }

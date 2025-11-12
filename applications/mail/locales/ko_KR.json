@@ -15949,6 +15949,11 @@
       "Something went wrong. Google Pay verification failed.": [
         "문제가 발생했습니다. Google Pay 인증에 실패했습니다."
       ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "초고속 속도"
+      ]
     }
   }
 }

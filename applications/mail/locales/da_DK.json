@@ -8930,6 +8930,21 @@
       ],
       "Google Pay mark": [
         "Google Pay-mærke"
+      ],
+      "Addresses settings": [
+        "Adresseindstillinger"
+      ],
+      "Saving draft": [
+        "Gemmer kladde"
+      ],
+      "Scheduling message": [
+        "Planlægger besked"
+      ],
+      "Sending message": [
+        "Sender besked"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Vi har opgraderet din ${ DRIVE_APP_NAME }-lagerplads til 5 GB. Hold dine vigtige filer og fotos krypteret."
       ]
     },
     "info": {
@@ -10324,6 +10339,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Du skal genaktivere dine nøgler for at se den opdateret invitation"
+      ],
+      "Reactivate subscription": [
+        "Genaktiver abonnement"
       ]
     },
     "Link to calendar event": {
@@ -12785,6 +12803,9 @@
       ],
       "your subscription": [
         "Dit abonnement"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Efter den dato vil din konto blive nedgraderet til **${ BRAND_NAME } Free**. Hvis du ombestemmer dig, kan du **genaktivere dit abonnement** for at bevare adgangen til premium-funktioner."
       ]
     },
     "Remaining days before the message expire": {
@@ -13696,6 +13717,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Du mister adgang til ubegrænsede logins og noter, ubegrænset hide-my-email aliaser, 20 bokse samt prioriteret support."
+      ],
+      "${ app } storage used": [
+        "${ app } lagerplads brugt"
+      ],
+      "Storage used": [
+        "Anvendt lagerplads"
       ]
     },
     "Subscription": {
@@ -16252,6 +16279,17 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Noget gik galt. Google Pay-bekræftelse mislykkedes."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } resultat mere ikke vist",
+        "${ hiddenResultsCount } resultater mere ikke vist"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Lynhurtige hastigheder"
       ]
     }
   }

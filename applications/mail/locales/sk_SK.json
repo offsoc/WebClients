@@ -9209,6 +9209,21 @@
       ],
       "Google Pay mark": [
         "Google Pay mark"
+      ],
+      "Addresses settings": [
+        "Nastavenia adries"
+      ],
+      "Saving draft": [
+        "Ukladanie konceptu"
+      ],
+      "Scheduling message": [
+        "Plánovanie správy"
+      ],
+      "Sending message": [
+        "Odosielanie správy"
+      ],
+      "We’ve upgraded your ${ DRIVE_APP_NAME } storage to 5GB. Keep your important files and photos encrypted.": [
+        "Navýšili sme váš úložný priestor v ${ DRIVE_APP_NAME } na 5 GB. Dôležité súbory a fotografie uchovávajte v šifrovanej podobe."
       ]
     },
     "info": {
@@ -10619,6 +10634,9 @@
       ],
       "You need to reactivate your keys to see the updated invitation": [
         "Pre zobrazenie upravenej pozvánky musíte znovu aktivovať svoje kľúče"
+      ],
+      "Reactivate subscription": [
+        "Obnoviť predplatné"
       ]
     },
     "Link to calendar event": {
@@ -13191,6 +13209,9 @@
       ],
       "your subscription": [
         "vaše predplatné"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Po tomto dátume bude váš účet znížený na **${ BRAND_NAME } Free**. Ak si to rozmyslíte, môžete **opätovne obnoviť svoje predplatné** a zachovať si prístup k prémiovým funkciám."
       ]
     },
     "Remaining days before the message expire": {
@@ -14148,6 +14169,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Stratíte prístup k neobmedzenému počtu prihlásení a poznámok, neobmedzenému počtu hide-my-email aliasov, 20 trezorom, ako aj prioritnej podpore."
+      ],
+      "${ app } storage used": [
+        "${ app } využitého úložiska"
+      ],
+      "Storage used": [
+        "Využité úložisko"
       ]
     },
     "Subscription": {
@@ -16941,6 +16968,19 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Niečo sa pokazilo. Overenie Google Pay zlyhalo."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } ďalší výsledok nebol zobrazený",
+        "${ hiddenResultsCount } ďalšie výsledky nezobrazené",
+        "${ hiddenResultsCount } ďalších výsledkov nezobrazených",
+        "${ hiddenResultsCount } ďalších výsledkov nezobrazených"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Bleskové rýchlosti"
       ]
     }
   }
