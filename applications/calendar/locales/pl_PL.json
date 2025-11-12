@@ -11766,6 +11766,9 @@
       ],
       "Time zone": [
         "Strefa czasu"
+      ],
+      "Discard changes?": [
+        "Czy chcesz odrzucić zmiany?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12421,6 +12424,11 @@
       ],
       "Passcode:": [
         "Kod dostępu:"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Błyskawiczne prędkości"
       ]
     }
   }

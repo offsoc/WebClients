@@ -882,7 +882,7 @@
         "Atualizar frase de recuperação"
       ],
       "Update secret passphrase": [
-        "Atualizar passphrase secreta"
+        "Atualizar frase secreta"
       ],
       "Upgrade": [
         "Fazer upgrade"
@@ -971,6 +971,27 @@
       ],
       "Copy link and close": [
         "Copiar link e fechar"
+      ],
+      "Add a date": [
+        "Adicionar data"
+      ],
+      "Close sidebar": [
+        "Fechar barra lateral"
+      ],
+      "Copy booking page link": [
+        "Copiar link da página de agendamento"
+      ],
+      "Delete booking page": [
+        "Excluir página de agendamentos"
+      ],
+      "Edit booking page": [
+        "Editar página de agendamentos"
+      ],
+      "Remove the booking range": [
+        "Remover o período do agendamento"
+      ],
+      "Split current booking range": [
+        "Dividir o intervalo de reservas atual"
       ]
     },
     "action": {
@@ -6457,6 +6478,30 @@
       ],
       "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
         "Compartilhe esta página para que outras pessoas possam agendar um horário no seu calendário. Você pode gerenciá-la a qualquer momento na barra lateral em Páginas de agendamento."
+      ],
+      "${ MEET_APP_NAME } video call": [
+        "Chamada de vídeo com ${ MEET_APP_NAME }"
+      ],
+      "Appointment duration": [
+        "Duração do compromisso"
+      ],
+      "Host": [
+        "Anfitrião"
+      ],
+      "Location": [
+        "Localização"
+      ],
+      "Manange booking page": [
+        "Gerenciar página de agendamentos"
+      ],
+      "Powered by ${ protonButton }": [
+        "Com tecnologia da ${ protonButton }"
+      ],
+      "Privacy by default": [
+        "Privacidade por padrão"
+      ],
+      "You will loose all unsaved changes.": [
+        "Você perderá todas as alterações não salvas."
       ]
     },
     "info": {
@@ -7307,6 +7352,9 @@
       ],
       "What’s this?": [
         "O que é isso?"
+      ],
+      "Reactivate subscription": [
+        "Reativar assinatura"
       ]
     },
     "Link label (optional)": {
@@ -8143,6 +8191,13 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Rastreamos a dark web para verificar se seus endereços ou aliases ${ BRAND_NAME } sofreram vazamento e alertarmos você imediatamente se encontrarmos alguma coisa."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Benefícios atuais do plano ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Compartilhar cofres com até ${ n } pessoa",
+        "Compartilhar cofres com até ${ n } pessoas"
       ]
     },
     "new_plans: feature highlight": {
@@ -9740,6 +9795,9 @@
       ],
       "your subscription": [
         "sua assinatura"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Após essa data, sua conta fará o downgrade para **${ BRAND_NAME } Free**. Se você mudar de ideia, você pode **reativar sua assinatura** para manter o acesso a recursos premium."
       ]
     },
     "Reload event button tooltip": {
@@ -10473,6 +10531,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Você perderá o acesso a logins e notas ilimitados, aliases ilimitados do hide-my-email, a 20 cofres, assim como ao suporte prioritário."
+      ],
+      "${ app } storage used": [
+        "${ app } de armazenamento usado"
+      ],
+      "Storage used": [
+        "De armazenamento usado"
       ]
     },
     "Subscribe to calendar modal": {
@@ -11957,6 +12021,12 @@
       ],
       "Your booking is confirmed": [
         "Sua reserva está confirmada"
+      ],
+      "Appointment details": [
+        "Detalhes do compromisso"
+      ],
+      "Discard changes?": [
+        "Descartar alterações?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12551,6 +12621,39 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Ocorreu um erro. A verificação do Google Pay falhou."
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Velocidade ultrarrápida"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Data do período de reserva"
+      ],
+      "End time of the booking range": [
+        "Horário de término do período de reserva"
+      ],
+      "Start time of the booking range": [
+        "Horário de início do período de reserva"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Tem certeza de que deseja continuar?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Se você optar por modificar seu ${ planTitle } plano, você pode perder o acesso a alguns recursos."
+      ],
+      "Keep ${ planTitle }": [
+        "Manter o ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Sim, tenho certeza"
+      ],
+      "Your plan includes this feature already.": [
+        "Seu plano já inclui esse recurso."
       ]
     }
   }

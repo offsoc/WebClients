@@ -10742,6 +10742,9 @@
       ],
       "Your booking is confirmed": [
         "你的預約已確認"
+      ],
+      "Discard changes?": [
+        "捨棄變更？"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

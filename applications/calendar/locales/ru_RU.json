@@ -11344,6 +11344,9 @@
       ],
       "Time zone": [
         "Часовой пояс"
+      ],
+      "Discard changes?": [
+        "Сбросить изменения?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11993,6 +11996,11 @@
       ],
       "Passcode:": [
         "Код доступа:"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Молниеносная скорость"
       ]
     }
   }

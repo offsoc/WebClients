@@ -971,6 +971,27 @@
       ],
       "Copy link and close": [
         "Copia link e chiudi"
+      ],
+      "Add a date": [
+        "Aggiungi una data"
+      ],
+      "Close sidebar": [
+        "Chiudi la barra laterale"
+      ],
+      "Copy booking page link": [
+        "Copia il link della pagina di prenotazione"
+      ],
+      "Delete booking page": [
+        "Elimina pagina di prenotazione"
+      ],
+      "Edit booking page": [
+        "Modifica pagina di prenotazione"
+      ],
+      "Remove the booking range": [
+        "Rimuovi l'intervallo di prenotazione"
+      ],
+      "Split current booking range": [
+        "Dividi l'intervallo di prenotazione attuale"
       ]
     },
     "action": {
@@ -1937,6 +1958,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Chat veloci e funzioni AI avanzate."
+      ],
+      "Advanced account and network security in one plan": [
+        "Sicurezza avanzata dell'account e della rete in un unico piano"
       ]
     },
     "colon": {
@@ -6457,6 +6481,33 @@
       ],
       "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
         "Non puoi avere più di ${ MAX_BOOKING_SLOTS } slot di prenotazione su una pagina."
+      ],
+      "${ MEET_APP_NAME } video call": [
+        "${ MEET_APP_NAME } videochiamata"
+      ],
+      "Appointment duration": [
+        "Durata dell'appuntamento"
+      ],
+      "Cannot create booking range across days": [
+        "Non puoi creare un intervallo di prenotazione su più giorni."
+      ],
+      "Host": [
+        "Host"
+      ],
+      "Location": [
+        "Luogo"
+      ],
+      "Manange booking page": [
+        "Gestisci pagina di prenotazione"
+      ],
+      "Powered by ${ protonButton }": [
+        "Alimentato da ${ protonButton }"
+      ],
+      "Privacy by default": [
+        "Privacy predefinita"
+      ],
+      "You will loose all unsaved changes.": [
+        "Perderai tutte le modifiche non salvate."
       ]
     },
     "info": {
@@ -7307,6 +7358,9 @@
       ],
       "What’s this?": [
         "Cos'è questo?"
+      ],
+      "Reactivate subscription": [
+        "Riattiva l'abbonamento"
       ]
     },
     "Link label (optional)": {
@@ -8143,6 +8197,13 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Monitoriamo il dark web per verificare se i tuoi indirizzi o alias ${ BRAND_NAME } vengono diffusi e ti avvisiamo immediatamente se troviamo qualcosa."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Vantaggi esistenti del piano ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Condivisione delle casseforti (fino a ${ n } persona",
+        "Condivisione delle casseforti fino a ${ n } persone"
       ]
     },
     "new_plans: feature highlight": {
@@ -9734,6 +9795,9 @@
       ],
       "your subscription": [
         "il tuo abbonamento"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Dopo quella data, per il tuo account sarà eseguito il downgrade a **${ BRAND_NAME } Free**. Se cambi idea, puoi **riattivare il tuo abbonamento** per mantenere l'accesso a funzionalità premium."
       ]
     },
     "Reload event button tooltip": {
@@ -10467,6 +10531,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Perderai l'accesso a login, note e alias hide-my-email illimitati, 20 casseforti e al supporto prioritario."
+      ],
+      "${ app } storage used": [
+        "${ app } archiviazione utilizzata"
+      ],
+      "Storage used": [
+        "Memoria utilizzata"
       ]
     },
     "Subscribe to calendar modal": {
@@ -11951,6 +12021,12 @@
       ],
       "Your booking is confirmed": [
         "La tua prenotazione è confermata"
+      ],
+      "Appointment details": [
+        "Dettagli dell'appuntamento"
+      ],
+      "Discard changes?": [
+        "Annullare le modifiche?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12545,6 +12621,39 @@
     "Form": {
       "Your contact info": [
         "Le tue informazioni di contatto"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Velocità fulminee"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Data dell'intervallo di prenotazione"
+      ],
+      "End time of the booking range": [
+        "Ora di fine dell'intervallo di prenotazione"
+      ],
+      "Start time of the booking range": [
+        "Ora di inizio dell'intervallo di prenotazione"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Sei sicuro di voler procedere?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Se scegli di modificare il tuo ${ planTitle } piano, potresti perdere l'accesso ad alcune funzionalità."
+      ],
+      "Keep ${ planTitle }": [
+        "Rimani con ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Sì, ne sono sicuro"
+      ],
+      "Your plan includes this feature already.": [
+        "Il tuo piano include già questa funzionalità."
       ]
     }
   }

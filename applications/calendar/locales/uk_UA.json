@@ -10576,6 +10576,12 @@
       ],
       "Time zone": [
         "Часовий пояс"
+      ],
+      "Account restricted": [
+        "Обліковий запис обмежено"
+      ],
+      "Discard changes?": [
+        "Відхилити зміни?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {

@@ -971,6 +971,27 @@
       ],
       "Copy link and close": [
         "Copier le lien et fermer"
+      ],
+      "Add a date": [
+        "Ajouter une date"
+      ],
+      "Close sidebar": [
+        "Fermer la barre latérale"
+      ],
+      "Copy booking page link": [
+        "Copier le lien de la page de réservation"
+      ],
+      "Delete booking page": [
+        "Supprimer la page de réservation"
+      ],
+      "Edit booking page": [
+        "Modifier la page de réservation"
+      ],
+      "Remove the booking range": [
+        "Retirer la plage de réservation"
+      ],
+      "Split current booking range": [
+        "Diviser la plage de réservation actuelle"
       ]
     },
     "action": {
@@ -1937,6 +1958,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Discussions rapides et fonctionnalités d'IA avancées."
+      ],
+      "Advanced account and network security in one plan": [
+        "Sécurité avancée des comptes et du réseau dans un seul abonnement"
       ]
     },
     "colon": {
@@ -6448,6 +6472,18 @@
       "Saving event": [
         "Enregistrement de l'événement",
         "Enregistrement des événements"
+      ],
+      "${ MEET_APP_NAME } video call": [
+        "${ MEET_APP_NAME } appel vidéo"
+      ],
+      "Cannot create booking range across days": [
+        "Impossible de créer une plage de réservation s'étendant sur plusieurs jours"
+      ],
+      "Manange booking page": [
+        "Gérer la page de réservation"
+      ],
+      "You will loose all unsaved changes.": [
+        "Vous perdrez toutes les modifications non enregistrées."
       ]
     },
     "info": {
@@ -7298,6 +7334,9 @@
       ],
       "What’s this?": [
         "Qu'est-ce que c'est ?"
+      ],
+      "Reactivate subscription": [
+        "Réactiver l'abonnement"
       ]
     },
     "Link label (optional)": {
@@ -8134,6 +8173,13 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Nous analysons le dark web et vérifions si vos adresses ou vos alias ${ BRAND_NAME } ont été divulgués et nous vous informons immédiatement des résultats."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Avantages existants de l'abonnement ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Partage du coffre-fort jusqu'à ${ n } personne",
+        "Partage du coffre-fort avec jusqu'à ${ n } personnes"
       ]
     },
     "new_plans: feature highlight": {
@@ -9720,6 +9766,9 @@
       ],
       "your subscription": [
         "votre abonnement"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Après cette date, votre compte passera à un abonnement inférieur à **${ BRAND_NAME } Gratuit**. Si vous changez d'avis, vous pouvez **réactiver votre abonnement** pour conserver l'accès aux fonctionnalités premium."
       ]
     },
     "Reload event button tooltip": {
@@ -10453,6 +10502,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Vous n'aurez plus accès à un nombre illimité d'identifiants et de notes, à un nombre illimité d'alias « hide-my-email », à 20 coffres-forts, ainsi qu'à l'assistance prioritaire."
+      ],
+      "${ app } storage used": [
+        "Espace de stockage utilisé de ${ app }"
+      ],
+      "Storage used": [
+        "Espace de stockage utilisé"
       ]
     },
     "Subscribe to calendar modal": {
@@ -11937,6 +11992,9 @@
       ],
       "Your booking is confirmed": [
         "Votre réservation est confirmée"
+      ],
+      "Discard changes?": [
+        "Abandonner les modifications ?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12531,6 +12589,22 @@
       "${ hiddenResultsCount } more result not shown": [
         "${ hiddenResultsCount } autre résultat non affiché",
         "${ hiddenResultsCount } autres résultats non affichés"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Vitesses extrêmement élevées"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Date de la plage de réservation"
+      ],
+      "End time of the booking range": [
+        "Heure de fin de la plage de réservation"
+      ],
+      "Start time of the booking range": [
+        "Heure de début de la plage horaire de réservation"
       ]
     }
   }

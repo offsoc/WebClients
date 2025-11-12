@@ -11192,6 +11192,9 @@
       ],
       "Time zone": [
         "Aikavyöhyke"
+      ],
+      "Discard changes?": [
+        "Hylätäänkö muutokset?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11758,6 +11761,11 @@
     "Duo offer": {
       "Only": [
         "Vain"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Salamannopea"
       ]
     }
   }

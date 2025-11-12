@@ -11683,6 +11683,9 @@
       ],
       "Your booking page is ready": [
         "예약 페이지가 준비되었습니다"
+      ],
+      "Discard changes?": [
+        "변경 사항을 취소할까요?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12222,6 +12225,11 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "문제가 발생했습니다. Google Pay 인증에 실패했습니다."
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "초고속 속도"
       ]
     }
   }

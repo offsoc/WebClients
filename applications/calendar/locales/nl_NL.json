@@ -11534,6 +11534,9 @@
       ],
       "Time zone": [
         "Tijdzone"
+      ],
+      "Discard changes?": [
+        "Wijzigingen annuleren?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12101,6 +12104,11 @@
       ],
       "Passcode:": [
         "Toegangscode:"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Hoge snelheden"
       ]
     }
   }

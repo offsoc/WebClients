@@ -11523,6 +11523,9 @@
       ],
       "Time zone": [
         "Zona waktu"
+      ],
+      "Discard changes?": [
+        "Batalkan perubahan?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12062,6 +12065,11 @@
       ],
       "Join the privacy revolution with our best-value bundles, now at 50% off!": [
         "Bergabunglah dengan revolusi privasi dengan bundel bernilai terbaik kami, kini diskon 50%!"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Kecepatan secepat kilat"
       ]
     }
   }

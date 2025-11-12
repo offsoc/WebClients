@@ -968,6 +968,18 @@
       ],
       "Join ${ CALENDAR_APP_NAME }": [
         "Unirte a ${ CALENDAR_APP_NAME }"
+      ],
+      "Add a date": [
+        "Agregar una fecha"
+      ],
+      "Close sidebar": [
+        "Cerrar la barra lateral"
+      ],
+      "Remove the booking range": [
+        "Eliminar el rango de reserva"
+      ],
+      "Split current booking range": [
+        "Dividir el rango de reserva actual"
       ]
     },
     "action": {
@@ -6448,6 +6460,12 @@
       ],
       "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
         "No puedes tener más de ${ MAX_BOOKING_SLOTS } espacios de reserva en una página."
+      ],
+      "Cannot create booking range across days": [
+        "No puedes crear un rango de reserva que abarque varios días."
+      ],
+      "You will loose all unsaved changes.": [
+        "Perderás todos los cambios no guardados."
       ]
     },
     "info": {
@@ -7298,6 +7316,9 @@
       ],
       "What’s this?": [
         "¿Qué es esto?"
+      ],
+      "Reactivate subscription": [
+        "Reactivar la suscripción"
       ]
     },
     "Link label (optional)": {
@@ -9720,6 +9741,9 @@
       ],
       "your subscription": [
         "tu suscripción"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Después de esa fecha, tu cuenta pasará al plan inferior **${ BRAND_NAME } Gratuito**. Si cambias de opinión, puedes **reactivar tu suscripción** para mantener el acceso a las funciones prémium."
       ]
     },
     "Reload event button tooltip": {
@@ -10453,6 +10477,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Perderás acceso a notas e inicios de sesión ilimitados, alias ilimitados de hide-my-email y 20 bóvedas así como al soporte prioritario."
+      ],
+      "${ app } storage used": [
+        "${ app } de almacenamiento utilizado"
+      ],
+      "Storage used": [
+        "Almacenamiento utilizado"
       ]
     },
     "Subscribe to calendar modal": {
@@ -11937,6 +11967,9 @@
       ],
       "Your booking page is ready": [
         "Tu página de reservas está lista"
+      ],
+      "Discard changes?": [
+        "¿Descartar los cambios?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12531,6 +12564,22 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Se ha producido un error. Falló la verificación de Google Pay."
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Velocidades ultrarrápidas"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Fecha del rango de reserva"
+      ],
+      "End time of the booking range": [
+        "Hora de finalización del rango de reserva"
+      ],
+      "Start time of the booking range": [
+        "Hora de inicio del rango de reserva"
       ]
     }
   }

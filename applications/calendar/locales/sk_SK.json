@@ -973,6 +973,24 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Bezplatná skúšobná verzia desktopovej aplikácie končí dňa ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Add a date": [
+        "Pridať dátum"
+      ],
+      "Close sidebar": [
+        "Zavrieť bočný panel"
+      ],
+      "Confirm booking": [
+        "Potvrdiť rezerváciu"
+      ],
+      "Copy link and close": [
+        "Kopírovať odkaz a zavrieť"
+      ],
+      "Remove the booking range": [
+        "Odstrániť rozsah rezervácie"
+      ],
+      "Split current booking range": [
+        "Rozdeliť aktuálny rozsah rezervácie"
       ]
     },
     "action": {
@@ -3237,6 +3255,9 @@
       ],
       "You’ve already created 10 aliases. Get unlimited aliases and 500 GB of storage with ${ BRAND_NAME } Unlimited.": [
         "Už ste vytvorili 10 aliasov. Získajte neobmedzený počet aliasov a 500 GB úložiska s ${ BRAND_NAME } Unlimited."
+      ],
+      "You’ll get a secure email with the details shortly.": [
+        "V krátkej dobe dostanete zabezpečený email s podrobnosťami."
       ]
     },
     "description": {
@@ -4096,6 +4117,12 @@
       ],
       "ZIP code is required": [
         "PSČ je povinné"
+      ],
+      "Content verification failed": [
+        "Overenie obsahu zlyhalo"
+      ],
+      "No booking page data received": [
+        "Neboli prijaté žiadne údaje zo stránky rezervácie"
       ]
     },
     "error": {
@@ -6572,6 +6599,39 @@
       ],
       "Where will the appointment take place?": [
         "Kde sa bude konať stretnutie?"
+      ],
+      "${ MEET_APP_NAME } video call": [
+        "${ MEET_APP_NAME } videohovor"
+      ],
+      "Booking already exists.": [
+        "Rezervácia už existuje."
+      ],
+      "Booking cannot be added in the past.": [
+        "Rezerváciu nie je možné pridať spätne."
+      ],
+      "Booking overlaps with an existing booking.": [
+        "Rezervácia sa prekrýva s existujúcou rezerváciou."
+      ],
+      "Cannot create booking range across days": [
+        "Nie je možné vytvoriť rezerváciu v rozsahu viacerých dní"
+      ],
+      "Saving event": [
+        "Ukladanie udalosti",
+        "Ukladanie udalosti",
+        "Ukladanie udalostí",
+        "Ukladanie udalostí"
+      ],
+      "Share this page to let others book time in your calendar. You can manage it anytime in the sidebar under Booking pages.": [
+        "Zdieľajte túto stránku, aby si ostatní mohli rezervovať čas vo vašom kalendári. Môžete ju kedykoľvek spravovať v bočnom paneli v časti Rezervačné stránky."
+      ],
+      "When are you free?": [
+        "Kedy máte čas?"
+      ],
+      "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
+        "Na jednej stránke nemôžete mať viac ako ${ MAX_BOOKING_SLOTS } rezervovaných miest."
+      ],
+      "You will loose all unsaved changes.": [
+        "Všetky neuložené zmeny stratíte."
       ]
     },
     "info": {
@@ -7434,6 +7494,9 @@
       ],
       "What’s this?": [
         "Čo je to?"
+      ],
+      "Reactivate subscription": [
+        "Obnoviť predplatné"
       ]
     },
     "Link label (optional)": {
@@ -10002,6 +10065,9 @@
       ],
       "your subscription": [
         "vaše predplatné"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Po tomto dátume bude váš účet znížený na **${ BRAND_NAME } Free**. Ak si to rozmyslíte, môžete **opätovne obnoviť svoje predplatné** a zachovať si prístup k prémiovým funkciám."
       ]
     },
     "Reload event button tooltip": {
@@ -10771,6 +10837,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Stratíte prístup k neobmedzenému počtu prihlásení a poznámok, neobmedzenému počtu hide-my-email aliasov, 20 trezorom, ako aj prioritnej podpore."
+      ],
+      "${ app } storage used": [
+        "${ app } využitého úložiska"
+      ],
+      "Storage used": [
+        "Využité úložisko"
       ]
     },
     "Subscribe to calendar modal": {
@@ -12309,6 +12381,15 @@
       ],
       "Time zone": [
         "Časové pásmo"
+      ],
+      "Discard changes?": [
+        "Zrušiť zmeny?"
+      ],
+      "Host": [
+        "Hostiteľ"
+      ],
+      "Your booking is confirmed": [
+        "Vaša rezervácia je potvrdená"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -12993,6 +13074,35 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Niečo sa pokazilo. Overenie Google Pay zlyhalo."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } ďalší výsledok nebol zobrazený",
+        "${ hiddenResultsCount } ďalšie výsledky nezobrazené",
+        "${ hiddenResultsCount } ďalších výsledkov nezobrazených",
+        "${ hiddenResultsCount } ďalších výsledkov nezobrazených"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Bleskové rýchlosti"
+      ]
+    },
+    "Form": {
+      "Your contact info": [
+        "Vaše kontaktné údaje"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Dátum rozsahu rezervácie"
+      ],
+      "End time of the booking range": [
+        "Koncový čas rozsahu rezervácie"
+      ],
+      "Start time of the booking range": [
+        "Čas začiatku rozsahu rezervácie"
       ]
     }
   }

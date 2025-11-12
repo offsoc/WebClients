@@ -979,6 +979,27 @@
       ],
       "Copy link and close": [
         "Скапіяваць спасылку і закрыць"
+      ],
+      "Add a date": [
+        "Дадаць дату"
+      ],
+      "Close sidebar": [
+        "Закрыць бакавую панэль"
+      ],
+      "Copy booking page link": [
+        "Скапіяваць спасылку на старонку браніравання"
+      ],
+      "Delete booking page": [
+        "Выдаліць старонку браніравання"
+      ],
+      "Edit booking page": [
+        "Рэдагаваць старонку браніравання"
+      ],
+      "Remove the booking range": [
+        "Выдаліць дыяпазон браніравання"
+      ],
+      "Split current booking range": [
+        "Разбіць бягучы дыяпазон браніравання"
       ]
     },
     "action": {
@@ -6614,6 +6635,18 @@
       ],
       "You can’t have more than ${ MAX_BOOKING_SLOTS } booking slots on a page.": [
         "У вас не можа быць больш за ${ MAX_BOOKING_SLOTS } прамежкаў браніравання на старонцы."
+      ],
+      "${ MEET_APP_NAME } video call": [
+        "Відэазванок ${ MEET_APP_NAME }"
+      ],
+      "Cannot create booking range across days": [
+        "Немагчыма стварыць дыяпазон браніравання на некалькі дзён"
+      ],
+      "Manange booking page": [
+        "Кіраваць старонкай браніравання"
+      ],
+      "You will loose all unsaved changes.": [
+        "Вы страціце ўсе незахаваныя змены."
       ]
     },
     "info": {
@@ -7476,6 +7509,9 @@
       ],
       "What’s this?": [
         "Што гэта?"
+      ],
+      "Reactivate subscription": [
+        "Паўторная актывацыя падпіскі"
       ]
     },
     "Link label (optional)": {
@@ -8372,6 +8408,12 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Наша сістэма сканіруе цёмную сетку для праверкі на прадмет уцечкі адрасоў і псеўданімаў ${ BRAND_NAME }. Вы неадкладна будзеце апавешчаны ў выпадку, калі нешта будзе выяўлена."
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Абагуленае сховішча (да ${ n } асобы)",
+        "Абагуленае сховішча (да ${ n } асоб)",
+        "Абагуленае сховішча (да ${ n } асоб)",
+        "Абагуленае сховішча (да ${ n } асоб)"
       ]
     },
     "new_plans: feature highlight": {
@@ -10044,6 +10086,9 @@
       ],
       "your subscription": [
         "ваша падпіска"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Пасля гэтай даты ваш уліковы запіс будзе паніжаны да ўзроўню **${ BRAND_NAME } Free**. Калі вы перадумаеце, вы можаце **паўторна актываваць сваю падпіску**, каб захаваць доступ да прэміяльных функцый."
       ]
     },
     "Reload event button tooltip": {
@@ -10813,6 +10858,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Вы згубіце доступ да наступных функцый: неабмежаваную колькасць запісаў уваходу і нататак; неабмежаваную колькасць псеўданімаў hide-my-email; 20 сховішчаў; прыярытэтную падтрымку."
+      ],
+      "${ app } storage used": [
+        "Выкарыстана сховішча ${ app }"
+      ],
+      "Storage used": [
+        "Выкарыстана сховішча"
       ]
     },
     "Subscribe to calendar modal": {
@@ -12357,6 +12408,9 @@
       ],
       "Your booking is confirmed": [
         "Ваша браніраванне пацверджана"
+      ],
+      "Discard changes?": [
+        "Адхіліць змены?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -13054,6 +13108,22 @@
     "Payments.error": {
       "Something went wrong. Google Pay verification failed.": [
         "Нешта пайшло не так. Збой праверкі Google Pay."
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Звышвысокія хуткасці"
+      ]
+    },
+    "label": {
+      "Date of the booking range": [
+        "Дата дыяпазону браніравання"
+      ],
+      "End time of the booking range": [
+        "Час завяршэння дыяпазону браніравання"
+      ],
+      "Start time of the booking range": [
+        "Час пачатку дыяпазону браніравання"
       ]
     }
   }

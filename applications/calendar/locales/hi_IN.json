@@ -8890,6 +8890,9 @@
       ],
       "Time zone": [
         "समय क्षेत्र"
+      ],
+      "Discard changes?": [
+        "बदलाव रद्द करें?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -9425,6 +9428,11 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "खास तौर पर डिज़ाइन किया गया NetShield विज्ञापनों, ट्रैकर्स और मालवेयर को ब्लॉक करके आपके डिवाइस की सुरक्षा करता है और आपकी ब्राउज़िंग को तेज़ करता है।"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "बहुत तेज गति"
       ]
     }
   }

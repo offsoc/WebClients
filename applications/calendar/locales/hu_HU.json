@@ -911,6 +911,24 @@
       ],
       "Your desktop app free trial ends on ${ formattedEndDate }. ${ upgradeButton }": [
         "Az asztali alkalmazás ingyenes kipróbálásának vége: ${ formattedEndDate }. ${ upgradeButton }"
+      ],
+      "Add secret passphrase": [
+        "Titkos jelszó hozzáadása"
+      ],
+      "Claim this address": [
+        "Cím igénylése"
+      ],
+      "Claim your free ${ BRAND_NAME } address": [
+        "Igényelje meg ingyenes ${ BRAND_NAME } címét"
+      ],
+      "Join with ${ MEET_APP_NAME }": [
+        "Csatlakozás ${ MEET_APP_NAME }-tel"
+      ],
+      "Passphrase": [
+        "Jelszó"
+      ],
+      "Update secret passphrase": [
+        "Titkos jelszó frissítése"
       ]
     },
     "action": {
@@ -1252,6 +1270,9 @@
       ],
       "Use your own email domain": [
         "Saját e-mail domain használata"
+      ],
+      "Recover previous file versions": [
+        "Régebbi fájlverziók helyreállítása"
       ]
     },
     "BF2024: Offers": {
@@ -1440,6 +1461,12 @@
       ],
       "Website access problem": [
         "Probléma a weboldal elérésével"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Meet problem": [
+        "Meet probléma"
       ]
     },
     "Button": {
@@ -3170,6 +3197,9 @@
       ],
       "This event was updated.": [
         "Ezt az eseményt frissítették."
+      ],
+      "DESCRIPTION:": [
+        "LEÍRÁS:"
       ]
     },
     "Email body for invitation (date part)": {
@@ -3723,6 +3753,15 @@
       ],
       "ZIP code is required": [
         "Irányítószám szükséges"
+      ],
+      "Failed to open to contact": [
+        "A névjegy megnyitása sikertelen"
+      ],
+      "Failed to update secret passphrase": [
+        "Nem sikerült a titkos jelszó frissítése"
+      ],
+      "Passphrase unavailable": [
+        "A jelszó nem érhető el"
       ]
     },
     "Error accepting calendar invitation": {
@@ -4109,6 +4148,9 @@
       ],
       "Your account is using ${ usedSpace } of storage, which exceeds the ${ inviteSpace } you were allocated. Delete some data or ask the plan admin to increase your storage.": [
         "A fiókja ${ usedSpace } tárhelyet foglal el, ami túllépi az önnek biztosított ${ inviteSpace } helyet. Töröljön adatokat vagy kérje meg a csomag adminisztrátorát, hogy növelje a tárhelyét."
+      ],
+      "Family plans do not currently support external accounts. Create a ${ BRAND_NAME } address before joining. ${ link }": [
+        "A családi csomagok jelenleg nem támogatják a külső fiókokat. Hozzon létre egy ${ BRAND_NAME } címet a csatlakozás előtt. ${ link }"
       ]
     },
     "familyOffer_2023:Label": {
@@ -4160,6 +4202,12 @@
     "Feature": {
       "Unlimited hide-my-email aliases": [
         "Korlátlan számú hide-my-email álnév"
+      ],
+      "Encrypted cloud storage for files, photos and documents": [
+        "Titkosított felhőtárhely fájlok, fényképek és dokumentumok tárolására"
+      ],
+      "More premium features": [
+        "További prémium funkciók"
       ]
     },
     "fido2: Error": {
@@ -4305,6 +4353,12 @@
       ],
       "Security Center": [
         "Biztonsági központ"
+      ],
+      "Domain": [
+        "Domain név"
+      ],
+      "Password ends with": [
+        "Jelszó ezzel végződik:"
       ]
     },
     "Hint": {
@@ -5968,6 +6022,45 @@
       ],
       "You’ll still be able to view your own account data, but all user accounts will be removed from your organization.": [
         "Továbbra is megtekintheti saját fiókadatait, de az összes felhasználói fiók eltávolításra kerül a szervezetéből."
+      ],
+      "**Step 1:** Invite your friends to ${ BRAND_NAME } with your referral link.": [
+        "**1. lépés:** Hívja meg barátait a ${ BRAND_NAME } szolgáltatásba az ajánlói hivatkozásával."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their chosen ${ BRAND_NAME } plan.": [
+        "**2. lépés:** Az ismerősei 2 ingyenes hetet kapnak a választott ${ BRAND_NAME } csomagjukhoz."
+      ],
+      "**Step 2:** Your friends get 2 weeks for free on their plan.": [
+        "**2. lépés:** Az ismerősei 2 ingyenes hetet kapnak a csomagjukhoz."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } credits for every friend that subscribes to a plan.": [
+        "**3. lépés:** Kap ${ referrerRewardAmount } Kreditet minden ismerőse után, aki előfizet egy csomagra."
+      ],
+      "**Step 3:** Get ${ referrerRewardAmount } in credits for every person that subscribes to a plan.": [
+        "**3. lépés:** ${ referrerRewardAmount } kreditet kap minden személy után, aki előfizet egy csomagra."
+      ],
+      "Choose a plan that works best for you.": [
+        "Válassza ki az Önnek legjobban megfelelő csomagot."
+      ],
+      "Continue": [
+        "Folytatás"
+      ],
+      "Ensure fully private and encrypted communication. Claim your free ${ BRAND_NAME } email address now.": [
+        "Biztosítsa a teljesen privát és titkosított kommunikációt. Igényeljen egy ingyenes ${ BRAND_NAME } e-mail címet."
+      ],
+      "For extra security, you can set a passphrase. It won’t be included in the calendar invite, remember to share it with your guests separately.": [
+        "További biztonság érdekében beállíthat egy jelszót. Ez nem lesz benne a naptár meghívóban, ne feledje külön megosztani a meghívottakkal."
+      ],
+      "Subscription ending: To keep your ${ planName } benefits, restart your subscription in the Apple App Store by ${ byDate }. ${ reactivateLink }": [
+        "Az előfizetés lejár: Ahhoz, hogy megőrizze a ${ planName } előnyeit, indítsa újra az előfizetését a Apple App Store-ban ${ byDate }-ig. ${ reactivateLink }"
+      ],
+      "Subscription ending: To keep your ${ planName } benefits, restart your subscription in the Google Play Store by ${ byDate }. ${ reactivateLink }": [
+        "Az előfizetés lejár: Ahhoz, hogy megőrizze a ${ planName } előnyeit, indítsa újra az előfizetését a Google Play Áruházban ${ byDate }-ig. ${ reactivateLink }"
+      ],
+      "Upgrade to keep your ${ planTitle } benefits.": [
+        "Váltson nagyobb csomagra, hogy megőrizze ${ planTitle } előnyeit."
+      ],
+      "You are currently signed in as ${ username }.": [
+        "Jelenleg ${ username } fiókkal van bejelentkezve."
       ]
     },
     "info": {
@@ -6626,6 +6719,15 @@
       ],
       "ZIP code": [
         "Irányítószám"
+      ],
+      "Black Friday": [
+        "Black Friday"
+      ],
+      "Passphrase:": [
+        "Jelszó:"
+      ],
+      "Remove ${ MEET_APP_NAME } video conference": [
+        "${ MEET_APP_NAME } videókonferencia eltávolítása"
       ]
     },
     "Label for contact group color": {
@@ -6776,6 +6878,12 @@
       ],
       "What’s this?": [
         "Mi ez?"
+      ],
+      "Reactivate subscription": [
+        "Előfizetés újraaktiválása"
+      ],
+      "Resume now": [
+        "Folytatás most"
       ]
     },
     "Link label (optional)": {
@@ -6841,6 +6949,9 @@
       ],
       "Your subscription has ended. ${ cta } and to avoid data loss.": [
         "Az előfizetése lejárt. ${ cta } az adatvesztés elkerülése érdekében."
+      ],
+      "To continue using ${ BRAND_NAME }, please make sure your premium features are no longer in use or upgrade your plan.": [
+        "A ${ BRAND_NAME } további használatához biztosítsa, hogy a prémium funkciók ne legyenek használatban vagy váltson nagyobb csomagra."
       ]
     },
     "Log preference": {
@@ -6889,6 +7000,9 @@
       ],
       "Your free trial has ended. Access to your account will soon be disabled. ${ action }": [
         "Igyenes próbaideje lejárt. Hozzáférés a fiókjához hamarosan le lesz tiltva. ${ action }"
+      ],
+      "Your free trial has ended. ${ nonAutoRenewalAction }": [
+        "Az ingyenes próbaidőszaka lejárt. ${ nonAutoRenewalAction }"
       ]
     },
     "Message display when a new app version is available": {
@@ -8051,6 +8165,9 @@
       ],
       "Passcode copied to clipboard": [
         "A jelkód a vágólapra másolva"
+      ],
+      "Passphrase copied to clipboard": [
+        "Jelszó a vágólapra másolva"
       ]
     },
     "Notification for duplicate filenames in the current upload": {
@@ -8272,6 +8389,12 @@
       ],
       "Your subscription renews soon": [
         "Az előfizetése hamarosan megújul"
+      ],
+      "Don't show this again": [
+        "Ne jelenjen meg újra"
+      ],
+      "Get ${ BRAND_NAME } Duo": [
+        "${ BRAND_NAME } Duo beszerzése"
       ]
     },
     "Offer fearue": {
@@ -8578,6 +8701,9 @@
       ],
       "New credit/debit card": [
         "Új bankkártya"
+      ],
+      "Google Pay": [
+        "Google Pay"
       ]
     },
     "Payment.Sepa.Action": {
@@ -8649,6 +8775,53 @@
       ],
       "Your payment is still being processed": [
         "A kifizetés még feldolgozás alatt van"
+      ],
+      "Amount due after trial on ${ formattedDate }": [
+        "Fizetendő összeg a próbaidőszak után ekkor: ${ formattedDate }"
+      ],
+      "Excluding ${ taxRate }% ${ taxName }: ${ taxAmount }": [
+        "${ taxRate }% ${ taxName }-t nem tartalmazza: ${ taxAmount }"
+      ],
+      "Excluding ${ taxRate }% taxes: ${ taxAmount }": [
+        "${ taxRate }% adó nélkül: ${ taxAmount }"
+      ],
+      "Including ${ taxRate }% ${ taxName }: ${ taxAmount }": [
+        "${ taxRate }% ${ taxName }-t tartalmaz: ${ taxAmount }"
+      ],
+      "Including ${ taxRate }% taxes: ${ taxAmount }": [
+        "${ taxRate }% adót tartalmaz: ${ taxAmount }"
+      ],
+      "Payment method required for the subscription to be activated after the trial ends.": [
+        "Fizetési mód szükséges az előfizetés aktiválásához a próbaverzió lejárta után."
+      ],
+      "Taxes": [
+        "Adók"
+      ],
+      "The specially discounted price is valid for the first ${ subscriptionLength } month.": [
+        "A kedvezményes ár az első ${ subscriptionLength } hónapra érvényes.",
+        "A kedvezményes ár az első ${ subscriptionLength } hónapra érvényes."
+      ],
+      "The specially discounted price is valid for the first month. The coupon is valid for ${ couponRedemptions } renewal. Then it will automatically be renewed at ${ renewPriceStr } for 1 month. You can cancel at any time.": [
+        "A kedvezményes ár az első hónapra érvényes. A kupon a ${ couponRedemptions } megújításáig érvényes. Ezután automatikusan megújul ${ renewPriceStr } áron havonta. Bármikor lemondhatja.",
+        "A kedvezményes ár az első hónapra érvényes. A kupon a ${ couponRedemptions } megújításáig érvényes. Ezután automatikusan megújul ${ renewPriceStr } áron havonta. Bármikor lemondhatja."
+      ],
+      "The specially discounted price is valid for the first month. Then it will automatically be renewed at ${ renewPriceStr } every month. You can cancel at any time.": [
+        "A kedvezményes ár az első hónapra érvényes. Ezt követően automatikusan megújul ${ renewPriceStr } áron havonta. Bármikor lemondhatja."
+      ],
+      "This offer is not available with your current plan.": [
+        "Ez az ajánlat nem érhető el a jelenlegi csomagjával."
+      ],
+      "VAT": [
+        "ÁFA"
+      ],
+      "You already have a subscription to this plan.": [
+        "Már rendelkezik előfizetéssel ehhez a csomaghoz."
+      ],
+      "You will soon be redirected to PayPal to verify your payment.": [
+        "A kifizetés ellenőrzéséhez hamarosan átirányítjuk a PayPal oldalára."
+      ],
+      "Your subscription currently has an existing discount. Moving to this new promotion means that the existing discount will no longer be applied.": [
+        "Az Ön előfizetése jelenleg kedvezménnyel rendelkezik. Az új promócióra való áttérés esetén, a meglévő kedvezmény a továbbiakban nem kerül alkalmazásra."
       ]
     },
     "Payments.Error": {
@@ -8687,6 +8860,12 @@
     "Payments.VAT number name": {
       "VAT number": [
         "Áfa-szám"
+      ],
+      "Edit ABN": [
+        "ABN szerkesztése"
+      ],
+      "Edit EIN": [
+        "EIN szerkesztése"
       ]
     },
     "PGP key encryption warning": {
@@ -8842,6 +9021,9 @@
       ],
       "ZIP code": [
         "Irányítószám"
+      ],
+      "Select country": [
+        "Válassza ki az országot"
       ]
     },
     "Placeholder for contact group name": {
@@ -8940,6 +9122,24 @@
       "Friend subscribed": [
         "Ismerős előfizetett",
         "Ismerősök előfizettek"
+      ],
+      "${ referrerRewardAmount } per referral": [
+        "${ referrerRewardAmount } ajánlásonként"
+      ],
+      "After that date, your account will be downgraded to **${ BRAND_NAME } Free**. If you change your mind, you can **reactivate your subscription** to keep access to premium features.": [
+        "Ezen dátum után a fiókja a **${ BRAND_NAME } Ingyenes** csomagra vált. Ha meggondolja magát, akkor **újraaktiválhatja előfizetését**, hogy továbbra is hozzáférjen a prémium funkciókhoz."
+      ],
+      "Invite friends. Get credits.": [
+        "Hívja meg ismerőseit. Szerezzen krediteket."
+      ],
+      "More sharing options": [
+        "További megosztási beállítások"
+      ],
+      "Once your full subscription starts, you can still cancel within 30 days and get a prorated refund.": [
+        "Amint a teljes előfizetés elindul, 30 napon belül még mindig lemondhatja, és időarányos visszatérítést kaphat."
+      ],
+      "Refer friends": [
+        "Ismerősök meghívása"
       ]
     },
     "Reload event button tooltip": {
@@ -9661,6 +9861,12 @@
       ],
       "You’ll lose access to unlimited logins and notes, unlimited hide-my-email aliases, 20 vaults, as well as priority support.": [
         "Elveszíti a hozzáférést korlátlan számú bejelentkezéshez és jegyzethez, korlátlan ide-my-email e-mail álnevekhez, 20 tárolóhoz és az elsőbbségi támogatáshoz."
+      ],
+      "${ app } storage used": [
+        "${ app } felhasznált tárhely"
+      ],
+      "Storage used": [
+        "Felhasznált tárhely"
       ]
     },
     "Subscribe to calendar modal": {
@@ -10263,6 +10469,9 @@
       ],
       "You have successfully unsubscribed": [
         "Sikeresen leiratkozott"
+      ],
+      "Secret passphrase updated": [
+        "Titkos jelszó frissítve"
       ]
     },
     "Suffix": {
@@ -11091,6 +11300,18 @@
       ],
       "Time zone": [
         "Időzóna"
+      ],
+      "Claim your ${ MAIL_APP_NAME } address": [
+        "Igényelje a ${ MAIL_APP_NAME } címét"
+      ],
+      "Discard changes?": [
+        "Módosítások elvetése?"
+      ],
+      "Share your link": [
+        "Ossza meg a hivatkozását"
+      ],
+      "Upgrade to keep your premium benefits.": [
+        "Váltson nagyobb csomagra, hogy megőrizze prémium előnyeit."
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11196,6 +11417,9 @@
     "tooltip": {
       "${ PASS_APP_NAME }: Secure logins on all your devices. Includes unlimited aliases, sharing, integrated 2FA, and more.": [
         "${ PASS_APP_NAME }: Biztonságos bejelentkezés minden eszközén. Korlátlan e-mail álnévvel, megosztással, integrált kétlépcsős hitelesítéssel és sok mással."
+      ],
+      "${ LUMO_APP_NAME }: AI assistant that respects your privacy": [
+        "${ LUMO_APP_NAME }: AI asszisztens, amely tiszteletben tartja a magánszféráját"
       ]
     },
     "Tooltip; share calendar modal ": {
@@ -11387,6 +11611,9 @@
       ],
       "Your free trial ends on ${ textDate }. ${ action }": [
         "Az ingyenes próbaideje hamarosan le fog járni ekkor: ${ textDate }. ${ action }"
+      ],
+      "Your trial will end on ${ textDate }. You won’t be charged if you cancel before ${ textDate }. ${ action }": [
+        "A próbaidőszak vége: ${ textDate }. Nem kerül díj felszámításra, ha ennél korábban lemondja: ${ textDate }. ${ action }"
       ]
     },
     "Warning in modal to accept calendar invitation; Description": {
@@ -11671,6 +11898,121 @@
     "BF2025: Tooltip": {
       "Specially designed NetShield protects your devices and speeds up your browsing by blocking ads, trackers, and malware.": [
         "A speciálisan tervezett NetShield megvédi eszközeit, és felgyorsítja a böngészést a hirdetések, követők és rosszindulatú szoftverek blokkolásával."
+      ]
+    },
+    "Autocomplete": {
+      "${ hiddenResultsCount } more result not shown": [
+        "${ hiddenResultsCount } további eredmény nem látható",
+        "${ hiddenResultsCount } további eredmény nem látható"
+      ]
+    },
+    "b2b_trials_2025_Info": {
+      "After the trial ends on ${ formattedDate }, it will become a paid subscription that auto-renews monthly. You won’t be charged if you cancel before ${ formattedDate }.": [
+        "A próbaidőszak ekkor ér véget: ${ formattedDate }, ezután automatikusan megújuló havi előfizetésre alakul át. Akkor nem kerül díj felszámításra, ha lemondja ${ formattedDate } előtt."
+      ],
+      "You can have up to ${ TRIAL_MAX_DEDICATED_IPS } dedicated server during the trial period.": [
+        "Akár ${ TRIAL_MAX_DEDICATED_IPS } dedikált szerverrel is rendelkezhet a próbaidőszakban."
+      ],
+      "You can have up to ${ TRIAL_MAX_SCRIBE_SEATS } Scribe seats during the trial period.": [
+        "Maximum ${ TRIAL_MAX_SCRIBE_SEATS } Scribe licence lehet a próbaidőszakban."
+      ],
+      "You can have up to ${ TRIAL_MAX_USERS } users during the trial period.": [
+        "Maximum ${ TRIAL_MAX_USERS } felhasználó lehet a próbaidőszakban."
+      ],
+      "You have reached the trial limit.": [
+        "Elérte a próbaverzió korlátját."
+      ]
+    },
+    "collider_2025: feature": {
+      "Access to advanced AI models": [
+        "Hozzáférés fejlett MI modellekhez"
+      ],
+      "Basic chat history": [
+        "Alapszintű csevegési előzmények"
+      ],
+      "Full chat history with search": [
+        "Teljes csevegési előzmények, kereséssel"
+      ],
+      "Unlimited daily chats": [
+        "Korlátlan napi csevegés"
+      ],
+      "Unlimited favorites for quick access": [
+        "Korlátlan számú kedvenc, a gyors eléréshez"
+      ],
+      "Upload and query multiple large files": [
+        "Több nagy méretű fájl feltöltése és lekérdezése"
+      ],
+      "Web search access": [
+        "Webes keresési hozzáférés"
+      ]
+    },
+    "collider_2025: Info": {
+      "${ LUMO_APP_NAME } is a privacy-first AI that helps you get more done while keeping your data secure. Unlock its full potential and enjoy early access to new features as they’re introduced.": [
+        "${ LUMO_APP_NAME } egy adatvédelem-központú mesterséges intelligencia, amely segíti a tevékenységeiben, miközben adatai biztonságban maradnak. Aknázza ki lehetőségek teljes skáláját, és szerezzen korai hozzáférést az új funkciókhoz."
+      ],
+      "Add ${ LUMO_APP_NAME }": [
+        "${ LUMO_APP_NAME } hozzáadása"
+      ],
+      "High-speed chats and advanced AI features.": [
+        "Nagy sebességű csevegések és fejlett MI funkciók."
+      ]
+    },
+    "Duo offer": {
+      "/month": [
+        "/hó"
+      ],
+      "2 TB of storage to share": [
+        "2 TB tárhely megosztásra"
+      ],
+      "2 user accounts": [
+        "2 felhasználói fiók"
+      ],
+      "All premium features from your current plan": [
+        "Az összes prémium funkció a jelenlegi csomagjából"
+      ]
+    },
+    "Duo offer: Link": {
+      "Get 4x more storage": [
+        "Szerezzen négyszer több tárhelyet"
+      ],
+      "Share your plan": [
+        "Ossza meg a csomagját"
+      ]
+    },
+    "Duo offer: Title": {
+      "Get 4x more storage with ${ BRAND_NAME } Duo": [
+        "Szerezzen négyszer több tárhelyet a ${ BRAND_NAME } Duo-val"
+      ],
+      "Share your plan benefits with ${ BRAND_NAME } Duo": [
+        "Ossza meg csomagja előnyeit a ${ BRAND_NAME } Duoval"
+      ]
+    },
+    "emergency_access": {
+      "Trusted contact": [
+        "Megbízható névjegy"
+      ]
+    },
+    "error": {
+      "Please sign in with the same Gmail address you originally connected": [
+        "Jelentkezzen be ugyanazzal a Gmail e-mail címmel, amit eredetileg csatlakoztatott"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Villámgyors sebesség"
+      ]
+    },
+    "Payments.error": {
+      "Something went wrong. Google Pay verification failed.": [
+        "Hiba történt. A Google Pay ellenőrzése sikertelen."
+      ]
+    },
+    "Payments.info": {
+      "Credit for the unused portion of your previous plan subscription": [
+        "Kredit az előző csomag-előfizetés fel nem használt részéért"
+      ],
+      "Credits will be added to your balance": [
+        "Kreditek az egyenlegéhez kerülnek hozzáadásra"
       ]
     }
   }

@@ -11228,6 +11228,9 @@
       ],
       "Time zone": [
         "Fuso horário"
+      ],
+      "Discard changes?": [
+        "Descartar alterações?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11789,6 +11792,11 @@
       ],
       "Passcode:": [
         "Código de acesso:"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Velocidades ultrarrápidas"
       ]
     }
   }

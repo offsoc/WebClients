@@ -11236,6 +11236,9 @@
       ],
       "Time zone": [
         "Časovni pas"
+      ],
+      "Discard changes?": [
+        "Zavrzi spremembe?"
       ]
     },
     "Title (number of minutes/hours/days/weeks)": {
@@ -11887,6 +11890,11 @@
       ],
       "Join the privacy revolution with our best-value bundles, now at 50% off!": [
         "Pridružite se revoluciji zasebnosti z našimi najugodnejšimi paketi, zdaj s 50 % popusta!"
+      ]
+    },
+    "Features": {
+      "Lightning-fast speeds": [
+        "Bliskovite hitrosti"
       ]
     }
   }
