@@ -2826,6 +2826,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Velmi rychlé konverzace a pokročilé funkce AI."
+      ],
+      "Advanced account and network security in one plan": [
+        "Pokročilé zabezpečení účtu a sítě v jednom tarifu"
       ]
     },
     "color": {
@@ -11525,6 +11528,15 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Prohledáváme dark web a kontrolujeme, zda nedošlo k úniku vašich adres nebo aliasů ${ BRAND_NAME }, pokud něco najdeme, okamžitě vás upozorníme."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Stávající výhody tarifu ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Sdílení trezoru s ${ n } osobou",
+        "Sdílení trezoru až se ${ n } osobami",
+        "Sdílení trezoru až s ${ n } osobami",
+        "Sdílení trezoru až s ${ n } osobami"
       ]
     },
     "new_plans: feature highlight": {
@@ -16942,6 +16954,23 @@
       ],
       "Passcode:": [
         "Přístupový kód:"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Určitě chcete pokračovat?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Pokud se rozhodnete upravit váš ${ planTitle } tarif, můžete ztratit přístup k některým funkcím."
+      ],
+      "Keep ${ planTitle }": [
+        "Ponechat ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Ano, jsem si jistý"
+      ],
+      "Your plan includes this feature already.": [
+        "Váš tarif již zahrnuje tuto funkci."
       ]
     }
   }

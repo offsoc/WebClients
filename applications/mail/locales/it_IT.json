@@ -2795,6 +2795,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Chat veloci e funzioni AI avanzate."
+      ],
+      "Advanced account and network security in one plan": [
+        "Sicurezza avanzata dell'account e della rete in un unico piano"
       ]
     },
     "color": {
@@ -11168,6 +11171,13 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Monitoriamo il dark web per verificare se i tuoi indirizzi o alias ${ BRAND_NAME } vengono diffusi e ti avvisiamo immediatamente se troviamo qualcosa."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Vantaggi esistenti del piano ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Condivisione delle casseforti (fino a ${ n } persona",
+        "Condivisione delle casseforti fino a ${ n } persone"
       ]
     },
     "new_plans: feature highlight": {
@@ -16288,6 +16298,23 @@
       ],
       "Passcode:": [
         "Codice di accesso:"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Sei sicuro di voler procedere?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Se scegli di modificare il tuo ${ planTitle } piano, potresti perdere l'accesso ad alcune funzionalità."
+      ],
+      "Keep ${ planTitle }": [
+        "Rimani con ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Sì, ne sono sicuro"
+      ],
+      "Your plan includes this feature already.": [
+        "Il tuo piano include già questa funzionalità."
       ]
     }
   }

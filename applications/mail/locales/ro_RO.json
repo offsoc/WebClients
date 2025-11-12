@@ -2805,6 +2805,9 @@
       ],
       "High-speed chats and advanced AI features.": [
         "Conversații rapide și funcții avansate de inteligență artificială."
+      ],
+      "Advanced account and network security in one plan": [
+        "Securitate avansată a contului și a rețelei într-un singur plan"
       ]
     },
     "color": {
@@ -11341,6 +11344,14 @@
       ],
       "We scan the dark web to check if your ${ BRAND_NAME } addresses or aliases have been leaked and alert you immediately if we find anything.": [
         "Scanăm internetul ascuns pentru a verifica dacă adresele sau aliasurile ${ BRAND_NAME } v-au fost divulgate și vă avertizăm imediat dacă găsim ceva."
+      ],
+      "Existing ${ PLAN_NAMES[PLANS.VPN_BUSINESS] } benefits": [
+        "Beneficiile existente ale planului ${ PLAN_NAMES[PLANS.VPN_BUSINESS] }"
+      ],
+      "Vault sharing with up to ${ n } person": [
+        "Partajare seifuri cu ${ n } persoană",
+        "Partajare seifuri cu ${ n } persoane",
+        "Partajare seifuri cu ${ n } de persoane"
       ]
     },
     "new_plans: feature highlight": {
@@ -16614,6 +16625,23 @@
         "Rezultate neafișate: ${ hiddenResultsCount }",
         "Rezultate neafișate: ${ hiddenResultsCount }",
         "Rezultate neafișate: ${ hiddenResultsCount }"
+      ]
+    },
+    "Payments.ModificationWarning": {
+      "Are you sure you want to proceed?": [
+        "Sigur doriți să continuați?"
+      ],
+      "If you choose to modify your ${ planTitle } plan, you may lose access to some features.": [
+        "Dacă alegeți să vă modificați planul ${ planTitle }, este posibil să pierdeți accesul la unele funcții."
+      ],
+      "Keep ${ planTitle }": [
+        "Păstrez ${ planTitle }"
+      ],
+      "Yes, I'm sure": [
+        "Da, sigur"
+      ],
+      "Your plan includes this feature already.": [
+        "Planul actual include deja această funcție."
       ]
     }
   }

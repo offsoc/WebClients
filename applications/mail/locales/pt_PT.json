@@ -13714,8 +13714,8 @@
         "${ elementsCount } conversas removidas de Com estrela."
       ],
       "${ elementsCount } message removed from Starred.": [
-        "${ elementsCount } mensagem removida de .",
-        "${ elementsCount } mensagens removidas de ."
+        "${ elementsCount } mensagem removida de Com estrela.",
+        "${ elementsCount } mensagens removidas de Com estrela."
       ]
     },
     "Success notification": {
