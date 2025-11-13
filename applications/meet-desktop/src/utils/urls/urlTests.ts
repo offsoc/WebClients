@@ -185,6 +185,30 @@ export const isHostAllowed = (host: string) => {
     }
 };
 
+export const isNavigationAllowed = (urlString: string) => {
+    const appURL = getAppURL();
+    let finalURL = urlString;
+    if (!finalURL.startsWith("https://") && !finalURL.startsWith("http://")) {
+        finalURL = "https://" + finalURL;
+    }
+
+    const url = new URL(finalURL);
+
+    // Allow all paths on meet domain
+    const meetUrl = new URL(appURL.meet);
+    if (url.host === meetUrl.host) {
+        return true;
+    }
+
+    // Allow only /meet paths on account domain
+    const accountUrl = new URL(appURL.account);
+    if (url.host === accountUrl.host) {
+        return url.pathname.startsWith("/meet");
+    }
+
+    return false;
+};
+
 export const isHomePage = (url: string) => {
     return isHome(url);
 };
