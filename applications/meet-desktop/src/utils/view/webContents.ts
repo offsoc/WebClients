@@ -10,6 +10,7 @@ import {
     isGoogleOAuthAuthorizationURL,
     isHome,
     isHostAllowed,
+    isNavigationAllowed,
     isMeet,
     isUpgradeURL,
     isUpsellURL,
@@ -109,6 +110,11 @@ export function handleWebContents(contents: WebContents) {
             return;
         }
 
+        if (!isNavigationAllowed(url)) {
+            shell.openExternal(url);
+            return ev.preventDefault();
+        }
+
         if (!isHostAllowed(url)) {
             return ev.preventDefault();
         }
@@ -148,8 +154,6 @@ export function handleWebContents(contents: WebContents) {
             return details.preventDefault();
         }
 
-        // Open calendar URLs in external browser
-        // This catches navigation from allowed about:blank windows (e.g., from window.open())
         if (isCalendar(details.url)) {
             logger().info("opening calendar URL in external browser", details.url);
             shell.openExternal(details.url);
@@ -167,10 +171,18 @@ export function handleWebContents(contents: WebContents) {
             return;
         }
 
+        if (!isNavigationAllowed(details.url)) {
+            shell.openExternal(details.url);
+            return details.preventDefault();
+        }
+
         // Only redirect to a different browser view if the navigation is happening in
         // the visible web contents.
-        if (isCurrentContent()) {
+        const isCurrent = isCurrentContent();
+
+        if (isCurrent) {
             if (isAccount(details.url) && !isAccountAuthorize(details.url) && getCurrentView() !== getAccountView()) {
+                logger().info("will-navigate account", details.url);
                 showView("account", details.url);
                 return details.preventDefault();
             }
@@ -197,6 +209,11 @@ export function handleWebContents(contents: WebContents) {
         }
 
         if (!isSafeUrl(details)) {
+            return { action: "deny" };
+        }
+
+        if (!isNavigationAllowed(url)) {
+            shell.openExternal(url);
             return { action: "deny" };
         }
 
@@ -229,14 +246,6 @@ export function handleWebContents(contents: WebContents) {
             logWindowOpen("denied", `account link in account view ${url}`);
             showView("account", url);
             return { action: "deny" };
-        }
-
-        if (isHostAllowed(url)) {
-            // We probably want to disable this case, this will only happen with proton URLs
-            // that are not calendar/mail/account domains and should be handled as a regular
-            // unknown link. We are keeping it enabled for now to detect error cases.
-            logWindowOpen("allowed", `host not caught by any electron view ${url}`, "error");
-            return { action: "allow" };
         }
 
         logWindowOpen("denied", `unknown link open in browser ${url}`);

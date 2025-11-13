@@ -5,13 +5,15 @@ import { isProdEnv } from "./isProdEnv";
 import { isHostAllowed } from "./urls/urlTests";
 
 export const checkKeys = (request: Request) => {
-    if (isHostAllowed(request.hostname)) {
+    if (isHostAllowed(request.hostname) || request.hostname.endsWith(".proton.me")) {
         // We dont do any verification for dev and testing environments
         if (!isProdEnv()) {
             return 0;
         }
 
-        if (hasProtonMeCert(request)) return 0;
+        if (hasProtonMeCert(request)) {
+            return 0;
+        }
 
         return -2;
     }
