@@ -26,8 +26,6 @@ export let cachedLatestVersion: DesktopVersion | null = null;
  * it will trigger the update.
  */
 export function initializeUpdateChecks() {
-    updateLogger.info("Initialization of update checks.");
-
     autoUpdater.on("update-downloaded", async () => {
         updateDownloaded = true;
         updateLogger.info("Update downloaded, showing prompt.");
@@ -65,8 +63,6 @@ export function initializeUpdateChecks() {
 const validUpdate = {} as DesktopVersion;
 
 async function checkForValidUpdates() {
-    updateLogger.info("Checking for new valid version.");
-
     const platform = getPlatform();
     const settings = getSettings();
     const local: LocalDesktopVersion = {
@@ -76,7 +72,6 @@ async function checkForValidUpdates() {
     };
 
     if (validUpdate.Version) {
-        updateLogger.info("Electron update already initialized, valid update available:", validUpdate, "local:", local);
         return;
     }
 
@@ -139,21 +134,10 @@ function getNewUpdate(local: LocalDesktopVersion, unorderedAvailableVersions: Ve
             }
 
             if (!isANewerThanB(r.Version, local.Version)) {
-                updateLogger.info(
-                    "Skipping update: no newer version avaiable, local:",
-                    JSON.stringify(local),
-                    "latest:",
-                    JSON.stringify(r),
-                );
                 return false;
             }
 
             if (local.RolloutProportion > r.RolloutProportion) {
-                updateLogger.info(
-                    "Skipping update: a newer version is available",
-                    JSON.stringify(r),
-                    `but rollout is low, local:${local.RolloutProportion * 100}%`,
-                );
                 return false;
             }
 
