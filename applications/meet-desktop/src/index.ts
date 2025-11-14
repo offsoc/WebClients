@@ -81,7 +81,8 @@ import { logInitialAppInfo } from "./utils/log/logInitialAppInfo";
         handleWebContents(contents);
     });
 
-    app.on("second-instance", (_ev) => {
+    app.on("second-instance", (_ev, argv) => {
+        mainLogger.info("Second instance called", argv);
         // Bring window to focus
         bringWindowToFront();
     });
