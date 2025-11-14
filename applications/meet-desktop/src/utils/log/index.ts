@@ -28,6 +28,11 @@ export const notificationLogger = Logger.scope("notification");
 export function sanitizeUrlForLogging(urlString: string): string {
     try {
         const url = new URL(urlString);
+
+        if (url.protocol !== "http:" && url.protocol !== "https:") {
+            return "[blocked-protocol]";
+        }
+
         return `${url.protocol}//${url.hostname}${url.pathname}`;
     } catch {
         return "[invalid-url]";

@@ -187,23 +187,31 @@ export const isHostAllowed = (host: string) => {
 
 export const isNavigationAllowed = (urlString: string) => {
     const appURL = getAppURL();
-    let finalURL = urlString;
-    if (!finalURL.startsWith("https://") && !finalURL.startsWith("http://")) {
-        finalURL = "https://" + finalURL;
+    let finalURL: URL;
+
+    try {
+        if (!urlString.includes("://")) {
+            urlString = "https://" + urlString;
+        }
+
+        finalURL = new URL(urlString);
+
+        if (finalURL.protocol !== "http:" && finalURL.protocol !== "https:") {
+            return false;
+        }
+    } catch {
+        return false;
     }
 
-    const url = new URL(finalURL);
-
-    // Allow all paths on meet domain
     const meetUrl = new URL(appURL.meet);
-    if (url.host === meetUrl.host) {
+    // Allow all paths on meet domain
+    if (finalURL.hostname.toLowerCase() === meetUrl.hostname.toLowerCase()) {
         return true;
     }
 
     // Allow specific paths on account domain
-    const accountUrl = new URL(appURL.account);
-    if (url.host === accountUrl.host) {
-        const pathname = url.pathname;
+    if (finalURL.hostname.toLowerCase() === new URL(appURL.account).hostname.toLowerCase()) {
+        const pathname = finalURL.pathname;
 
         // Allow /meet paths
         if (pathname.startsWith("/meet")) {
@@ -212,7 +220,6 @@ export const isNavigationAllowed = (urlString: string) => {
 
         // Allow authentication-related paths
         const authPaths = ["/login", "/authorize", "/switch", "/sso/"];
-
         if (authPaths.some((path) => pathname.startsWith(path))) {
             return true;
         }
