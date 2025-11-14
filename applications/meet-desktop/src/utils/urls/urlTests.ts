@@ -200,10 +200,27 @@ export const isNavigationAllowed = (urlString: string) => {
         return true;
     }
 
-    // Allow only /meet paths on account domain
+    // Allow specific paths on account domain
     const accountUrl = new URL(appURL.account);
     if (url.host === accountUrl.host) {
-        return url.pathname.startsWith("/meet");
+        const pathname = url.pathname;
+
+        // Allow /meet paths
+        if (pathname.startsWith("/meet")) {
+            return true;
+        }
+
+        // Allow authentication-related paths
+        const authPaths = ["/login", "/authorize", "/switch", "/sso/"];
+
+        if (authPaths.some((path) => pathname.startsWith(path))) {
+            return true;
+        }
+
+        // Allow user session paths (/u/0, /u/1, etc.)
+        if (/^\/u\/\d+/.test(pathname)) {
+            return true;
+        }
     }
 
     return false;
