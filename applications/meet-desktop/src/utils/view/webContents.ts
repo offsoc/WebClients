@@ -149,25 +149,30 @@ export function handleWebContents(contents: WebContents) {
             return details.preventDefault();
         }
 
-        if (isCalendar(details.url)) {
-            shell.openExternal(details.url);
-            details.preventDefault();
-
-            // Close the window if it's a popup (not one of our managed views)
+        const closeExtraWindow = () => {
             const viewName = getWebContentsViewName(contents);
             if (!viewName) {
                 const browserWindow = BrowserWindow.fromWebContents(contents);
                 if (browserWindow && !browserWindow.isDestroyed()) {
-                    logger().info("closing popup window after opening calendar URL externally");
                     browserWindow.close();
                 }
             }
+        };
+
+        if (isCalendar(details.url)) {
+            shell.openExternal(details.url);
+            details.preventDefault();
+
+            closeExtraWindow();
+
             return;
         }
 
         if (!isNavigationAllowed(details.url)) {
             shell.openExternal(details.url);
-            return details.preventDefault();
+            details.preventDefault();
+
+            closeExtraWindow();
         }
 
         // Only redirect to a different browser view if the navigation is happening in
