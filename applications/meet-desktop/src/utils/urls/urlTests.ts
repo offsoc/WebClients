@@ -208,6 +208,10 @@ export const isNavigationAllowed = (urlString: string) => {
         if (finalURL.hostname.toLowerCase() === new URL(appURL.account).hostname.toLowerCase()) {
             const pathname = finalURL.pathname;
 
+            if (!pathname) {
+                return false;
+            }
+
             // Allow /meet paths
             if (pathname.startsWith("/meet")) {
                 return true;
